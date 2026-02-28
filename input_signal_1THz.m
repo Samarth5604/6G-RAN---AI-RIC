@@ -1,0 +1,108 @@
+clc;
+clear;
+close all;
+
+%% ===============================
+% 6G 1 THz RAN Simulation
+% ===============================
+
+%% 1 THz Parameters
+fc = 1e12;             % 1 THz carrier
+c = 3e8;
+lambda = c/fc;
+d = 50;                % distance (meters)
+
+disp(['Wavelength = ', num2str(lambda*1e6), ' micrometers'])
+
+%% Path Loss (Free Space)
+FSPL_dB = 20*log10(4*pi*d/lambda);
+PathLoss = 10^(-FSPL_dB/10);
+disp(['Path Loss (dB) = ', num2str(FSPL_dB)])
+
+%% OFDM Parameters
+Nfft = 128;
+cpLen = 16;
+numSymbols = 200;
+M = 4; % QPSK
+
+%% Massive MIMO
+Nt = 2;   % transmit antennas
+Nr = 2;    % receive antennas
+
+%% Generate Data
+data = randi([0 M-1], Nfft*numSymbols, 1);
+modData = pskmod(data, M, pi/M);
+
+%% OFDM Modulation
+txOFDM = [];
+for i = 1:numSymbols
+    sym = modData((i-1)*Nfft+1:i*Nfft);
+    ifftSig = ifft(sym);
+    txOFDM = [txOFDM; ifftSig(end-cpLen+1:end); ifftSig];
+end
+
+%% MIMO Channel (Rayleigh)
+H = (randn(Nr,Nt)+1j*randn(Nr,Nt))/sqrt(2);
+
+% Beamforming (SVD Precoding)
+[U,S,V] = svd(H);
+w = V(:,1);   % dominant beam
+
+%% Apply Path Loss and MIMO
+h_eff = H(1,:)*w;              % Effective channel
+txSignal = sqrt(PathLoss) * txOFDM;
+rxSignal = h_eff * txSignal;
+
+%% Add Noise
+SNR_dB = 20;
+snrLinear = 10^(SNR_dB/10);
+
+noise = sqrt(1/(2*snrLinear)) * ...
+        (randn(size(rxSignal)) + 1j*randn(size(rxSignal)));
+
+rxSignal = rxSignal + noise;
+
+%% OFDM Demodulation
+rxData = [];
+index = 1;
+for i = 1:numSymbols
+    rSym = rxSignal(index+cpLen:index+cpLen+Nfft-1);
+    fftSig = fft(rSym);
+    rxData = [rxData; fftSig];
+    index = index + Nfft + cpLen;
+end
+
+%% Equalization
+rxEq = rxData / h_eff;
+
+%% Demodulation
+rxBits = pskdemod(rxEq, M, pi/M);
+
+%% BER Calculation
+[~, BER] = biterr(data, rxBits);
+disp(['BER = ', num2str(BER)])
+
+%% ===============================
+% 1 THz Upconversion (Actual Modulated Wave)
+% ===============================
+
+samplesToPlot = 2000;                % limit for visualization
+baseband = real(txSignal(1:samplesToPlot));
+
+fs_carrier = 10e12;                  % 10 THz sampling
+Ts = 1/fs_carrier;
+t = (0:samplesToPlot-1)*Ts;
+
+carrier = cos(2*pi*fc*t);
+
+% Modulated THz Wave
+thzWave = baseband.' .* carrier;
+
+%% Plot THz Waveform
+figure;
+plot(t*1e12, thzWave,'LineWidth',1.2);
+grid on;
+xlabel('Time (picoseconds)');
+ylabel('Amplitude');
+title('1 THz Modulated Waveform (6G OFDM + Massive MIMO)');
+
