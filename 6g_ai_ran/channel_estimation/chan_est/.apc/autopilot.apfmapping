@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="chan_est.cpp" path="/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est.cpp"/>
+    <originFiles name="chan_est.h" path="/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est.h"/>
+    <originFiles name="dmrs_pilots.h" path="/home/samarth/Desktop/6g_ai_ran/channel_estimation/dmrs_pilots.h"/>
+  </source>
+  <testbench>
+    <originFiles name="chan_est_tb.cpp" path="/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

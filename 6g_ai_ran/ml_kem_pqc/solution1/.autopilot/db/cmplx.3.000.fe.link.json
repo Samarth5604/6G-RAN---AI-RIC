@@ -1,0 +1,77 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 1 4",
+    "file": "mlkem_ip.cpp",
+    "fileloc": 77,
+    "instructions": 34,
+    "name": "mlkem_top",
+    "total_instructions": 2360
+  },
+  "1": {
+    "basicblocks": 13,
+    "calls": "6 6 6",
+    "file": "mlkem_ip.cpp",
+    "fileloc": 38,
+    "instructions": 87,
+    "loads": {
+      "L": 3
+    },
+    "name": "process_phase",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 2032
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "mlkem_ip.cpp",
+    "fileloc": 24,
+    "instructions": 27,
+    "name": "read_phase",
+    "total_instructions": 143
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mlkem_types.h",
+    "fileloc": 40,
+    "instructions": 2,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 19
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "mlkem_ip.cpp",
+    "fileloc": 63,
+    "instructions": 43,
+    "loads": {
+      "L": 2
+    },
+    "name": "write_phase",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 149
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "mlkem_ip.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 21
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mlkem_types.h",
+    "fileloc": 49,
+    "instructions": 49,
+    "name": "montgomery_reduce",
+    "total_instructions": 497
+  }
+}

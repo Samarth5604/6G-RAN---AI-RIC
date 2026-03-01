@@ -1,0 +1,7 @@
+Running: xsim.dir/thz_pipeline_top_wrapper_behav/xsimk -simmode gui -wdb thz_pipeline_top_wrapper_behav.wdb -simrunnum 0 -socket 44813
+Design successfully loaded
+Design Loading Memory Usage: 53644 KB (Peak: 53776 KB)
+Design Loading CPU Usage: 70 ms
+Simulation completed
+Simulation Memory Usage: 129876 KB (Peak: 192912 KB)
+Simulation CPU Usage: 6570 ms

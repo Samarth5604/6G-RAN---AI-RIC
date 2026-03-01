@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../chan_est.cpp in debug mode
+   Generating csim.exe
+PASS: DMRS symbol — 4096 weights correct
+PASS: non-DMRS symbol — weight_stream empty
+
+ALL TESTS PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4096
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

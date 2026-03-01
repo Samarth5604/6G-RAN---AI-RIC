@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="beamforming" solutionName="solution1" date="2026-02-28T17:35:08.684+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'out_stream' as it needs to be read/written in its entirety" projectName="beamforming" solutionName="solution1" date="2026-02-28T17:35:07.836+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'in_stream' as it needs to be read/written in its entirety" projectName="beamforming" solutionName="solution1" date="2026-02-28T17:35:07.828+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'set_directive_top -location' command is deprecated and will be removed in a future release." projectName="beamforming" solutionName="solution1" date="2026-02-28T17:34:57.654+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'set_directive_top -name' command is deprecated and will be removed in a future release." projectName="beamforming" solutionName="solution1" date="2026-02-28T17:34:57.647+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/beamforming/beamforming/solution1/csynth.tcl'" projectName="beamforming" solutionName="solution1" date="2026-02-28T17:34:57.040+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [HLS 200-484] The 'set_directive_top -location' command is deprecated and will be removed in a future release." projectName="beamforming" solutionName="solution1" date="2026-02-28T17:35:24.121+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'set_directive_top -name' command is deprecated and will be removed in a future release." projectName="beamforming" solutionName="solution1" date="2026-02-28T17:35:24.112+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/beamforming/beamforming/solution1/export.tcl'" projectName="beamforming" solutionName="solution1" date="2026-02-28T17:35:23.322+0530" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

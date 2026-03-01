@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <packageLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.753+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_im_1'" projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.219+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_re_1'" projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.218+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_im_0'" projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.217+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_re_0'" projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.215+0530" type="Warning"/>
+      </synLog>
+      <packageLog>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/export.tcl'" projectName="chan_est" solutionName="solution1" date="2026-02-28T16:01:02.570+0530" type="Warning"/>
+      </packageLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

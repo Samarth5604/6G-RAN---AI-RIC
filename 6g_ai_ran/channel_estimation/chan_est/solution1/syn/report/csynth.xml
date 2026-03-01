@@ -1,0 +1,947 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu7ev-ffvc1156-2-e</Part>
+        <TopModelName>chan_est_top</TopModelName>
+        <TargetClockPeriod>3.33</TargetClockPeriod>
+        <ClockUncertainty>0.90</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>2.380</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>1030</Best-caseLatency>
+            <Average-caseLatency>3686</Average-caseLatency>
+            <Worst-caseLatency>6341</Worst-caseLatency>
+            <Best-caseRealTimeLatency>3.430 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>12.274 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>21.116 us</Worst-caseRealTimeLatency>
+            <Interval-min>1031</Interval-min>
+            <Interval-max>6342</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>chan_est.cpp:190</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>19</BRAM_18K>
+            <DSP>8</DSP>
+            <FF>636</FF>
+            <LUT>1232</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>624</BRAM_18K>
+            <DSP>1728</DSP>
+            <FF>460800</FF>
+            <LUT>230400</LUT>
+            <URAM>96</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>chan_est_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>chan_est_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>chan_est_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>chan_est_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>chan_est_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>chan_est_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_0_TDATA</name>
+            <Object>fft_in_0_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_0_TVALID</name>
+            <Object>fft_in_0_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_0_TREADY</name>
+            <Object>fft_in_0_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_0_TLAST</name>
+            <Object>fft_in_0_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_0_TKEEP</name>
+            <Object>fft_in_0_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_0_TSTRB</name>
+            <Object>fft_in_0_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_1_TDATA</name>
+            <Object>fft_in_1_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_1_TVALID</name>
+            <Object>fft_in_1_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_1_TREADY</name>
+            <Object>fft_in_1_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_1_TLAST</name>
+            <Object>fft_in_1_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_1_TKEEP</name>
+            <Object>fft_in_1_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fft_in_1_TSTRB</name>
+            <Object>fft_in_1_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>symbol_num</name>
+            <Object>symbol_num</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>weight_stream_TDATA</name>
+            <Object>weight_stream_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>weight_stream_TVALID</name>
+            <Object>weight_stream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>weight_stream_TREADY</name>
+            <Object>weight_stream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>weight_stream_TLAST</name>
+            <Object>weight_stream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>weight_stream_TKEEP</name>
+            <Object>weight_stream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>weight_stream_TSTRB</name>
+            <Object>weight_stream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>chan_est_top</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_chan_est_top_Pipeline_buf_loop_fu_152</InstName>
+                    <ModuleName>chan_est_top_Pipeline_buf_loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>152</ID>
+                    <BindInstances>icmp_ln228_fu_160_p2 add_ln228_fu_166_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_chan_est_top_Pipeline_pilot_scan_fu_176</InstName>
+                    <ModuleName>chan_est_top_Pipeline_pilot_scan</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>176</ID>
+                    <BindInstances>icmp_ln246_fu_208_p2 add_ln246_fu_214_p2 sub_ln248_fu_252_p2 mac_muladd_16s_15s_30s_30_4_1_U17 mul_16s_15s_30_1_1_U13 mac_muladd_16s_15s_30s_30_4_1_U17 mul_16s_15s_30_1_1_U14 mac_mulsub_16s_15s_30s_30_4_1_U18 mac_mulsub_16s_15s_30s_30_4_1_U18 mac_muladd_16s_15s_30s_30_4_1_U19 mul_16s_15s_30_1_1_U15 mac_muladd_16s_15s_30s_30_4_1_U19 mul_16s_15s_30_1_1_U16 mac_mulsub_16s_15s_30s_30_4_1_U20 mac_mulsub_16s_15s_30s_30_4_1_U20 DMRS_RE_U DMRS_IM_U</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_chan_est_top_Pipeline_zoh_fill_fu_192</InstName>
+                    <ModuleName>chan_est_top_Pipeline_zoh_fill</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>192</ID>
+                    <BindInstances>icmp_ln266_fu_231_p2 add_ln266_fu_237_p2 PILOT_FOR_K_U</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_chan_est_top_Pipeline_weight_out_fu_210</InstName>
+                    <ModuleName>chan_est_top_Pipeline_weight_out</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>210</ID>
+                    <BindInstances>icmp_ln283_fu_212_p2 idx_2_fu_218_p2 select_ln289_fu_267_p3 select_ln289_1_fu_274_p3 select_ln289_2_fu_281_p3 select_ln290_fu_288_p3 select_ln290_1_fu_295_p3 select_ln290_2_fu_302_p3 w_last_fu_256_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>fft_re_U fft_re_1_U fft_im_U fft_im_1_U pilot_h_re_U pilot_h_re_1_U pilot_h_im_U pilot_h_im_1_U w_re_U w_re_1_U w_re_2_U w_re_3_U w_im_U w_im_1_U w_im_2_U w_im_3_U icmp_ln243_fu_230_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>chan_est_top_Pipeline_buf_loop</Name>
+            <Loops>
+                <buf_loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.90</ClockUncertainty>
+                    <EstimatedClockPeriod>1.652</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1026</Best-caseLatency>
+                    <Average-caseLatency>1026</Average-caseLatency>
+                    <Worst-caseLatency>1026</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>3.417 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>3.417 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>3.417 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1025</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <buf_loop>
+                        <Name>buf_loop</Name>
+                        <Slack>2.43</Slack>
+                        <TripCount>1024</TripCount>
+                        <Latency>1024</Latency>
+                        <AbsoluteTimeLatency>3.410 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </buf_loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>chan_est.cpp:228</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <buf_loop>
+                            <Name>buf_loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>chan_est.cpp:228</SourceLocation>
+                        </buf_loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>89</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>97</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="buf_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln228_fu_160_p2" SOURCE="chan_est.cpp:228" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln228" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="buf_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln228_fu_166_p2" SOURCE="chan_est.cpp:228" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln228" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>chan_est_top_Pipeline_pilot_scan</Name>
+            <Loops>
+                <pilot_scan/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.90</ClockUncertainty>
+                    <EstimatedClockPeriod>2.380</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>178</Best-caseLatency>
+                    <Average-caseLatency>178</Average-caseLatency>
+                    <Worst-caseLatency>178</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.593 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.593 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.593 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>173</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <pilot_scan>
+                        <Name>pilot_scan</Name>
+                        <Slack>2.43</Slack>
+                        <TripCount>172</TripCount>
+                        <Latency>176</Latency>
+                        <AbsoluteTimeLatency>0.586 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </pilot_scan>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>chan_est.cpp:246</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <pilot_scan>
+                            <Name>pilot_scan</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>chan_est.cpp:248</SourceLocation>
+                        </pilot_scan>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>2</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>311</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>137</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="pilot_scan" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln246_fu_208_p2" SOURCE="chan_est.cpp:246" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln246" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="pilot_scan" OPTYPE="add" PRAGMA="" RTLNAME="add_ln246_fu_214_p2" SOURCE="chan_est.cpp:246" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln246" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="pilot_scan" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln248_fu_252_p2" SOURCE="chan_est.cpp:248" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln248" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_30s_30_4_1_U17" SOURCE="chan_est.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_15s_30_1_1_U13" SOURCE="chan_est.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_30s_30_4_1_U17" SOURCE="chan_est.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_15s_30_1_1_U14" SOURCE="chan_est.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mac_mulsub_16s_15s_30s_30_4_1_U18" SOURCE="chan_est.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="sub" PRAGMA="" RTLNAME="mac_mulsub_16s_15s_30s_30_4_1_U18" SOURCE="chan_est.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_30s_30_4_1_U19" SOURCE="chan_est.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_15s_30_1_1_U15" SOURCE="chan_est.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_30s_30_4_1_U19" SOURCE="chan_est.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_15s_30_1_1_U16" SOURCE="chan_est.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mac_mulsub_16s_15s_30s_30_4_1_U20" SOURCE="chan_est.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="sub" PRAGMA="" RTLNAME="mac_mulsub_16s_15s_30s_30_4_1_U20" SOURCE="chan_est.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln47_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="DMRS_RE_U" SOURCE="" STORAGESIZE="15 172 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="DMRS_RE" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="DMRS_IM_U" SOURCE="" STORAGESIZE="15 172 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="DMRS_IM" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>chan_est_top_Pipeline_zoh_fill</Name>
+            <Loops>
+                <zoh_fill/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.90</ClockUncertainty>
+                    <EstimatedClockPeriod>1.664</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1029</Best-caseLatency>
+                    <Average-caseLatency>1029</Average-caseLatency>
+                    <Worst-caseLatency>1029</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>3.427 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>3.427 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>3.427 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1025</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <zoh_fill>
+                        <Name>zoh_fill</Name>
+                        <Slack>2.43</Slack>
+                        <TripCount>1024</TripCount>
+                        <Latency>1027</Latency>
+                        <AbsoluteTimeLatency>3.420 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>5</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </zoh_fill>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>chan_est.cpp:266</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <zoh_fill>
+                            <Name>zoh_fill</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>chan_est.cpp:266</SourceLocation>
+                        </zoh_fill>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>1</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <FF>167</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>107</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="zoh_fill" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln266_fu_231_p2" SOURCE="chan_est.cpp:266" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln266" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="zoh_fill" OPTYPE="add" PRAGMA="" RTLNAME="add_ln266_fu_237_p2" SOURCE="chan_est.cpp:266" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln266" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="PILOT_FOR_K_U" SOURCE="" STORAGESIZE="8 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="PILOT_FOR_K" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>chan_est_top_Pipeline_weight_out</Name>
+            <Loops>
+                <weight_out/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.90</ClockUncertainty>
+                    <EstimatedClockPeriod>1.951</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4099</Best-caseLatency>
+                    <Average-caseLatency>4099</Average-caseLatency>
+                    <Worst-caseLatency>4099</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>13.650 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>13.650 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>13.650 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4097</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <weight_out>
+                        <Name>weight_out</Name>
+                        <Slack>2.43</Slack>
+                        <TripCount>4096</TripCount>
+                        <Latency>4097</Latency>
+                        <AbsoluteTimeLatency>13.643 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </weight_out>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>chan_est.cpp:283</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <weight_out>
+                            <Name>weight_out</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>chan_est.cpp:283</SourceLocation>
+                        </weight_out>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>54</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>208</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="weight_out" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln283_fu_212_p2" SOURCE="chan_est.cpp:283" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln283" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="weight_out" OPTYPE="add" PRAGMA="" RTLNAME="idx_2_fu_218_p2" SOURCE="chan_est.cpp:283" STORAGESUBTYPE="" URAM="0" VARIABLE="idx_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln289_fu_267_p3" SOURCE="chan_est.cpp:289" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln289" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln289_1_fu_274_p3" SOURCE="chan_est.cpp:289" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln289_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln289_2_fu_281_p3" SOURCE="chan_est.cpp:289" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln289_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln290_fu_288_p3" SOURCE="chan_est.cpp:290" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln290" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln290_1_fu_295_p3" SOURCE="chan_est.cpp:290" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln290_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln290_2_fu_302_p3" SOURCE="chan_est.cpp:290" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln290_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="weight_out" OPTYPE="seteq" PRAGMA="" RTLNAME="w_last_fu_256_p2" SOURCE="chan_est.cpp:292" STORAGESUBTYPE="" URAM="0" VARIABLE="w_last" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>chan_est_top</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.90</ClockUncertainty>
+                    <EstimatedClockPeriod>2.380</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1030</Best-caseLatency>
+                    <Average-caseLatency>3686</Average-caseLatency>
+                    <Worst-caseLatency>6341</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>3.430 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>12.274 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>21.116 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1031 ~ 6342</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>chan_est.cpp:190</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>19</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>3</UTIL_BRAM>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>636</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1232</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_re_U" SOURCE="chan_est.cpp:205" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_re" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_re_1_U" SOURCE="chan_est.cpp:205" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_re_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_im_U" SOURCE="chan_est.cpp:206" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_im" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_im_1_U" SOURCE="chan_est.cpp:206" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_im_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_re_U" SOURCE="chan_est.cpp:211" STORAGESIZE="16 172 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_re" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_re_1_U" SOURCE="chan_est.cpp:211" STORAGESIZE="16 172 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_re_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_im_U" SOURCE="chan_est.cpp:212" STORAGESIZE="16 172 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_im" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_im_1_U" SOURCE="chan_est.cpp:212" STORAGESIZE="16 172 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_im_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_U" SOURCE="chan_est.cpp:217" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_1_U" SOURCE="chan_est.cpp:217" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_2_U" SOURCE="chan_est.cpp:217" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_3_U" SOURCE="chan_est.cpp:217" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_U" SOURCE="chan_est.cpp:218" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_1_U" SOURCE="chan_est.cpp:218" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_2_U" SOURCE="chan_est.cpp:218" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_3_U" SOURCE="chan_est.cpp:218" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln243_fu_230_p2" SOURCE="chan_est.cpp:243" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln243" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_export output="/home/samarth/Desktop/6g_ai_ran/channel_estimation"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="fft_in" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0, 0, 0, '8', false&gt;, 0&gt;*" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="fft_in_0" name="" usage="data" direction="in"/>
+                <hwRef type="interface" interface="fft_in_1" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="symbol_num" index="1" direction="in" srcType="ap_uint&lt;4&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="symbol_num" name="symbol_num" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="weight_stream" index="2" direction="out" srcType="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0, 0, 0, '8', false&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="weight_stream" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">fft_in_0:fft_in_1:weight_stream</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="fft_in_0" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="32" portPrefix="fft_in_0_">
+            <ports>
+                <port>fft_in_0_TDATA</port>
+                <port>fft_in_0_TKEEP</port>
+                <port>fft_in_0_TLAST</port>
+                <port>fft_in_0_TREADY</port>
+                <port>fft_in_0_TSTRB</port>
+                <port>fft_in_0_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="fft_in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="fft_in_1" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="32" portPrefix="fft_in_1_">
+            <ports>
+                <port>fft_in_1_TDATA</port>
+                <port>fft_in_1_TKEEP</port>
+                <port>fft_in_1_TLAST</port>
+                <port>fft_in_1_TREADY</port>
+                <port>fft_in_1_TSTRB</port>
+                <port>fft_in_1_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="fft_in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="symbol_num" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="4">
+            <portMaps>
+                <portMap portMapName="symbol_num">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>symbol_num</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="symbol_num"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="weight_stream" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="32" portPrefix="weight_stream_">
+            <ports>
+                <port>weight_stream_TDATA</port>
+                <port>weight_stream_TKEEP</port>
+                <port>weight_stream_TLAST</port>
+                <port>weight_stream_TREADY</port>
+                <port>weight_stream_TSTRB</port>
+                <port>weight_stream_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="weight_stream"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="9">Interface, Direction, Register Mode, TDATA, TKEEP, TLAST, TREADY, TSTRB, TVALID</keys>
+                    <column name="fft_in_0">in, both, 32, 4, 1, 1, 4, 1</column>
+                    <column name="fft_in_1">in, both, 32, 4, 1, 1, 4, 1</column>
+                    <column name="weight_stream">out, both, 32, 4, 1, 1, 4, 1</column>
+                </table>
+            </item>
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="symbol_num">ap_none, in, 4</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="fft_in">in, stream&lt;hls::axis&lt;ap_uint&lt;32&gt; 0 0 0 '8' false&gt; 0&gt;*</column>
+                    <column name="symbol_num">in, ap_uint&lt;4&gt;</column>
+                    <column name="weight_stream">out, stream&lt;hls::axis&lt;ap_uint&lt;32&gt; 0 0 0 '8' false&gt; 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="fft_in">fft_in_0, interface</column>
+                    <column name="fft_in">fft_in_1, interface</column>
+                    <column name="symbol_num">symbol_num, port</column>
+                    <column name="weight_stream">weight_stream, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="inline" location="./dmrs_pilots.h:109" status="valid" parentFunction="is_pilot" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="./dmrs_pilots.h:115" status="valid" parentFunction="pilot_index" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="chan_est.cpp:42" status="valid" parentFunction="ls_div" variable="" isDirective="0" options=""/>
+        <Pragma type="interface" location="chan_est.cpp:195" status="valid" parentFunction="chan_est_top" variable="fft_in" isDirective="0" options="axis port=fft_in"/>
+        <Pragma type="interface" location="chan_est.cpp:196" status="valid" parentFunction="chan_est_top" variable="weight_stream" isDirective="0" options="axis port=weight_stream"/>
+        <Pragma type="interface" location="chan_est.cpp:197" status="valid" parentFunction="chan_est_top" variable="symbol_num" isDirective="0" options="ap_none port=symbol_num"/>
+        <Pragma type="interface" location="chan_est.cpp:198" status="valid" parentFunction="chan_est_top" variable="return" isDirective="0" options="ap_ctrl_hs port=return"/>
+        <Pragma type="disaggregate" location="chan_est.cpp:199" status="valid" parentFunction="chan_est_top" variable="fft_in" isDirective="0" options="variable=fft_in"/>
+        <Pragma type="array_partition" location="chan_est.cpp:207" status="valid" parentFunction="chan_est_top" variable="fft_re" isDirective="0" options="variable=fft_re complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:208" status="valid" parentFunction="chan_est_top" variable="fft_im" isDirective="0" options="variable=fft_im complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:213" status="valid" parentFunction="chan_est_top" variable="pilot_h_re" isDirective="0" options="variable=pilot_h_re complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:214" status="valid" parentFunction="chan_est_top" variable="pilot_h_im" isDirective="0" options="variable=pilot_h_im complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:219" status="valid" parentFunction="chan_est_top" variable="w_re" isDirective="0" options="variable=w_re complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:220" status="valid" parentFunction="chan_est_top" variable="w_re" isDirective="0" options="variable=w_re complete dim=2"/>
+        <Pragma type="array_partition" location="chan_est.cpp:221" status="valid" parentFunction="chan_est_top" variable="w_im" isDirective="0" options="variable=w_im complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:222" status="valid" parentFunction="chan_est_top" variable="w_im" isDirective="0" options="variable=w_im complete dim=2"/>
+        <Pragma type="pipeline" location="chan_est.cpp:229" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="chan_est.cpp:231" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="chan_est.cpp:247" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="chan_est.cpp:252" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="chan_est.cpp:267" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="chan_est.cpp:270" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="chan_est.cpp:272" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="chan_est.cpp:284" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
+    </PragmaReport>
+</profile>
+

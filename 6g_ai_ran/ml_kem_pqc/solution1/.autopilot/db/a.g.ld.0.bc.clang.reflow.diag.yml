@@ -1,0 +1,42 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mlkem_ip.cpp, Line: 57, Column: 22 }
+Function:        _ZL13process_phaseiRN3hls6streamI6ap_intILi16EELi0EEES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'montgomery_reduce(ap_int<32>)'
+    DebugLoc:        { File: ./mlkem_types.h, Line: 49, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'process_phase(int, hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&)'
+    DebugLoc:        { File: mlkem_ip.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mlkem_ip.cpp, Line: 54, Column: 22 }
+Function:        _ZL13process_phaseiRN3hls6streamI6ap_intILi16EELi0EEES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'montgomery_reduce(ap_int<32>)'
+    DebugLoc:        { File: ./mlkem_types.h, Line: 49, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'process_phase(int, hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&)'
+    DebugLoc:        { File: mlkem_ip.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mlkem_ip.cpp, Line: 51, Column: 22 }
+Function:        _ZL13process_phaseiRN3hls6streamI6ap_intILi16EELi0EEES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'montgomery_reduce(ap_int<32>)'
+    DebugLoc:        { File: ./mlkem_types.h, Line: 49, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'process_phase(int, hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&)'
+    DebugLoc:        { File: mlkem_ip.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...

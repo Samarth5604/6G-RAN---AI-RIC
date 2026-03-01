@@ -1,0 +1,85 @@
+---
+MainSourceFile:  /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          55545
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          283219
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          283683
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          284148
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          567853
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_230_1:  '
+    FileOffset:      230
+    FilePath:        chan_est.cpp
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          1112497
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_230_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_251_2:  '
+    FileOffset:      251
+    FilePath:        chan_est.cpp
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          1112937
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_251_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_269_3:  '
+    FileOffset:      269
+    FilePath:        chan_est.cpp
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          1113300
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_269_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_271_4:  '
+    FileOffset:      271
+    FilePath:        chan_est.cpp
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          1113350
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_271_4: '
+...

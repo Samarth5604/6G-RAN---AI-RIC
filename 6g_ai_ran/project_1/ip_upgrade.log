@@ -1,0 +1,91 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Feb 28 17:36:04 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_beamformer_top_0_3'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of thz_pipeline_top_beamformer_top_0_3 (xilinx.com:hls:beamformer_top:1.0) from (Rev. 2114500462) to (Rev. 2114500775)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'thz_pipeline_top_beamformer_top_0_3'.
+
+
+-Upgrade has removed interface 's_axi_WEIGHTS'
+
+-Upgrade has added interface 'weight_stream' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'thz_pipeline_top_beamformer_top_0_3'. These changes may impact your design.
+
+
+-Upgrade has removed port 's_axi_WEIGHTS_ARADDR'
+
+-Upgrade has removed port 's_axi_WEIGHTS_ARREADY'
+
+-Upgrade has removed port 's_axi_WEIGHTS_ARVALID'
+
+-Upgrade has removed port 's_axi_WEIGHTS_AWADDR'
+
+-Upgrade has removed port 's_axi_WEIGHTS_AWREADY'
+
+-Upgrade has removed port 's_axi_WEIGHTS_AWVALID'
+
+-Upgrade has removed port 's_axi_WEIGHTS_BREADY'
+
+-Upgrade has removed port 's_axi_WEIGHTS_BRESP'
+
+-Upgrade has removed port 's_axi_WEIGHTS_BVALID'
+
+-Upgrade has removed port 's_axi_WEIGHTS_RDATA'
+
+-Upgrade has removed port 's_axi_WEIGHTS_RREADY'
+
+-Upgrade has removed port 's_axi_WEIGHTS_RRESP'
+
+-Upgrade has removed port 's_axi_WEIGHTS_RVALID'
+
+-Upgrade has removed port 's_axi_WEIGHTS_WDATA'
+
+-Upgrade has removed port 's_axi_WEIGHTS_WREADY'
+
+-Upgrade has removed port 's_axi_WEIGHTS_WSTRB'
+
+-Upgrade has removed port 's_axi_WEIGHTS_WVALID'
+
+-Upgrade has added port 'weight_stream_TDATA'
+
+-Upgrade has added port 'weight_stream_TKEEP'
+
+-Upgrade has added port 'weight_stream_TLAST'
+
+-Upgrade has added port 'weight_stream_TREADY'
+
+-Upgrade has added port 'weight_stream_TSTRB'
+
+-Upgrade has added port 'weight_stream_TVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'thz_pipeline_top_beamformer_top_0_3'. These changes may impact your design.
+
+
+-Upgrade has removed address block 's_axi_WEIGHTS/Reg'
+
+

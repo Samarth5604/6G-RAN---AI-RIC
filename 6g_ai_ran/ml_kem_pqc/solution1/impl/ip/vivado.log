@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Feb 27 17:41:30 2026
+# Process ID: 101074
+# Current directory: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/vivado.log
+# Journal file: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/vivado.jou
+# Running On        :localhost.localdomain
+# Platform          :unknown
+# Operating System  :unknown
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency     :637.971 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :33071 MB
+# Swap memory       :16739 MB
+# Total Virtual     :49810 MB
+# Available Virtual :28927 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/solution1_data.json outdir=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip srcdir=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1 sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/misc
+INFO: Copied 26 verilog file(s) to /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/hdl/verilog
+INFO: Copied 21 vhdl file(s) to /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/drivers
+INFO: Import ports from HDL: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/hdl/vhdl/mlkem_top.vhd (mlkem_top)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/samarth/Desktop/Vivado/2024.1/data/ip'.
+INFO: Add axi4stream interface in_stream
+INFO: Add axi4stream interface out_stream
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/component.xml
+INFO: Created IP archive /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/xilinx_com_hls_mlkem_top_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 27 17:41:36 2026...

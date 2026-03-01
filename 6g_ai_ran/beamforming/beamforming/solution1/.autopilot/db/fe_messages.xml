@@ -1,0 +1,96 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cmac" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/samarth/Desktop/6g_ai_ran/beamforming/beamforming/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=beamformer_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/samarth/Desktop/6g_ai_ran/beamforming/beamforming/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=beamformer_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:96:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=weight_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:98:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_stream" ARG_PragmaType="disaggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_stream" ARG_PragmaType="disaggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights_re complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:108:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights_re complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights_im complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:110:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights_im complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:139:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_re complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:150:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_im complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:155:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="beamformer.cpp:174:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="beamformer_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="beamformer.cpp:177:2" msg_body="Inlining function 'cmac(ap_int&lt;16&gt;, ap_int&lt;16&gt;, ap_fixed&lt;16, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_int&lt;32&gt;&amp;, ap_int&lt;32&gt;&amp;)' into 'beamformer_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="cmac(ap_int&lt;16&gt;, ap_int&lt;16&gt;, ap_fixed&lt;16, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_int&lt;32&gt;&amp;, ap_int&lt;32&gt;&amp;)" Callee-DebugLoc="File beamformer.cpp Line 72 Column 0" Caller="beamformer_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File beamformer.cpp Line 93 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="beamformer.cpp:153:9" msg_body="Loop 'read_loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="read_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="beamformer.cpp:166:9" msg_body="Loop 'beam_loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="beam_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="beamformer.cpp:172:13" msg_body="Loop 'ant_loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ant_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="beamformer.cpp:93:0" msg_body="Unrolling loop 'read_loop' (beamformer.cpp:153:9) in function 'beamformer_top' completely with a factor of 2">
+        <args Factor="2" LoopLoc="beamformer.cpp:153:9" LoopName="read_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="beamformer.cpp:93:0" msg_body="Unrolling loop 'beam_loop' (beamformer.cpp:166:9) in function 'beamformer_top' completely with a factor of 2">
+        <args Factor="2" LoopLoc="beamformer.cpp:166:9" LoopName="beam_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="beamformer.cpp:93:0" msg_body="Unrolling loop 'ant_loop' (beamformer.cpp:172:13) in function 'beamformer_top' completely with a factor of 2">
+        <args Factor="2" LoopLoc="beamformer.cpp:172:13" LoopName="ant_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="beamformer.cpp:106:15" msg_body="Applying array_partition to 'weights_re': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="weights_re"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="beamformer.cpp:106:27" msg_body="Applying array_partition to 'weights_im': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="weights_im"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="beamformer.cpp:93:0" msg_body="Applying array_partition to 'in_stream': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="in_stream"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="beamformer.cpp:93:0" msg_body="Applying array_partition to 'out_stream': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="out_stream"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

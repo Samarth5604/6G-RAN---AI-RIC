@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 22,
+    "calls": "",
+    "file": "cp_insertion.cpp",
+    "fileloc": 42,
+    "instructions": 111,
+    "loads": {
+      "L": 7
+    },
+    "name": "cp_insertion",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 345
+  }
+}

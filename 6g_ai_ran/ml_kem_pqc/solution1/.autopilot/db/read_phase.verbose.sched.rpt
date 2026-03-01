@@ -1,0 +1,130 @@
+
+
+================================================================
+== Vitis HLS Report for 'read_phase'
+================================================================
+* Date:           Fri Feb 27 17:36:35 2026
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        ml_kem_pqc
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  1.630 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|      260|  3.330 ns|  0.866 us|    1|  260|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 3 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.49>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %in_stream_V_data_V, i4 %in_stream_V_keep_V, i4 %in_stream_V_strb_V, i1 0, i1 %in_stream_V_last_V, i1 0, i1 0, void @empty_10"   --->   Operation 4 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %coeff_stream, void @empty_8, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %in_stream_V_last_V, i4 %in_stream_V_strb_V, i4 %in_stream_V_keep_V, i32 %in_stream_V_data_V, void @empty_7, i32 1, i32 1, void @empty_5, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.49ns)   --->   "%tmp = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i32P0A.i4P0A.i4P0A.i1P0A, i32 %in_stream_V_data_V, i4 %in_stream_V_keep_V, i4 %in_stream_V_strb_V, i1 %in_stream_V_last_V, i32 1" [mlkem_ip.cpp:29]   --->   Operation 7 'nbreadreq' 'tmp' <Predicate = true> <Delay = 0.49> <CoreInst = "regslice">   --->   Core 148 'regslice' <Latency = 0> <II = 1> <Delay = 0.65> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln29 = br i1 %tmp, void %if.end, void %for.inc.preheader" [mlkem_ip.cpp:29]   --->   Operation 8 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.07>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 9 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [2/2] (0.07ns)   --->   "%call_ln0 = call void @read_phase_Pipeline_VITIS_LOOP_30_1, i32 %in_stream_V_data_V, i4 %in_stream_V_keep_V, i4 %in_stream_V_strb_V, i1 %in_stream_V_last_V, i16 %coeff_stream"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.07> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 1.63>
+ST_3 : Operation 11 [1/2] (1.63ns)   --->   "%call_ln0 = call void @read_phase_Pipeline_VITIS_LOOP_30_1, i32 %in_stream_V_data_V, i4 %in_stream_V_keep_V, i4 %in_stream_V_strb_V, i1 %in_stream_V_last_V, i16 %coeff_stream"   --->   Operation 11 'call' 'call_ln0' <Predicate = (tmp)> <Delay = 1.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end"   --->   Operation 12 'br' 'br_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln36 = ret" [mlkem_ip.cpp:36]   --->   Operation 13 'ret' 'ret_ln36' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.330ns, clock uncertainty: 0.899ns.
+
+ <State 1>: 0.497ns
+The critical path consists of the following:
+	axis request operation ('tmp', mlkem_ip.cpp:29) on port 'in_stream_V_data_V' (mlkem_ip.cpp:29) [9]  (0.497 ns)
+
+ <State 2>: 0.079ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'read_phase_Pipeline_VITIS_LOOP_30_1' [13]  (0.079 ns)
+
+ <State 3>: 1.630ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'read_phase_Pipeline_VITIS_LOOP_30_1' [13]  (1.630 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

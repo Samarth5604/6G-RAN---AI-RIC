@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mlkem_top'" level="0">
+<item name = "Date">Fri Feb 27 17:36:35 2026
+</item>
+<item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
+<item name = "Project">ml_kem_pqc</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.33 ns, 2.380 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">269, 269, 0.896 us, 0.896 us, 267, 267, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_read_phase_fu_108">read_phase, 1, 260, 3.330 ns, 0.866 us, 1, 260, no</column>
+<column name="call_ln97_entry_proc_fu_121">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_process_phase_fu_128">process_phase, 266, 266, 0.886 us, 0.886 us, 266, 266, no</column>
+<column name="grp_write_phase_fu_135">write_phase, 258, 258, 0.859 us, 0.859 us, 256, 256, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,26 @@
+{
+  "0": {
+    "basicblocks": 33,
+    "calls": "1",
+    "file": "beamformer.cpp",
+    "fileloc": 89,
+    "instructions": 282,
+    "loads": {
+      "L": 9
+    },
+    "name": "beamformer_top",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 2871
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "beamformer.cpp",
+    "fileloc": 68,
+    "instructions": 79,
+    "name": "cmac",
+    "total_instructions": 1899
+  }
+}

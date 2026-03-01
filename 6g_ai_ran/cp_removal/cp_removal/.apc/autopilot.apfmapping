@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cp_removal.cpp" path="/home/samarth/Desktop/6g_ai_ran/cp_removal/cp_removal.cpp"/>
+    <originFiles name="cp_removal.h" path="/home/samarth/Desktop/6g_ai_ran/cp_removal/cp_removal.h"/>
+  </source>
+  <testbench>
+    <originFiles name="cp_removal_tb.cpp" path="/home/samarth/Desktop/6g_ai_ran/cp_removal/cp_removal_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

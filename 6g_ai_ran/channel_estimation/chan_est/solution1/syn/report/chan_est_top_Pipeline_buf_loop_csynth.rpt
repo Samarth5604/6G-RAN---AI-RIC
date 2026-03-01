@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vitis HLS Report for 'chan_est_top_Pipeline_buf_loop'
+================================================================
+* Date:           Sat Feb 28 15:53:58 2026
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        chan_est
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  1.652 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+-----------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  |                    Pipeline                   |
+    |   min   |   max   |    min   |    max   |  min |  max |                      Type                     |
+    +---------+---------+----------+----------+------+------+-----------------------------------------------+
+    |     1026|     1026|  3.417 us|  3.417 us|  1025|  1025|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+------+------+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |            |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- buf_loop  |     1024|     1024|         2|          1|          1|  1024|       yes|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      43|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      54|    -|
+|Register         |        -|     -|      89|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|      89|      97|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln228_fu_166_p2               |         +|   0|  0|  18|          11|           1|
+    |ap_block_pp0_stage0_11001         |       and|   0|  0|   2|           1|           1|
+    |icmp_ln228_fu_160_p2              |      icmp|   0|  0|  19|          11|          12|
+    |ap_block_state1_pp0_stage0_iter0  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  43|          25|          17|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_k_2     |   9|          2|   11|         22|
+    |fft_in_0_TDATA_blk_n     |   9|          2|    1|          2|
+    |fft_in_1_TDATA_blk_n     |   9|          2|    1|          2|
+    |k_fu_72                  |   9|          2|   11|         22|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   26|         52|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |k_2_reg_227              |  11|   0|   11|          0|
+    |k_fu_72                  |  11|   0|   11|          0|
+    |tmp_1_reg_250            |  16|   0|   16|          0|
+    |tmp_s_reg_240            |  16|   0|   16|          0|
+    |trunc_ln233_1_reg_245    |  16|   0|   16|          0|
+    |trunc_ln233_reg_235      |  16|   0|   16|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  89|   0|   89|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |          Source Object         |    C Type    |
++-------------------+-----+-----+------------+--------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_buf_loop|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_buf_loop|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_buf_loop|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_buf_loop|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_buf_loop|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_buf_loop|  return value|
+|fft_in_0_TVALID    |   in|    1|        axis|               fft_in_0_V_data_V|       pointer|
+|fft_in_0_TDATA     |   in|   32|        axis|               fft_in_0_V_data_V|       pointer|
+|fft_in_1_TVALID    |   in|    1|        axis|               fft_in_1_V_data_V|       pointer|
+|fft_in_1_TDATA     |   in|   32|        axis|               fft_in_1_V_data_V|       pointer|
+|fft_im_1_address0  |  out|   10|   ap_memory|                        fft_im_1|         array|
+|fft_im_1_ce0       |  out|    1|   ap_memory|                        fft_im_1|         array|
+|fft_im_1_we0       |  out|    1|   ap_memory|                        fft_im_1|         array|
+|fft_im_1_d0        |  out|   16|   ap_memory|                        fft_im_1|         array|
+|fft_im_address0    |  out|   10|   ap_memory|                          fft_im|         array|
+|fft_im_ce0         |  out|    1|   ap_memory|                          fft_im|         array|
+|fft_im_we0         |  out|    1|   ap_memory|                          fft_im|         array|
+|fft_im_d0          |  out|   16|   ap_memory|                          fft_im|         array|
+|fft_re_1_address0  |  out|   10|   ap_memory|                        fft_re_1|         array|
+|fft_re_1_ce0       |  out|    1|   ap_memory|                        fft_re_1|         array|
+|fft_re_1_we0       |  out|    1|   ap_memory|                        fft_re_1|         array|
+|fft_re_1_d0        |  out|   16|   ap_memory|                        fft_re_1|         array|
+|fft_re_address0    |  out|   10|   ap_memory|                          fft_re|         array|
+|fft_re_ce0         |  out|    1|   ap_memory|                          fft_re|         array|
+|fft_re_we0         |  out|    1|   ap_memory|                          fft_re|         array|
+|fft_re_d0          |  out|   16|   ap_memory|                          fft_re|         array|
+|fft_in_0_TREADY    |  out|    1|        axis|               fft_in_0_V_last_V|       pointer|
+|fft_in_0_TLAST     |   in|    1|        axis|               fft_in_0_V_last_V|       pointer|
+|fft_in_0_TKEEP     |   in|    4|        axis|               fft_in_0_V_keep_V|       pointer|
+|fft_in_0_TSTRB     |   in|    4|        axis|               fft_in_0_V_strb_V|       pointer|
+|fft_in_1_TREADY    |  out|    1|        axis|               fft_in_1_V_last_V|       pointer|
+|fft_in_1_TLAST     |   in|    1|        axis|               fft_in_1_V_last_V|       pointer|
+|fft_in_1_TKEEP     |   in|    4|        axis|               fft_in_1_V_keep_V|       pointer|
+|fft_in_1_TSTRB     |   in|    4|        axis|               fft_in_1_V_strb_V|       pointer|
++-------------------+-----+-----+------------+--------------------------------+--------------+
+

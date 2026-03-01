@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "cp_removal",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "cp_removal"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/samarth/Desktop/6g_ai_ran/cp_removal/cp_removal/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

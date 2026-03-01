@@ -1,0 +1,29 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../mlkem_test.cpp in debug mode
+   Generating csim.exe
+===============================================================================
+6G ZERO TRUST ARCHITECTURE: UNIQUE VALUE VERIFICATION
+  All 256 coefficients validated per mode against software reference
+===============================================================================
+-------------------------------------------------------------------------------
+MODE 0: GENERATE — Public Key
+-------------------------------------------------------------------------------
+  Beats checked : 256 / 256
+  Result        : PASS
+-------------------------------------------------------------------------------
+MODE 1: ENCAPS  — Ciphertext
+-------------------------------------------------------------------------------
+  Beats checked : 256 / 256
+  Result        : PASS
+-------------------------------------------------------------------------------
+MODE 2: DECAPS  — Plaintext
+-------------------------------------------------------------------------------
+  Beats checked : 256 / 256
+  Result        : PASS
+===============================================================================
+OVERALL RESULT: ALL TESTS PASSED
+===============================================================================
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 256
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

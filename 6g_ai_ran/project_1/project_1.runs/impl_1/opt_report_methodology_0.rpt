@@ -1,0 +1,40 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 10:28:17 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : report_methodology -file opt_report_methodology_0.rpt -pb opt_report_methodology_0.pb -rpx opt_report_methodology_0.rpx
+| Design       : thz_pipeline_top_wrapper
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 1
++---------+----------+-------------------------------------------------------------+------------+
+| Rule    | Severity | Description                                                 | Violations |
++---------+----------+-------------------------------------------------------------+------------+
+| NTCN-11 | Warning  | CLOCK_DEDICATED_ROUTE net not driven by global clock buffer | 1          |
++---------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NTCN-11#1 Warning
+CLOCK_DEDICATED_ROUTE net not driven by global clock buffer  
+Net thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0] is assigned constraint CLOCK_DEDICATED_ROUTE 'BACKBONE' and is not driven by a global clock buffer. Instead the driver is PS8 cell thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i. The CLOCK_DEDICATED_ROUTE constraint may not be properly applied. Please check your design.
+Related violations: <none>
+
+

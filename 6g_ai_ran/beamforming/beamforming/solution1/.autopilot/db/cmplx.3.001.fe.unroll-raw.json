@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 225,
+    "calls": "",
+    "file": "beamformer.cpp",
+    "fileloc": 89,
+    "instructions": 640,
+    "loads": {
+      "L": 24
+    },
+    "name": "beamformer_top",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 640
+  }
+}

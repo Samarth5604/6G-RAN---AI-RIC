@@ -1,0 +1,65 @@
+INFO: [HLS 200-10] For user 'samarth' on host 'localhost' (Linux_x86_64 version 5.14.0-611.35.1.el9_7.x86_64) on Sat Feb 28 16:01:02 IST 2026
+INFO: [HLS 200-10] In directory '/home/samarth/Desktop/6g_ai_ran/channel_estimation'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project chan_est 
+INFO: [HLS 200-10] Opening project '/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est'.
+INFO: [HLS 200-1510] Running: set_top chan_est_top 
+INFO: [HLS 200-1510] Running: add_files chan_est.cpp 
+INFO: [HLS 200-10] Adding design file 'chan_est.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files chan_est.h 
+INFO: [HLS 200-10] Adding design file 'chan_est.h' to the project
+INFO: [HLS 200-1510] Running: add_files dmrs_pilots.h 
+INFO: [HLS 200-10] Adding design file 'dmrs_pilots.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb chan_est_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'chan_est_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Feb 28 16:01:04 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/solution1_data.json outdir=/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/impl/ip srcdir=/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1 sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/impl/ip/misc
+INFO: Copied 21 verilog file(s) to /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/impl/ip/hdl/verilog
+INFO: Copied 15 vhdl file(s) to /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/impl/ip/hdl/vhdl
+INFO: Import ports from HDL: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/impl/ip/hdl/vhdl/chan_est_top.vhd (chan_est_top)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add axi4stream interface fft_in_0
+INFO: Add axi4stream interface fft_in_1
+INFO: Add data interface symbol_num
+INFO: Add axi4stream interface weight_stream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/samarth/Desktop/Vivado/2024.1/data/ip'.
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/impl/ip/component.xml
+INFO: Created IP archive /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/impl/ip/xilinx_com_hls_chan_est_top_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 28 16:01:10 2026...
+INFO: [HLS 200-802] Generated output file export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:17; Allocated memory: 6.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 10.03 seconds. Total CPU system time: 0.48 seconds. Total elapsed time: 19.46 seconds; peak allocated memory: 336.465 MB.

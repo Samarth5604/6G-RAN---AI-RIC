@@ -1,0 +1,225 @@
+
+
+================================================================
+== Synthesis Summary Report of 'beamformer_top'
+================================================================
++ General Information: 
+    * Date:           Sat Feb 28 17:35:08 2026
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        beamforming
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----------+------------+------------+-----+
+    |                   Modules                  | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |        |          |            |            |     |
+    |                   & Loops                  | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  |    DSP   |     FF     |     LUT    | URAM|
+    +--------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----------+------------+------------+-----+
+    |+ beamformer_top                            |     -|  0.05|     5133|  1.709e+04|         -|     5134|     -|        no|  8 (1%)|  16 (~0%)|  1622 (~0%)|  2168 (~0%)|    -|
+    | + beamformer_top_Pipeline_weight_load      |     -|  0.76|     4098|  1.365e+04|         -|     4098|     -|        no|       -|         -|    60 (~0%)|   101 (~0%)|    -|
+    |  o weight_load                             |     -|  2.43|     4096|  1.364e+04|         2|        1|  4096|       yes|       -|         -|           -|           -|    -|
+    | + beamformer_top_Pipeline_subcarrier_loop  |     -|  0.05|     1029|  3.427e+03|         -|     1029|     -|        no|       -|  16 (~0%)|  1553 (~0%)|  1695 (~0%)|    -|
+    |  o subcarrier_loop                         |     -|  2.43|     1027|  3.420e+03|         5|        1|  1024|       yes|       -|         -|           -|           -|    -|
+    +--------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++---------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface     | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++---------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| in_stream_0   | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| in_stream_1   | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| out_stream_0  | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| out_stream_1  | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| weight_stream | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++---------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+---------------------------------------------------------+
+| Argument      | Direction | Datatype                                                |
++---------------+-----------+---------------------------------------------------------+
+| in_stream     | in        | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>* |
+| out_stream    | out       | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>* |
+| weight_stream | in        | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>& |
++---------------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++---------------+---------------+-----------+
+| Argument      | HW Interface  | HW Type   |
++---------------+---------------+-----------+
+| in_stream     | in_stream_0   | interface |
+| in_stream     | in_stream_1   | interface |
+| out_stream    | out_stream_0  | interface |
+| out_stream    | out_stream_1  | interface |
+| weight_stream | weight_stream | interface |
++---------------+---------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------+-----+--------+-------------------------+--------+----------+---------+
+| Name                                       | DSP | Pragma | Variable                | Op     | Impl     | Latency |
++--------------------------------------------+-----+--------+-------------------------+--------+----------+---------+
+| + beamformer_top                           | 16  |        |                         |        |          |         |
+|  + beamformer_top_Pipeline_weight_load     | 0   |        |                         |        |          |         |
+|    icmp_ln121_fu_210_p2                    |     |        | icmp_ln121              | seteq  | auto     | 0       |
+|    idx_2_fu_216_p2                         |     |        | idx_2                   | add    | fabric   | 0       |
+|    icmp_ln128_fu_244_p2                    |     |        | icmp_ln128              | seteq  | auto     | 0       |
+|  + beamformer_top_Pipeline_subcarrier_loop | 16  |        |                         |        |          |         |
+|    icmp_ln137_fu_298_p2                    |     |        | icmp_ln137              | seteq  | auto     | 0       |
+|    add_ln137_fu_304_p2                     |     |        | add_ln137               | add    | fabric   | 0       |
+|    mul_16s_16s_32_1_1_U13                  | 1   |        | mul_ln74                | mul    | auto     | 0       |
+|    icmp_ln74_fu_730_p2                     |     |        | icmp_ln74               | setne  | auto     | 0       |
+|    add_ln74_fu_735_p2                      |     |        | add_ln74                | add    | fabric   | 0       |
+|    select_ln74_fu_740_p3                   |     |        | select_ln74             | select | auto_sel | 0       |
+|    ref_tmp_i_i321_i_0_fu_747_p3            |     |        | ref_tmp_i_i321_i_0      | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U14                  | 1   |        | mul_ln74_1              | mul    | auto     | 0       |
+|    icmp_ln74_1_fu_761_p2                   |     |        | icmp_ln74_1             | setne  | auto     | 0       |
+|    add_ln74_1_fu_766_p2                    |     |        | add_ln74_1              | add    | fabric   | 0       |
+|    select_ln74_1_fu_771_p3                 |     |        | select_ln74_1           | select | auto_sel | 0       |
+|    ref_tmp_i_i214_i_0_fu_778_p3            |     |        | ref_tmp_i_i214_i_0      | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U15                  | 1   |        | mul_ln75                | mul    | auto     | 0       |
+|    icmp_ln75_fu_792_p2                     |     |        | icmp_ln75               | setne  | auto     | 0       |
+|    add_ln75_fu_797_p2                      |     |        | add_ln75                | add    | fabric   | 0       |
+|    select_ln75_fu_802_p3                   |     |        | select_ln75             | select | auto_sel | 0       |
+|    ref_tmp_i_i84_i_0_fu_809_p3             |     |        | ref_tmp_i_i84_i_0       | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U16                  | 1   |        | mul_ln75_1              | mul    | auto     | 0       |
+|    icmp_ln75_1_fu_823_p2                   |     |        | icmp_ln75_1             | setne  | auto     | 0       |
+|    add_ln75_1_fu_828_p2                    |     |        | add_ln75_1              | add    | fabric   | 0       |
+|    select_ln75_1_fu_833_p3                 |     |        | select_ln75_1           | select | auto_sel | 0       |
+|    ref_tmp_i_i_i_0_fu_840_p3               |     |        | ref_tmp_i_i_i_0         | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U17                  | 1   |        | mul_ln74_2              | mul    | auto     | 0       |
+|    icmp_ln74_2_fu_854_p2                   |     |        | icmp_ln74_2             | setne  | auto     | 0       |
+|    add_ln74_2_fu_859_p2                    |     |        | add_ln74_2              | add    | fabric   | 0       |
+|    select_ln74_2_fu_864_p3                 |     |        | select_ln74_2           | select | auto_sel | 0       |
+|    ref_tmp_i_i321_i_0_1558_fu_871_p3       |     |        | ref_tmp_i_i321_i_0_1558 | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U18                  | 1   |        | mul_ln74_3              | mul    | auto     | 0       |
+|    icmp_ln74_3_fu_885_p2                   |     |        | icmp_ln74_3             | setne  | auto     | 0       |
+|    add_ln74_3_fu_890_p2                    |     |        | add_ln74_3              | add    | fabric   | 0       |
+|    select_ln74_3_fu_895_p3                 |     |        | select_ln74_3           | select | auto_sel | 0       |
+|    ref_tmp_i_i214_i_0_1579_fu_902_p3       |     |        | ref_tmp_i_i214_i_0_1579 | select | auto_sel | 0       |
+|    add_ln74_5_fu_909_p2                    |     |        | add_ln74_5              | add    | fabric   | 0       |
+|    mul_16s_16s_32_1_1_U19                  | 1   |        | mul_ln75_2              | mul    | auto     | 0       |
+|    icmp_ln75_2_fu_922_p2                   |     |        | icmp_ln75_2             | setne  | auto     | 0       |
+|    add_ln75_2_fu_927_p2                    |     |        | add_ln75_2              | add    | fabric   | 0       |
+|    select_ln75_2_fu_932_p3                 |     |        | select_ln75_2           | select | auto_sel | 0       |
+|    ref_tmp_i_i84_i_0_1601_fu_939_p3        |     |        | ref_tmp_i_i84_i_0_1601  | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U20                  | 1   |        | mul_ln75_3              | mul    | auto     | 0       |
+|    icmp_ln75_3_fu_953_p2                   |     |        | icmp_ln75_3             | setne  | auto     | 0       |
+|    add_ln75_3_fu_958_p2                    |     |        | add_ln75_3              | add    | fabric   | 0       |
+|    select_ln75_3_fu_963_p3                 |     |        | select_ln75_3           | select | auto_sel | 0       |
+|    ref_tmp_i_i_i_0_1622_fu_970_p3          |     |        | ref_tmp_i_i_i_0_1622    | select | auto_sel | 0       |
+|    sub_ln75_fu_977_p2                      |     |        | sub_ln75                | sub    | fabric   | 0       |
+|    mul_16s_16s_32_1_1_U21                  | 1   |        | mul_ln74_4              | mul    | auto     | 0       |
+|    icmp_ln74_4_fu_990_p2                   |     |        | icmp_ln74_4             | setne  | auto     | 0       |
+|    add_ln74_7_fu_995_p2                    |     |        | add_ln74_7              | add    | fabric   | 0       |
+|    select_ln74_4_fu_1000_p3                |     |        | select_ln74_4           | select | auto_sel | 0       |
+|    ref_tmp_i_i321_i_0_1_fu_1007_p3         |     |        | ref_tmp_i_i321_i_0_1    | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U22                  | 1   |        | mul_ln74_5              | mul    | auto     | 0       |
+|    icmp_ln74_5_fu_1021_p2                  |     |        | icmp_ln74_5             | setne  | auto     | 0       |
+|    add_ln74_8_fu_1026_p2                   |     |        | add_ln74_8              | add    | fabric   | 0       |
+|    select_ln74_5_fu_1031_p3                |     |        | select_ln74_5           | select | auto_sel | 0       |
+|    ref_tmp_i_i214_i_0_1_fu_1038_p3         |     |        | ref_tmp_i_i214_i_0_1    | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U23                  | 1   |        | mul_ln75_4              | mul    | auto     | 0       |
+|    icmp_ln75_4_fu_1052_p2                  |     |        | icmp_ln75_4             | setne  | auto     | 0       |
+|    add_ln75_5_fu_1057_p2                   |     |        | add_ln75_5              | add    | fabric   | 0       |
+|    select_ln75_4_fu_1062_p3                |     |        | select_ln75_4           | select | auto_sel | 0       |
+|    ref_tmp_i_i84_i_0_1_fu_1069_p3          |     |        | ref_tmp_i_i84_i_0_1     | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U24                  | 1   |        | mul_ln75_5              | mul    | auto     | 0       |
+|    icmp_ln75_5_fu_1083_p2                  |     |        | icmp_ln75_5             | setne  | auto     | 0       |
+|    add_ln75_6_fu_1088_p2                   |     |        | add_ln75_6              | add    | fabric   | 0       |
+|    select_ln75_5_fu_1093_p3                |     |        | select_ln75_5           | select | auto_sel | 0       |
+|    ref_tmp_i_i_i_0_1_fu_1100_p3            |     |        | ref_tmp_i_i_i_0_1       | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U25                  | 1   |        | mul_ln74_6              | mul    | auto     | 0       |
+|    icmp_ln74_6_fu_1114_p2                  |     |        | icmp_ln74_6             | setne  | auto     | 0       |
+|    add_ln74_9_fu_1119_p2                   |     |        | add_ln74_9              | add    | fabric   | 0       |
+|    select_ln74_6_fu_1124_p3                |     |        | select_ln74_6           | select | auto_sel | 0       |
+|    ref_tmp_i_i321_i_0_1_1_fu_1131_p3       |     |        | ref_tmp_i_i321_i_0_1_1  | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U26                  | 1   |        | mul_ln74_7              | mul    | auto     | 0       |
+|    icmp_ln74_7_fu_1145_p2                  |     |        | icmp_ln74_7             | setne  | auto     | 0       |
+|    add_ln74_10_fu_1150_p2                  |     |        | add_ln74_10             | add    | fabric   | 0       |
+|    select_ln74_7_fu_1155_p3                |     |        | select_ln74_7           | select | auto_sel | 0       |
+|    ref_tmp_i_i214_i_0_1_1_fu_1162_p3       |     |        | ref_tmp_i_i214_i_0_1_1  | select | auto_sel | 0       |
+|    add_ln74_12_fu_1169_p2                  |     |        | add_ln74_12             | add    | fabric   | 0       |
+|    mul_16s_16s_32_1_1_U27                  | 1   |        | mul_ln75_6              | mul    | auto     | 0       |
+|    icmp_ln75_6_fu_1182_p2                  |     |        | icmp_ln75_6             | setne  | auto     | 0       |
+|    add_ln75_7_fu_1187_p2                   |     |        | add_ln75_7              | add    | fabric   | 0       |
+|    select_ln75_6_fu_1192_p3                |     |        | select_ln75_6           | select | auto_sel | 0       |
+|    ref_tmp_i_i84_i_0_1_1_fu_1199_p3        |     |        | ref_tmp_i_i84_i_0_1_1   | select | auto_sel | 0       |
+|    mul_16s_16s_32_1_1_U28                  | 1   |        | mul_ln75_7              | mul    | auto     | 0       |
+|    icmp_ln75_7_fu_1213_p2                  |     |        | icmp_ln75_7             | setne  | auto     | 0       |
+|    add_ln75_8_fu_1218_p2                   |     |        | add_ln75_8              | add    | fabric   | 0       |
+|    select_ln75_7_fu_1223_p3                |     |        | select_ln75_7           | select | auto_sel | 0       |
+|    ref_tmp_i_i_i_0_1_1_fu_1230_p3          |     |        | ref_tmp_i_i_i_0_1_1     | select | auto_sel | 0       |
+|    sub_ln75_2_fu_1237_p2                   |     |        | sub_ln75_2              | sub    | fabric   | 0       |
++--------------------------------------------+-----+--------+-------------------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++------------------+--------------+------+------+------+--------+--------------+------+---------+------------------+
+| Name             | Usage        | Type | BRAM | URAM | Pragma | Variable     | Impl | Latency | Bitwidth, Depth, |
+|                  |              |      |      |      |        |              |      |         | Banks            |
++------------------+--------------+------+------+------+--------+--------------+------+---------+------------------+
+| + beamformer_top |              |      | 8    | 0    |        |              |      |         |                  |
+|   weights_re_U   | ram_1p array |      | 1    |      |        | weights_re   | auto | 1       | 16, 1024, 1      |
+|   weights_re_1_U | ram_1p array |      | 1    |      |        | weights_re_1 | auto | 1       | 16, 1024, 1      |
+|   weights_re_2_U | ram_1p array |      | 1    |      |        | weights_re_2 | auto | 1       | 16, 1024, 1      |
+|   weights_re_3_U | ram_1p array |      | 1    |      |        | weights_re_3 | auto | 1       | 16, 1024, 1      |
+|   weights_im_U   | ram_1p array |      | 1    |      |        | weights_im   | auto | 1       | 16, 1024, 1      |
+|   weights_im_1_U | ram_1p array |      | 1    |      |        | weights_im_1 | auto | 1       | 16, 1024, 1      |
+|   weights_im_2_U | ram_1p array |      | 1    |      |        | weights_im_2 | auto | 1       | 16, 1024, 1      |
+|   weights_im_3_U | ram_1p array |      | 1    |      |        | weights_im_3 | auto | 1       | 16, 1024, 1      |
++------------------+--------------+------+------+------+--------+--------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+------------------------------------+----------------------------------------------------+
+| Type            | Options                            | Location                                           |
++-----------------+------------------------------------+----------------------------------------------------+
+| inline          |                                    | beamformer.cpp:73 in cmac                          |
+| interface       | axis port=in_stream                | beamformer.cpp:95 in beamformer_top, in_stream     |
+| interface       | axis port=out_stream               | beamformer.cpp:96 in beamformer_top, out_stream    |
+| interface       | axis port=weight_stream            | beamformer.cpp:97 in beamformer_top, weight_stream |
+| interface       | ap_ctrl_hs port=return             | beamformer.cpp:98 in beamformer_top, return        |
+| disaggregate    | variable=in_stream                 | beamformer.cpp:99 in beamformer_top, in_stream     |
+| disaggregate    | variable=out_stream                | beamformer.cpp:100 in beamformer_top, out_stream   |
+| array_partition | variable=weights_re complete dim=1 | beamformer.cpp:107 in beamformer_top, weights_re   |
+| array_partition | variable=weights_re complete dim=2 | beamformer.cpp:108 in beamformer_top, weights_re   |
+| array_partition | variable=weights_im complete dim=1 | beamformer.cpp:109 in beamformer_top, weights_im   |
+| array_partition | variable=weights_im complete dim=2 | beamformer.cpp:110 in beamformer_top, weights_im   |
+| pipeline        | II=1                               | beamformer.cpp:122 in beamformer_top               |
+| pipeline        | II=1                               | beamformer.cpp:139 in beamformer_top               |
+| array_partition | variable=x_re complete             | beamformer.cpp:149 in beamformer_top, x_re         |
+| array_partition | variable=x_im complete             | beamformer.cpp:150 in beamformer_top, x_im         |
+| unroll          |                                    | beamformer.cpp:155 in beamformer_top               |
+| unroll          |                                    | beamformer.cpp:168 in beamformer_top               |
+| unroll          |                                    | beamformer.cpp:174 in beamformer_top               |
++-----------------+------------------------------------+----------------------------------------------------+
+
+

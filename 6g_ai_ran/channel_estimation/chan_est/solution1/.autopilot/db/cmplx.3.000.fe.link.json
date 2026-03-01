@@ -1,0 +1,60 @@
+{
+  "0": {
+    "basicblocks": 54,
+    "calls": "1",
+    "file": "chan_est.cpp",
+    "fileloc": 190,
+    "instructions": 317,
+    "loads": {
+      "G": 3,
+      "L": 10
+    },
+    "name": "chan_est_top",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 1882
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "chan_est.cpp",
+    "fileloc": 37,
+    "instructions": 79,
+    "loads": {
+      "L": 2
+    },
+    "name": "ls_div",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1117
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "3 4",
+    "file": "chan_est.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 3,
+    "name": "",
+    "total_instructions": 133133
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dmrs_pilots.h",
+    "fileloc": 40,
+    "instructions": 173,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 66565
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dmrs_pilots.h",
+    "fileloc": 72,
+    "instructions": 173,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 66565
+  }
+}

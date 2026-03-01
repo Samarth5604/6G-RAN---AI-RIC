@@ -1,0 +1,1182 @@
+INFO-FLOW: Workspace /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1 opened at Fri Feb 27 17:36:23 IST 2026
+Execute     ap_set_clock -name default -period 3.33 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+Execute     set_part xczu7ev-ffvc1156-2-e 
+Execute       create_platform xczu7ev-ffvc1156-2-e -board  
+DBG:HLSDevice: Trying to load device library: /home/samarth/Desktop/Vitis_HLS/2024.1/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/samarth/Desktop/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+Command       create_platform done; 0.32 sec.
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.4 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=/home/samarth/Desktop/6g_ai_ran 
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran
+Execute     config_export -output=/home/samarth/Desktop/6g_ai_ran 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.41 sec.
+Execute   set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+Execute     create_platform xczu7ev-ffvc1156-2-e -board  
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.13 sec.
+Execute   create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+Execute   config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran -rtl verilog 
+Execute   source ./ml_kem_pqc/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./ml_kem_pqc/solution1/directives.tcl
+Execute     set_directive_top -name mlkem_top mlkem_top 
+INFO: [HLS 200-1510] Running: set_directive_top -name mlkem_top mlkem_top 
+WARNING: [HLS 200-484] The 'set_directive_top -name' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_top -location' command is deprecated and will be removed in a future release.
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 295.863 MB.
+Execute       set_directive_top mlkem_top -name=mlkem_top 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO: [HLS 200-10] Analyzing design file 'mlkem_ip.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling mlkem_ip.cpp as C++
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang mlkem_ip.cpp -foptimization-record-file=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /home/samarth/Desktop/Vitis_HLS/2024.1/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=3.33 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot -I /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp -hls-platform-db-name=/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvc1156-2-e > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.cpp.clang.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp -hls-platform-db-name=/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvc1156-2-e > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/clang.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/.systemc_flag -fix-errors /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.24 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/all.directive.json -fix-errors /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.38 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.4 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 0.47 sec.
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=3.33 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot -I /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.bc -hls-platform-db-name=/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvc1156-2-e > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp.clang.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.pp.0.cpp.clang.err.log
+INFO: [HLS 200-10] Analyzing design file 'ntt_engine.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling ntt_engine.cpp as C++
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang ntt_engine.cpp -foptimization-record-file=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /home/samarth/Desktop/Vitis_HLS/2024.1/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=3.33 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot -I /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp -hls-platform-db-name=/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvc1156-2-e > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.cpp.clang.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp -hls-platform-db-name=/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvc1156-2-e > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/clang.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/.systemc_flag -fix-errors /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.26 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/all.directive.json -fix-errors /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.23 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.2 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp.clang-tidy.loop-label.err.log
+Command       clang_tidy done; 0.44 sec.
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=3.33 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot -I /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.bc -hls-platform-db-name=/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvc1156-2-e > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp.clang.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.pp.0.cpp.clang.err.log
+WARNING: [HLS 207-5292] unused parameter 'p' (ntt_engine.cpp:4:21)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.42 seconds. CPU system time: 0.81 seconds. Elapsed time: 4.25 seconds; current allocated memory: 297.559 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.g.bc" "/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.g.bc"  
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_ip.g.bc /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/ntt_engine.g.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.0.bc > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/lib/libhlsm_39.bc /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/lib/libhlsm_39.bc /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/lib/libhlsmc++_39.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.11 sec.
+Execute       run_link_or_opt -opt -out /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=mlkem_top -reflow-float-conversion 
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=mlkem_top -reflow-float-conversion -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.54 sec.
+Execute       run_link_or_opt -out /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/lib/libfloatconversion_39.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=mlkem_top 
+INFO-FLOW: run_clang exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=mlkem_top -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: /home/samarth/Desktop/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=mlkem_top -mllvm -hls-db-dir -mllvm /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=3.33 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=0.899 -x ir /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvc1156-2-e 2> /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 2,360 Compile/Link /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,360 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 152 Unroll/Inline (step 1) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 152 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 130 Unroll/Inline (step 2) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 130 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 131 Unroll/Inline (step 3) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 131 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 131 Unroll/Inline (step 4) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 131 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 120 Array/Struct (step 1) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 120 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 120 Array/Struct (step 2) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 120 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 120 Array/Struct (step 3) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 120 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 120 Array/Struct (step 4) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 120 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 142 Array/Struct (step 5) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 142 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 141 Performance (step 1) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 141 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 139 Performance (step 2) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 139 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 116 Performance (step 3) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 116 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 116 Performance (step 4) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 116 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 112 HW Transforms (step 1) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 112 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 127 HW Transforms (step 2) /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 127 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'montgomery_reduce(ap_int<32>)' into 'process_phase(int, hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&)' (mlkem_ip.cpp:57:22)
+INFO: [HLS 214-131] Inlining function 'montgomery_reduce(ap_int<32>)' into 'process_phase(int, hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&)' (mlkem_ip.cpp:54:22)
+INFO: [HLS 214-131] Inlining function 'montgomery_reduce(ap_int<32>)' into 'process_phase(int, hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&)' (mlkem_ip.cpp:51:22)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.83 seconds. CPU system time: 0.34 seconds. Elapsed time: 6.82 seconds; current allocated memory: 308.035 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 308.035 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top mlkem_top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.0.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 308.109 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.1.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 308.824 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.g.1.bc to /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.o.1.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-712] Applying dataflow to function 'mlkem_top' (mlkem_ip.cpp:77:1), detected/extracted 4 process function(s): 
+	 'entry_proc'
+	 'read_phase'
+	 'process_phase'
+	 'write_phase'.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 331.480 MB.
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.o.2.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute           auto_get_db
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -cdfg-build /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.o.3.bc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 379.758 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.12 sec.
+Command     elaborate done; 11.19 sec.
+Execute     ap_eval exec zip -j /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'mlkem_top' ...
+Execute       ap_set_top_model mlkem_top 
+Execute       get_model_list mlkem_top -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model mlkem_top 
+Execute       preproc_iomode -model write_phase 
+Execute       preproc_iomode -model process_phase 
+Execute       preproc_iomode -model process_phase_Pipeline_VITIS_LOOP_44_1 
+Execute       preproc_iomode -model read_phase 
+Execute       preproc_iomode -model read_phase_Pipeline_VITIS_LOOP_30_1 
+Execute       preproc_iomode -model entry_proc 
+Execute       get_model_list mlkem_top -filter all-wo-channel 
+INFO-FLOW: Model list for configure: entry_proc read_phase_Pipeline_VITIS_LOOP_30_1 read_phase process_phase_Pipeline_VITIS_LOOP_44_1 process_phase write_phase mlkem_top
+INFO-FLOW: Configuring Module : entry_proc ...
+Execute       set_default_model entry_proc 
+Execute       apply_spec_resource_limit entry_proc 
+INFO-FLOW: Configuring Module : read_phase_Pipeline_VITIS_LOOP_30_1 ...
+Execute       set_default_model read_phase_Pipeline_VITIS_LOOP_30_1 
+Execute       apply_spec_resource_limit read_phase_Pipeline_VITIS_LOOP_30_1 
+INFO-FLOW: Configuring Module : read_phase ...
+Execute       set_default_model read_phase 
+Execute       apply_spec_resource_limit read_phase 
+INFO-FLOW: Configuring Module : process_phase_Pipeline_VITIS_LOOP_44_1 ...
+Execute       set_default_model process_phase_Pipeline_VITIS_LOOP_44_1 
+Execute       apply_spec_resource_limit process_phase_Pipeline_VITIS_LOOP_44_1 
+INFO-FLOW: Configuring Module : process_phase ...
+Execute       set_default_model process_phase 
+Execute       apply_spec_resource_limit process_phase 
+INFO-FLOW: Configuring Module : write_phase ...
+Execute       set_default_model write_phase 
+Execute       apply_spec_resource_limit write_phase 
+INFO-FLOW: Configuring Module : mlkem_top ...
+Execute       set_default_model mlkem_top 
+Execute       apply_spec_resource_limit mlkem_top 
+INFO-FLOW: Model list for preprocess: entry_proc read_phase_Pipeline_VITIS_LOOP_30_1 read_phase process_phase_Pipeline_VITIS_LOOP_44_1 process_phase write_phase mlkem_top
+INFO-FLOW: Preprocessing Module: entry_proc ...
+Execute       set_default_model entry_proc 
+Execute       cdfg_preprocess -model entry_proc 
+Execute       rtl_gen_preprocess entry_proc 
+INFO-FLOW: Preprocessing Module: read_phase_Pipeline_VITIS_LOOP_30_1 ...
+Execute       set_default_model read_phase_Pipeline_VITIS_LOOP_30_1 
+Execute       cdfg_preprocess -model read_phase_Pipeline_VITIS_LOOP_30_1 
+Execute       rtl_gen_preprocess read_phase_Pipeline_VITIS_LOOP_30_1 
+INFO-FLOW: Preprocessing Module: read_phase ...
+Execute       set_default_model read_phase 
+Execute       cdfg_preprocess -model read_phase 
+Execute       rtl_gen_preprocess read_phase 
+INFO-FLOW: Preprocessing Module: process_phase_Pipeline_VITIS_LOOP_44_1 ...
+Execute       set_default_model process_phase_Pipeline_VITIS_LOOP_44_1 
+Execute       cdfg_preprocess -model process_phase_Pipeline_VITIS_LOOP_44_1 
+Execute       rtl_gen_preprocess process_phase_Pipeline_VITIS_LOOP_44_1 
+INFO-FLOW: Preprocessing Module: process_phase ...
+Execute       set_default_model process_phase 
+Execute       cdfg_preprocess -model process_phase 
+Execute       rtl_gen_preprocess process_phase 
+INFO-FLOW: Preprocessing Module: write_phase ...
+Execute       set_default_model write_phase 
+Execute       cdfg_preprocess -model write_phase 
+Execute       rtl_gen_preprocess write_phase 
+INFO-FLOW: Preprocessing Module: mlkem_top ...
+Execute       set_default_model mlkem_top 
+Execute       cdfg_preprocess -model mlkem_top 
+Execute       rtl_gen_preprocess mlkem_top 
+INFO-FLOW: Model list for synthesis: entry_proc read_phase_Pipeline_VITIS_LOOP_30_1 read_phase process_phase_Pipeline_VITIS_LOOP_44_1 process_phase write_phase mlkem_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model entry_proc 
+Execute       schedule -model entry_proc 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 379.840 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.verbose.sched.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.sched.adb -f 
+INFO-FLOW: Finish scheduling entry_proc.
+Execute       set_default_model entry_proc 
+Execute       bind -model entry_proc 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 379.840 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.verbose.bind.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.bind.adb -f 
+INFO-FLOW: Finish binding entry_proc.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_phase_Pipeline_VITIS_LOOP_30_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_phase_Pipeline_VITIS_LOOP_30_1 
+Execute       schedule -model read_phase_Pipeline_VITIS_LOOP_30_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_30_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_30_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 380.770 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.verbose.sched.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.sched.adb -f 
+INFO-FLOW: Finish scheduling read_phase_Pipeline_VITIS_LOOP_30_1.
+Execute       set_default_model read_phase_Pipeline_VITIS_LOOP_30_1 
+Execute       bind -model read_phase_Pipeline_VITIS_LOOP_30_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 380.770 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.verbose.bind.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.bind.adb -f 
+INFO-FLOW: Finish binding read_phase_Pipeline_VITIS_LOOP_30_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_phase' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_phase 
+Execute       schedule -model read_phase 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 380.785 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.verbose.sched.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.sched.adb -f 
+INFO-FLOW: Finish scheduling read_phase.
+Execute       set_default_model read_phase 
+Execute       bind -model read_phase 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 380.785 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.verbose.bind.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.bind.adb -f 
+INFO-FLOW: Finish binding read_phase.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_phase_Pipeline_VITIS_LOOP_44_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model process_phase_Pipeline_VITIS_LOOP_44_1 
+Execute       schedule -model process_phase_Pipeline_VITIS_LOOP_44_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=t_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=t_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=t) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_44_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_44_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 380.957 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.verbose.sched.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.sched.adb -f 
+INFO-FLOW: Finish scheduling process_phase_Pipeline_VITIS_LOOP_44_1.
+Execute       set_default_model process_phase_Pipeline_VITIS_LOOP_44_1 
+Execute       bind -model process_phase_Pipeline_VITIS_LOOP_44_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 380.957 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.verbose.bind.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.bind.adb -f 
+INFO-FLOW: Finish binding process_phase_Pipeline_VITIS_LOOP_44_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_phase' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model process_phase 
+Execute       schedule -model process_phase 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 380.961 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.verbose.sched.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.sched.adb -f 
+INFO-FLOW: Finish scheduling process_phase.
+Execute       set_default_model process_phase 
+Execute       bind -model process_phase 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 380.961 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.verbose.bind.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.bind.adb -f 
+INFO-FLOW: Finish binding process_phase.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_phase' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model write_phase 
+Execute       schedule -model write_phase 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_68_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_68_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 381.031 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.verbose.sched.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.sched.adb -f 
+INFO-FLOW: Finish scheduling write_phase.
+Execute       set_default_model write_phase 
+Execute       bind -model write_phase 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 381.031 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.verbose.bind.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.bind.adb -f 
+INFO-FLOW: Finish binding write_phase.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mlkem_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model mlkem_top 
+Execute       schedule -model mlkem_top 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 381.031 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.verbose.sched.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.sched.adb -f 
+INFO-FLOW: Finish scheduling mlkem_top.
+Execute       set_default_model mlkem_top 
+Execute       bind -model mlkem_top 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 381.031 MB.
+Execute       syn_report -verbosereport -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.verbose.bind.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.bind.adb -f 
+INFO-FLOW: Finish binding mlkem_top.
+Execute       get_model_list mlkem_top -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess entry_proc 
+Execute       rtl_gen_preprocess read_phase_Pipeline_VITIS_LOOP_30_1 
+Execute       rtl_gen_preprocess read_phase 
+Execute       rtl_gen_preprocess process_phase_Pipeline_VITIS_LOOP_44_1 
+Execute       rtl_gen_preprocess process_phase 
+Execute       rtl_gen_preprocess write_phase 
+Execute       rtl_gen_preprocess mlkem_top 
+INFO-FLOW: Model list for RTL generation: entry_proc read_phase_Pipeline_VITIS_LOOP_30_1 read_phase process_phase_Pipeline_VITIS_LOOP_44_1 process_phase write_phase mlkem_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model entry_proc -top_prefix mlkem_top_ -sub_prefix mlkem_top_ -mg_file /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 381.031 MB.
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl entry_proc -style xilinx -f -lang vhdl -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/vhdl/mlkem_top_entry_proc 
+Execute       gen_rtl entry_proc -style xilinx -f -lang vlog -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/verilog/mlkem_top_entry_proc 
+Execute       syn_report -csynth -model entry_proc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/entry_proc_csynth.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -rtlxml -model entry_proc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/entry_proc_csynth.xml 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -verbosereport -model entry_proc -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.verbose.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -model entry_proc -f -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.adb 
+Execute       db_write -model entry_proc -bindview -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info entry_proc -p /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_phase_Pipeline_VITIS_LOOP_30_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model read_phase_Pipeline_VITIS_LOOP_30_1 -top_prefix mlkem_top_ -sub_prefix mlkem_top_ -mg_file /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'read_phase_Pipeline_VITIS_LOOP_30_1' pipeline 'VITIS_LOOP_30_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_phase_Pipeline_VITIS_LOOP_30_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 381.484 MB.
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_phase_Pipeline_VITIS_LOOP_30_1 -style xilinx -f -lang vhdl -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/vhdl/mlkem_top_read_phase_Pipeline_VITIS_LOOP_30_1 
+Execute       gen_rtl read_phase_Pipeline_VITIS_LOOP_30_1 -style xilinx -f -lang vlog -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/verilog/mlkem_top_read_phase_Pipeline_VITIS_LOOP_30_1 
+Execute       syn_report -csynth -model read_phase_Pipeline_VITIS_LOOP_30_1 -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/read_phase_Pipeline_VITIS_LOOP_30_1_csynth.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -rtlxml -model read_phase_Pipeline_VITIS_LOOP_30_1 -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/read_phase_Pipeline_VITIS_LOOP_30_1_csynth.xml 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -verbosereport -model read_phase_Pipeline_VITIS_LOOP_30_1 -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.verbose.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -model read_phase_Pipeline_VITIS_LOOP_30_1 -f -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.adb 
+Execute       db_write -model read_phase_Pipeline_VITIS_LOOP_30_1 -bindview -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info read_phase_Pipeline_VITIS_LOOP_30_1 -p /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_phase' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model read_phase -top_prefix mlkem_top_ -sub_prefix mlkem_top_ -mg_file /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_phase'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 382.457 MB.
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_phase -style xilinx -f -lang vhdl -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/vhdl/mlkem_top_read_phase 
+Execute       gen_rtl read_phase -style xilinx -f -lang vlog -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/verilog/mlkem_top_read_phase 
+Execute       syn_report -csynth -model read_phase -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/read_phase_csynth.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -rtlxml -model read_phase -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/read_phase_csynth.xml 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -verbosereport -model read_phase -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.verbose.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -model read_phase -f -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.adb 
+Execute       db_write -model read_phase -bindview -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info read_phase -p /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_phase_Pipeline_VITIS_LOOP_44_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model process_phase_Pipeline_VITIS_LOOP_44_1 -top_prefix mlkem_top_ -sub_prefix mlkem_top_ -mg_file /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'process_phase_Pipeline_VITIS_LOOP_44_1' pipeline 'VITIS_LOOP_44_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_13s_26s_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_13s_28s_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_13s_29s_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_12ns_28_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_13ns_29_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_13s_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_phase_Pipeline_VITIS_LOOP_44_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 383.707 MB.
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl process_phase_Pipeline_VITIS_LOOP_44_1 -style xilinx -f -lang vhdl -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/vhdl/mlkem_top_process_phase_Pipeline_VITIS_LOOP_44_1 
+Execute       gen_rtl process_phase_Pipeline_VITIS_LOOP_44_1 -style xilinx -f -lang vlog -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/verilog/mlkem_top_process_phase_Pipeline_VITIS_LOOP_44_1 
+Execute       syn_report -csynth -model process_phase_Pipeline_VITIS_LOOP_44_1 -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/process_phase_Pipeline_VITIS_LOOP_44_1_csynth.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -rtlxml -model process_phase_Pipeline_VITIS_LOOP_44_1 -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/process_phase_Pipeline_VITIS_LOOP_44_1_csynth.xml 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -verbosereport -model process_phase_Pipeline_VITIS_LOOP_44_1 -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.verbose.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -model process_phase_Pipeline_VITIS_LOOP_44_1 -f -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.adb 
+Execute       db_write -model process_phase_Pipeline_VITIS_LOOP_44_1 -bindview -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info process_phase_Pipeline_VITIS_LOOP_44_1 -p /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_phase' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model process_phase -top_prefix mlkem_top_ -sub_prefix mlkem_top_ -mg_file /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_phase'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 385.137 MB.
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl process_phase -style xilinx -f -lang vhdl -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/vhdl/mlkem_top_process_phase 
+Execute       gen_rtl process_phase -style xilinx -f -lang vlog -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/verilog/mlkem_top_process_phase 
+Execute       syn_report -csynth -model process_phase -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/process_phase_csynth.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -rtlxml -model process_phase -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/process_phase_csynth.xml 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -verbosereport -model process_phase -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.verbose.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -model process_phase -f -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.adb 
+Execute       db_write -model process_phase -bindview -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info process_phase -p /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_phase' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model write_phase -top_prefix mlkem_top_ -sub_prefix mlkem_top_ -mg_file /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'write_phase' pipeline 'VITIS_LOOP_68_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_phase'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 385.984 MB.
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl write_phase -style xilinx -f -lang vhdl -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/vhdl/mlkem_top_write_phase 
+Execute       gen_rtl write_phase -style xilinx -f -lang vlog -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/verilog/mlkem_top_write_phase 
+Execute       syn_report -csynth -model write_phase -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/write_phase_csynth.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -rtlxml -model write_phase -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/write_phase_csynth.xml 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -verbosereport -model write_phase -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.verbose.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -model write_phase -f -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.adb 
+Execute       db_write -model write_phase -bindview -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info write_phase -p /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mlkem_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model mlkem_top -top_prefix  -sub_prefix mlkem_top_ -mg_file /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mlkem_top/mode' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mlkem_top/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mlkem_top/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mlkem_top/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mlkem_top/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mlkem_top/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mlkem_top/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mlkem_top/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mlkem_top/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'mlkem_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'mode' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mlkem_top'.
+INFO: [RTMG 210-285] Implementing FIFO 'mode_c_U(mlkem_top_fifo_w32_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'coeff_stream_U(mlkem_top_fifo_w16_d256_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'result_stream_U(mlkem_top_fifo_w16_d256_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_process_phase_U0_U(mlkem_top_start_for_process_phase_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_write_phase_U0_U(mlkem_top_start_for_write_phase_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 387.383 MB.
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl mlkem_top -istop -style xilinx -f -lang vhdl -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/vhdl/mlkem_top 
+Execute       gen_rtl mlkem_top -istop -style xilinx -f -lang vlog -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/verilog/mlkem_top 
+Execute       syn_report -csynth -model mlkem_top -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/mlkem_top_csynth.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -rtlxml -model mlkem_top -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/mlkem_top_csynth.xml 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -verbosereport -model mlkem_top -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.verbose.rpt 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       db_write -model mlkem_top -f -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.adb 
+Execute       db_write -model mlkem_top -bindview -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info mlkem_top -p /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top 
+Execute       export_constraint_db -f -tool general -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.constraint.tcl 
+Execute       syn_report -designview -model mlkem_top -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.design.xml 
+Execute       syn_report -csynthDesign -model mlkem_top -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth.rpt -MHOut /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xczu7ev-ffvc1156-2-e 
+Execute           ap_family_info -name xczu7ev-ffvc1156-2-e -data names 
+Execute           ap_part_info -quiet -name xczu7ev-ffvc1156-2-e -data family 
+Execute       syn_report -wcfg -model mlkem_top -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model mlkem_top -o /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.protoinst 
+Execute       sc_get_clocks mlkem_top 
+Execute       sc_get_portdomain mlkem_top 
+INFO-FLOW: Model list for RTL component generation: entry_proc read_phase_Pipeline_VITIS_LOOP_30_1 read_phase process_phase_Pipeline_VITIS_LOOP_44_1 process_phase write_phase mlkem_top
+INFO-FLOW: Handling components in module [entry_proc] ... 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.compgen.tcl 
+INFO-FLOW: Handling components in module [read_phase_Pipeline_VITIS_LOOP_30_1] ... 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.compgen.tcl 
+INFO-FLOW: Found component mlkem_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model mlkem_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [read_phase] ... 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.compgen.tcl 
+INFO-FLOW: Found component mlkem_top_regslice_both.
+INFO-FLOW: Append model mlkem_top_regslice_both
+INFO-FLOW: Found component mlkem_top_regslice_both.
+INFO-FLOW: Append model mlkem_top_regslice_both
+INFO-FLOW: Found component mlkem_top_regslice_both.
+INFO-FLOW: Append model mlkem_top_regslice_both
+INFO-FLOW: Found component mlkem_top_regslice_both.
+INFO-FLOW: Append model mlkem_top_regslice_both
+INFO-FLOW: Handling components in module [process_phase_Pipeline_VITIS_LOOP_44_1] ... 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.compgen.tcl 
+INFO-FLOW: Found component mlkem_top_mul_16s_13ns_29_1_1.
+INFO-FLOW: Append model mlkem_top_mul_16s_13ns_29_1_1
+INFO-FLOW: Found component mlkem_top_mul_16s_12ns_28_1_1.
+INFO-FLOW: Append model mlkem_top_mul_16s_12ns_28_1_1
+INFO-FLOW: Found component mlkem_top_mul_16s_13s_16_1_1.
+INFO-FLOW: Append model mlkem_top_mul_16s_13s_16_1_1
+INFO-FLOW: Found component mlkem_top_mac_muladd_16s_13s_26s_29_4_1.
+INFO-FLOW: Append model mlkem_top_mac_muladd_16s_13s_26s_29_4_1
+INFO-FLOW: Found component mlkem_top_mac_muladd_16s_13s_29s_29_4_1.
+INFO-FLOW: Append model mlkem_top_mac_muladd_16s_13s_29s_29_4_1
+INFO-FLOW: Found component mlkem_top_mac_muladd_16s_13s_28s_29_4_1.
+INFO-FLOW: Append model mlkem_top_mac_muladd_16s_13s_28s_29_4_1
+INFO-FLOW: Found component mlkem_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model mlkem_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [process_phase] ... 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.compgen.tcl 
+INFO-FLOW: Handling components in module [write_phase] ... 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.compgen.tcl 
+INFO-FLOW: Found component mlkem_top_regslice_both.
+INFO-FLOW: Append model mlkem_top_regslice_both
+INFO-FLOW: Found component mlkem_top_regslice_both.
+INFO-FLOW: Append model mlkem_top_regslice_both
+INFO-FLOW: Found component mlkem_top_regslice_both.
+INFO-FLOW: Append model mlkem_top_regslice_both
+INFO-FLOW: Found component mlkem_top_regslice_both.
+INFO-FLOW: Append model mlkem_top_regslice_both
+INFO-FLOW: Found component mlkem_top_flow_control_loop_pipe.
+INFO-FLOW: Append model mlkem_top_flow_control_loop_pipe
+INFO-FLOW: Handling components in module [mlkem_top] ... 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.compgen.tcl 
+INFO-FLOW: Found component mlkem_top_fifo_w32_d3_S.
+INFO-FLOW: Append model mlkem_top_fifo_w32_d3_S
+INFO-FLOW: Found component mlkem_top_fifo_w16_d256_A.
+INFO-FLOW: Append model mlkem_top_fifo_w16_d256_A
+INFO-FLOW: Found component mlkem_top_fifo_w16_d256_A.
+INFO-FLOW: Append model mlkem_top_fifo_w16_d256_A
+INFO-FLOW: Found component mlkem_top_start_for_process_phase_U0.
+INFO-FLOW: Append model mlkem_top_start_for_process_phase_U0
+INFO-FLOW: Found component mlkem_top_start_for_write_phase_U0.
+INFO-FLOW: Append model mlkem_top_start_for_write_phase_U0
+INFO-FLOW: Found component mlkem_top_control_s_axi.
+INFO-FLOW: Append model mlkem_top_control_s_axi
+INFO-FLOW: Append model entry_proc
+INFO-FLOW: Append model read_phase_Pipeline_VITIS_LOOP_30_1
+INFO-FLOW: Append model read_phase
+INFO-FLOW: Append model process_phase_Pipeline_VITIS_LOOP_44_1
+INFO-FLOW: Append model process_phase
+INFO-FLOW: Append model write_phase
+INFO-FLOW: Append model mlkem_top
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: mlkem_top_flow_control_loop_pipe_sequential_init mlkem_top_regslice_both mlkem_top_regslice_both mlkem_top_regslice_both mlkem_top_regslice_both mlkem_top_mul_16s_13ns_29_1_1 mlkem_top_mul_16s_12ns_28_1_1 mlkem_top_mul_16s_13s_16_1_1 mlkem_top_mac_muladd_16s_13s_26s_29_4_1 mlkem_top_mac_muladd_16s_13s_29s_29_4_1 mlkem_top_mac_muladd_16s_13s_28s_29_4_1 mlkem_top_flow_control_loop_pipe_sequential_init mlkem_top_regslice_both mlkem_top_regslice_both mlkem_top_regslice_both mlkem_top_regslice_both mlkem_top_flow_control_loop_pipe mlkem_top_fifo_w32_d3_S mlkem_top_fifo_w16_d256_A mlkem_top_fifo_w16_d256_A mlkem_top_start_for_process_phase_U0 mlkem_top_start_for_write_phase_U0 mlkem_top_control_s_axi entry_proc read_phase_Pipeline_VITIS_LOOP_30_1 read_phase process_phase_Pipeline_VITIS_LOOP_44_1 process_phase write_phase mlkem_top
+INFO-FLOW: Generating /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model mlkem_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model mlkem_top_regslice_both
+INFO-FLOW: To file: write model mlkem_top_regslice_both
+INFO-FLOW: To file: write model mlkem_top_regslice_both
+INFO-FLOW: To file: write model mlkem_top_regslice_both
+INFO-FLOW: To file: write model mlkem_top_mul_16s_13ns_29_1_1
+INFO-FLOW: To file: write model mlkem_top_mul_16s_12ns_28_1_1
+INFO-FLOW: To file: write model mlkem_top_mul_16s_13s_16_1_1
+INFO-FLOW: To file: write model mlkem_top_mac_muladd_16s_13s_26s_29_4_1
+INFO-FLOW: To file: write model mlkem_top_mac_muladd_16s_13s_29s_29_4_1
+INFO-FLOW: To file: write model mlkem_top_mac_muladd_16s_13s_28s_29_4_1
+INFO-FLOW: To file: write model mlkem_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model mlkem_top_regslice_both
+INFO-FLOW: To file: write model mlkem_top_regslice_both
+INFO-FLOW: To file: write model mlkem_top_regslice_both
+INFO-FLOW: To file: write model mlkem_top_regslice_both
+INFO-FLOW: To file: write model mlkem_top_flow_control_loop_pipe
+INFO-FLOW: To file: write model mlkem_top_fifo_w32_d3_S
+INFO-FLOW: To file: write model mlkem_top_fifo_w16_d256_A
+INFO-FLOW: To file: write model mlkem_top_fifo_w16_d256_A
+INFO-FLOW: To file: write model mlkem_top_start_for_process_phase_U0
+INFO-FLOW: To file: write model mlkem_top_start_for_write_phase_U0
+INFO-FLOW: To file: write model mlkem_top_control_s_axi
+INFO-FLOW: To file: write model entry_proc
+INFO-FLOW: To file: write model read_phase_Pipeline_VITIS_LOOP_30_1
+INFO-FLOW: To file: write model read_phase
+INFO-FLOW: To file: write model process_phase_Pipeline_VITIS_LOOP_44_1
+INFO-FLOW: To file: write model process_phase
+INFO-FLOW: To file: write model write_phase
+INFO-FLOW: To file: write model mlkem_top
+INFO-FLOW: Generating /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=3.330 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/vhdl' dstVlogDir='/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/vlog' tclDir='/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db' modelList='mlkem_top_flow_control_loop_pipe_sequential_init
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_mul_16s_13ns_29_1_1
+mlkem_top_mul_16s_12ns_28_1_1
+mlkem_top_mul_16s_13s_16_1_1
+mlkem_top_mac_muladd_16s_13s_26s_29_4_1
+mlkem_top_mac_muladd_16s_13s_29s_29_4_1
+mlkem_top_mac_muladd_16s_13s_28s_29_4_1
+mlkem_top_flow_control_loop_pipe_sequential_init
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_flow_control_loop_pipe
+mlkem_top_fifo_w32_d3_S
+mlkem_top_fifo_w16_d256_A
+mlkem_top_fifo_w16_d256_A
+mlkem_top_start_for_process_phase_U0
+mlkem_top_start_for_write_phase_U0
+mlkem_top_control_s_axi
+entry_proc
+read_phase_Pipeline_VITIS_LOOP_30_1
+read_phase
+process_phase_Pipeline_VITIS_LOOP_44_1
+process_phase
+write_phase
+mlkem_top
+' expOnly='0'
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.compgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.compgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.compgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.compgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.compgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.compgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.compgen.tcl 
+Execute         source ./control.slave.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 390.566 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='mlkem_top_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: No bind nodes found for module_name entry_proc
+INFO-FLOW: No bind nodes found for module_name read_phase
+INFO-FLOW: No bind nodes found for module_name process_phase
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='mlkem_top_flow_control_loop_pipe_sequential_init
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_mul_16s_13ns_29_1_1
+mlkem_top_mul_16s_12ns_28_1_1
+mlkem_top_mul_16s_13s_16_1_1
+mlkem_top_mac_muladd_16s_13s_26s_29_4_1
+mlkem_top_mac_muladd_16s_13s_29s_29_4_1
+mlkem_top_mac_muladd_16s_13s_28s_29_4_1
+mlkem_top_flow_control_loop_pipe_sequential_init
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_flow_control_loop_pipe
+mlkem_top_fifo_w32_d3_S
+mlkem_top_fifo_w16_d256_A
+mlkem_top_fifo_w16_d256_A
+mlkem_top_start_for_process_phase_U0
+mlkem_top_start_for_write_phase_U0
+mlkem_top_control_s_axi
+entry_proc
+read_phase_Pipeline_VITIS_LOOP_30_1
+read_phase
+process_phase_Pipeline_VITIS_LOOP_44_1
+process_phase
+write_phase
+mlkem_top
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.tbgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.compgen.dataonly.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.compgen.dataonly.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.compgen.dataonly.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.tbgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.tbgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.tbgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.tbgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.tbgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.tbgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.tbgen.tcl 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.constraint.tcl 
+Execute       sc_get_clocks mlkem_top 
+Execute       source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME control_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} cache_nodes {} report_dict {TOPINST mlkem_top MODULE2INSTS {mlkem_top mlkem_top read_phase read_phase_U0 read_phase_Pipeline_VITIS_LOOP_30_1 grp_read_phase_Pipeline_VITIS_LOOP_30_1_fu_52 entry_proc entry_proc_U0 process_phase process_phase_U0 process_phase_Pipeline_VITIS_LOOP_44_1 grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38 write_phase write_phase_U0} INST2MODULE {mlkem_top mlkem_top read_phase_U0 read_phase grp_read_phase_Pipeline_VITIS_LOOP_30_1_fu_52 read_phase_Pipeline_VITIS_LOOP_30_1 entry_proc_U0 entry_proc process_phase_U0 process_phase grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38 process_phase_Pipeline_VITIS_LOOP_44_1 write_phase_U0 write_phase} INSTDATA {mlkem_top {DEPTH 1 CHILDREN {read_phase_U0 entry_proc_U0 process_phase_U0 write_phase_U0}} read_phase_U0 {DEPTH 2 CHILDREN grp_read_phase_Pipeline_VITIS_LOOP_30_1_fu_52} grp_read_phase_Pipeline_VITIS_LOOP_30_1_fu_52 {DEPTH 3 CHILDREN {}} entry_proc_U0 {DEPTH 2 CHILDREN {}} process_phase_U0 {DEPTH 2 CHILDREN grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38} grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38 {DEPTH 3 CHILDREN {}} write_phase_U0 {DEPTH 2 CHILDREN {}}} MODULEDATA {read_phase_Pipeline_VITIS_LOOP_30_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln30_fu_83_p2 SOURCE mlkem_ip.cpp:30 VARIABLE icmp_ln30 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_2_fu_89_p2 SOURCE mlkem_ip.cpp:30 VARIABLE i_2 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} process_phase_Pipeline_VITIS_LOOP_44_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_fu_102_p2 SOURCE mlkem_ip.cpp:44 VARIABLE i LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_13ns_29_1_1_U17 SOURCE mlkem_ip.cpp:54 VARIABLE a_2 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_13s_16_1_1_U19 SOURCE ./mlkem_types.h:51 VARIABLE u_2 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_13s_29s_29_4_1_U22 SOURCE ./mlkem_types.h:52 VARIABLE mul_ln52_2 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_13s_29s_29_4_1_U22 SOURCE ./mlkem_types.h:52 VARIABLE t_2 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_12ns_28_1_1_U18 SOURCE mlkem_ip.cpp:51 VARIABLE a_1 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_13s_16_1_1_U20 SOURCE ./mlkem_types.h:51 VARIABLE u_1 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_13s_28s_29_4_1_U23 SOURCE ./mlkem_types.h:52 VARIABLE mul_ln52_1 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_13s_28s_29_4_1_U23 SOURCE ./mlkem_types.h:52 VARIABLE t_1 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_13s_26s_29_4_1_U21 SOURCE ./mlkem_types.h:52 VARIABLE mul_ln52 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_13s_26s_29_4_1_U21 SOURCE ./mlkem_types.h:52 VARIABLE t LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln44_fu_118_p2 SOURCE mlkem_ip.cpp:44 VARIABLE icmp_ln44 LOOP VITIS_LOOP_44_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false}} AREA {DSP 7 BRAM 0 URAM 0}} write_phase {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME out_tmp_last_fu_95_p2 SOURCE mlkem_ip.cpp:72 VARIABLE out_tmp_last LOOP VITIS_LOOP_68_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_fu_102_p2 SOURCE mlkem_ip.cpp:68 VARIABLE i LOOP VITIS_LOOP_68_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} mlkem_top {BINDINFO {{BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME mode_c_U SOURCE mlkem_ip.cpp:97 VARIABLE mode_c LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {scalar prop} STORAGESIZE {32 3 1} STORAGEUSAGE {fifo channel} DISPNAME {bind_storage fifo} VISIBLE true} {BINDTYPE storage ID {} IMPL memory LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME coeff_stream_U SOURCE mlkem_ip.cpp:90 VARIABLE coeff_stream LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE stream STORAGESIZE {16 256 1} STORAGEUSAGE {fifo channel} DISPNAME {bind_storage fifo} VISIBLE true} {BINDTYPE storage ID {} IMPL memory LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME result_stream_U SOURCE mlkem_ip.cpp:91 VARIABLE result_stream LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE stream STORAGESIZE {16 256 1} STORAGEUSAGE {fifo channel} DISPNAME {bind_storage fifo} VISIBLE true}} AREA {DSP 7 BRAM 2 URAM 0}} entry_proc {AREA {DSP 0 BRAM 0 URAM 0}} read_phase {AREA {DSP 0 BRAM 0 URAM 0}} process_phase {AREA {DSP 7 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.27 seconds; current allocated memory: 402.051 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for mlkem_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for mlkem_top.
+Execute       syn_report -model mlkem_top -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 420.17 MHz
+Command     autosyn done; 0.79 sec.
+Command   csynth_design done; 12.04 sec.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:12; Allocated memory: 106.566 MB.
+Command ap_source done; 12.6 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1 opened at Fri Feb 27 17:41:28 IST 2026
+Execute     ap_set_clock -name default -period 3.33 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+Execute     set_part xczu7ev-ffvc1156-2-e 
+Execute       create_platform xczu7ev-ffvc1156-2-e -board  
+DBG:HLSDevice: Trying to load device library: /home/samarth/Desktop/Vitis_HLS/2024.1/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/samarth/Desktop/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+Command       create_platform done; 0.31 sec.
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.38 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=/home/samarth/Desktop/6g_ai_ran 
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran
+Execute     config_export -output=/home/samarth/Desktop/6g_ai_ran 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.39 sec.
+Execute   set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+Execute     create_platform xczu7ev-ffvc1156-2-e -board  
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.12 sec.
+Execute   create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+Execute   config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran -rtl verilog 
+Execute   source ./ml_kem_pqc/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./ml_kem_pqc/solution1/directives.tcl
+Execute     set_directive_top -name mlkem_top mlkem_top 
+INFO: [HLS 200-1510] Running: set_directive_top -name mlkem_top mlkem_top 
+WARNING: [HLS 200-484] The 'set_directive_top -name' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_top -location' command is deprecated and will be removed in a future release.
+Execute   export_design -rtl verilog -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran 
+Execute     config_export -format=ip_catalog -output=/home/samarth/Desktop/6g_ai_ran -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=3.330 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=mlkem_top xml_exists=0
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to mlkem_top
+INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=9
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=30 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='mlkem_top_flow_control_loop_pipe_sequential_init
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_mul_16s_13ns_29_1_1
+mlkem_top_mul_16s_12ns_28_1_1
+mlkem_top_mul_16s_13s_16_1_1
+mlkem_top_mac_muladd_16s_13s_26s_29_4_1
+mlkem_top_mac_muladd_16s_13s_29s_29_4_1
+mlkem_top_mac_muladd_16s_13s_28s_29_4_1
+mlkem_top_flow_control_loop_pipe_sequential_init
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_regslice_both
+mlkem_top_flow_control_loop_pipe
+mlkem_top_fifo_w32_d3_S
+mlkem_top_fifo_w16_d256_A
+mlkem_top_fifo_w16_d256_A
+mlkem_top_start_for_process_phase_U0
+mlkem_top_start_for_write_phase_U0
+mlkem_top_control_s_axi
+entry_proc
+read_phase_Pipeline_VITIS_LOOP_30_1
+read_phase
+process_phase_Pipeline_VITIS_LOOP_44_1
+process_phase
+write_phase
+mlkem_top
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.compgen.dataonly.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.compgen.dataonly.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.rtl_wrap.cfg.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.compgen.dataonly.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/entry_proc.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase_Pipeline_VITIS_LOOP_30_1.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/read_phase.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase_Pipeline_VITIS_LOOP_44_1.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/process_phase.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/write_phase.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.tbgen.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.constraint.tcl 
+Execute     sc_get_clocks mlkem_top 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.constraint.tcl 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/mlkem_top.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/impl/ip/pack.sh
+Execute     send_msg_by_id INFO @200-802@%s export.zip 
+INFO: [HLS 200-802] Generated output file export.zip
+Command   export_design done; 18.23 sec.
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:18; Allocated memory: 6.453 MB.
+Command ap_source done; 18.76 sec.
+Execute cleanup_all 

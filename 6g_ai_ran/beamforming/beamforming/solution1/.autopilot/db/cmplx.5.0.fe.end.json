@@ -1,0 +1,47 @@
+{
+    "1": {
+        "name": "beamformer_top_Pipeline_weight_load",
+        "file": "beamformer.cpp",
+        "fileloc": "121",
+        "instructions": "49",
+        "total_instructions": "49",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "beamformer_top",
+        "file": "beamformer.cpp",
+        "fileloc": "89",
+        "instructions": "46",
+        "total_instructions": "302",
+        "calls": "1 2",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "beamformer_top_Pipeline_subcarrier_loop",
+        "file": "beamformer.cpp",
+        "fileloc": "137",
+        "instructions": "207",
+        "total_instructions": "207",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

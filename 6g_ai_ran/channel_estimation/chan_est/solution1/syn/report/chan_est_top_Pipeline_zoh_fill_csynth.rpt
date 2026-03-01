@@ -1,0 +1,198 @@
+
+
+================================================================
+== Vitis HLS Report for 'chan_est_top_Pipeline_zoh_fill'
+================================================================
+* Date:           Sat Feb 28 15:53:58 2026
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        chan_est
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  1.664 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+-----------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  |                    Pipeline                   |
+    |   min   |   max   |    min   |    max   |  min |  max |                      Type                     |
+    +---------+---------+----------+----------+------+------+-----------------------------------------------+
+    |     1029|     1029|  3.427 us|  3.427 us|  1025|  1025|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+------+------+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |            |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- zoh_fill  |     1027|     1027|         5|          1|          1|  1024|       yes|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      39|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        1|     -|       0|       0|    -|
+|Multiplexer      |        -|     -|       0|      36|    -|
+|Register         |        -|     -|     167|      32|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        1|     0|     167|     107|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       ~0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |     Memory    |                         Module                         | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |PILOT_FOR_K_U  |chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R  |        1|  0|   0|    0|  1024|    8|     1|         8192|
+    +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total          |                                                        |        1|  0|   0|    0|  1024|    8|     1|         8192|
+    +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln266_fu_237_p2   |         +|   0|  0|  18|          11|           1|
+    |icmp_ln266_fu_231_p2  |      icmp|   0|  0|  19|          11|          12|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  39|          23|          15|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_k_1     |   9|          2|   11|         22|
+    |k_fu_50                  |   9|          2|   11|         22|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   24|         48|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
+    |k_fu_50                           |  11|   0|   11|          0|
+    |m_reg_288                         |   8|   0|    8|          0|
+    |pilot_h_im_1_load_reg_331         |  16|   0|   16|          0|
+    |pilot_h_im_load_reg_325           |  16|   0|   16|          0|
+    |pilot_h_re_1_load_reg_319         |  16|   0|   16|          0|
+    |pilot_h_re_load_reg_313           |  16|   0|   16|          0|
+    |zext_ln266_reg_271                |  11|   0|   64|         53|
+    |zext_ln266_reg_271                |  64|  32|   64|         53|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 167|  32|  220|        106|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+--------------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |          Source Object         |    C Type    |
++-----------------------+-----+-----+------------+--------------------------------+--------------+
+|ap_clk                 |   in|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_zoh_fill|  return value|
+|ap_rst                 |   in|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_zoh_fill|  return value|
+|ap_start               |   in|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_zoh_fill|  return value|
+|ap_done                |  out|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_zoh_fill|  return value|
+|ap_idle                |  out|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_zoh_fill|  return value|
+|ap_ready               |  out|    1|  ap_ctrl_hs|  chan_est_top_Pipeline_zoh_fill|  return value|
+|w_im_3_address0        |  out|   10|   ap_memory|                          w_im_3|         array|
+|w_im_3_ce0             |  out|    1|   ap_memory|                          w_im_3|         array|
+|w_im_3_we0             |  out|    1|   ap_memory|                          w_im_3|         array|
+|w_im_3_d0              |  out|   16|   ap_memory|                          w_im_3|         array|
+|w_im_2_address0        |  out|   10|   ap_memory|                          w_im_2|         array|
+|w_im_2_ce0             |  out|    1|   ap_memory|                          w_im_2|         array|
+|w_im_2_we0             |  out|    1|   ap_memory|                          w_im_2|         array|
+|w_im_2_d0              |  out|   16|   ap_memory|                          w_im_2|         array|
+|w_im_1_address0        |  out|   10|   ap_memory|                          w_im_1|         array|
+|w_im_1_ce0             |  out|    1|   ap_memory|                          w_im_1|         array|
+|w_im_1_we0             |  out|    1|   ap_memory|                          w_im_1|         array|
+|w_im_1_d0              |  out|   16|   ap_memory|                          w_im_1|         array|
+|w_im_address0          |  out|   10|   ap_memory|                            w_im|         array|
+|w_im_ce0               |  out|    1|   ap_memory|                            w_im|         array|
+|w_im_we0               |  out|    1|   ap_memory|                            w_im|         array|
+|w_im_d0                |  out|   16|   ap_memory|                            w_im|         array|
+|w_re_3_address0        |  out|   10|   ap_memory|                          w_re_3|         array|
+|w_re_3_ce0             |  out|    1|   ap_memory|                          w_re_3|         array|
+|w_re_3_we0             |  out|    1|   ap_memory|                          w_re_3|         array|
+|w_re_3_d0              |  out|   16|   ap_memory|                          w_re_3|         array|
+|w_re_2_address0        |  out|   10|   ap_memory|                          w_re_2|         array|
+|w_re_2_ce0             |  out|    1|   ap_memory|                          w_re_2|         array|
+|w_re_2_we0             |  out|    1|   ap_memory|                          w_re_2|         array|
+|w_re_2_d0              |  out|   16|   ap_memory|                          w_re_2|         array|
+|w_re_1_address0        |  out|   10|   ap_memory|                          w_re_1|         array|
+|w_re_1_ce0             |  out|    1|   ap_memory|                          w_re_1|         array|
+|w_re_1_we0             |  out|    1|   ap_memory|                          w_re_1|         array|
+|w_re_1_d0              |  out|   16|   ap_memory|                          w_re_1|         array|
+|w_re_address0          |  out|   10|   ap_memory|                            w_re|         array|
+|w_re_ce0               |  out|    1|   ap_memory|                            w_re|         array|
+|w_re_we0               |  out|    1|   ap_memory|                            w_re|         array|
+|w_re_d0                |  out|   16|   ap_memory|                            w_re|         array|
+|pilot_h_re_address0    |  out|    8|   ap_memory|                      pilot_h_re|         array|
+|pilot_h_re_ce0         |  out|    1|   ap_memory|                      pilot_h_re|         array|
+|pilot_h_re_q0          |   in|   16|   ap_memory|                      pilot_h_re|         array|
+|pilot_h_im_address0    |  out|    8|   ap_memory|                      pilot_h_im|         array|
+|pilot_h_im_ce0         |  out|    1|   ap_memory|                      pilot_h_im|         array|
+|pilot_h_im_q0          |   in|   16|   ap_memory|                      pilot_h_im|         array|
+|pilot_h_re_1_address0  |  out|    8|   ap_memory|                    pilot_h_re_1|         array|
+|pilot_h_re_1_ce0       |  out|    1|   ap_memory|                    pilot_h_re_1|         array|
+|pilot_h_re_1_q0        |   in|   16|   ap_memory|                    pilot_h_re_1|         array|
+|pilot_h_im_1_address0  |  out|    8|   ap_memory|                    pilot_h_im_1|         array|
+|pilot_h_im_1_ce0       |  out|    1|   ap_memory|                    pilot_h_im_1|         array|
+|pilot_h_im_1_q0        |   in|   16|   ap_memory|                    pilot_h_im_1|         array|
++-----------------------+-----+-----+------------+--------------------------------+--------------+
+

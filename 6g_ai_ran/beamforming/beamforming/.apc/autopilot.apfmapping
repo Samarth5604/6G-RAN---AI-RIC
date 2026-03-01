@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="beamformer.cpp" path="/home/samarth/Desktop/6g_ai_ran/beamforming/beamformer.cpp"/>
+    <originFiles name="beamformer.h" path="/home/samarth/Desktop/6g_ai_ran/beamforming/beamformer.h"/>
+  </source>
+  <testbench>
+    <originFiles name="beamformer_tb.cpp" path="/home/samarth/Desktop/6g_ai_ran/beamforming/beamformer_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

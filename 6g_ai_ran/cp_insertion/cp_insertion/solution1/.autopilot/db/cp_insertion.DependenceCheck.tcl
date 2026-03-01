@@ -1,0 +1,31 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_data_U"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_data_1_U"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_data_2_U"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_data_3_U"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_strb_U"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_strb_1_U"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_strb_2_U"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_strb_3_U"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_buf_fill_fu_88"},
+	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_buf_fill_fu_88.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_cp_out_fu_108"},
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_cp_out_fu_108.sparsemux_9_2_32_1_1_U13"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_cp_out_fu_108.sparsemux_9_2_4_1_1_U14"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_cp_out_fu_108.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_data_out_fu_128"},
+	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_data_out_fu_128.sparsemux_9_2_32_1_1_U29"},
+	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_data_out_fu_128.sparsemux_9_2_4_1_1_U30"},
+	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cp_insertion_Pipeline_data_out_fu_128.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_data_V_U"},
+	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_keep_V_U"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_strb_V_U"},
+	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_last_V_U"},
+	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_data_V_U"},
+	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_keep_V_U"},
+	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_strb_V_U"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_last_V_U"}]}
+set DependenceCheckSize 0

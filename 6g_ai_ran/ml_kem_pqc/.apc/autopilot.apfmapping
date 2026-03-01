@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mlkem_ip.cpp" path="/home/samarth/Desktop/6g_ai_ran/mlkem_ip.cpp"/>
+    <originFiles name="mlkem_types.h" path="/home/samarth/Desktop/6g_ai_ran/mlkem_types.h"/>
+    <originFiles name="ntt_engine.cpp" path="/home/samarth/Desktop/6g_ai_ran/ntt_engine.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="mlkem_test.cpp" path="/home/samarth/Desktop/6g_ai_ran/mlkem_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../beamformer_tb.cpp in debug mode
+   Compiling ../../../../beamformer.cpp in debug mode
+   Generating csim.exe
+PASS: Both beams verified, weight stream interface correct.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4096
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

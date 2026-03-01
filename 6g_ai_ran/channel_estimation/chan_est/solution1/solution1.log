@@ -1,0 +1,922 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:10; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:00; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:06; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:01; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:01; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:01; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 295.684 MB.
+INFO: [HLS 200-10] Analyzing design file 'chan_est.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.55 seconds. CPU system time: 0.42 seconds. Elapsed time: 3 seconds; current allocated memory: 297.152 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 2,276 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 326 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 161 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 165 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 165 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 182 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 150 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 158 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 158 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 159 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 155 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 151 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 138 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 138 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 148 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 153 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'ls_div(ap_int<16>, ap_int<16>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2][1024], ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2][1024])' (chan_est.cpp:91:21)
+INFO: [HLS 214-131] Inlining function 'pilot_index(int)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2][1024], ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2][1024])' (chan_est.cpp:84:25)
+INFO: [HLS 214-131] Inlining function 'is_pilot(int)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2][1024], ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2][1024])' (chan_est.cpp:83:17)
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_74_2' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:74:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_88_3' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:88:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_97_4' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:97:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_99_5' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:99:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_74_2' (chan_est.cpp:74:19) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:39:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_88_3' (chan_est.cpp:88:34) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:39:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_97_4' (chan_est.cpp:97:30) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:39:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_99_5' (chan_est.cpp:99:19) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:39:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_58_1' (chan_est.cpp:58:19) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:39:0)
+INFO: [HLS 214-248] Applying array_partition to 'fft_in': Complete partitioning on dimension 1. (chan_est.cpp:39:0)
+INFO: [HLS 214-248] Applying array_partition to 'weights_re': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (chan_est.cpp:39:0)
+INFO: [HLS 214-248] Applying array_partition to 'weights_im': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (chan_est.cpp:39:0)
+INFO: [HLS 214-241] Aggregating bram variable 'weights_im_1_1' with compact=bit mode in 16-bits
+INFO: [HLS 214-241] Aggregating bram variable 'weights_im_1_0' with compact=bit mode in 16-bits
+INFO: [HLS 214-241] Aggregating bram variable 'weights_im_0_1' with compact=bit mode in 16-bits
+INFO: [HLS 214-241] Aggregating bram variable 'weights_im_0_0' with compact=bit mode in 16-bits
+INFO: [HLS 214-241] Aggregating bram variable 'weights_re_1_1' with compact=bit mode in 16-bits
+INFO: [HLS 214-241] Aggregating bram variable 'weights_re_1_0' with compact=bit mode in 16-bits
+INFO: [HLS 214-241] Aggregating bram variable 'weights_re_0_1' with compact=bit mode in 16-bits
+INFO: [HLS 214-241] Aggregating bram variable 'weights_re_0_0' with compact=bit mode in 16-bits
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.88 seconds. CPU system time: 0.31 seconds. Elapsed time: 6.77 seconds; current allocated memory: 307.668 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 307.668 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 307.883 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 308.020 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./dmrs_pilots.h:108:33) to (chan_est.cpp:105:9) in function 'chan_est_top'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 330.438 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 322.188 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'chan_est_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=sub_ln31_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=sub_ln31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'subcarrier_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 38, loop 'subcarrier_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 322.531 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 322.531 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/symbol_num' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weights_re_0_0' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weights_re_0_1' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weights_re_1_0' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weights_re_1_1' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weights_im_0_0' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weights_im_0_1' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weights_im_1_0' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weights_im_1_1' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'chan_est_top' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chan_est_top' pipeline 'subcarrier_loop' pipeline type 'loop pipeline'
+INFO: [HLS 200-1552] Enabling free running pipeline (frp) architecture on pipeline 'subcarrier_loop' in module 'chan_est_top'. Estimated max control fanout for pipeline is 6748.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_30s_30_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_16s_15s_30s_30_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_15s_16s_30_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_34ns_65_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_32s_4ns_3_36_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top'.
+INFO: [RTMG 210-279] Implementing memory 'chan_est_top_DMRS_RE_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'chan_est_top_DMRS_IM_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 325.020 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 328.074 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.35 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.37 seconds; current allocated memory: 338.152 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for chan_est_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for chan_est_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 414.51 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:10; Allocated memory: 42.566 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1510] Running: config_export -output /home/samarth/Desktop/6g_ai_ran/channel_estimation 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:18; Allocated memory: 6.484 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:03; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:03; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 295.914 MB.
+INFO: [HLS 200-10] Analyzing design file 'chan_est.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.65 seconds. CPU system time: 0.41 seconds. Elapsed time: 3.07 seconds; current allocated memory: 297.414 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 2,709 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 395 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 217 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 223 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 223 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 257 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 225 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 225 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 225 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 258 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 262 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 258 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 231 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 231 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 208 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 220 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'ls_div(ap_int<16>, ap_int<16>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (chan_est.cpp:135:21)
+INFO: [HLS 214-131] Inlining function 'pilot_index(int)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (chan_est.cpp:127:25)
+INFO: [HLS 214-131] Inlining function 'is_pilot(int)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (chan_est.cpp:126:17)
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety
+INFO: [HLS 214-291] Loop 'read_loop' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:116:9)
+INFO: [HLS 214-291] Loop 'pilot_loop' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:132:17)
+INFO: [HLS 214-291] Loop 'fill_loop' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:143:13)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_145_2' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:145:20)
+INFO: [HLS 214-186] Unrolling loop 'read_loop' (chan_est.cpp:116:9) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:65:0)
+INFO: [HLS 214-186] Unrolling loop 'pilot_loop' (chan_est.cpp:132:17) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:65:0)
+INFO: [HLS 214-186] Unrolling loop 'fill_loop' (chan_est.cpp:143:13) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:65:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_145_2' (chan_est.cpp:145:20) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:65:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_96_1' (chan_est.cpp:96:19) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:65:0)
+INFO: [HLS 214-248] Applying array_partition to 'w_re': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (chan_est.cpp:77:9)
+INFO: [HLS 214-248] Applying array_partition to 'w_im': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (chan_est.cpp:78:12)
+INFO: [HLS 214-248] Applying array_partition to 'fft_in': Complete partitioning on dimension 1. (chan_est.cpp:65:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.79 seconds. CPU system time: 0.26 seconds. Elapsed time: 6.64 seconds; current allocated memory: 307.930 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 307.930 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 308.207 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 308.578 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./dmrs_pilots.h:108:33) to (chan_est.cpp:151:9) in function 'chan_est_top'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (chan_est.cpp:169:9) to (chan_est.cpp:168:17) in function 'chan_est_top'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 331.344 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'ant_out'(chan_est.cpp:166:13) and 'subcarrier_out'(chan_est.cpp:168:17) in function 'chan_est_top' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'beam_out'(chan_est.cpp:164:9) and 'ant_out'(chan_est.cpp:166:13) in function 'chan_est_top' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'ant_out' (chan_est.cpp:166:13) in function 'chan_est_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'beam_out' (chan_est.cpp:164:9) in function 'chan_est_top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 342.098 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'chan_est_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top_Pipeline_subcarrier_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=sub_ln58_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln57_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=sub_ln58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln57) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'subcarrier_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 37, loop 'subcarrier_loop'
+WARNING: [HLS 200-871] Estimated clock period (2.667 ns) exceeds the target (target clock period: 3.330 ns, clock uncertainty: 0.899 ns, effective delay budget: 2.431 ns).
+WARNING: [HLS 200-1016] The critical path in module 'chan_est_top_Pipeline_subcarrier_loop' consists of the following:
+	'store' operation 0 bit ('k_1_write_ln108', ./dmrs_pilots.h:108->chan_est.cpp:126) of constant 0 on local variable 'k', ./dmrs_pilots.h:108->chan_est.cpp:126 [34]  (0.427 ns)
+	'load' operation 11 bit ('k', ./dmrs_pilots.h:110->chan_est.cpp:126) on local variable 'k', ./dmrs_pilots.h:108->chan_est.cpp:126 [37]  (0.000 ns)
+	'add' operation 11 bit ('add_ln110', ./dmrs_pilots.h:110->chan_est.cpp:126) [63]  (0.787 ns)
+	'urem' operation 3 bit ('urem_ln110', ./dmrs_pilots.h:110->chan_est.cpp:126) [65]  (1.453 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 342.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 342.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top_Pipeline_beam_out_ant_out_subcarrier_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'beam_out_ant_out_subcarrier_out'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'beam_out_ant_out_subcarrier_out'
+WARNING: [HLS 200-871] Estimated clock period (2.699 ns) exceeds the target (target clock period: 3.330 ns, clock uncertainty: 0.899 ns, effective delay budget: 2.431 ns).
+WARNING: [HLS 200-1016] The critical path in module 'chan_est_top_Pipeline_beam_out_ant_out_subcarrier_out' consists of the following:
+	'load' operation 11 bit ('k_load', chan_est.cpp:168) on local variable 'k', chan_est.cpp:168 [32]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln168', chan_est.cpp:168) [41]  (0.798 ns)
+	'and' operation 1 bit ('and_ln164', chan_est.cpp:164) [42]  (0.287 ns)
+	'or' operation 1 bit ('empty', chan_est.cpp:164) [46]  (0.000 ns)
+	'select' operation 11 bit ('k_mid2', chan_est.cpp:164) [47]  (0.389 ns)
+	'add' operation 11 bit ('add_ln168', chan_est.cpp:168) [80]  (0.798 ns)
+	'store' operation 0 bit ('k_write_ln168', chan_est.cpp:168) of variable 'add_ln168', chan_est.cpp:168 on local variable 'k', chan_est.cpp:168 [87]  (0.427 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 342.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 342.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (2.448 ns) exceeds the target (target clock period: 3.330 ns, clock uncertainty: 0.899 ns, effective delay budget: 2.431 ns).
+WARNING: [HLS 200-1016] The critical path in module 'chan_est_top' consists of the following:
+	'call' operation 0 bit ('_ln0') to 'chan_est_top_Pipeline_beam_out_ant_out_subcarrier_out' [54]  (2.448 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 342.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 342.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top_Pipeline_subcarrier_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chan_est_top_Pipeline_subcarrier_loop' pipeline 'subcarrier_loop' pipeline type 'loop pipeline'
+INFO: [HLS 200-1552] Enabling free running pipeline (frp) architecture on pipeline 'subcarrier_loop' in module 'chan_est_top_Pipeline_subcarrier_loop'. Estimated max control fanout for pipeline is 6620.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_30s_30_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_16s_15s_30s_30_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_15s_16s_30_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_34ns_65_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_32s_4ns_3_36_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top_Pipeline_subcarrier_loop'.
+INFO: [RTMG 210-279] Implementing memory 'chan_est_top_chan_est_top_Pipeline_subcarrier_loop_DMRS_RE_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'chan_est_top_chan_est_top_Pipeline_subcarrier_loop_DMRS_IM_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 345.004 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top_Pipeline_beam_out_ant_out_subcarrier_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chan_est_top_Pipeline_beam_out_ant_out_subcarrier_out' pipeline 'beam_out_ant_out_subcarrier_out' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top_Pipeline_beam_out_ant_out_subcarrier_out'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 346.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/symbol_num' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'chan_est_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top'.
+INFO: [RTMG 210-278] Implementing memory 'chan_est_top_w_re_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 349.293 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 352.879 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 363.234 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for chan_est_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for chan_est_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 370.51 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:10; Allocated memory: 67.543 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:01; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 295.914 MB.
+INFO: [HLS 200-10] Analyzing design file 'chan_est.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.57 seconds. CPU system time: 0.41 seconds. Elapsed time: 3 seconds; current allocated memory: 297.555 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 2,721 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 440 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 244 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 244 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 275 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 214 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 214 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 214 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 251 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 220 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 220 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 197 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 203 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'ls_div(ap_int<16>, ap_int<16>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (chan_est.cpp:117:21)
+INFO: [HLS 214-131] Inlining function 'pilot_index(int)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (chan_est.cpp:116:29)
+INFO: [HLS 214-131] Inlining function 'is_pilot(int)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (chan_est.cpp:115:6)
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_99_2' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:99:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_113_3' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:113:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_128_4' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:128:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_130_5' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:130:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_139_6' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:139:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_99_2' (chan_est.cpp:99:19) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:54:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_113_3' (chan_est.cpp:113:20) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:54:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_128_4' (chan_est.cpp:128:31) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:54:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_130_5' (chan_est.cpp:130:20) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:54:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_139_6' (chan_est.cpp:139:31) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:54:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_75_1' (chan_est.cpp:75:19) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:54:0)
+INFO: [HLS 214-248] Applying array_partition to 'w_re': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (chan_est.cpp:62:9)
+INFO: [HLS 214-248] Applying array_partition to 'w_im': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (chan_est.cpp:63:12)
+INFO: [HLS 214-248] Applying array_partition to 'new_h_re': Complete partitioning on dimension 1. (chan_est.cpp:109:20)
+INFO: [HLS 214-248] Applying array_partition to 'new_h_im': Complete partitioning on dimension 1. (chan_est.cpp:109:33)
+INFO: [HLS 214-248] Applying array_partition to 'fft_in': Complete partitioning on dimension 1. (chan_est.cpp:54:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.76 seconds. CPU system time: 0.27 seconds. Elapsed time: 6.63 seconds; current allocated memory: 307.980 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 307.980 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 308.250 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 308.602 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (chan_est.cpp:144:9) in function 'chan_est_top'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 331.375 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 341.645 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'chan_est_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top_Pipeline_subcarrier_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=sub_ln47_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln46_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=sub_ln47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln46) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'subcarrier_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 16, loop 'subcarrier_loop'
+WARNING: [HLS 200-871] Estimated clock period (2.448 ns) exceeds the target (target clock period: 3.330 ns, clock uncertainty: 0.899 ns, effective delay budget: 2.431 ns).
+WARNING: [HLS 200-1016] The critical path in module 'chan_est_top_Pipeline_subcarrier_loop' consists of the following:
+	'store' operation 0 bit ('k_1_write_ln108', ./dmrs_pilots.h:108->chan_est.cpp:115) of constant 0 on local variable 'k', ./dmrs_pilots.h:108->chan_est.cpp:115 [34]  (0.427 ns)
+	'load' operation 11 bit ('k') on local variable 'k', ./dmrs_pilots.h:108->chan_est.cpp:115 [37]  (0.000 ns)
+	'add' operation 11 bit ('empty_23') [63]  (0.787 ns)
+	'srem' operation 4 bit ('rem_i') [64]  (1.234 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 342.773 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 342.773 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top_Pipeline_weight_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'weight_out'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'weight_out'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 342.773 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 342.773 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 342.773 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 342.773 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top_Pipeline_subcarrier_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chan_est_top_Pipeline_subcarrier_loop' pipeline 'subcarrier_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_30s_30_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_16s_15s_30s_30_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_11s_13ns_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_15s_16s_30_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'srem_11s_4ns_4_15_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top_Pipeline_subcarrier_loop'.
+INFO: [RTMG 210-279] Implementing memory 'chan_est_top_chan_est_top_Pipeline_subcarrier_loop_DMRS_RE_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'chan_est_top_chan_est_top_Pipeline_subcarrier_loop_DMRS_IM_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 342.777 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top_Pipeline_weight_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chan_est_top_Pipeline_weight_out' pipeline 'weight_out' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top_Pipeline_weight_out'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 345.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/symbol_num' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'chan_est_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top'.
+INFO: [RTMG 210-278] Implementing memory 'chan_est_top_w_re_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 347.492 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 351.117 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.23 seconds; current allocated memory: 361.285 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for chan_est_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for chan_est_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 408.47 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:10; Allocated memory: 65.555 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:01; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 295.914 MB.
+INFO: [HLS 200-10] Analyzing design file 'chan_est.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.6 seconds. CPU system time: 0.42 seconds. Elapsed time: 3.02 seconds; current allocated memory: 297.398 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,882 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 376 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 214 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 211 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 211 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 313 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 261 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 261 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 261 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 294 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 298 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 294 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 267 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 267 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 244 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 258 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'ls_div(ap_int<16>, ap_int<16>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'chan_est_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, ap_uint<4>, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (chan_est.cpp:254:17)
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_269_3' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:269:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_271_4' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:271:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_251_2' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:251:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_230_1' is marked as complete unroll implied by the pipeline pragma (chan_est.cpp:230:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_269_3' (chan_est.cpp:269:31) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:194:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_271_4' (chan_est.cpp:271:20) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:194:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_251_2' (chan_est.cpp:251:31) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:194:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_230_1' (chan_est.cpp:230:20) in function 'chan_est_top' completely with a factor of 2 (chan_est.cpp:194:0)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_re'
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_im'
+INFO: [HLS 214-248] Applying array_partition to 'fft_re': Complete partitioning on dimension 1. (chan_est.cpp:205:13)
+INFO: [HLS 214-248] Applying array_partition to 'fft_im': Complete partitioning on dimension 1. (chan_est.cpp:206:16)
+INFO: [HLS 214-248] Applying array_partition to 'pilot_h_re': Complete partitioning on dimension 1. (chan_est.cpp:211:9)
+INFO: [HLS 214-248] Applying array_partition to 'pilot_h_im': Complete partitioning on dimension 1. (chan_est.cpp:212:12)
+INFO: [HLS 214-248] Applying array_partition to 'w_re': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (chan_est.cpp:217:9)
+INFO: [HLS 214-248] Applying array_partition to 'w_im': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (chan_est.cpp:218:12)
+INFO: [HLS 214-248] Applying array_partition to 'fft_in': Complete partitioning on dimension 1. (chan_est.cpp:194:0)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_re_0'
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_im_0'
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_re_1'
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_im_1'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.81 seconds. CPU system time: 0.31 seconds. Elapsed time: 6.71 seconds; current allocated memory: 307.980 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 307.980 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 308.320 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 308.762 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 331.727 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 360.992 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'chan_est_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top_Pipeline_buf_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'buf_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'buf_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 362.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 362.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top_Pipeline_pilot_scan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=sub_ln47_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln46_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=sub_ln47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln46) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'pilot_scan'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'pilot_scan'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 362.062 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 362.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top_Pipeline_zoh_fill' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'zoh_fill'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'zoh_fill'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 362.098 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 362.098 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top_Pipeline_weight_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'weight_out'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'weight_out'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 362.184 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 362.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chan_est_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 362.211 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 362.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top_Pipeline_buf_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chan_est_top_Pipeline_buf_loop' pipeline 'buf_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top_Pipeline_buf_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 362.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top_Pipeline_pilot_scan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chan_est_top_Pipeline_pilot_scan' pipeline 'pilot_scan' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_30s_30_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_16s_15s_30s_30_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_15s_30_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top_Pipeline_pilot_scan'.
+INFO: [RTMG 210-279] Implementing memory 'chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_RE_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_IM_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 363.648 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top_Pipeline_zoh_fill' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chan_est_top_Pipeline_zoh_fill' pipeline 'zoh_fill' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top_Pipeline_zoh_fill'.
+INFO: [RTMG 210-279] Implementing memory 'chan_est_top_chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 365.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top_Pipeline_weight_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chan_est_top_Pipeline_weight_out' pipeline 'weight_out' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top_Pipeline_weight_out'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 367.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chan_est_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/fft_in_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/symbol_num' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'chan_est_top/weight_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'chan_est_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chan_est_top'.
+INFO: [RTMG 210-278] Implementing memory 'chan_est_top_fft_re_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'chan_est_top_pilot_h_re_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 369.773 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 373.453 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 383.930 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for chan_est_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for chan_est_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 420.17 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:10; Allocated memory: 88.383 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6g_ai_ran/channel_estimation
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:17; Allocated memory: 6.000 MB.

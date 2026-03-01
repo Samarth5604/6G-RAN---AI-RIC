@@ -1,0 +1,1022 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Mar  1 10:26:13 2026
+# Process ID: 190637
+# Current directory: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1
+# Command line: vivado -log thz_pipeline_top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source thz_pipeline_top_wrapper.tcl -notrace
+# Log file: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/thz_pipeline_top_wrapper.vdi
+# Journal file: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/vivado.jou
+# Running On        :localhost.localdomain
+# Platform          :unknown
+# Operating System  :unknown
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency     :587.902 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :33071 MB
+# Swap memory       :16739 MB
+# Total Virtual     :49810 MB
+# Available Virtual :36997 MB
+#-----------------------------------------------------------
+source thz_pipeline_top_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1571.969 ; gain = 7.961 ; free physical = 13108 ; free virtual = 34942
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/Vitis-AI-master/src/vai_library/dpu_task/src'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/beamforming'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/cp_insertion'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/cp_removal'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/channel_estimation'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/zcu104_dpu_workspace/DPU_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/samarth/Desktop/Vivado/2024.1/data/ip'.
+Command: link_design -top thz_pipeline_top_wrapper -part xczu7ev-ffvc1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Project 1-454] Reading design checkpoint '/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/thz_pipeline_top.dcp' for cell 'thz_pipeline_top_i'
+Netlist sorting complete. Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.96 . Memory (MB): peak = 2752.539 ; gain = 0.000 ; free physical = 11798 ; free virtual = 33425
+INFO: [Netlist 29-17] Analyzing 992 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:158]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:178]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:181]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc:184]
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_21/bd_3c88_m00arn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_1/thz_pipeline_top_axi_dma_0_1.xdc] for cell 'thz_pipeline_top_i/axi_dma_1/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_1/thz_pipeline_top_axi_dma_0_1.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_1/thz_pipeline_top_axi_dma_0_1.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_1/thz_pipeline_top_axi_dma_0_1.xdc:61]
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_1/thz_pipeline_top_axi_dma_0_1.xdc] for cell 'thz_pipeline_top_i/axi_dma_1/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_1/bd_3c88_psr_aclk_0_board.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_1/bd_3c88_psr_aclk_0_board.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_1/bd_3c88_psr_aclk_0.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_1/bd_3c88_psr_aclk_0.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s00_nodes/s00_ar_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:178]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:181]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc:184]
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_11/bd_3c88_sarn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s00_nodes/s00_ar_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s00_nodes/s00_r_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:66]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:82]
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc:82]
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_12/bd_3c88_srn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s00_nodes/s00_r_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_17/bd_3c88_sawn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s01_nodes/s01_aw_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_17/bd_3c88_sawn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s01_nodes/s01_aw_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_18/bd_3c88_swn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s01_nodes/s01_w_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_18/bd_3c88_swn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s01_nodes/s01_w_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_19/bd_3c88_sbn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s01_nodes/s01_b_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_19/bd_3c88_sbn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/s01_nodes/s01_b_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_0/thz_pipeline_top_axi_dma_0_0.xdc] for cell 'thz_pipeline_top_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_0/thz_pipeline_top_axi_dma_0_0.xdc:61]
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_0/thz_pipeline_top_axi_dma_0_0.xdc] for cell 'thz_pipeline_top_i/axi_dma_0/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_22/bd_3c88_m00rn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_r_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_22/bd_3c88_m00rn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_r_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_23/bd_3c88_m00awn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_23/bd_3c88_m00awn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_24/bd_3c88_m00wn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_w_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_24/bd_3c88_m00wn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_25/bd_3c88_m00bn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_b_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_25/bd_3c88_m00bn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/smartconnect.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/smartconnect.xdc:1]
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/smartconnect.xdc] for cell 'thz_pipeline_top_i/axi_smc1/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3_board.xdc] for cell 'thz_pipeline_top_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3_board.xdc] for cell 'thz_pipeline_top_i/axi_gpio_0/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3.xdc] for cell 'thz_pipeline_top_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3.xdc] for cell 'thz_pipeline_top_i/axi_gpio_0/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_1/bd_fc49_psr_aclk_0_board.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_1/bd_fc49_psr_aclk_0_board.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_rst_ps8_0_266M_0/thz_pipeline_top_rst_ps8_0_266M_0.xdc] for cell 'thz_pipeline_top_i/rst_ps8_0_266M/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_rst_ps8_0_266M_0/thz_pipeline_top_rst_ps8_0_266M_0.xdc] for cell 'thz_pipeline_top_i/rst_ps8_0_266M/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_rst_ps8_0_266M_0/thz_pipeline_top_rst_ps8_0_266M_0_board.xdc] for cell 'thz_pipeline_top_i/rst_ps8_0_266M/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_rst_ps8_0_266M_0/thz_pipeline_top_rst_ps8_0_266M_0_board.xdc] for cell 'thz_pipeline_top_i/rst_ps8_0_266M/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_zynq_ultra_ps_e_0_0/thz_pipeline_top_zynq_ultra_ps_e_0_0.xdc] for cell 'thz_pipeline_top_i/zynq_ultra_ps_e_0/inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3023.723 ; gain = 29.719 ; free physical = 11682 ; free virtual = 33313
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_zynq_ultra_ps_e_0_0/thz_pipeline_top_zynq_ultra_ps_e_0_0.xdc] for cell 'thz_pipeline_top_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/smartconnect.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/smartconnect.xdc:1]
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/smartconnect.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_25/bd_fc49_m00bn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_25/bd_fc49_m00bn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_24/bd_fc49_m00wn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_24/bd_fc49_m00wn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_23/bd_fc49_m00awn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_23/bd_fc49_m00awn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_22/bd_fc49_m00rn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_22/bd_fc49_m00rn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_21/bd_fc49_m00arn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_21/bd_fc49_m00arn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_19/bd_fc49_sbn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s01_nodes/s01_b_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_19/bd_fc49_sbn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s01_nodes/s01_b_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_18/bd_fc49_swn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s01_nodes/s01_w_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_18/bd_fc49_swn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s01_nodes/s01_w_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_17/bd_fc49_sawn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s01_nodes/s01_aw_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_17/bd_fc49_sawn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s01_nodes/s01_aw_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_12/bd_fc49_srn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s00_nodes/s00_r_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_12/bd_fc49_srn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s00_nodes/s00_r_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_11/bd_fc49_sarn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s00_nodes/s00_ar_node/inst'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_11/bd_fc49_sarn_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/s00_nodes/s00_ar_node/inst'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_1/bd_fc49_psr_aclk_0.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_1/bd_fc49_psr_aclk_0.xdc] for cell 'thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc]
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc]
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_0/thz_pipeline_top_axi_dma_0_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_dma_0/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_0/thz_pipeline_top_axi_dma_0_0_clocks.xdc] for cell 'thz_pipeline_top_i/axi_dma_0/U0'
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_1/thz_pipeline_top_axi_dma_0_1_clocks.xdc] for cell 'thz_pipeline_top_i/axi_dma_1/U0'
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_1/thz_pipeline_top_axi_dma_0_1_clocks.xdc] for cell 'thz_pipeline_top_i/axi_dma_1/U0'
+INFO: [Project 1-1714] 92 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 921 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10963 ; free virtual = 32594
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 474 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 74 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 64 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 156 instances
+  RAM32X1S => RAM32X1S (RAMS32): 64 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 16 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 32 instances
+
+21 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:11 ; elapsed = 00:00:51 . Memory (MB): peak = 4289.898 ; gain = 2643.453 ; free physical = 10963 ; free virtual = 32594
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10889 ; free virtual = 32588
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1eed22a93
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10792 ; free virtual = 32446
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1eed22a93
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10793 ; free virtual = 32446
+Phase 1 Initialization | Checksum: 1eed22a93
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10793 ; free virtual = 32446
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 2.1 Timer Update | Checksum: 1eed22a93
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:07 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10684 ; free virtual = 32344
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1eed22a93
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:07 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10678 ; free virtual = 32338
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1eed22a93
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:07 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10678 ; free virtual = 32338
+
+Phase 3 Retarget
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 22 inverters resulting in an inversion of 93 pins
+INFO: [Opt 31-138] Pushed 111 inverter(s) to 2814 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1d4b29f85
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:08 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10677 ; free virtual = 32332
+Retarget | Checksum: 1d4b29f85
+INFO: [Opt 31-389] Phase Retarget created 618 cells and removed 1419 cells
+INFO: [Opt 31-1021] In phase Retarget, 80 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 128335563
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10681 ; free virtual = 32336
+Constant propagation | Checksum: 128335563
+INFO: [Opt 31-389] Phase Constant propagation created 542 cells and removed 759 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 80 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 1d226948b
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:10 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10685 ; free virtual = 32332
+Sweep | Checksum: 1d226948b
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 532 cells
+INFO: [Opt 31-1021] In phase Sweep, 103 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1d226948b
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:11 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10684 ; free virtual = 32330
+BUFG optimization | Checksum: 1d226948b
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 19d3acb28
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:11 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10685 ; free virtual = 32331
+Shift Register Optimization | Checksum: 19d3acb28
+INFO: [Opt 31-389] Phase Shift Register Optimization created 4 cells and removed 0 cells
+INFO: [Opt 31-1555] control_set_opt supports Versal devices only, and device xczu7ev is unsupported
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 19d3acb28
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:12 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10688 ; free virtual = 32335
+Post Processing Netlist | Checksum: 19d3acb28
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 80 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1e88cd7d5
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:12 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10689 ; free virtual = 32335
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10689 ; free virtual = 32335
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1e88cd7d5
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:12 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10688 ; free virtual = 32335
+Phase 9 Finalization | Checksum: 1e88cd7d5
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:12 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10688 ; free virtual = 32335
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             618  |            1419  |                                             80  |
+|  Constant propagation         |             542  |             759  |                                             80  |
+|  Sweep                        |               0  |             532  |                                            103  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               4  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             80  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1e88cd7d5
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:13 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10688 ; free virtual = 32335
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10689 ; free virtual = 32336
+Ending Netlist Obfuscation Task | Checksum: 1e88cd7d5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10689 ; free virtual = 32336
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:18 . Memory (MB): peak = 4289.898 ; gain = 0.000 ; free physical = 10689 ; free virtual = 32336
+INFO: [Vivado 12-24828] Executing command : report_drc -file opt_report_drc_0.rpt -pb opt_report_drc_0.pb -rpx opt_report_drc_0.rpx
+Command: report_drc -file opt_report_drc_0.rpt -pb opt_report_drc_0.pb -rpx opt_report_drc_0.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/opt_report_drc_0.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file opt_report_methodology_0.rpt -pb opt_report_methodology_0.pb -rpx opt_report_methodology_0.rpx
+Command: report_methodology -file opt_report_methodology_0.rpt -pb opt_report_methodology_0.pb -rpx opt_report_methodology_0.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_VDISTR
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_VROUTE
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_HDISTR
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_HROUTE
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_BUFG
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_LEAF
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/opt_report_methodology_0.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:02:08 ; elapsed = 00:00:36 . Memory (MB): peak = 5224.699 ; gain = 858.172 ; free physical = 9590 ; free virtual = 31250
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file opt_report_timing_summary_0.rpt -pb opt_report_timing_summary_0.pb -rpx opt_report_timing_summary_0.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:44 ; elapsed = 00:00:09 . Memory (MB): peak = 5224.699 ; gain = 0.000 ; free physical = 9406 ; free virtual = 31143
+INFO: [Vivado 12-24828] Executing command : report_utilization -file opt_report_utilization_0.rpt -pb opt_report_utilization_0.pb
+generate_parallel_reports: Time (s): cpu = 00:03:11 ; elapsed = 00:00:48 . Memory (MB): peak = 5224.699 ; gain = 934.801 ; free physical = 9401 ; free virtual = 31136
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.09 . Memory (MB): peak = 5224.699 ; gain = 0.000 ; free physical = 9395 ; free virtual = 31135
+INFO: [Common 17-1381] The checkpoint '/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/thz_pipeline_top_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 5224.699 ; gain = 0.000 ; free physical = 9545 ; free virtual = 31224
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Vivado_Tcl 4-2302] The placer was invoked with the 'Explore' directive.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5224.699 ; gain = 0.000 ; free physical = 9558 ; free virtual = 31235
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1cb3b74ba
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5224.699 ; gain = 0.000 ; free physical = 9561 ; free virtual = 31237
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5224.699 ; gain = 0.000 ; free physical = 9574 ; free virtual = 31251
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1224dd629
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 5224.699 ; gain = 0.000 ; free physical = 9540 ; free virtual = 31264
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1e083f112
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:20 . Memory (MB): peak = 5231.727 ; gain = 7.027 ; free physical = 9559 ; free virtual = 31292
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1e083f112
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:20 . Memory (MB): peak = 5231.727 ; gain = 7.027 ; free physical = 9560 ; free virtual = 31290
+Phase 1 Placer Initialization | Checksum: 1e083f112
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:20 . Memory (MB): peak = 5231.727 ; gain = 7.027 ; free physical = 9563 ; free virtual = 31293
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1fe6eae1f
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:00:38 . Memory (MB): peak = 5231.727 ; gain = 7.027 ; free physical = 9504 ; free virtual = 31250
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1fe6eae1f
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:00:39 . Memory (MB): peak = 5231.727 ; gain = 7.027 ; free physical = 9493 ; free virtual = 31242
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 1fe6eae1f
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:00:52 . Memory (MB): peak = 5572.711 ; gain = 348.012 ; free physical = 9089 ; free virtual = 30851
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 19cc4d6e6
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:00:54 . Memory (MB): peak = 5604.727 ; gain = 380.027 ; free physical = 9090 ; free virtual = 30851
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 19cc4d6e6
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:00:54 . Memory (MB): peak = 5604.727 ; gain = 380.027 ; free physical = 9090 ; free virtual = 30851
+Phase 2.1.1 Partition Driven Placement | Checksum: 19cc4d6e6
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:00:54 . Memory (MB): peak = 5604.727 ; gain = 380.027 ; free physical = 9094 ; free virtual = 30856
+Phase 2.1 Floorplanning | Checksum: 19cc4d6e6
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:00:54 . Memory (MB): peak = 5604.727 ; gain = 380.027 ; free physical = 9095 ; free virtual = 30856
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 19cc4d6e6
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:00:55 . Memory (MB): peak = 5604.727 ; gain = 380.027 ; free physical = 9095 ; free virtual = 30856
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1aa84e0ed
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:00:55 . Memory (MB): peak = 5604.727 ; gain = 380.027 ; free physical = 9067 ; free virtual = 30855
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 244e61083
+
+Time (s): cpu = 00:06:00 ; elapsed = 00:01:46 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8770 ; free virtual = 30589
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 846 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 326 nets or LUTs. Breaked 0 LUT, combined 326 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 6 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5731.754 ; gain = 0.000 ; free physical = 8773 ; free virtual = 30588
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            326  |                   326  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            326  |                   326  |           0  |           5  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1d3c965a3
+
+Time (s): cpu = 00:06:08 ; elapsed = 00:01:51 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8796 ; free virtual = 30612
+Phase 2.4 Global Placement Core | Checksum: 22ddad8f7
+
+Time (s): cpu = 00:08:37 ; elapsed = 00:02:31 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8841 ; free virtual = 30603
+Phase 2 Global Placement | Checksum: 22ddad8f7
+
+Time (s): cpu = 00:08:37 ; elapsed = 00:02:31 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8833 ; free virtual = 30595
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 24c117eb4
+
+Time (s): cpu = 00:08:57 ; elapsed = 00:02:37 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8815 ; free virtual = 30573
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 21c17f4ad
+
+Time (s): cpu = 00:09:01 ; elapsed = 00:02:38 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8814 ; free virtual = 30572
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 2934032b4
+
+Time (s): cpu = 00:09:21 ; elapsed = 00:02:44 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8838 ; free virtual = 30596
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 23b277855
+
+Time (s): cpu = 00:09:23 ; elapsed = 00:02:44 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8936 ; free virtual = 30691
+Phase 3.3.2 Slice Area Swap | Checksum: 23b277855
+
+Time (s): cpu = 00:09:23 ; elapsed = 00:02:45 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8936 ; free virtual = 30692
+Phase 3.3 Small Shape DP | Checksum: 2f71e22f2
+
+Time (s): cpu = 00:09:27 ; elapsed = 00:02:46 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8944 ; free virtual = 30695
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 20a612d83
+
+Time (s): cpu = 00:09:28 ; elapsed = 00:02:47 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8945 ; free virtual = 30696
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1a2539e29
+
+Time (s): cpu = 00:09:28 ; elapsed = 00:02:47 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8948 ; free virtual = 30699
+Phase 3 Detail Placement | Checksum: 1a2539e29
+
+Time (s): cpu = 00:09:28 ; elapsed = 00:02:47 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8948 ; free virtual = 30699
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1c4b7d7b2
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.360 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: d02e0353
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.35 . Memory (MB): peak = 5731.754 ; gain = 0.000 ; free physical = 8987 ; free virtual = 30738
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 18fbd8a08
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.57 . Memory (MB): peak = 5731.754 ; gain = 0.000 ; free physical = 8988 ; free virtual = 30739
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1c4b7d7b2
+
+Time (s): cpu = 00:09:58 ; elapsed = 00:02:56 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8987 ; free virtual = 30738
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.571. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 268a58480
+
+Time (s): cpu = 00:10:01 ; elapsed = 00:02:58 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8977 ; free virtual = 30728
+
+Time (s): cpu = 00:10:01 ; elapsed = 00:02:58 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8977 ; free virtual = 30728
+Phase 4.1 Post Commit Optimization | Checksum: 268a58480
+
+Time (s): cpu = 00:10:01 ; elapsed = 00:02:58 . Memory (MB): peak = 5731.754 ; gain = 507.055 ; free physical = 8977 ; free virtual = 30728
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8891 ; free virtual = 30611
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 16e8758b0
+
+Time (s): cpu = 00:10:16 ; elapsed = 00:03:04 . Memory (MB): peak = 5754.738 ; gain = 530.039 ; free physical = 8890 ; free virtual = 30611
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 16e8758b0
+
+Time (s): cpu = 00:10:16 ; elapsed = 00:03:04 . Memory (MB): peak = 5754.738 ; gain = 530.039 ; free physical = 8895 ; free virtual = 30616
+Phase 4.3 Placer Reporting | Checksum: 16e8758b0
+
+Time (s): cpu = 00:10:16 ; elapsed = 00:03:05 . Memory (MB): peak = 5754.738 ; gain = 530.039 ; free physical = 8896 ; free virtual = 30616
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8896 ; free virtual = 30616
+
+Time (s): cpu = 00:10:16 ; elapsed = 00:03:05 . Memory (MB): peak = 5754.738 ; gain = 530.039 ; free physical = 8896 ; free virtual = 30616
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 13ade9609
+
+Time (s): cpu = 00:10:16 ; elapsed = 00:03:05 . Memory (MB): peak = 5754.738 ; gain = 530.039 ; free physical = 8894 ; free virtual = 30615
+Ending Placer Task | Checksum: 7c04d956
+
+Time (s): cpu = 00:10:16 ; elapsed = 00:03:05 . Memory (MB): peak = 5754.738 ; gain = 530.039 ; free physical = 8894 ; free virtual = 30615
+95 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:10:35 ; elapsed = 00:03:09 . Memory (MB): peak = 5754.738 ; gain = 530.039 ; free physical = 8895 ; free virtual = 30615
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_io" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file place_report_incremental_reuse_0.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_io -file place_report_io_0.rpt
+report_io: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.13 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8893 ; free virtual = 30614
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.08 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8880 ; free virtual = 30613
+Wrote PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8844 ; free virtual = 30617
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8844 ; free virtual = 30617
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.11 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8861 ; free virtual = 30635
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8858 ; free virtual = 30635
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8855 ; free virtual = 30635
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5754.738 ; gain = 0.000 ; free physical = 8854 ; free virtual = 30635
+INFO: [Common 17-1381] The checkpoint '/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/thz_pipeline_top_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 5778.750 ; gain = 0.000 ; free physical = 8817 ; free virtual = 30577
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.571 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+107 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file phys_opt_report_timing_summary_0.rpt -pb phys_opt_report_timing_summary_0.pb -rpx phys_opt_report_timing_summary_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_design_analysis -congestion -file phys_opt_report_design_analysis_0.rpt
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.09 . Memory (MB): peak = 5778.750 ; gain = 0.000 ; free physical = 8851 ; free virtual = 30618
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 5778.750 ; gain = 0.000 ; free physical = 8827 ; free virtual = 30631
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5778.750 ; gain = 0.000 ; free physical = 8827 ; free virtual = 30631
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.11 . Memory (MB): peak = 5778.750 ; gain = 0.000 ; free physical = 8826 ; free virtual = 30632
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5778.750 ; gain = 0.000 ; free physical = 8827 ; free virtual = 30629
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5778.750 ; gain = 0.000 ; free physical = 8824 ; free virtual = 30629
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5778.750 ; gain = 0.000 ; free physical = 8824 ; free virtual = 30629
+INFO: [Common 17-1381] The checkpoint '/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/thz_pipeline_top_wrapper_physopt.dcp' has been generated.
+Command: route_design -directive Explore -tns_cleanup
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 4cbb6ad8 ConstDB: 0 ShapeSum: 2ce82ccc RouteDB: 26141b2
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.55 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8845 ; free virtual = 30607
+Post Restoration Checksum: NetGraph: ac5951bc | NumContArr: 1d9f6784 | Constraints: 28b106c3 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 1b552baa0
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8863 ; free virtual = 30624
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1b552baa0
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8863 ; free virtual = 30624
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1b552baa0
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8863 ; free virtual = 30624
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 17e094907
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:05 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8866 ; free virtual = 30628
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 127053fef
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:07 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8873 ; free virtual = 30634
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.692  | TNS=0.000  | WHS=-0.098 | THS=-39.251|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 33955
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 30939
+  Number of Partially Routed Nets     = 3016
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1a4b124ad
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:10 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8886 ; free virtual = 30647
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 1a4b124ad
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:10 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8886 ; free virtual = 30647
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 236233c84
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:12 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8889 ; free virtual = 30651
+Phase 4 Initial Routing | Checksum: 24b8fc2f4
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:12 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8889 ; free virtual = 30651
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 5132
+ Number of Nodes with overlaps = 282
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.358  | TNS=0.000  | WHS=-0.029 | THS=-0.496 |
+
+Phase 5.1 Global Iteration 0 | Checksum: 113593190
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:26 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8938 ; free virtual = 30702
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.358  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 203716074
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:27 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8941 ; free virtual = 30705
+Phase 5 Rip-up And Reroute | Checksum: 203716074
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:27 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 8941 ; free virtual = 30705
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 TNS Cleanup
+
+Phase 6.1.1 Delay CleanUp
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.358  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.358  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1.1 Delay CleanUp | Checksum: 1c42f5127
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:29 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9013 ; free virtual = 30775
+Phase 6.1 TNS Cleanup | Checksum: 1c42f5127
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:29 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9013 ; free virtual = 30775
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 1c42f5127
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:29 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9013 ; free virtual = 30775
+Phase 6 Delay and Skew Optimization | Checksum: 1c42f5127
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:29 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9013 ; free virtual = 30775
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.358  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 219d7bfa9
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:30 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9012 ; free virtual = 30775
+Phase 7 Post Hold Fix | Checksum: 219d7bfa9
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:30 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9012 ; free virtual = 30775
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.10899 %
+  Global Horizontal Routing Utilization  = 2.21935 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 219d7bfa9
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:30 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9012 ; free virtual = 30774
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 219d7bfa9
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:30 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9012 ; free virtual = 30774
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 219d7bfa9
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:31 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9014 ; free virtual = 30773
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 219d7bfa9
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:31 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9014 ; free virtual = 30773
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 219d7bfa9
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:31 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9013 ; free virtual = 30772
+
+Phase 13 Route finalize
+Phase 13 Route finalize | Checksum: 219d7bfa9
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:31 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9013 ; free virtual = 30772
+
+Phase 14 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.358  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 14 Post Router Timing | Checksum: 1a57f5304
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:00:34 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9014 ; free virtual = 30773
+INFO: [Route 35-61] The design met the timing requirement.
+Total Elapsed time in route_design: 33.89 secs
+
+Phase 15 Post-Route Event Processing
+Phase 15 Post-Route Event Processing | Checksum: d9b6743d
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:00:34 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9015 ; free virtual = 30774
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: d9b6743d
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:00:34 . Memory (MB): peak = 5786.754 ; gain = 0.000 ; free physical = 9015 ; free virtual = 30774
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+129 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:15 ; elapsed = 00:00:36 . Memory (MB): peak = 5786.754 ; gain = 8.004 ; free physical = 9015 ; free virtual = 30774
+INFO: [Vivado 12-24828] Executing command : report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx
+Command: report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/route_report_drc_0.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -warn_on_violation -file route_report_timing_summary_0.rpt -pb route_report_timing_summary_0.pb -rpx route_report_timing_summary_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_incremental_reuse, report_route_status, report_utilization" in parallel.
+Running report generation with 4 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file route_report_incremental_reuse_0.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -pb route_report_bus_skew_0.pb -rpx route_report_bus_skew_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_utilization -file route_report_utilization_0.rpt -pb route_report_utilization_0.pb
+INFO: [Vivado 12-24828] Executing command : report_route_status -file route_report_route_status_0.rpt -pb route_report_route_status_0.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file route_report_power_0.rpt -pb route_report_power_summary_0.pb -rpx route_report_power_0.rpx
+Command: report_power -file route_report_power_0.rpt -pb route_report_power_summary_0.pb -rpx route_report_power_0.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+145 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+generate_parallel_reports: Time (s): cpu = 00:00:24 ; elapsed = 00:00:06 . Memory (MB): peak = 5826.773 ; gain = 40.020 ; free physical = 9010 ; free virtual = 30786
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.09 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8999 ; free virtual = 30788
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8971 ; free virtual = 30800
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8971 ; free virtual = 30800
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.26 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8966 ; free virtual = 30801
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8966 ; free virtual = 30804
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8963 ; free virtual = 30804
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8962 ; free virtual = 30804
+INFO: [Common 17-1381] The checkpoint '/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/thz_pipeline_top_wrapper_routed.dcp' has been generated.
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode 
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8972 ; free virtual = 30766
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.358 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+154 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -warn_on_violation -file post_route_phys_opt_report_timing_summary_0.rpt -pb post_route_phys_opt_report_timing_summary_0.pb -rpx post_route_phys_opt_report_timing_summary_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file post_route_phys_opt_report_bus_skew_0.rpt -pb post_route_phys_opt_report_bus_skew_0.pb -rpx post_route_phys_opt_report_bus_skew_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.1 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8981 ; free virtual = 30791
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8961 ; free virtual = 30809
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8961 ; free virtual = 30809
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.27 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8957 ; free virtual = 30813
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8957 ; free virtual = 30816
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8957 ; free virtual = 30819
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5826.773 ; gain = 0.000 ; free physical = 8957 ; free virtual = 30819
+INFO: [Common 17-1381] The checkpoint '/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/impl_1/thz_pipeline_top_wrapper_postroute_physopt.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  1 10:32:42 2026...

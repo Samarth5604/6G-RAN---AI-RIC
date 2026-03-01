@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "cp_removal.cpp",
+    "fileloc": 37,
+    "instructions": 95,
+    "loads": {
+      "L": 8
+    },
+    "name": "cp_removal",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 117
+  }
+}

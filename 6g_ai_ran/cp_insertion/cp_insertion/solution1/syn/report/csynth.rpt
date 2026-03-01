@@ -1,0 +1,133 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cp_insertion'
+================================================================
++ General Information: 
+    * Date:           Sat Feb 28 13:05:15 2026
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        cp_insertion
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+    |              Modules              | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |        |    |           |           |     |
+    |              & Loops              | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  | DSP|     FF    |    LUT    | URAM|
+    +-----------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+    |+ cp_insertion                     |     -|  0.17|     2208|  7.353e+03|         -|     2209|     -|        no|  8 (1%)|   -|  113 (~0%)|  903 (~0%)|    -|
+    | + cp_insertion_Pipeline_buf_fill  |     -|  0.78|     1026|  3.417e+03|         -|     1026|     -|        no|       -|   -|   60 (~0%)|   88 (~0%)|    -|
+    |  o buf_fill                       |     -|  2.43|     1024|  3.410e+03|         2|        1|  1024|       yes|       -|   -|          -|          -|    -|
+    | + cp_insertion_Pipeline_cp_out    |     -|  0.17|      147|    489.510|         -|      147|     -|        no|       -|   -|   23 (~0%)|  135 (~0%)|    -|
+    |  o cp_out                         |     -|  2.43|      145|    482.850|         3|        1|   144|       yes|       -|   -|          -|          -|    -|
+    | + cp_insertion_Pipeline_data_out  |     -|  0.17|     1026|  3.417e+03|         -|     1026|     -|        no|       -|   -|   17 (~0%)|  146 (~0%)|    -|
+    |  o data_out                       |     -|  2.43|     1024|  3.410e+03|         2|        1|  1024|       yes|       -|   -|          -|          -|    -|
+    +-----------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface  | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| in_stream  | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| out_stream | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+---------------------------------------------------------+
+| Argument   | Direction | Datatype                                                |
++------------+-----------+---------------------------------------------------------+
+| in_stream  | in        | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>& |
+| out_stream | out       | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>& |
++------------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++------------+--------------+-----------+
+| Argument   | HW Interface | HW Type   |
++------------+--------------+-----------+
+| in_stream  | in_stream    | interface |
+| out_stream | out_stream   | interface |
++------------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------+-----+--------+-----------+-----------+--------+---------+
+| Name                              | DSP | Pragma | Variable  | Op        | Impl   | Latency |
++-----------------------------------+-----+--------+-----------+-----------+--------+---------+
+| + cp_insertion                    | 0   |        |           |           |        |         |
+|  + cp_insertion_Pipeline_buf_fill | 0   |        |           |           |        |         |
+|    icmp_ln56_fu_204_p2            |     |        | icmp_ln56 | seteq     | auto   | 0       |
+|    add_ln56_fu_210_p2             |     |        | add_ln56  | add       | fabric | 0       |
+|  + cp_insertion_Pipeline_cp_out   | 0   |        |           |           |        |         |
+|    icmp_ln66_fu_226_p2            |     |        | icmp_ln66 | seteq     | auto   | 0       |
+|    add_ln66_fu_232_p2             |     |        | add_ln66  | add       | fabric | 0       |
+|    add_ln69_fu_259_p2             |     |        | add_ln69  | add       | fabric | 0       |
+|    sparsemux_9_2_32_1_1_U13       |     |        | s_data    | sparsemux | auto   | 0       |
+|    sparsemux_9_2_4_1_1_U14        |     |        | s_strb    | sparsemux | auto   | 0       |
+|  + cp_insertion_Pipeline_data_out | 0   |        |           |           |        |         |
+|    icmp_ln79_fu_223_p2            |     |        | icmp_ln79 | seteq     | auto   | 0       |
+|    add_ln79_fu_229_p2             |     |        | add_ln79  | add       | fabric | 0       |
+|    sparsemux_9_2_32_1_1_U29       |     |        | s_data    | sparsemux | auto   | 0       |
+|    sparsemux_9_2_4_1_1_U30        |     |        | s_strb    | sparsemux | auto   | 0       |
+|    s_last_fu_261_p2               |     |        | s_last    | seteq     | auto   | 0       |
++-----------------------------------+-----+--------+-----------+-----------+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++----------------+--------------+------+------+------+--------+------------+------+---------+------------------+
+| Name           | Usage        | Type | BRAM | URAM | Pragma | Variable   | Impl | Latency | Bitwidth, Depth, |
+|                |              |      |      |      |        |            |      |         | Banks            |
++----------------+--------------+------+------+------+--------+------------+------+---------+------------------+
+| + cp_insertion |              |      | 8    | 0    |        |            |      |         |                  |
+|   buf_data_U   | ram_1p array |      | 2    |      |        | buf_data   | auto | 1       | 32, 256, 1       |
+|   buf_data_1_U | ram_1p array |      | 2    |      |        | buf_data_1 | auto | 1       | 32, 256, 1       |
+|   buf_data_2_U | ram_1p array |      | 2    |      |        | buf_data_2 | auto | 1       | 32, 256, 1       |
+|   buf_data_3_U | ram_1p array |      | 2    |      |        | buf_data_3 | auto | 1       | 32, 256, 1       |
+|   buf_strb_U   | ram_1p array |      | 1    |      |        | buf_strb   | auto | 1       | 4, 256, 1        |
+|   buf_strb_1_U | ram_1p array |      | 1    |      |        | buf_strb_1 | auto | 1       | 4, 256, 1        |
+|   buf_strb_2_U | ram_1p array |      | 1    |      |        | buf_strb_2 | auto | 1       | 4, 256, 1        |
+|   buf_strb_3_U | ram_1p array |      | 1    |      |        | buf_strb_3 | auto | 1       | 4, 256, 1        |
++----------------+--------------+------+------+------+--------+------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+------------------------------+-------------------------------------------------+
+| Type            | Options                      | Location                                        |
++-----------------+------------------------------+-------------------------------------------------+
+| interface       | axis port=in_stream          | cp_insertion.cpp:46 in cp_insertion, in_stream  |
+| interface       | axis port=out_stream         | cp_insertion.cpp:47 in cp_insertion, out_stream |
+| interface       | ap_ctrl_hs port=return       | cp_insertion.cpp:48 in cp_insertion, return     |
+| array_partition | variable=buf cyclic factor=4 | cp_insertion.cpp:52 in cp_insertion, buf        |
+| pipeline        | II=1                         | cp_insertion.cpp:58 in cp_insertion             |
+| pipeline        | II=1                         | cp_insertion.cpp:68 in cp_insertion             |
+| pipeline        | II=1                         | cp_insertion.cpp:81 in cp_insertion             |
++-----------------+------------------------------+-------------------------------------------------+
+
+

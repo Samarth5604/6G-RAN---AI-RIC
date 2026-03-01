@@ -1,0 +1,69 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./mlkem_types.h:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="montgomery_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_phase" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_phase" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="process_phase" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="process_phase" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_phase" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_phase" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="mlkem_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mlkem_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="mlkem_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mlkem_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mlkem_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=mode bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:83:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mlkem_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mlkem_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mlkem_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:92:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mlkem_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coeff_stream depth=256" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:93:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mlkem_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=result_stream depth=256" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mlkem_ip.cpp:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mlkem_top" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="ntt_engine.cpp:4:21" msg_body="unused parameter 'p'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./mlkem_types.h:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="montgomery_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_engine.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ntt" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mlkem_ip.cpp:57:22" msg_body="Inlining function 'montgomery_reduce(ap_int&lt;32&gt;)' into 'process_phase(int, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;)'">
+        <args Callee="montgomery_reduce(ap_int&lt;32&gt;)" Callee-DebugLoc="File ./mlkem_types.h Line 49 Column 0" Caller="process_phase(int, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;)" Caller-DebugLoc="File mlkem_ip.cpp Line 42 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mlkem_ip.cpp:54:22" msg_body="Inlining function 'montgomery_reduce(ap_int&lt;32&gt;)' into 'process_phase(int, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;)'">
+        <args Callee="montgomery_reduce(ap_int&lt;32&gt;)" Callee-DebugLoc="File ./mlkem_types.h Line 49 Column 0" Caller="process_phase(int, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;)" Caller-DebugLoc="File mlkem_ip.cpp Line 42 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mlkem_ip.cpp:51:22" msg_body="Inlining function 'montgomery_reduce(ap_int&lt;32&gt;)' into 'process_phase(int, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;)'">
+        <args Callee="montgomery_reduce(ap_int&lt;32&gt;)" Callee-DebugLoc="File ./mlkem_types.h Line 49 Column 0" Caller="process_phase(int, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;)" Caller-DebugLoc="File mlkem_ip.cpp Line 42 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

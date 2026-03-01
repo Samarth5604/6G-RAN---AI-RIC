@@ -1,0 +1,65 @@
+{
+    "1": {
+        "name": "cp_insertion_Pipeline_data_out",
+        "file": "cp_insertion.cpp",
+        "fileloc": "79",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "cp_insertion",
+        "file": "cp_insertion.cpp",
+        "fileloc": "42",
+        "instructions": "31",
+        "total_instructions": "157",
+        "calls": "3 2 1",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "cp_insertion_Pipeline_cp_out",
+        "file": "cp_insertion.cpp",
+        "fileloc": "66",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "cp_insertion_Pipeline_buf_fill",
+        "file": "cp_insertion.cpp",
+        "fileloc": "56",
+        "instructions": "42",
+        "total_instructions": "42",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

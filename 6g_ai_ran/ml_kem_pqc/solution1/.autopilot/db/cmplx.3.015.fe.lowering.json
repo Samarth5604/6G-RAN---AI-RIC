@@ -1,0 +1,44 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 3 1",
+    "file": "mlkem_ip.cpp",
+    "fileloc": 77,
+    "instructions": 28,
+    "name": "mlkem_top",
+    "total_instructions": 112
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "mlkem_ip.cpp",
+    "fileloc": 63,
+    "instructions": 23,
+    "name": "write_phase",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 23
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "mlkem_ip.cpp",
+    "fileloc": 24,
+    "instructions": 17,
+    "loads": {
+      "L": 1
+    },
+    "name": "read_phase",
+    "total_instructions": 17
+  },
+  "3": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "mlkem_ip.cpp",
+    "fileloc": 38,
+    "instructions": 44,
+    "name": "process_phase",
+    "total_instructions": 44
+  }
+}

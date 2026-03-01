@@ -1,0 +1,216 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: beamformer.cpp, Line: 177, Column: 2 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'cmac(ap_int<16>, ap_int<16>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_int<32>&, ap_int<32>&)'
+    DebugLoc:        { File: beamformer.cpp, Line: 72, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'beamformer_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>*, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: beamformer.cpp, Line: 93, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-disaggr
+Name:            DisaggrIntrinsic
+Function:        apatb_beamformer_top_ir
+Args:            
+  - String:          'Cannot apply disaggregate pragma/directive on '
+  - IntrinsicType:   stream
+  - String:          ' object '''
+  - Name:            in_stream
+  - String:          ''' '
+  - String:          as it needs to be read/written in its entirety
+...
+--- !Missed
+Pass:            reflow-disaggr
+Name:            DisaggrIntrinsic
+Function:        apatb_beamformer_top_ir
+Args:            
+  - String:          'Cannot apply disaggregate pragma/directive on '
+  - IntrinsicType:   stream
+  - String:          ' object '''
+  - Name:            out_stream
+  - String:          ''' '
+  - String:          as it needs to be read/written in its entirety
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: beamformer.cpp, Line: 153, Column: 9 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        read_loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: beamformer.cpp, Line: 166, Column: 9 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        beam_loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: beamformer.cpp, Line: 172, Column: 13 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ant_loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: beamformer.cpp, Line: 93, Column: 0 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        read_loop
+  - String:          ''' ('
+  - LoopLoc:         'beamformer.cpp:153:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          beamformer_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: beamformer.cpp, Line: 93, Column: 0 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        beam_loop
+  - String:          ''' ('
+  - LoopLoc:         'beamformer.cpp:166:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          beamformer_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: beamformer.cpp, Line: 93, Column: 0 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ant_loop
+  - String:          ''' ('
+  - LoopLoc:         'beamformer.cpp:172:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          beamformer_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: beamformer.cpp, Line: 93, Column: 0 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ant_loop
+  - String:          ''' ('
+  - LoopLoc:         'beamformer.cpp:172:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          beamformer_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: beamformer.cpp, Line: 106, Column: 15 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          weights_re
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: beamformer.cpp, Line: 106, Column: 27 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          weights_im
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: beamformer.cpp, Line: 93, Column: 0 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          in_stream
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: beamformer.cpp, Line: 93, Column: 0 }
+Function:        _Z14beamformer_topPN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_RS5_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          out_stream
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...

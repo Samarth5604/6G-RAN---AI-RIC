@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../cp_insertion_tb.cpp in debug mode
+   Compiling ../../../../cp_insertion.cpp in debug mode
+   Generating csim.exe
+PASS: cp_insertion — 1168 samples correct, CP correct, TLAST correct
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1168
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "cp_insertion",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "cp_insertion"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/samarth/Desktop/6g_ai_ran/cp_insertion/cp_insertion/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]
