@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "slot_counter_top",
+        "file": "slot_counter.cpp",
+        "fileloc": "43",
+        "instructions": "80",
+        "total_instructions": "80",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "G": "3"
+        },
+        "stores": {
+            "G": "11"
+        }
+    }
+}

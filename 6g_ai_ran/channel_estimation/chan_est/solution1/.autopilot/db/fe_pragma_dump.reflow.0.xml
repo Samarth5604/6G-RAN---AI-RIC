@@ -1,8 +1,8 @@
 <pragmas>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<16, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(af_range_ref<16, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<16, false>(ap_int_base<16, false> const&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, true>& ap_int_base<12, true>::operator=<13, true>(ap_int_base<13, true> const&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)" off="0" region="0" recursive="0"/>
@@ -57,27 +57,27 @@
 <pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<16>::ap_int<32, false>(ap_range_ref<32, false> const&)" off="0" region="0" recursive="0"/>
 <pragma file="/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi12ELb1EEC2EDq12_i" off="0" region="0" recursive="0"/>
-<pragma file="chan_est.cpp" line="284" pragmaType="pipeline" parentfunction="chan_est_top" off="0" ii="1" rewind="0" style=""/>
-<pragma file="chan_est.cpp" line="267" pragmaType="pipeline" parentfunction="chan_est_top" off="0" ii="1" rewind="0" style=""/>
-<pragma file="chan_est.cpp" line="270" pragmaType="unroll" parentfunction="chan_est_top" factor="-1" skip_exit_check="0"/>
-<pragma file="chan_est.cpp" line="272" pragmaType="unroll" parentfunction="chan_est_top" factor="-1" skip_exit_check="0"/>
-<pragma file="chan_est.cpp" line="247" pragmaType="pipeline" parentfunction="chan_est_top" off="0" ii="1" rewind="0" style=""/>
-<pragma file="chan_est.cpp" line="252" pragmaType="unroll" parentfunction="chan_est_top" factor="-1" skip_exit_check="0"/>
-<pragma file="chan_est.cpp" line="229" pragmaType="pipeline" parentfunction="chan_est_top" off="0" ii="1" rewind="0" style=""/>
-<pragma file="chan_est.cpp" line="231" pragmaType="unroll" parentfunction="chan_est_top" factor="-1" skip_exit_check="0"/>
-<pragma file="chan_est.cpp" line="195" pragmaType="interface" parentfunction="chan_est_top" mode="axis" port="fft_in" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="chan_est.cpp" line="196" pragmaType="interface" parentfunction="chan_est_top" mode="axis" port="weight_stream" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="chan_est.cpp" line="197" pragmaType="interface" parentfunction="chan_est_top" mode="ap_none" port="symbol_num" name="" register="0"/>
-<pragma file="chan_est.cpp" line="198" pragmaType="interface" parentfunction="chan_est_top" mode="ap_ctrl_hs" port="return" name=""/>
-<pragma file="chan_est.cpp" line="199" pragmaType="disaggregate" parentfunction="chan_est_top" variable="fft_in"/>
-<pragma file="chan_est.cpp" line="207" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="fft_re"/>
-<pragma file="chan_est.cpp" line="208" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="fft_im"/>
-<pragma file="chan_est.cpp" line="213" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="pilot_h_re"/>
-<pragma file="chan_est.cpp" line="214" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="pilot_h_im"/>
-<pragma file="chan_est.cpp" line="219" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="w_re"/>
-<pragma file="chan_est.cpp" line="220" pragmaType="array_partition" parentfunction="chan_est_top" dim="2" factor="0" mode="complete" dynamic="0" variable="w_re"/>
-<pragma file="chan_est.cpp" line="221" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="w_im"/>
-<pragma file="chan_est.cpp" line="222" pragmaType="array_partition" parentfunction="chan_est_top" dim="2" factor="0" mode="complete" dynamic="0" variable="w_im"/>
+<pragma file="chan_est.cpp" line="148" pragmaType="pipeline" parentfunction="chan_est_top" off="0" ii="1" rewind="0" style=""/>
+<pragma file="chan_est.cpp" line="131" pragmaType="pipeline" parentfunction="chan_est_top" off="0" ii="1" rewind="0" style=""/>
+<pragma file="chan_est.cpp" line="134" pragmaType="unroll" parentfunction="chan_est_top" factor="-1" skip_exit_check="0"/>
+<pragma file="chan_est.cpp" line="136" pragmaType="unroll" parentfunction="chan_est_top" factor="-1" skip_exit_check="0"/>
+<pragma file="chan_est.cpp" line="108" pragmaType="pipeline" parentfunction="chan_est_top" off="0" ii="1" rewind="0" style=""/>
+<pragma file="chan_est.cpp" line="116" pragmaType="unroll" parentfunction="chan_est_top" factor="-1" skip_exit_check="0"/>
+<pragma file="chan_est.cpp" line="90" pragmaType="pipeline" parentfunction="chan_est_top" off="0" ii="1" rewind="0" style=""/>
+<pragma file="chan_est.cpp" line="92" pragmaType="unroll" parentfunction="chan_est_top" factor="-1" skip_exit_check="0"/>
+<pragma file="chan_est.cpp" line="56" pragmaType="interface" parentfunction="chan_est_top" mode="axis" port="fft_in" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="chan_est.cpp" line="57" pragmaType="interface" parentfunction="chan_est_top" mode="axis" port="weight_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="chan_est.cpp" line="58" pragmaType="interface" parentfunction="chan_est_top" mode="ap_none" port="symbol_num" name="" register="0"/>
+<pragma file="chan_est.cpp" line="59" pragmaType="interface" parentfunction="chan_est_top" mode="ap_ctrl_hs" port="return" name=""/>
+<pragma file="chan_est.cpp" line="60" pragmaType="disaggregate" parentfunction="chan_est_top" variable="fft_in"/>
+<pragma file="chan_est.cpp" line="68" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="fft_re"/>
+<pragma file="chan_est.cpp" line="69" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="fft_im"/>
+<pragma file="chan_est.cpp" line="74" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="pilot_h_re"/>
+<pragma file="chan_est.cpp" line="75" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="pilot_h_im"/>
+<pragma file="chan_est.cpp" line="80" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="w_re"/>
+<pragma file="chan_est.cpp" line="81" pragmaType="array_partition" parentfunction="chan_est_top" dim="2" factor="0" mode="complete" dynamic="0" variable="w_re"/>
+<pragma file="chan_est.cpp" line="82" pragmaType="array_partition" parentfunction="chan_est_top" dim="1" factor="0" mode="complete" dynamic="0" variable="w_im"/>
+<pragma file="chan_est.cpp" line="83" pragmaType="array_partition" parentfunction="chan_est_top" dim="2" factor="0" mode="complete" dynamic="0" variable="w_im"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<13, true>::ap_int_base<12, true>(ap_int_base<12, true> const&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<13, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<13>::ap_int<13, true>(ap_int_base<13, true> const&)" off="0" region="0" recursive="0"/>

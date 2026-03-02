@@ -455,7 +455,7 @@
               <name>k</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -471,7 +471,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
@@ -508,10 +508,10 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>k_write_ln228</name>
+              <name>k_write_ln89</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -527,7 +527,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
@@ -565,10 +565,10 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>br_ln228</name>
+              <name>br_ln89</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -584,7 +584,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
@@ -624,7 +624,7 @@
               <name>k_2</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -640,7 +640,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
@@ -678,10 +678,10 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>icmp_ln228</name>
+              <name>icmp_ln89</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -697,13 +697,13 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln228_fu_160_p2</rtlName>
+              <rtlName>icmp_ln89_fu_160_p2</rtlName>
               <control>auto</control>
               <opType>seteq</opType>
               <implIndex>auto</implIndex>
@@ -735,10 +735,10 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>add_ln228</name>
+              <name>add_ln89</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -754,13 +754,13 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln228_fu_166_p2</rtlName>
+              <rtlName>add_ln89_fu_166_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -792,10 +792,10 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>br_ln228</name>
+              <name>br_ln89</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -811,7 +811,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
@@ -850,10 +850,10 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>zext_ln228</name>
+              <name>zext_ln89</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -869,13 +869,13 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln228_fu_213_p1</rtlName>
+              <rtlName>zext_ln89_fu_213_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -909,7 +909,7 @@
               <name>empty</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>232</lineNumber>
+              <lineNumber>93</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -925,7 +925,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>232</second>
+                      <second>93</second>
                     </item>
                   </second>
                 </item>
@@ -969,7 +969,7 @@
               <name>s_data</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>232</lineNumber>
+              <lineNumber>93</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -985,7 +985,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>232</second>
+                      <second>93</second>
                     </item>
                   </second>
                 </item>
@@ -1022,10 +1022,10 @@
             <Obj>
               <type>0</type>
               <id>32</id>
-              <name>trunc_ln233</name>
+              <name>trunc_ln94</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>233</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1041,13 +1041,13 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>233</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln233_fu_176_p1</rtlName>
+              <rtlName>trunc_ln94_fu_176_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1081,7 +1081,7 @@
               <name>fft_re_addr</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>233</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1097,7 +1097,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>233</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
@@ -1139,7 +1139,7 @@
               <name>tmp_s</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>234</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1155,7 +1155,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>234</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -1198,7 +1198,7 @@
               <name>fft_im_addr</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>234</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1214,7 +1214,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>234</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -1253,10 +1253,10 @@
             <Obj>
               <type>0</type>
               <id>36</id>
-              <name>empty_21</name>
+              <name>empty_19</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>232</lineNumber>
+              <lineNumber>93</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1272,7 +1272,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>232</second>
+                      <second>93</second>
                     </item>
                   </second>
                 </item>
@@ -1316,7 +1316,7 @@
               <name>s_data_1</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>232</lineNumber>
+              <lineNumber>93</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1332,7 +1332,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>232</second>
+                      <second>93</second>
                     </item>
                   </second>
                 </item>
@@ -1369,10 +1369,10 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>trunc_ln233_1</name>
+              <name>trunc_ln94_1</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>233</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1388,13 +1388,13 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>233</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln233_1_fu_194_p1</rtlName>
+              <rtlName>trunc_ln94_1_fu_194_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1428,7 +1428,7 @@
               <name>fft_re_1_addr</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>233</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1444,7 +1444,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>233</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
@@ -1483,10 +1483,10 @@
             <Obj>
               <type>0</type>
               <id>40</id>
-              <name>fft_re_addr_write_ln233</name>
+              <name>fft_re_addr_write_ln94</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>233</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1502,7 +1502,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>233</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
@@ -1540,10 +1540,10 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>fft_re_1_addr_write_ln233</name>
+              <name>fft_re_1_addr_write_ln94</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>233</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1559,7 +1559,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>233</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
@@ -1600,7 +1600,7 @@
               <name>tmp_1</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>234</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1616,7 +1616,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>234</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -1659,7 +1659,7 @@
               <name>fft_im_1_addr</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>234</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1675,7 +1675,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>234</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -1714,10 +1714,10 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>fft_im_addr_write_ln234</name>
+              <name>fft_im_addr_write_ln95</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>234</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1733,7 +1733,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>234</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -1771,10 +1771,10 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>fft_im_1_addr_write_ln234</name>
+              <name>fft_im_1_addr_write_ln95</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>234</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1790,7 +1790,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>234</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -1828,10 +1828,10 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>k_write_ln228</name>
+              <name>k_write_ln89</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1847,7 +1847,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
@@ -1887,10 +1887,10 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>br_ln228</name>
+              <name>br_ln89</name>
               <fileName>chan_est.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
+              <lineNumber>89</lineNumber>
               <contextFuncName>chan_est_top</contextFuncName>
               <contextNormFuncName>chan_est_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1906,7 +1906,7 @@
                         <first>chan_est.cpp</first>
                         <second>chan_est_top</second>
                       </first>
-                      <second>228</second>
+                      <second>89</second>
                     </item>
                   </second>
                 </item>
@@ -2241,7 +2241,7 @@
           <Obj>
             <type>3</type>
             <id>25</id>
-            <name>VITIS_LOOP_230_1</name>
+            <name>VITIS_LOOP_91_1</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -2275,7 +2275,7 @@
           <Obj>
             <type>3</type>
             <id>48</id>
-            <name>VITIS_LOOP_230_1.split</name>
+            <name>VITIS_LOOP_91_1.split</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -3108,7 +3108,7 @@
         <count>5</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln228_fu_166_p2 ( + ) </first>
+          <first>add_ln89_fu_166_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3200,7 +3200,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln228_fu_160_p2 ( icmp ) </first>
+          <first>icmp_ln89_fu_160_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3534,7 +3534,7 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln233_1_reg_245</first>
+          <first>trunc_ln94_1_reg_245</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3553,7 +3553,7 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln233_reg_235</first>
+          <first>trunc_ln94_reg_235</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3591,7 +3591,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>add_ln228_fu_166_p2 ( + ) </first>
+          <first>add_ln89_fu_166_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3599,7 +3599,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln228_fu_160_p2 ( icmp ) </first>
+          <first>icmp_ln89_fu_160_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4058,7 +4058,7 @@
       <count>14</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>add_ln228_fu_166</first>
+        <first>add_ln89_fu_166</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4098,7 +4098,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln228_fu_160</first>
+        <first>icmp_ln89_fu_160</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4146,7 +4146,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln233_1_fu_194</first>
+        <first>trunc_ln94_1_fu_194</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4154,7 +4154,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln233_fu_176</first>
+        <first>trunc_ln94_fu_176</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4162,7 +4162,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln228_fu_213</first>
+        <first>zext_ln89_fu_213</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4178,7 +4178,7 @@
       <count>5</count>
       <item_version>0</item_version>
       <item>
-        <first>empty_21_read_fu_88</first>
+        <first>empty_19_read_fu_88</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4202,7 +4202,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_152</first>
+        <first>store_ln89_store_fu_152</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4210,7 +4210,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_208</first>
+        <first>store_ln89_store_fu_208</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4358,7 +4358,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln233_1_reg_245</first>
+        <first>trunc_ln94_1_reg_245</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4366,7 +4366,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln233_reg_235</first>
+        <first>trunc_ln94_reg_235</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

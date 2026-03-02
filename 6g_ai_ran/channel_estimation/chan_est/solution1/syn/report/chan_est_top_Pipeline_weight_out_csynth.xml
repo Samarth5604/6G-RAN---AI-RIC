@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:283</SourceLocation>
+<SourceLocation>chan_est.cpp:147</SourceLocation>
 <SummaryOfLoopViolations>
 <weight_out>
 <Name>weight_out</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:283</SourceLocation>
+<SourceLocation>chan_est.cpp:147</SourceLocation>
 </weight_out>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

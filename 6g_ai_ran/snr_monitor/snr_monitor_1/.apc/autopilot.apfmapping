@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="chan_est.cpp" path="/home/samarth/Desktop/6g_ai_ran/snr_monitor/chan_est.cpp"/>
+    <originFiles name="chan_est.h" path="/home/samarth/Desktop/6g_ai_ran/snr_monitor/chan_est.h"/>
+    <originFiles name="dmrs_pilots.h" path="/home/samarth/Desktop/6g_ai_ran/snr_monitor/dmrs_pilots.h"/>
+    <originFiles name="snr_monitor.cpp" path="/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor.cpp"/>
+    <originFiles name="snr_monitor.h" path="/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor.h"/>
+  </source>
+  <testbench>
+    <originFiles name="snr_monitor_tb.cpp" path="/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

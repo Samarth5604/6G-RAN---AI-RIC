@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sc_map_table.h" path="/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_map_table.h"/>
+    <originFiles name="sc_mapper.cpp" path="/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapper.cpp"/>
+    <originFiles name="sc_mapper.h" path="/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapper.h"/>
+  </source>
+  <testbench>
+    <originFiles name="sc_mapper_tb.cpp" path="/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapper_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -71,13 +71,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:228</SourceLocation>
+<SourceLocation>chan_est.cpp:89</SourceLocation>
 <SummaryOfLoopViolations>
 <buf_loop>
 <Name>buf_loop</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:228</SourceLocation>
+<SourceLocation>chan_est.cpp:89</SourceLocation>
 </buf_loop>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -490,22 +490,22 @@
 <EstimatedClockPeriod>2.380</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>178</Best-caseLatency>
-<Average-caseLatency>178</Average-caseLatency>
-<Worst-caseLatency>178</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.593 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.593 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.593 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>173</PipelineInitiationInterval>
+<Best-caseLatency>106</Best-caseLatency>
+<Average-caseLatency>106</Average-caseLatency>
+<Worst-caseLatency>106</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.353 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.353 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.353 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>101</PipelineInitiationInterval>
 <PipelineType>loop auto-rewind (delay=0 clock cycles(s))</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <pilot_scan>
 <Name>pilot_scan</Name>
 <Slack>2.43</Slack>
-<TripCount>172</TripCount>
-<Latency>176</Latency>
-<AbsoluteTimeLatency>0.586 us</AbsoluteTimeLatency>
+<TripCount>100</TripCount>
+<Latency>104</Latency>
+<AbsoluteTimeLatency>0.346 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>6</PipelineDepth>
 <PipelineType>yes</PipelineType>
@@ -516,13 +516,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:246</SourceLocation>
+<SourceLocation>chan_est.cpp:107</SourceLocation>
 <SummaryOfLoopViolations>
 <pilot_scan>
 <Name>pilot_scan</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:248</SourceLocation>
+<SourceLocation>chan_est.cpp:107</SourceLocation>
 </pilot_scan>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -535,10 +535,10 @@
 <DSP>8</DSP>
 <AVAIL_DSP>1728</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>311</FF>
+<FF>308</FF>
 <AVAIL_FF>460800</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>137</LUT>
+<LUT>154</LUT>
 <AVAIL_LUT>230400</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
@@ -621,7 +621,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -665,7 +665,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -709,7 +709,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -753,7 +753,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -961,13 +961,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:266</SourceLocation>
+<SourceLocation>chan_est.cpp:130</SourceLocation>
 <SummaryOfLoopViolations>
 <zoh_fill>
 <Name>zoh_fill</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:266</SourceLocation>
+<SourceLocation>chan_est.cpp:130</SourceLocation>
 </zoh_fill>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -977,7 +977,7 @@
 <BRAM_18K>1</BRAM_18K>
 <AVAIL_BRAM>624</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<FF>167</FF>
+<FF>166</FF>
 <AVAIL_FF>460800</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
 <LUT>107</LUT>
@@ -1418,7 +1418,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1451,7 +1451,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1484,7 +1484,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1517,7 +1517,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1582,13 +1582,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:283</SourceLocation>
+<SourceLocation>chan_est.cpp:147</SourceLocation>
 <SummaryOfLoopViolations>
 <weight_out>
 <Name>weight_out</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:283</SourceLocation>
+<SourceLocation>chan_est.cpp:147</SourceLocation>
 </weight_out>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -2021,18 +2021,18 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1030</Best-caseLatency>
-<Average-caseLatency>3686</Average-caseLatency>
-<Worst-caseLatency>6341</Worst-caseLatency>
+<Average-caseLatency>3650</Average-caseLatency>
+<Worst-caseLatency>6269</Worst-caseLatency>
 <Best-caseRealTimeLatency>3.430 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>12.274 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>21.116 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1031 ~ 6342</PipelineInitiationInterval>
+<Average-caseRealTimeLatency>12.154 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>20.876 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>1031 ~ 6270</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:190</SourceLocation>
+<SourceLocation>chan_est.cpp:51</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -2043,10 +2043,10 @@
 <DSP>8</DSP>
 <AVAIL_DSP>1728</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>636</FF>
+<FF>632</FF>
 <AVAIL_FF>460800</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>1232</LUT>
+<LUT>1249</LUT>
 <AVAIL_LUT>230400</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>

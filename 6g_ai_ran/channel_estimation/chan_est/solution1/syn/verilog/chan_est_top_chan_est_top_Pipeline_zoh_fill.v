@@ -99,16 +99,16 @@ output  [9:0] w_re_address0;
 output   w_re_ce0;
 output   w_re_we0;
 output  [15:0] w_re_d0;
-output  [7:0] pilot_h_re_address0;
+output  [6:0] pilot_h_re_address0;
 output   pilot_h_re_ce0;
 input  [15:0] pilot_h_re_q0;
-output  [7:0] pilot_h_im_address0;
+output  [6:0] pilot_h_im_address0;
 output   pilot_h_im_ce0;
 input  [15:0] pilot_h_im_q0;
-output  [7:0] pilot_h_re_1_address0;
+output  [6:0] pilot_h_re_1_address0;
 output   pilot_h_re_1_ce0;
 input  [15:0] pilot_h_re_1_q0;
-output  [7:0] pilot_h_im_1_address0;
+output  [6:0] pilot_h_im_1_address0;
 output   pilot_h_im_1_ce0;
 input  [15:0] pilot_h_im_1_q0;
 
@@ -123,27 +123,27 @@ reg    ap_enable_reg_pp0_iter3;
 reg    ap_enable_reg_pp0_iter4;
 reg    ap_idle_pp0;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln266_fu_231_p2;
+wire   [0:0] icmp_ln130_fu_231_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 wire   [9:0] PILOT_FOR_K_address0;
-wire   [7:0] PILOT_FOR_K_q0;
+wire   [6:0] PILOT_FOR_K_q0;
 wire    ap_block_pp0_stage0_11001;
-wire   [63:0] zext_ln266_fu_243_p1;
-reg   [63:0] zext_ln266_reg_271;
-reg   [63:0] zext_ln266_reg_271_pp0_iter1_reg;
-reg   [63:0] zext_ln266_reg_271_pp0_iter2_reg;
-reg   [63:0] zext_ln266_reg_271_pp0_iter3_reg;
-reg   [7:0] m_reg_288;
+wire   [63:0] zext_ln130_fu_243_p1;
+reg   [63:0] zext_ln130_reg_271;
+reg   [63:0] zext_ln130_reg_271_pp0_iter1_reg;
+reg   [63:0] zext_ln130_reg_271_pp0_iter2_reg;
+reg   [63:0] zext_ln130_reg_271_pp0_iter3_reg;
+reg   [6:0] m_reg_288;
 reg   [15:0] pilot_h_re_load_reg_313;
 reg   [15:0] pilot_h_re_1_load_reg_319;
 reg   [15:0] pilot_h_im_load_reg_325;
 reg   [15:0] pilot_h_im_1_load_reg_331;
 wire    ap_block_pp0_stage0;
-wire   [63:0] idxprom79_fu_253_p1;
+wire   [63:0] idxprom82_fu_253_p1;
 reg   [10:0] k_fu_50;
-wire   [10:0] add_ln266_fu_237_p2;
+wire   [10:0] add_ln130_fu_237_p2;
 wire    ap_loop_init;
 reg   [10:0] ap_sig_allocacmp_k_1;
 reg    PILOT_FOR_K_ce0_local;
@@ -192,7 +192,7 @@ initial begin
 end
 
 chan_est_top_chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R #(
-    .DataWidth( 8 ),
+    .DataWidth( 7 ),
     .AddressRange( 1024 ),
     .AddressWidth( 10 ))
 PILOT_FOR_K_U(
@@ -282,8 +282,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln266_fu_231_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            k_fu_50 <= add_ln266_fu_237_p2;
+        if (((icmp_ln130_fu_231_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            k_fu_50 <= add_ln130_fu_237_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             k_fu_50 <= 11'd0;
         end
@@ -295,8 +295,8 @@ always @ (posedge ap_clk) begin
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
         ap_loop_exit_ready_pp0_iter2_reg <= ap_loop_exit_ready_pp0_iter1_reg;
         m_reg_288 <= PILOT_FOR_K_q0;
-        zext_ln266_reg_271[10 : 0] <= zext_ln266_fu_243_p1[10 : 0];
-        zext_ln266_reg_271_pp0_iter1_reg[10 : 0] <= zext_ln266_reg_271[10 : 0];
+        zext_ln130_reg_271[10 : 0] <= zext_ln130_fu_243_p1[10 : 0];
+        zext_ln130_reg_271_pp0_iter1_reg[10 : 0] <= zext_ln130_reg_271[10 : 0];
     end
 end
 
@@ -307,8 +307,8 @@ always @ (posedge ap_clk) begin
         pilot_h_im_load_reg_325 <= pilot_h_im_q0;
         pilot_h_re_1_load_reg_319 <= pilot_h_re_1_q0;
         pilot_h_re_load_reg_313 <= pilot_h_re_q0;
-        zext_ln266_reg_271_pp0_iter2_reg[10 : 0] <= zext_ln266_reg_271_pp0_iter1_reg[10 : 0];
-        zext_ln266_reg_271_pp0_iter3_reg[10 : 0] <= zext_ln266_reg_271_pp0_iter2_reg[10 : 0];
+        zext_ln130_reg_271_pp0_iter2_reg[10 : 0] <= zext_ln130_reg_271_pp0_iter1_reg[10 : 0];
+        zext_ln130_reg_271_pp0_iter3_reg[10 : 0] <= zext_ln130_reg_271_pp0_iter2_reg[10 : 0];
     end
 end
 
@@ -321,7 +321,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln266_fu_231_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln130_fu_231_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -539,9 +539,9 @@ always @ (*) begin
     endcase
 end
 
-assign PILOT_FOR_K_address0 = zext_ln266_fu_243_p1;
+assign PILOT_FOR_K_address0 = zext_ln130_fu_243_p1;
 
-assign add_ln266_fu_237_p2 = (ap_sig_allocacmp_k_1 + 11'd1);
+assign add_ln130_fu_237_p2 = (ap_sig_allocacmp_k_1 + 11'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -561,27 +561,27 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln266_fu_231_p2 = ((ap_sig_allocacmp_k_1 == 11'd1024) ? 1'b1 : 1'b0);
+assign icmp_ln130_fu_231_p2 = ((ap_sig_allocacmp_k_1 == 11'd1024) ? 1'b1 : 1'b0);
 
-assign idxprom79_fu_253_p1 = m_reg_288;
+assign idxprom82_fu_253_p1 = m_reg_288;
 
-assign pilot_h_im_1_address0 = idxprom79_fu_253_p1;
+assign pilot_h_im_1_address0 = idxprom82_fu_253_p1;
 
 assign pilot_h_im_1_ce0 = pilot_h_im_1_ce0_local;
 
-assign pilot_h_im_address0 = idxprom79_fu_253_p1;
+assign pilot_h_im_address0 = idxprom82_fu_253_p1;
 
 assign pilot_h_im_ce0 = pilot_h_im_ce0_local;
 
-assign pilot_h_re_1_address0 = idxprom79_fu_253_p1;
+assign pilot_h_re_1_address0 = idxprom82_fu_253_p1;
 
 assign pilot_h_re_1_ce0 = pilot_h_re_1_ce0_local;
 
-assign pilot_h_re_address0 = idxprom79_fu_253_p1;
+assign pilot_h_re_address0 = idxprom82_fu_253_p1;
 
 assign pilot_h_re_ce0 = pilot_h_re_ce0_local;
 
-assign w_im_1_address0 = zext_ln266_reg_271_pp0_iter3_reg;
+assign w_im_1_address0 = zext_ln130_reg_271_pp0_iter3_reg;
 
 assign w_im_1_ce0 = w_im_1_ce0_local;
 
@@ -589,7 +589,7 @@ assign w_im_1_d0 = pilot_h_im_1_load_reg_331;
 
 assign w_im_1_we0 = w_im_1_we0_local;
 
-assign w_im_2_address0 = zext_ln266_reg_271_pp0_iter3_reg;
+assign w_im_2_address0 = zext_ln130_reg_271_pp0_iter3_reg;
 
 assign w_im_2_ce0 = w_im_2_ce0_local;
 
@@ -597,7 +597,7 @@ assign w_im_2_d0 = pilot_h_im_load_reg_325;
 
 assign w_im_2_we0 = w_im_2_we0_local;
 
-assign w_im_3_address0 = zext_ln266_reg_271_pp0_iter3_reg;
+assign w_im_3_address0 = zext_ln130_reg_271_pp0_iter3_reg;
 
 assign w_im_3_ce0 = w_im_3_ce0_local;
 
@@ -605,7 +605,7 @@ assign w_im_3_d0 = pilot_h_im_1_load_reg_331;
 
 assign w_im_3_we0 = w_im_3_we0_local;
 
-assign w_im_address0 = zext_ln266_reg_271_pp0_iter3_reg;
+assign w_im_address0 = zext_ln130_reg_271_pp0_iter3_reg;
 
 assign w_im_ce0 = w_im_ce0_local;
 
@@ -613,7 +613,7 @@ assign w_im_d0 = pilot_h_im_load_reg_325;
 
 assign w_im_we0 = w_im_we0_local;
 
-assign w_re_1_address0 = zext_ln266_reg_271_pp0_iter3_reg;
+assign w_re_1_address0 = zext_ln130_reg_271_pp0_iter3_reg;
 
 assign w_re_1_ce0 = w_re_1_ce0_local;
 
@@ -621,7 +621,7 @@ assign w_re_1_d0 = pilot_h_re_1_load_reg_319;
 
 assign w_re_1_we0 = w_re_1_we0_local;
 
-assign w_re_2_address0 = zext_ln266_reg_271_pp0_iter3_reg;
+assign w_re_2_address0 = zext_ln130_reg_271_pp0_iter3_reg;
 
 assign w_re_2_ce0 = w_re_2_ce0_local;
 
@@ -629,7 +629,7 @@ assign w_re_2_d0 = pilot_h_re_load_reg_313;
 
 assign w_re_2_we0 = w_re_2_we0_local;
 
-assign w_re_3_address0 = zext_ln266_reg_271_pp0_iter3_reg;
+assign w_re_3_address0 = zext_ln130_reg_271_pp0_iter3_reg;
 
 assign w_re_3_ce0 = w_re_3_ce0_local;
 
@@ -637,7 +637,7 @@ assign w_re_3_d0 = pilot_h_re_1_load_reg_319;
 
 assign w_re_3_we0 = w_re_3_we0_local;
 
-assign w_re_address0 = zext_ln266_reg_271_pp0_iter3_reg;
+assign w_re_address0 = zext_ln130_reg_271_pp0_iter3_reg;
 
 assign w_re_ce0 = w_re_ce0_local;
 
@@ -645,13 +645,13 @@ assign w_re_d0 = pilot_h_re_load_reg_313;
 
 assign w_re_we0 = w_re_we0_local;
 
-assign zext_ln266_fu_243_p1 = ap_sig_allocacmp_k_1;
+assign zext_ln130_fu_243_p1 = ap_sig_allocacmp_k_1;
 
 always @ (posedge ap_clk) begin
-    zext_ln266_reg_271[63:11] <= 53'b00000000000000000000000000000000000000000000000000000;
-    zext_ln266_reg_271_pp0_iter1_reg[63:11] <= 53'b00000000000000000000000000000000000000000000000000000;
-    zext_ln266_reg_271_pp0_iter2_reg[63:11] <= 53'b00000000000000000000000000000000000000000000000000000;
-    zext_ln266_reg_271_pp0_iter3_reg[63:11] <= 53'b00000000000000000000000000000000000000000000000000000;
+    zext_ln130_reg_271[63:11] <= 53'b00000000000000000000000000000000000000000000000000000;
+    zext_ln130_reg_271_pp0_iter1_reg[63:11] <= 53'b00000000000000000000000000000000000000000000000000000;
+    zext_ln130_reg_271_pp0_iter2_reg[63:11] <= 53'b00000000000000000000000000000000000000000000000000000;
+    zext_ln130_reg_271_pp0_iter3_reg[63:11] <= 53'b00000000000000000000000000000000000000000000000000000;
 end
 
 endmodule //chan_est_top_chan_est_top_Pipeline_zoh_fill

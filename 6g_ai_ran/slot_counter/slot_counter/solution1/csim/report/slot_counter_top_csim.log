@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../slot_counter_tb.cpp in debug mode
+   Compiling ../../../../slot_counter.cpp in debug mode
+   Generating csim.exe
+
+Timing constants:
+  CYCLES_EXTENDED_SYM = 2682 (8940 ns) — sym 0 and 7
+  CYCLES_NORMAL_SYM   = 2678 (8926.67 ns) — sym 1-6, 8-13
+  CYCLES_PER_SLOT     = 37500 (125 us)
+  Check 2x2682 + 12x2678 = 37500 == 37500 : PASS
+
+ALL TESTS PASSED
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

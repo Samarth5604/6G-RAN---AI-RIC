@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="sc_mapping" solutionName="solution1" date="2026-03-01T14:11:07.471+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'data_out' as it needs to be read/written in its entirety" projectName="sc_mapping" solutionName="solution1" date="2026-03-01T14:11:07.212+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety" projectName="sc_mapping" solutionName="solution1" date="2026-03-01T14:11:07.204+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/csynth.tcl'" projectName="sc_mapping" solutionName="solution1" date="2026-03-01T14:10:56.365+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/export.tcl'" projectName="sc_mapping" solutionName="solution1" date="2026-03-01T14:17:35.876+0530" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

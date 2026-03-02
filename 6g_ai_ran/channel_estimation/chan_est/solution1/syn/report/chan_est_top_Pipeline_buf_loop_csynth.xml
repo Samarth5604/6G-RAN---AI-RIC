@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:228</SourceLocation>
+<SourceLocation>chan_est.cpp:89</SourceLocation>
 <SummaryOfLoopViolations>
 <buf_loop>
 <Name>buf_loop</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:228</SourceLocation>
+<SourceLocation>chan_est.cpp:89</SourceLocation>
 </buf_loop>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

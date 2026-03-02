@@ -1,0 +1,59 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<7>::ap_uint<33>(ap_int<33> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::RType<($_0)32, true>::plus operator+<4, false>(ap_int_base<4, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint<33>(ap_int<33> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<7, false>(ap_int_base<7, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi12ELb0EEC2EDq12_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<7, false>::RType<($_0)32, true>::plus operator+<7, false>(ap_int_base<7, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<4, false>(ap_int_base<4, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, false>::RType<($_0)32, true>::minus operator-<12, false>(ap_int_base<12, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<12, false>::operator>=<33, true>(ap_int_base<33, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<7>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<12>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" off="0" region="0" recursive="0"/>
+<pragma file="slot_counter.cpp" line="55" pragmaType="interface" parentfunction="slot_counter_top" mode="ap_none" port="symbol_num" name="" register="0"/>
+<pragma file="slot_counter.cpp" line="56" pragmaType="interface" parentfunction="slot_counter_top" mode="ap_none" port="slot_num" name="" register="0"/>
+<pragma file="slot_counter.cpp" line="57" pragmaType="interface" parentfunction="slot_counter_top" mode="ap_none" port="gpio_override" name="" register="0"/>
+<pragma file="slot_counter.cpp" line="58" pragmaType="interface" parentfunction="slot_counter_top" mode="ap_none" port="gpio_symbol_num" name="" register="0"/>
+<pragma file="slot_counter.cpp" line="59" pragmaType="interface" parentfunction="slot_counter_top" mode="ap_none" port="gpio_slot_num" name="" register="0"/>
+<pragma file="slot_counter.cpp" line="60" pragmaType="interface" parentfunction="slot_counter_top" mode="s_axilite" port="sync_req" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="slot_counter.cpp" line="61" pragmaType="interface" parentfunction="slot_counter_top" mode="s_axilite" port="sync_symbol" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="slot_counter.cpp" line="62" pragmaType="interface" parentfunction="slot_counter_top" mode="s_axilite" port="sync_slot" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="slot_counter.cpp" line="63" pragmaType="interface" parentfunction="slot_counter_top" mode="s_axilite" port="symbol_num_out" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="slot_counter.cpp" line="64" pragmaType="interface" parentfunction="slot_counter_top" mode="s_axilite" port="slot_num_out" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="slot_counter.cpp" line="65" pragmaType="interface" parentfunction="slot_counter_top" mode="s_axilite" port="" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="slot_counter.cpp" line="66" pragmaType="interface" parentfunction="slot_counter_top" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="slot_counter.cpp" line="72" pragmaType="reset" parentfunction="slot_counter_top" off="0" variable="_ZZ16slot_counter_topR7ap_uintILi4EERS_ILi7EES_ILi1EES0_S2_S4_S0_S2_S1_S3_E9phase_cnt"/>
+<pragma file="slot_counter.cpp" line="73" pragmaType="reset" parentfunction="slot_counter_top" off="0" variable="_ZZ16slot_counter_topR7ap_uintILi4EERS_ILi7EES_ILi1EES0_S2_S4_S0_S2_S1_S3_E10symbol_cnt"/>
+<pragma file="slot_counter.cpp" line="74" pragmaType="reset" parentfunction="slot_counter_top" off="0" variable="_ZZ16slot_counter_topR7ap_uintILi4EERS_ILi7EES_ILi1EES0_S2_S4_S0_S2_S1_S3_E8slot_cnt"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, false>::RType<32, true>::plus operator+<12, false, 32, true>(ap_int_base<12, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<12, false>(ap_int_base<12, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<7, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, false>::RType<($_0)32, true>::plus operator+<12, false>(ap_int_base<12, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<12>::ap_uint<33>(ap_int<33> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, false>::ap_int_base<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<7, false>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, false>::RType<32, true>::minus operator-<12, false, 32, true>(ap_int_base<12, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<4, false>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi7ELb0EEC2EDq7_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<7, false>::RType<32, true>::plus operator+<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::RType<32, true>::plus operator+<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<7, false>::ap_int_base<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDq4_j" off="0" region="0" recursive="0"/>
+</pragmas>

@@ -3,21 +3,29 @@
   <errorLogs>
     <logs>
       <synLog/>
+      <simLog/>
+      <mgLog/>
       <packageLog/>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.753+0530" type="Warning"/>
-        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_im_1'" projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.219+0530" type="Warning"/>
-        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_re_1'" projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.218+0530" type="Warning"/>
-        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_im_0'" projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.217+0530" type="Warning"/>
-        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access on variable 'fft_re_0'" projectName="chan_est" solutionName="solution1" date="2026-02-28T15:53:58.215+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="chan_est" solutionName="solution1" date="2026-03-01T14:56:19.724+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety" projectName="chan_est" solutionName="solution1" date="2026-03-01T14:56:19.252+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'set_directive_top -location' command is deprecated and will be removed in a future release." projectName="chan_est" solutionName="solution1" date="2026-03-01T14:56:10.558+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'set_directive_top -name' command is deprecated and will be removed in a future release." projectName="chan_est" solutionName="solution1" date="2026-03-01T14:56:10.555+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/csynth.tcl'" projectName="chan_est" solutionName="solution1" date="2026-03-01T14:56:10.114+0530" type="Warning"/>
       </synLog>
+      <simLog/>
+      <mgLog/>
       <packageLog>
-        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/export.tcl'" projectName="chan_est" solutionName="solution1" date="2026-02-28T16:01:02.570+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'set_directive_top -location' command is deprecated and will be removed in a future release." projectName="chan_est" solutionName="solution1" date="2026-03-01T14:56:31.544+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'set_directive_top -name' command is deprecated and will be removed in a future release." projectName="chan_est" solutionName="solution1" date="2026-03-01T14:56:31.542+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/export.tcl'" projectName="chan_est" solutionName="solution1" date="2026-03-01T14:56:31.063+0530" type="Warning"/>
       </packageLog>
+      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

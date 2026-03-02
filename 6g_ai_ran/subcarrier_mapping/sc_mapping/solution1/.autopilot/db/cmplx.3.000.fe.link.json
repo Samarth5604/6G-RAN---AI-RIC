@@ -1,0 +1,36 @@
+{
+  "0": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "sc_mapper.cpp",
+    "fileloc": 18,
+    "instructions": 125,
+    "loads": {
+      "G": 2,
+      "L": 5
+    },
+    "name": "sc_mapper_rx",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 317
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "sc_mapper.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 8985
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sc_map_table.h",
+    "fileloc": 23,
+    "instructions": 500,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 8983
+  }
+}

@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="chan_est_top_chan_est_top,hls_ip_2024_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu7ev-ffvc1156-2-e,HLS_INPUT_CLOCK=3.330000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.380000,HLS_SYN_LAT=3686,HLS_SYN_TPT=none,HLS_SYN_MEM=19,HLS_SYN_DSP=0,HLS_SYN_FF=636,HLS_SYN_LUT=1232,HLS_VERSION=2024_1}" *)
+(* CORE_GENERATION_INFO="chan_est_top_chan_est_top,hls_ip_2024_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu7ev-ffvc1156-2-e,HLS_INPUT_CLOCK=3.330000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.380000,HLS_SYN_LAT=3650,HLS_SYN_TPT=none,HLS_SYN_MEM=19,HLS_SYN_DSP=0,HLS_SYN_FF=632,HLS_SYN_LUT=1249,HLS_VERSION=2024_1}" *)
 
 module chan_est_top (
         ap_clk,
@@ -80,8 +80,8 @@ reg ap_ready;
  reg    ap_rst_n_inv;
 (* fsm_encoding = "none" *) reg   [9:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [0:0] icmp_ln243_fu_230_p2;
-reg   [0:0] icmp_ln243_reg_236;
+wire   [0:0] icmp_ln104_fu_230_p2;
+reg   [0:0] icmp_ln104_reg_236;
 reg   [9:0] fft_re_address0;
 reg    fft_re_ce0;
 reg    fft_re_we0;
@@ -98,19 +98,19 @@ reg   [9:0] fft_im_1_address0;
 reg    fft_im_1_ce0;
 reg    fft_im_1_we0;
 wire   [15:0] fft_im_1_q0;
-reg   [7:0] pilot_h_re_address0;
+reg   [6:0] pilot_h_re_address0;
 reg    pilot_h_re_ce0;
 reg    pilot_h_re_we0;
 wire   [15:0] pilot_h_re_q0;
-reg   [7:0] pilot_h_re_1_address0;
+reg   [6:0] pilot_h_re_1_address0;
 reg    pilot_h_re_1_ce0;
 reg    pilot_h_re_1_we0;
 wire   [15:0] pilot_h_re_1_q0;
-reg   [7:0] pilot_h_im_address0;
+reg   [6:0] pilot_h_im_address0;
 reg    pilot_h_im_ce0;
 reg    pilot_h_im_we0;
 wire   [15:0] pilot_h_im_q0;
-reg   [7:0] pilot_h_im_1_address0;
+reg   [6:0] pilot_h_im_1_address0;
 reg    pilot_h_im_1_ce0;
 reg    pilot_h_im_1_we0;
 wire   [15:0] pilot_h_im_1_q0;
@@ -172,19 +172,19 @@ wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_start;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_done;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_idle;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_ready;
-wire   [7:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_address0;
+wire   [6:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_address0;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_ce0;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_we0;
 wire   [15:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_d0;
-wire   [7:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_address0;
+wire   [6:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_address0;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_ce0;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_we0;
 wire   [15:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_d0;
-wire   [7:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_address0;
+wire   [6:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_address0;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_ce0;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_we0;
 wire   [15:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_d0;
-wire   [7:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_address0;
+wire   [6:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_address0;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_ce0;
 wire    grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_we0;
 wire   [15:0] grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_d0;
@@ -232,13 +232,13 @@ wire   [9:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_w_re_address0;
 wire    grp_chan_est_top_Pipeline_zoh_fill_fu_192_w_re_ce0;
 wire    grp_chan_est_top_Pipeline_zoh_fill_fu_192_w_re_we0;
 wire   [15:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_w_re_d0;
-wire   [7:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_address0;
+wire   [6:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_address0;
 wire    grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_ce0;
-wire   [7:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_address0;
+wire   [6:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_address0;
 wire    grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_ce0;
-wire   [7:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_1_address0;
+wire   [6:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_1_address0;
 wire    grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_1_ce0;
-wire   [7:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_1_address0;
+wire   [6:0] grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_1_address0;
 wire    grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_1_ce0;
 wire    grp_chan_est_top_Pipeline_weight_out_fu_210_ap_start;
 wire    grp_chan_est_top_Pipeline_weight_out_fu_210_ap_done;
@@ -406,8 +406,8 @@ fft_im_1_U(
 
 chan_est_top_pilot_h_re_RAM_AUTO_1R1W #(
     .DataWidth( 16 ),
-    .AddressRange( 172 ),
-    .AddressWidth( 8 ))
+    .AddressRange( 100 ),
+    .AddressWidth( 7 ))
 pilot_h_re_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -420,8 +420,8 @@ pilot_h_re_U(
 
 chan_est_top_pilot_h_re_RAM_AUTO_1R1W #(
     .DataWidth( 16 ),
-    .AddressRange( 172 ),
-    .AddressWidth( 8 ))
+    .AddressRange( 100 ),
+    .AddressWidth( 7 ))
 pilot_h_re_1_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -434,8 +434,8 @@ pilot_h_re_1_U(
 
 chan_est_top_pilot_h_re_RAM_AUTO_1R1W #(
     .DataWidth( 16 ),
-    .AddressRange( 172 ),
-    .AddressWidth( 8 ))
+    .AddressRange( 100 ),
+    .AddressWidth( 7 ))
 pilot_h_im_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -448,8 +448,8 @@ pilot_h_im_U(
 
 chan_est_top_pilot_h_re_RAM_AUTO_1R1W #(
     .DataWidth( 16 ),
-    .AddressRange( 172 ),
-    .AddressWidth( 8 ))
+    .AddressRange( 100 ),
+    .AddressWidth( 7 ))
 pilot_h_im_1_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -930,7 +930,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln243_reg_236 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
+        if (((icmp_ln104_reg_236 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
             grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_start_reg <= 1'b1;
         end else if ((grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_ready == 1'b1)) begin
             grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_start_reg <= 1'b0;
@@ -964,7 +964,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state1)) begin
-        icmp_ln243_reg_236 <= icmp_ln243_fu_230_p2;
+        icmp_ln104_reg_236 <= icmp_ln104_fu_230_p2;
     end
 end
 
@@ -1532,7 +1532,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state4 : begin
-            if (((icmp_ln243_reg_236 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
+            if (((icmp_ln104_reg_236 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
                 ap_NS_fsm = ap_ST_fsm_state10;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state5;
@@ -1616,7 +1616,7 @@ assign grp_chan_est_top_Pipeline_weight_out_fu_210_weight_stream_TREADY = (weigh
 
 assign grp_chan_est_top_Pipeline_zoh_fill_fu_192_ap_start = grp_chan_est_top_Pipeline_zoh_fill_fu_192_ap_start_reg;
 
-assign icmp_ln243_fu_230_p2 = ((symbol_num == 4'd2) ? 1'b1 : 1'b0);
+assign icmp_ln104_fu_230_p2 = ((symbol_num == 4'd2) ? 1'b1 : 1'b0);
 
 assign weight_stream_TVALID = regslice_both_weight_stream_V_data_V_U_vld_out;
 

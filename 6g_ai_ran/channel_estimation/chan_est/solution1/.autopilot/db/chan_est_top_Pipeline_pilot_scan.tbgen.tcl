@@ -15,19 +15,19 @@ set DLRegItemOffset 0
 set C_modelName {chan_est_top_Pipeline_pilot_scan}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict pilot_h_im_1 { MEM_WIDTH 16 MEM_SIZE 344 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict pilot_h_im { MEM_WIDTH 16 MEM_SIZE 344 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict pilot_h_re_1 { MEM_WIDTH 16 MEM_SIZE 344 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict pilot_h_re { MEM_WIDTH 16 MEM_SIZE 344 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict pilot_h_im_1 { MEM_WIDTH 16 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict pilot_h_im { MEM_WIDTH 16 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict pilot_h_re_1 { MEM_WIDTH 16 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict pilot_h_re { MEM_WIDTH 16 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict fft_re { MEM_WIDTH 16 MEM_SIZE 2048 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict fft_im { MEM_WIDTH 16 MEM_SIZE 2048 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict fft_re_1 { MEM_WIDTH 16 MEM_SIZE 2048 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict fft_im_1 { MEM_WIDTH 16 MEM_SIZE 2048 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
-	{ pilot_h_im_1 int 16 regular {array 172 { 0 3 } 0 1 }  }
-	{ pilot_h_im int 16 regular {array 172 { 0 3 } 0 1 }  }
-	{ pilot_h_re_1 int 16 regular {array 172 { 0 3 } 0 1 }  }
-	{ pilot_h_re int 16 regular {array 172 { 0 3 } 0 1 }  }
+	{ pilot_h_im_1 int 16 regular {array 100 { 0 3 } 0 1 }  }
+	{ pilot_h_im int 16 regular {array 100 { 0 3 } 0 1 }  }
+	{ pilot_h_re_1 int 16 regular {array 100 { 0 3 } 0 1 }  }
+	{ pilot_h_re int 16 regular {array 100 { 0 3 } 0 1 }  }
 	{ fft_re int 16 regular {array 1024 { 1 3 } 1 1 }  }
 	{ fft_im int 16 regular {array 1024 { 1 3 } 1 1 }  }
 	{ fft_re_1 int 16 regular {array 1024 { 1 3 } 1 1 }  }
@@ -54,19 +54,19 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ pilot_h_im_1_address0 sc_out sc_lv 8 signal 0 } 
+	{ pilot_h_im_1_address0 sc_out sc_lv 7 signal 0 } 
 	{ pilot_h_im_1_ce0 sc_out sc_logic 1 signal 0 } 
 	{ pilot_h_im_1_we0 sc_out sc_logic 1 signal 0 } 
 	{ pilot_h_im_1_d0 sc_out sc_lv 16 signal 0 } 
-	{ pilot_h_im_address0 sc_out sc_lv 8 signal 1 } 
+	{ pilot_h_im_address0 sc_out sc_lv 7 signal 1 } 
 	{ pilot_h_im_ce0 sc_out sc_logic 1 signal 1 } 
 	{ pilot_h_im_we0 sc_out sc_logic 1 signal 1 } 
 	{ pilot_h_im_d0 sc_out sc_lv 16 signal 1 } 
-	{ pilot_h_re_1_address0 sc_out sc_lv 8 signal 2 } 
+	{ pilot_h_re_1_address0 sc_out sc_lv 7 signal 2 } 
 	{ pilot_h_re_1_ce0 sc_out sc_logic 1 signal 2 } 
 	{ pilot_h_re_1_we0 sc_out sc_logic 1 signal 2 } 
 	{ pilot_h_re_1_d0 sc_out sc_lv 16 signal 2 } 
-	{ pilot_h_re_address0 sc_out sc_lv 8 signal 3 } 
+	{ pilot_h_re_address0 sc_out sc_lv 7 signal 3 } 
 	{ pilot_h_re_ce0 sc_out sc_logic 1 signal 3 } 
 	{ pilot_h_re_we0 sc_out sc_logic 1 signal 3 } 
 	{ pilot_h_re_d0 sc_out sc_lv 16 signal 3 } 
@@ -90,19 +90,19 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "pilot_h_im_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "pilot_h_im_1", "role": "address0" }} , 
+ 	{ "name": "pilot_h_im_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "pilot_h_im_1", "role": "address0" }} , 
  	{ "name": "pilot_h_im_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_im_1", "role": "ce0" }} , 
  	{ "name": "pilot_h_im_1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_im_1", "role": "we0" }} , 
  	{ "name": "pilot_h_im_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "pilot_h_im_1", "role": "d0" }} , 
- 	{ "name": "pilot_h_im_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "pilot_h_im", "role": "address0" }} , 
+ 	{ "name": "pilot_h_im_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "pilot_h_im", "role": "address0" }} , 
  	{ "name": "pilot_h_im_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_im", "role": "ce0" }} , 
  	{ "name": "pilot_h_im_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_im", "role": "we0" }} , 
  	{ "name": "pilot_h_im_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "pilot_h_im", "role": "d0" }} , 
- 	{ "name": "pilot_h_re_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "pilot_h_re_1", "role": "address0" }} , 
+ 	{ "name": "pilot_h_re_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "pilot_h_re_1", "role": "address0" }} , 
  	{ "name": "pilot_h_re_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_re_1", "role": "ce0" }} , 
  	{ "name": "pilot_h_re_1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_re_1", "role": "we0" }} , 
  	{ "name": "pilot_h_re_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "pilot_h_re_1", "role": "d0" }} , 
- 	{ "name": "pilot_h_re_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "pilot_h_re", "role": "address0" }} , 
+ 	{ "name": "pilot_h_re_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "pilot_h_re", "role": "address0" }} , 
  	{ "name": "pilot_h_re_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_re", "role": "ce0" }} , 
  	{ "name": "pilot_h_re_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_re", "role": "we0" }} , 
  	{ "name": "pilot_h_re_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "pilot_h_re", "role": "d0" }} , 
@@ -126,7 +126,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "178", "EstimateLatencyMax" : "178",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "106", "EstimateLatencyMax" : "106",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -177,8 +177,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "178", "Max" : "178"}
-	, {"Name" : "Interval", "Min" : "178", "Max" : "178"}
+	{"Name" : "Latency", "Min" : "106", "Max" : "106"}
+	, {"Name" : "Interval", "Min" : "106", "Max" : "106"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -186,10 +186,10 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	pilot_h_im_1 { ap_memory {  { pilot_h_im_1_address0 mem_address 1 8 }  { pilot_h_im_1_ce0 mem_ce 1 1 }  { pilot_h_im_1_we0 mem_we 1 1 }  { pilot_h_im_1_d0 mem_din 1 16 } } }
-	pilot_h_im { ap_memory {  { pilot_h_im_address0 mem_address 1 8 }  { pilot_h_im_ce0 mem_ce 1 1 }  { pilot_h_im_we0 mem_we 1 1 }  { pilot_h_im_d0 mem_din 1 16 } } }
-	pilot_h_re_1 { ap_memory {  { pilot_h_re_1_address0 mem_address 1 8 }  { pilot_h_re_1_ce0 mem_ce 1 1 }  { pilot_h_re_1_we0 mem_we 1 1 }  { pilot_h_re_1_d0 mem_din 1 16 } } }
-	pilot_h_re { ap_memory {  { pilot_h_re_address0 mem_address 1 8 }  { pilot_h_re_ce0 mem_ce 1 1 }  { pilot_h_re_we0 mem_we 1 1 }  { pilot_h_re_d0 mem_din 1 16 } } }
+	pilot_h_im_1 { ap_memory {  { pilot_h_im_1_address0 mem_address 1 7 }  { pilot_h_im_1_ce0 mem_ce 1 1 }  { pilot_h_im_1_we0 mem_we 1 1 }  { pilot_h_im_1_d0 mem_din 1 16 } } }
+	pilot_h_im { ap_memory {  { pilot_h_im_address0 mem_address 1 7 }  { pilot_h_im_ce0 mem_ce 1 1 }  { pilot_h_im_we0 mem_we 1 1 }  { pilot_h_im_d0 mem_din 1 16 } } }
+	pilot_h_re_1 { ap_memory {  { pilot_h_re_1_address0 mem_address 1 7 }  { pilot_h_re_1_ce0 mem_ce 1 1 }  { pilot_h_re_1_we0 mem_we 1 1 }  { pilot_h_re_1_d0 mem_din 1 16 } } }
+	pilot_h_re { ap_memory {  { pilot_h_re_address0 mem_address 1 7 }  { pilot_h_re_ce0 mem_ce 1 1 }  { pilot_h_re_we0 mem_we 1 1 }  { pilot_h_re_d0 mem_din 1 16 } } }
 	fft_re { ap_memory {  { fft_re_address0 mem_address 1 10 }  { fft_re_ce0 mem_ce 1 1 }  { fft_re_q0 mem_dout 0 16 } } }
 	fft_im { ap_memory {  { fft_im_address0 mem_address 1 10 }  { fft_im_ce0 mem_ce 1 1 }  { fft_im_q0 mem_dout 0 16 } } }
 	fft_re_1 { ap_memory {  { fft_re_1_address0 mem_address 1 10 }  { fft_re_1_ce0 mem_ce 1 1 }  { fft_re_1_q0 mem_dout 0 16 } } }

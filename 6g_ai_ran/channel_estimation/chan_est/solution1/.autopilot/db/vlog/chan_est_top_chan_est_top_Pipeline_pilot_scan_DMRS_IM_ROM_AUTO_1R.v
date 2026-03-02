@@ -9,8 +9,8 @@ module chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_IM_ROM_AUTO_1R (
     reset, clk);
 
 parameter DataWidth = 15;
-parameter AddressWidth = 8;
-parameter AddressRange = 172;
+parameter AddressWidth = 7;
+parameter AddressRange = 100;
  
 input[AddressWidth-1:0] address0;
 input ce0;

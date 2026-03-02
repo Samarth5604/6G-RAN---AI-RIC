@@ -45,4 +45,4 @@
 #  PART OF THIS FILE AT ALL TIMES.
 #-----------------------------------------------------------------------------
 
-# No clock in this configuration
+create_clock -period 100.0 -name aclk [get_ports aclk]

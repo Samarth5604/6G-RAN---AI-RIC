@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="slot_counter.cpp" path="/home/samarth/Desktop/6g_ai_ran/slot_counter/slot_counter.cpp"/>
+    <originFiles name="slot_counter.h" path="/home/samarth/Desktop/6g_ai_ran/slot_counter/slot_counter.h"/>
+  </source>
+  <testbench>
+    <originFiles name="slot_counter_tb.cpp" path="/home/samarth/Desktop/6g_ai_ran/slot_counter/slot_counter_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

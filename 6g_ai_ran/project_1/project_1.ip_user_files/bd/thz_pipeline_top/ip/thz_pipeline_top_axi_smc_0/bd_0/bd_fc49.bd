@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x11614122AE3635D6",
+      "boundary_crc": "0x307FD74D09039165",
       "design_src": "SBD",
       "device": "xczu7ev-ffvc1156-2-e",
       "name": "bd_fc49",
@@ -63,7 +63,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "32",
+            "value": "40",
             "value_src": "auto_prop"
           },
           "ARUSER_WIDTH": {
@@ -188,8 +188,8 @@
         "address_space_ref": "S00_AXI",
         "base_address": {
           "minimum": "0x00000000",
-          "maximum": "0xFFFFFFFF",
-          "width": "32"
+          "maximum": "0x00FFFFFFFFFF",
+          "width": "40"
         }
       },
       "S01_AXI": {
@@ -198,7 +198,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "32",
+            "value": "40",
             "value_src": "auto_prop"
           },
           "ARUSER_WIDTH": {
@@ -323,8 +323,8 @@
         "address_space_ref": "S01_AXI",
         "base_address": {
           "minimum": "0x00000000",
-          "maximum": "0xFFFFFFFF",
-          "width": "32"
+          "maximum": "0x00FFFFFFFFFF",
+          "width": "40"
         }
       },
       "M00_AXI": {
@@ -726,7 +726,7 @@
                 "value": "2"
               },
               "PAYLD_WIDTH": {
-                "value": "140"
+                "value": "148"
               },
               "S_LATENCY": {
                 "value": "0"
@@ -818,7 +818,7 @@
                 "value": "2"
               },
               "PAYLD_WIDTH": {
-                "value": "140"
+                "value": "148"
               },
               "S_LATENCY": {
                 "value": "0"
@@ -1074,7 +1074,7 @@
             "inst_hier_path": "s00_entry_pipeline/s00_mmu",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "ID_WIDTH": {
                 "value": "0"
@@ -1095,7 +1095,7 @@
                 "value": "16"
               },
               "NUM_SEG": {
-                "value": "1"
+                "value": "2"
               },
               "NUM_WRITE_OUTSTANDING": {
                 "value": "2"
@@ -1127,11 +1127,29 @@
               "SEG000_SUPPORTS_WRITE": {
                 "value": "1"
               },
-              "SUPPORTS_NARROW": {
+              "SEG001_BASE_ADDR": {
+                "value": "0x00000000FF000000"
+              },
+              "SEG001_SECURE_READ": {
                 "value": "0"
               },
-              "SUPPORTS_READ_DECERR": {
+              "SEG001_SECURE_WRITE": {
+                "value": "0"
+              },
+              "SEG001_SEP_ROUTE": {
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "SEG001_SIZE": {
+                "value": "24"
+              },
+              "SEG001_SUPPORTS_READ": {
                 "value": "1"
+              },
+              "SEG001_SUPPORTS_WRITE": {
+                "value": "1"
+              },
+              "SUPPORTS_NARROW": {
+                "value": "0"
               },
               "S_ARUSER_WIDTH": {
                 "value": "0"
@@ -1167,7 +1185,7 @@
             "inst_hier_path": "s00_entry_pipeline/s00_transaction_regulator",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "IS_CASCADED": {
                 "value": "0"
@@ -1194,7 +1212,7 @@
                 "value": "1"
               },
               "SUPPORTS_READ_DEADLOCK": {
-                "value": "0"
+                "value": "1"
               },
               "SUPPORTS_WRITE_DEADLOCK": {
                 "value": "0"
@@ -1224,7 +1242,7 @@
             "inst_hier_path": "s00_entry_pipeline/s00_si_converter",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "HAS_BURST": {
                 "value": "0"
@@ -1266,7 +1284,7 @@
                 "value": "1"
               },
               "NUM_SEG": {
-                "value": "1"
+                "value": "2"
               },
               "NUM_WRITE_OUTSTANDING": {
                 "value": "2"
@@ -1287,6 +1305,15 @@
                 "value": "128"
               },
               "SEP000_WDATA_WIDTH": {
+                "value": "128"
+              },
+              "SEP001_PROTOCOL": {
+                "value": "AXI4"
+              },
+              "SEP001_RDATA_WIDTH": {
+                "value": "128"
+              },
+              "SEP001_WDATA_WIDTH": {
                 "value": "128"
               },
               "SUPPORTS_NARROW": {
@@ -1366,7 +1393,7 @@
         "inst_hier_path": "s00_axi2sc",
         "parameters": {
           "AXI_ADDR_WIDTH": {
-            "value": "32"
+            "value": "40"
           },
           "AXI_ID_WIDTH": {
             "value": "2"
@@ -1384,7 +1411,7 @@
             "value": "READ_ONLY"
           },
           "SC_ADDR_WIDTH": {
-            "value": "32"
+            "value": "40"
           },
           "SC_ARUSER_WIDTH": {
             "value": "0"
@@ -1480,7 +1507,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "2"
@@ -1552,7 +1579,7 @@
                 "value": "1"
               },
               "PAYLD_WIDTH": {
-                "value": "140"
+                "value": "148"
               },
               "S00_NUM_BYTES": {
                 "value": "4"
@@ -1633,7 +1660,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "0"
@@ -1865,7 +1892,7 @@
             "inst_hier_path": "s01_entry_pipeline/s01_mmu",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "ID_WIDTH": {
                 "value": "0"
@@ -1886,7 +1913,7 @@
                 "value": "2"
               },
               "NUM_SEG": {
-                "value": "1"
+                "value": "2"
               },
               "NUM_WRITE_OUTSTANDING": {
                 "value": "16"
@@ -1918,11 +1945,29 @@
               "SEG000_SUPPORTS_WRITE": {
                 "value": "1"
               },
-              "SUPPORTS_NARROW": {
+              "SEG001_BASE_ADDR": {
+                "value": "0x00000000FF000000"
+              },
+              "SEG001_SECURE_READ": {
                 "value": "0"
               },
-              "SUPPORTS_WRITE_DECERR": {
+              "SEG001_SECURE_WRITE": {
+                "value": "0"
+              },
+              "SEG001_SEP_ROUTE": {
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "SEG001_SIZE": {
+                "value": "24"
+              },
+              "SEG001_SUPPORTS_READ": {
                 "value": "1"
+              },
+              "SEG001_SUPPORTS_WRITE": {
+                "value": "1"
+              },
+              "SUPPORTS_NARROW": {
+                "value": "0"
               },
               "S_AWUSER_WIDTH": {
                 "value": "0"
@@ -1961,7 +2006,7 @@
             "inst_hier_path": "s01_entry_pipeline/s01_transaction_regulator",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "IS_CASCADED": {
                 "value": "0"
@@ -1991,7 +2036,7 @@
                 "value": "0"
               },
               "SUPPORTS_WRITE_DEADLOCK": {
-                "value": "0"
+                "value": "1"
               },
               "S_ID_WIDTH": {
                 "value": "0"
@@ -2018,7 +2063,7 @@
             "inst_hier_path": "s01_entry_pipeline/s01_si_converter",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "HAS_BURST": {
                 "value": "0"
@@ -2060,7 +2105,7 @@
                 "value": "1"
               },
               "NUM_SEG": {
-                "value": "1"
+                "value": "2"
               },
               "NUM_WRITE_OUTSTANDING": {
                 "value": "16"
@@ -2081,6 +2126,15 @@
                 "value": "128"
               },
               "SEP000_WDATA_WIDTH": {
+                "value": "128"
+              },
+              "SEP001_PROTOCOL": {
+                "value": "AXI4"
+              },
+              "SEP001_RDATA_WIDTH": {
+                "value": "128"
+              },
+              "SEP001_WDATA_WIDTH": {
                 "value": "128"
               },
               "SUPPORTS_NARROW": {
@@ -2160,7 +2214,7 @@
         "inst_hier_path": "s01_axi2sc",
         "parameters": {
           "AXI_ADDR_WIDTH": {
-            "value": "32"
+            "value": "40"
           },
           "AXI_ID_WIDTH": {
             "value": "2"
@@ -2178,7 +2232,7 @@
             "value": "WRITE_ONLY"
           },
           "SC_ADDR_WIDTH": {
-            "value": "32"
+            "value": "40"
           },
           "SC_ARUSER_WIDTH": {
             "value": "0"
@@ -2284,7 +2338,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "3"
@@ -2356,7 +2410,7 @@
                 "value": "1"
               },
               "PAYLD_WIDTH": {
-                "value": "140"
+                "value": "148"
               },
               "S00_NUM_BYTES": {
                 "value": "4"
@@ -2437,7 +2491,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "1"
@@ -2590,7 +2644,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "4"
@@ -2814,7 +2868,7 @@
         "inst_hier_path": "m00_sc2axi",
         "parameters": {
           "AXI_ADDR_WIDTH": {
-            "value": "32"
+            "value": "40"
           },
           "AXI_ID_WIDTH": {
             "value": "2"
@@ -2832,7 +2886,7 @@
             "value": "READ_WRITE"
           },
           "SC_ADDR_WIDTH": {
-            "value": "32"
+            "value": "40"
           },
           "SC_ARUSER_WIDTH": {
             "value": "0"
@@ -2955,7 +3009,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "2"
@@ -3027,7 +3081,7 @@
                 "value": "2"
               },
               "PAYLD_WIDTH": {
-                "value": "140"
+                "value": "148"
               },
               "S00_NUM_BYTES": {
                 "value": "16"
@@ -3108,7 +3162,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "0"
@@ -3261,7 +3315,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "3"
@@ -3333,7 +3387,7 @@
                 "value": "2"
               },
               "PAYLD_WIDTH": {
-                "value": "140"
+                "value": "148"
               },
               "S00_NUM_BYTES": {
                 "value": "16"
@@ -3414,7 +3468,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "1"
@@ -3570,7 +3624,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "40"
               },
               "CHANNEL": {
                 "value": "4"
@@ -4225,12 +4279,12 @@
       "/": {
         "address_spaces": {
           "S00_AXI": {
-            "range": "4G",
-            "width": "32"
+            "range": "1T",
+            "width": "40"
           },
           "S01_AXI": {
-            "range": "4G",
-            "width": "32"
+            "range": "1T",
+            "width": "40"
           }
         },
         "memory_maps": {

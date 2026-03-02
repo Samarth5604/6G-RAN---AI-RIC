@@ -12,8 +12,8 @@ entity chan_est_top_pilot_h_re_RAM_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 16; 
-        AddressWidth    : integer   := 8;
-        AddressRange    : integer   := 172
+        AddressWidth    : integer   := 7;
+        AddressRange    : integer   := 100
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

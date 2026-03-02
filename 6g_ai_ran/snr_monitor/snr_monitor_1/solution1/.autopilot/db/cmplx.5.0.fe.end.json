@@ -1,0 +1,69 @@
+{
+    "1": {
+        "name": "snr_monitor_top_Pipeline_weight_drain",
+        "file": "snr_monitor.cpp",
+        "fileloc": "99",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "snr_monitor_top",
+        "file": "snr_monitor.cpp",
+        "fileloc": "54",
+        "instructions": "61",
+        "total_instructions": "194",
+        "calls": "2 1 3",
+        "basicblocks": "5",
+        "loads": {
+            "L": "2"
+        }
+    },
+    "2": {
+        "name": "snr_monitor_top_Pipeline_buf_loop",
+        "file": "snr_monitor.cpp",
+        "fileloc": "83",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "snr_monitor_top_Pipeline_pilot_snr",
+        "file": "snr_monitor.cpp",
+        "fileloc": "115",
+        "instructions": "78",
+        "total_instructions": "78",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "9"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

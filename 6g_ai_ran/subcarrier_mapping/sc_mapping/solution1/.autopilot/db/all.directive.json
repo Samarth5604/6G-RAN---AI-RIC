@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "sc_mapper_rx",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "sc_mapper_rx"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/csynth.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]

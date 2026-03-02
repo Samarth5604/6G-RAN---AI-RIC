@@ -44,7 +44,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename pilot_h_im_1 \
     op interface \
-    ports { pilot_h_im_1_address0 { O 8 vector } pilot_h_im_1_ce0 { O 1 bit } pilot_h_im_1_we0 { O 1 bit } pilot_h_im_1_d0 { O 16 vector } } \
+    ports { pilot_h_im_1_address0 { O 7 vector } pilot_h_im_1_ce0 { O 1 bit } pilot_h_im_1_we0 { O 1 bit } pilot_h_im_1_d0 { O 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pilot_h_im_1'"
@@ -63,7 +63,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename pilot_h_im \
     op interface \
-    ports { pilot_h_im_address0 { O 8 vector } pilot_h_im_ce0 { O 1 bit } pilot_h_im_we0 { O 1 bit } pilot_h_im_d0 { O 16 vector } } \
+    ports { pilot_h_im_address0 { O 7 vector } pilot_h_im_ce0 { O 1 bit } pilot_h_im_we0 { O 1 bit } pilot_h_im_d0 { O 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pilot_h_im'"
@@ -82,7 +82,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename pilot_h_re_1 \
     op interface \
-    ports { pilot_h_re_1_address0 { O 8 vector } pilot_h_re_1_ce0 { O 1 bit } pilot_h_re_1_we0 { O 1 bit } pilot_h_re_1_d0 { O 16 vector } } \
+    ports { pilot_h_re_1_address0 { O 7 vector } pilot_h_re_1_ce0 { O 1 bit } pilot_h_re_1_we0 { O 1 bit } pilot_h_re_1_d0 { O 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pilot_h_re_1'"
@@ -101,7 +101,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename pilot_h_re \
     op interface \
-    ports { pilot_h_re_address0 { O 8 vector } pilot_h_re_ce0 { O 1 bit } pilot_h_re_we0 { O 1 bit } pilot_h_re_d0 { O 16 vector } } \
+    ports { pilot_h_re_address0 { O 7 vector } pilot_h_re_ce0 { O 1 bit } pilot_h_re_we0 { O 1 bit } pilot_h_re_d0 { O 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pilot_h_re'"

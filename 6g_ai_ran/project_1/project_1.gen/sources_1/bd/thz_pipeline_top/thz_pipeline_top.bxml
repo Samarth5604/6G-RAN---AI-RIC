@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="thz_pipeline_top" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1772337565"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1772337542"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1772337565"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1772337565"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1772434968"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1772434965"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1772434968"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1772434968"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="thz_pipeline_top_sim_netlist.vhdl" Type="VHDL">
         <Properties IsEditable="true" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
@@ -48,6 +48,12 @@
         <ProcessingOrder Val="NORMAL"/>
       </File>
       <File Name="sim/thz_pipeline_top.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim/thz_pipeline_top.protoinst">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>

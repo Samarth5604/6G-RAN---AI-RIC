@@ -1,0 +1,383 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:05; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 295.793 MB.
+INFO: [HLS 200-10] Analyzing design file 'sc_mapper.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.94 seconds. CPU system time: 0.57 seconds. Elapsed time: 3.7 seconds; current allocated memory: 296.887 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 279 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 204 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 120 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 184 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 192 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 184 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 124 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 124 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 87 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 82 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'data_out' as it needs to be read/written in its entirety
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_78_1' is marked as complete unroll implied by the pipeline pragma (sc_mapper.cpp:78:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_89_2' is marked as complete unroll implied by the pipeline pragma (sc_mapper.cpp:89:30)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_78_1' (sc_mapper.cpp:78:19) in function 'sc_mapper_rx' completely with a factor of 2 (sc_mapper.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_89_2' (sc_mapper.cpp:89:30) in function 'sc_mapper_rx' completely with a factor of 2 (sc_mapper.cpp:58:0)
+INFO: [HLS 214-248] Applying array_partition to 'fft_in': Complete partitioning on dimension 1. (sc_mapper.cpp:58:0)
+INFO: [HLS 214-248] Applying array_partition to 'data_out': Complete partitioning on dimension 1. (sc_mapper.cpp:58:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.47 seconds. CPU system time: 0.39 seconds. Elapsed time: 7.47 seconds; current allocated memory: 307.328 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 307.328 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 307.512 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 307.637 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 329.680 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 321.430 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sc_mapper_rx' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sc_mapper_rx' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'scan_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'scan_loop'
+WARNING: [HLS 200-871] Estimated clock period (2.451 ns) exceeds the target (target clock period: 3.330 ns, clock uncertainty: 0.899 ns, effective delay budget: 2.431 ns).
+WARNING: [HLS 200-1016] The critical path in module 'sc_mapper_rx' consists of the following:
+	'load' operation 10 bit ('DATA_SC_IDX_load', sc_mapper.cpp:85) on array 'DATA_SC_IDX' [67]  (1.237 ns)
+	'icmp' operation 1 bit ('is_data', sc_mapper.cpp:85) [68]  (0.787 ns)
+	'store' operation 0 bit ('d1_write_ln96', sc_mapper.cpp:96) of variable 'd', sc_mapper.cpp:96 on local variable 'd1' [75]  (0.427 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 321.590 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 321.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sc_mapper_rx' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'sc_mapper_rx' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sc_mapper_rx' pipeline 'scan_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sc_mapper_rx'.
+INFO: [RTMG 210-279] Implementing memory 'sc_mapper_rx_DATA_SC_IDX_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 321.590 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 323.848 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.32 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.34 seconds; current allocated memory: 331.590 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sc_mapper_rx.
+INFO: [VLOG 209-307] Generating Verilog RTL for sc_mapper_rx.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 408.00 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:12; Allocated memory: 35.879 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:02; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 295.699 MB.
+INFO: [HLS 200-10] Analyzing design file 'sc_mapper.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.57 seconds. CPU system time: 0.51 seconds. Elapsed time: 3.11 seconds; current allocated memory: 296.934 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 317 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 211 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 170 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 170 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 170 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 124 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 188 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 196 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 188 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 128 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 128 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 91 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 86 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'data_out' as it needs to be read/written in its entirety
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_47_1' is marked as complete unroll implied by the pipeline pragma (sc_mapper.cpp:47:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_57_2' is marked as complete unroll implied by the pipeline pragma (sc_mapper.cpp:57:30)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_47_1' (sc_mapper.cpp:47:19) in function 'sc_mapper_rx' completely with a factor of 2 (sc_mapper.cpp:21:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_2' (sc_mapper.cpp:57:30) in function 'sc_mapper_rx' completely with a factor of 2 (sc_mapper.cpp:21:0)
+INFO: [HLS 214-248] Applying array_partition to 'fft_in': Complete partitioning on dimension 1. (sc_mapper.cpp:21:0)
+INFO: [HLS 214-248] Applying array_partition to 'data_out': Complete partitioning on dimension 1. (sc_mapper.cpp:21:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.33 seconds. CPU system time: 0.38 seconds. Elapsed time: 7.21 seconds; current allocated memory: 307.375 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 307.375 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 307.488 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 307.590 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 329.484 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 321.484 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sc_mapper_rx' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sc_mapper_rx' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'scan_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'scan_loop'
+WARNING: [HLS 200-871] Estimated clock period (2.508 ns) exceeds the target (target clock period: 3.330 ns, clock uncertainty: 0.899 ns, effective delay budget: 2.431 ns).
+WARNING: [HLS 200-1016] The critical path in module 'sc_mapper_rx' consists of the following:
+	'load' operation 32 bit ('d1_load', sc_mapper.cpp:64) on local variable 'd1' [53]  (0.000 ns)
+	'add' operation 32 bit ('d', sc_mapper.cpp:64) [73]  (1.016 ns)
+	'getelementptr' operation 9 bit ('DATA_SC_IDX_addr', sc_mapper.cpp:68) [82]  (0.000 ns)
+	'load' operation 10 bit ('DATA_SC_IDX_load', sc_mapper.cpp:68) on array 'DATA_SC_IDX' [83]  (1.237 ns)
+	blocking operation 0.255 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 321.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 321.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sc_mapper_rx' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'sc_mapper_rx' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sc_mapper_rx' pipeline 'scan_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sc_mapper_rx'.
+INFO: [RTMG 210-279] Implementing memory 'sc_mapper_rx_DATA_SC_IDX_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 321.730 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 324.066 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.3 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.32 seconds; current allocated memory: 331.977 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sc_mapper_rx.
+INFO: [VLOG 209-307] Generating Verilog RTL for sc_mapper_rx.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 398.72 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:11; Allocated memory: 36.359 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:00; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.53ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.53 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.53ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 295.746 MB.
+INFO: [HLS 200-10] Analyzing design file 'sc_mapper.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.56 seconds. CPU system time: 0.51 seconds. Elapsed time: 3.09 seconds; current allocated memory: 296.934 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 317 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 211 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 170 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 170 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 170 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 124 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 188 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 196 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 188 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 128 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 128 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 91 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 86 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'data_out' as it needs to be read/written in its entirety
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_47_1' is marked as complete unroll implied by the pipeline pragma (sc_mapper.cpp:47:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_57_2' is marked as complete unroll implied by the pipeline pragma (sc_mapper.cpp:57:30)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_47_1' (sc_mapper.cpp:47:19) in function 'sc_mapper_rx' completely with a factor of 2 (sc_mapper.cpp:21:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_2' (sc_mapper.cpp:57:30) in function 'sc_mapper_rx' completely with a factor of 2 (sc_mapper.cpp:21:0)
+INFO: [HLS 214-248] Applying array_partition to 'fft_in': Complete partitioning on dimension 1. (sc_mapper.cpp:21:0)
+INFO: [HLS 214-248] Applying array_partition to 'data_out': Complete partitioning on dimension 1. (sc_mapper.cpp:21:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.12 seconds. CPU system time: 0.33 seconds. Elapsed time: 7.03 seconds; current allocated memory: 307.398 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 307.398 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 307.551 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 307.672 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 329.551 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 321.547 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sc_mapper_rx' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sc_mapper_rx' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'scan_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'scan_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 321.715 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 321.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sc_mapper_rx' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/fft_in_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sc_mapper_rx/data_out_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'sc_mapper_rx' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sc_mapper_rx' pipeline 'scan_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sc_mapper_rx'.
+INFO: [RTMG 210-279] Implementing memory 'sc_mapper_rx_DATA_SC_IDX_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 321.715 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 324.164 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.24 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.26 seconds; current allocated memory: 331.992 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sc_mapper_rx.
+INFO: [VLOG 209-307] Generating Verilog RTL for sc_mapper_rx.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 398.72 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:10; Allocated memory: 36.340 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.53ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3.53 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.53ns.
+INFO: [HLS 200-1510] Running: config_export -output /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:22; Allocated memory: 5.562 MB.

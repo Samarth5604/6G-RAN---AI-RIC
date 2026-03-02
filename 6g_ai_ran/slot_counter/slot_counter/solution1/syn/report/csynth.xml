@@ -1,0 +1,695 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu7ev-ffvc1156-2-e</Part>
+        <TopModelName>slot_counter_top</TopModelName>
+        <TargetClockPeriod>3.33</TargetClockPeriod>
+        <ClockUncertainty>0.90</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>2.180</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>1</Best-caseLatency>
+            <Average-caseLatency>1</Average-caseLatency>
+            <Worst-caseLatency>1</Worst-caseLatency>
+            <Best-caseRealTimeLatency>3.330 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>3.330 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>3.330 ns</Worst-caseRealTimeLatency>
+            <Interval-min>2</Interval-min>
+            <Interval-max>2</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>slot_counter.cpp:43</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <FF>125</FF>
+            <LUT>353</LUT>
+            <URAM>0</URAM>
+            <DSP>0</DSP>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>624</BRAM_18K>
+            <DSP>1728</DSP>
+            <FF>460800</FF>
+            <LUT>230400</LUT>
+            <URAM>96</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWADDR</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WDATA</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WSTRB</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARADDR</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RDATA</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RRESP</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BRESP</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>slot_counter_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>slot_counter_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>symbol_num</name>
+            <Object>symbol_num</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>slot_num</name>
+            <Object>slot_num</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>7</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>gpio_override</name>
+            <Object>gpio_override</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>gpio_symbol_num</name>
+            <Object>gpio_symbol_num</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>gpio_slot_num</name>
+            <Object>gpio_slot_num</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>7</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>slot_counter_top</ModuleName>
+            <BindInstances>icmp_ln93_fu_214_p2 icmp_ln93_1_fu_220_p2 or_ln93_fu_226_p2 select_ln97_fu_232_p3 icmp_ln97_fu_244_p2 icmp_ln100_fu_256_p2 add_ln107_fu_262_p2 icmp_ln103_fu_280_p2 add_ln105_fu_286_p2 select_ln103_fu_292_p3 add_ln110_fu_306_p2 symbol_num slot_num CTRL_s_axi_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>slot_counter_top</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.90</ClockUncertainty>
+                    <EstimatedClockPeriod>2.180</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>1</Average-caseLatency>
+                    <Worst-caseLatency>1</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>3.330 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>3.330 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>3.330 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>slot_counter.cpp:43</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>125</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>353</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln93_fu_214_p2" SOURCE="slot_counter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln93" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln93_1_fu_220_p2" SOURCE="slot_counter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln93_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln93_fu_226_p2" SOURCE="slot_counter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln93" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln97_fu_232_p3" SOURCE="slot_counter.cpp:97" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln97" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln97_fu_244_p2" SOURCE="slot_counter.cpp:97" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln97" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln100_fu_256_p2" SOURCE="slot_counter.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln100" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln107_fu_262_p2" SOURCE="slot_counter.cpp:107" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln107" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln103_fu_280_p2" SOURCE="slot_counter.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln103" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln105_fu_286_p2" SOURCE="slot_counter.cpp:105" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln105" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln103_fu_292_p3" SOURCE="slot_counter.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln103" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln110_fu_306_p2" SOURCE="slot_counter.cpp:110" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln110" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="symbol_num" SOURCE="slot_counter.cpp:115" STORAGESUBTYPE="" URAM="0" VARIABLE="gpio_symbol_num_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="slot_num" SOURCE="slot_counter.cpp:115" STORAGESUBTYPE="" URAM="0" VARIABLE="gpio_slot_num_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="symbol_num" index="0" direction="out" srcType="ap_uint&lt;4&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="symbol_num" name="symbol_num" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="slot_num" index="1" direction="out" srcType="ap_uint&lt;7&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="slot_num" name="slot_num" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="gpio_override" index="2" direction="in" srcType="ap_uint&lt;1&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="gpio_override" name="gpio_override" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="gpio_symbol_num" index="3" direction="in" srcType="ap_uint&lt;4&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="gpio_symbol_num" name="gpio_symbol_num" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="gpio_slot_num" index="4" direction="in" srcType="ap_uint&lt;7&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="gpio_slot_num" name="gpio_slot_num" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="sync_req" index="5" direction="in" srcType="ap_uint&lt;1&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="sync_req" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="sync_symbol" index="6" direction="in" srcType="ap_uint&lt;4&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="sync_symbol" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="sync_slot" index="7" direction="in" srcType="ap_uint&lt;7&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="sync_slot" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="symbol_num_out" index="8" direction="out" srcType="ap_uint&lt;4&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="symbol_num_out" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_CTRL" name="symbol_num_out_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="slot_num_out" index="9" direction="out" srcType="ap_uint&lt;7&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="slot_num_out" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_CTRL" name="slot_num_out_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_CTRL" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="6" portPrefix="s_axi_CTRL_" paramPrefix="C_S_AXI_CTRL_">
+            <ports>
+                <port>s_axi_CTRL_ARADDR</port>
+                <port>s_axi_CTRL_ARREADY</port>
+                <port>s_axi_CTRL_ARVALID</port>
+                <port>s_axi_CTRL_AWADDR</port>
+                <port>s_axi_CTRL_AWREADY</port>
+                <port>s_axi_CTRL_AWVALID</port>
+                <port>s_axi_CTRL_BREADY</port>
+                <port>s_axi_CTRL_BRESP</port>
+                <port>s_axi_CTRL_BVALID</port>
+                <port>s_axi_CTRL_RDATA</port>
+                <port>s_axi_CTRL_RREADY</port>
+                <port>s_axi_CTRL_RRESP</port>
+                <port>s_axi_CTRL_RVALID</port>
+                <port>s_axi_CTRL_WDATA</port>
+                <port>s_axi_CTRL_WREADY</port>
+                <port>s_axi_CTRL_WSTRB</port>
+                <port>s_axi_CTRL_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x10" name="sync_req" access="W" description="Data signal of sync_req" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="sync_req" access="W" description="Bit 0 to 0 of sync_req"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="sync_symbol" access="W" description="Data signal of sync_symbol" range="32">
+                    <fields>
+                        <field offset="0" width="4" name="sync_symbol" access="W" description="Bit 3 to 0 of sync_symbol"/>
+                        <field offset="4" width="28" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x20" name="sync_slot" access="W" description="Data signal of sync_slot" range="32">
+                    <fields>
+                        <field offset="0" width="7" name="sync_slot" access="W" description="Bit 6 to 0 of sync_slot"/>
+                        <field offset="7" width="25" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x28" name="symbol_num_out" access="R" description="Data signal of symbol_num_out" range="32">
+                    <fields>
+                        <field offset="0" width="4" name="symbol_num_out" access="R" description="Bit 3 to 0 of symbol_num_out"/>
+                        <field offset="4" width="28" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x2c" name="symbol_num_out_ctrl" access="R" description="Control signal of symbol_num_out" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="symbol_num_out_ap_vld" access="R" description="Control signal symbol_num_out_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x38" name="slot_num_out" access="R" description="Data signal of slot_num_out" range="32">
+                    <fields>
+                        <field offset="0" width="7" name="slot_num_out" access="R" description="Bit 6 to 0 of slot_num_out"/>
+                        <field offset="7" width="25" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x3c" name="slot_num_out_ctrl" access="R" description="Control signal of slot_num_out" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="slot_num_out_ap_vld" access="R" description="Control signal slot_num_out_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="sync_req"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24" argName="sync_symbol"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="sync_slot"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="40" argName="symbol_num_out"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="56" argName="slot_num_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_CTRL</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="symbol_num" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="4">
+            <portMaps>
+                <portMap portMapName="symbol_num">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>symbol_num</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="symbol_num"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="slot_num" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="7">
+            <portMaps>
+                <portMap portMapName="slot_num">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>slot_num</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="slot_num"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="gpio_override" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="gpio_override">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>gpio_override</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="gpio_override"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="gpio_symbol_num" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="4">
+            <portMaps>
+                <portMap portMapName="gpio_symbol_num">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>gpio_symbol_num</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="gpio_symbol_num"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="gpio_slot_num" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="7">
+            <portMaps>
+                <portMap portMapName="gpio_slot_num">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>gpio_slot_num</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="gpio_slot_num"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table>
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_CTRL">32, 6, 16, 0</column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_CTRL">sync_req, 0x10, 32, W, Data signal of sync_req, </column>
+                    <column name="s_axi_CTRL">sync_symbol, 0x18, 32, W, Data signal of sync_symbol, </column>
+                    <column name="s_axi_CTRL">sync_slot, 0x20, 32, W, Data signal of sync_slot, </column>
+                    <column name="s_axi_CTRL">symbol_num_out, 0x28, 32, R, Data signal of symbol_num_out, </column>
+                    <column name="s_axi_CTRL">symbol_num_out_ctrl, 0x2c, 32, R, Control signal of symbol_num_out, 0=symbol_num_out_ap_vld</column>
+                    <column name="s_axi_CTRL">slot_num_out, 0x38, 32, R, Data signal of slot_num_out, </column>
+                    <column name="s_axi_CTRL">slot_num_out_ctrl, 0x3c, 32, R, Control signal of slot_num_out, 0=slot_num_out_ap_vld</column>
+                </table>
+            </item>
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="gpio_override">ap_none, in, 1</column>
+                    <column name="gpio_slot_num">ap_none, in, 7</column>
+                    <column name="gpio_symbol_num">ap_none, in, 4</column>
+                    <column name="slot_num">ap_none, out, 7</column>
+                    <column name="symbol_num">ap_none, out, 4</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="symbol_num">out, ap_uint&lt;4&gt;&amp;</column>
+                    <column name="slot_num">out, ap_uint&lt;7&gt;&amp;</column>
+                    <column name="gpio_override">in, ap_uint&lt;1&gt;</column>
+                    <column name="gpio_symbol_num">in, ap_uint&lt;4&gt;</column>
+                    <column name="gpio_slot_num">in, ap_uint&lt;7&gt;</column>
+                    <column name="sync_req">in, ap_uint&lt;1&gt;</column>
+                    <column name="sync_symbol">in, ap_uint&lt;4&gt;</column>
+                    <column name="sync_slot">in, ap_uint&lt;7&gt;</column>
+                    <column name="symbol_num_out">out, ap_uint&lt;4&gt;&amp;</column>
+                    <column name="slot_num_out">out, ap_uint&lt;7&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="symbol_num">symbol_num, port, </column>
+                    <column name="slot_num">slot_num, port, </column>
+                    <column name="gpio_override">gpio_override, port, </column>
+                    <column name="gpio_symbol_num">gpio_symbol_num, port, </column>
+                    <column name="gpio_slot_num">gpio_slot_num, port, </column>
+                    <column name="sync_req">s_axi_CTRL, register, name=sync_req offset=0x10 range=32</column>
+                    <column name="sync_symbol">s_axi_CTRL, register, name=sync_symbol offset=0x18 range=32</column>
+                    <column name="sync_slot">s_axi_CTRL, register, name=sync_slot offset=0x20 range=32</column>
+                    <column name="symbol_num_out">s_axi_CTRL, register, name=symbol_num_out offset=0x28 range=32</column>
+                    <column name="symbol_num_out">s_axi_CTRL, register, name=symbol_num_out_ctrl offset=0x2c range=32</column>
+                    <column name="slot_num_out">s_axi_CTRL, register, name=slot_num_out offset=0x38 range=32</column>
+                    <column name="slot_num_out">s_axi_CTRL, register, name=slot_num_out_ctrl offset=0x3c range=32</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="slot_counter.cpp:55" status="valid" parentFunction="slot_counter_top" variable="symbol_num" isDirective="0" options="ap_none port=symbol_num"/>
+        <Pragma type="interface" location="slot_counter.cpp:56" status="valid" parentFunction="slot_counter_top" variable="slot_num" isDirective="0" options="ap_none port=slot_num"/>
+        <Pragma type="interface" location="slot_counter.cpp:57" status="valid" parentFunction="slot_counter_top" variable="gpio_override" isDirective="0" options="ap_none port=gpio_override"/>
+        <Pragma type="interface" location="slot_counter.cpp:58" status="valid" parentFunction="slot_counter_top" variable="gpio_symbol_num" isDirective="0" options="ap_none port=gpio_symbol_num"/>
+        <Pragma type="interface" location="slot_counter.cpp:59" status="valid" parentFunction="slot_counter_top" variable="gpio_slot_num" isDirective="0" options="ap_none port=gpio_slot_num"/>
+        <Pragma type="interface" location="slot_counter.cpp:60" status="valid" parentFunction="slot_counter_top" variable="sync_req" isDirective="0" options="s_axilite port=sync_req bundle=CTRL"/>
+        <Pragma type="interface" location="slot_counter.cpp:61" status="valid" parentFunction="slot_counter_top" variable="sync_symbol" isDirective="0" options="s_axilite port=sync_symbol bundle=CTRL"/>
+        <Pragma type="interface" location="slot_counter.cpp:62" status="valid" parentFunction="slot_counter_top" variable="sync_slot" isDirective="0" options="s_axilite port=sync_slot bundle=CTRL"/>
+        <Pragma type="interface" location="slot_counter.cpp:63" status="valid" parentFunction="slot_counter_top" variable="symbol_num_out" isDirective="0" options="s_axilite port=symbol_num_out bundle=CTRL"/>
+        <Pragma type="interface" location="slot_counter.cpp:64" status="valid" parentFunction="slot_counter_top" variable="slot_num_out" isDirective="0" options="s_axilite port=slot_num_out bundle=CTRL"/>
+        <Pragma type="interface" location="slot_counter.cpp:65" status="valid" parentFunction="slot_counter_top" variable="return" isDirective="0" options="s_axilite port=return bundle=CTRL"/>
+        <Pragma type="interface" location="slot_counter.cpp:66" status="valid" parentFunction="slot_counter_top" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+        <Pragma type="reset" location="slot_counter.cpp:72" status="valid" parentFunction="slot_counter_top" variable="phase_cnt" isDirective="0" options="variable=phase_cnt"/>
+        <Pragma type="reset" location="slot_counter.cpp:73" status="valid" parentFunction="slot_counter_top" variable="symbol_cnt" isDirective="0" options="variable=symbol_cnt"/>
+        <Pragma type="reset" location="slot_counter.cpp:74" status="valid" parentFunction="slot_counter_top" variable="slot_cnt" isDirective="0" options="variable=slot_cnt"/>
+    </PragmaReport>
+</profile>
+

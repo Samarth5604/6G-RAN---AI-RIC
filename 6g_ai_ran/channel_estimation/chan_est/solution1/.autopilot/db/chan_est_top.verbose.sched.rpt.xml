@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'chan_est_top'" level="0">
-<item name = "Date">Sat Feb 28 15:53:58 2026
+<item name = "Date">Sun Mar  1 14:56:19 2026
 </item>
 <item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
 <item name = "Project">chan_est</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1030, 6341, 3.430 us, 21.116 us, 1031, 6342, no</column>
+<column name="">1030, 6269, 3.430 us, 20.876 us, 1031, 6270, no</column>
 </table>
 </item>
 <item name = "Detail">

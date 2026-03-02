@@ -1,0 +1,214 @@
+
+
+================================================================
+== Synthesis Summary Report of 'snr_monitor_top'
+================================================================
++ General Information: 
+    * Date:           Mon Mar  2 11:31:41 2026
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        snr_monitor_1
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |                  Modules                 | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |         |         |            |            |     |
+    |                  & Loops                 | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF     |     LUT    | URAM|
+    +------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |+ snr_monitor_top                         |     -|  0.05|     5311|  1.769e+04|         -|     5312|     -|        no|  6 (~0%)|  8 (~0%)|  1615 (~0%)|  1960 (~0%)|    -|
+    | + snr_monitor_top_Pipeline_buf_loop      |     -|  0.78|     1026|  3.417e+03|         -|     1026|     -|        no|        -|        -|    57 (~0%)|    97 (~0%)|    -|
+    |  o buf_loop                              |     -|  2.43|     1024|  3.410e+03|         2|        1|  1024|       yes|        -|        -|           -|           -|    -|
+    | + snr_monitor_top_Pipeline_weight_drain  |     -|  0.76|     4098|  1.365e+04|         -|     4098|     -|        no|        -|        -|    62 (~0%)|   102 (~0%)|    -|
+    |  o weight_drain                          |     -|  2.43|     4096|  1.364e+04|         2|        1|  4096|       yes|        -|        -|           -|           -|    -|
+    | + snr_monitor_top_Pipeline_pilot_snr     |     -|  0.05|      110|    366.300|         -|      110|     -|        no|  2 (~0%)|  8 (~0%)|   528 (~0%)|   416 (~0%)|    -|
+    |  o pilot_snr                             |     -|  2.43|      108|    359.640|        10|        1|   100|       yes|        -|        -|           -|           -|    -|
+    +------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++-----------+------------+---------------+--------+----------+
+| Interface | Data Width | Address Width | Offset | Register |
++-----------+------------+---------------+--------+----------+
+| s_axi_SNR | 32         | 5             | 16     | 0        |
++-----------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-----------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface | Register     | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-----------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_SNR | CTRL         | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_SNR | GIER         | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_SNR | IP_IER       | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_SNR | IP_ISR       | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_SNR | snr_out      | 0x10   | 32    | R      | Data signal of snr_out           |                                                                      |
+| s_axi_SNR | snr_out_ctrl | 0x14   | 32    | R      | Control signal of snr_out        | 0=snr_out_ap_vld                                                     |
++-----------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++---------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface     | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++---------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| fft_in_0      | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| fft_in_1      | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| weight_stream | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++---------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* Other Ports
++------------+---------+-----------+----------+
+| Port       | Mode    | Direction | Bitwidth |
++------------+---------+-----------+----------+
+| symbol_num | ap_none | in        | 4        |
++------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+---------------------------------------------------------+
+| Argument      | Direction | Datatype                                                |
++---------------+-----------+---------------------------------------------------------+
+| fft_in        | in        | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>* |
+| weight_stream | in        | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>& |
+| symbol_num    | in        | ap_uint<4>                                              |
+| snr_out       | out       | ap_uint<32>&                                            |
++---------------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++---------------+---------------+-----------+----------------------------------------+
+| Argument      | HW Interface  | HW Type   | HW Info                                |
++---------------+---------------+-----------+----------------------------------------+
+| fft_in        | fft_in_0      | interface |                                        |
+| fft_in        | fft_in_1      | interface |                                        |
+| weight_stream | weight_stream | interface |                                        |
+| symbol_num    | symbol_num    | port      |                                        |
+| snr_out       | s_axi_SNR     | register  | name=snr_out offset=0x10 range=32      |
+| snr_out       | s_axi_SNR     | register  | name=snr_out_ctrl offset=0x14 range=32 |
++---------------+---------------+-----------+----------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------+-----+--------+--------------+-------+-----------+---------+
+| Name                                     | DSP | Pragma | Variable     | Op    | Impl      | Latency |
++------------------------------------------+-----+--------+--------------+-------+-----------+---------+
+| + snr_monitor_top                        | 8   |        |              |       |           |         |
+|   icmp_ln113_fu_195_p2                   |     |        | icmp_ln113   | seteq | auto      | 0       |
+|   icmp_ln168_fu_239_p2                   |     |        | icmp_ln168   | setlt | auto      | 0       |
+|   sub_ln168_fu_227_p2                    |     |        | sub_ln168    | sub   | fabric    | 0       |
+|   icmp_ln168_1_fu_233_p2                 |     |        | icmp_ln168_1 | setgt | auto      | 0       |
+|   or_ln168_fu_244_p2                     |     |        | or_ln168     | or    | auto      | 0       |
+|   udiv_64s_39ns_32_68_seq_1_U38          |     |        | udiv_ln173   | udiv  | auto_seq  | 67      |
+|  + snr_monitor_top_Pipeline_buf_loop     | 0   |        |              |       |           |         |
+|    icmp_ln83_fu_130_p2                   |     |        | icmp_ln83    | seteq | auto      | 0       |
+|    add_ln83_fu_136_p2                    |     |        | add_ln83     | add   | fabric    | 0       |
+|  + snr_monitor_top_Pipeline_weight_drain | 0   |        |              |       |           |         |
+|    icmp_ln99_fu_116_p2                   |     |        | icmp_ln99    | seteq | auto      | 0       |
+|    add_ln99_fu_122_p2                    |     |        | add_ln99     | add   | fabric    | 0       |
+|    icmp_ln102_fu_142_p2                  |     |        | icmp_ln102   | seteq | auto      | 0       |
+|  + snr_monitor_top_Pipeline_pilot_snr    | 8   |        |              |       |           |         |
+|    icmp_ln119_fu_184_p2                  |     |        | icmp_ln119   | seteq | auto      | 0       |
+|    m_2_fu_190_p2                         |     |        | m_2          | add   | fabric    | 0       |
+|    mul_16s_15s_30_1_1_U17                | 1   |        | mul_ln145    | mul   | auto      | 0       |
+|    mac_mulsub_16s_15s_30s_30_4_1_U21     | 1   |        | mul_ln145_1  | mul   | dsp_slice | 3       |
+|    mac_mulsub_16s_15s_30s_30_4_1_U21     | 1   |        | s_re_full    | sub   | dsp_slice | 3       |
+|    mac_muladd_16s_15s_30s_30_4_1_U22     | 1   |        | mul_ln146    | mul   | dsp_slice | 3       |
+|    mul_16s_15s_30_1_1_U18                | 1   |        | mul_ln146_1  | mul   | auto      | 0       |
+|    mac_muladd_16s_15s_30s_30_4_1_U22     | 1   |        | s_im_full    | add   | dsp_slice | 3       |
+|    add_ln147_fu_267_p2                   |     |        | add_ln147    | add   | fabric    | 0       |
+|    add_ln148_fu_282_p2                   |     |        | add_ln148    | add   | fabric    | 0       |
+|    e_re_fu_297_p2                        |     |        | e_re         | sub   | fabric    | 0       |
+|    e_im_fu_302_p2                        |     |        | e_im         | sub   | fabric    | 0       |
+|    mul_16s_16s_32_1_1_U19                | 1   |        | mul_ln156    | mul   | auto      | 0       |
+|    mac_muladd_16s_16s_32s_33_4_1_U23     | 1   |        | mul_ln156_1  | mul   | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_33_4_1_U23     | 1   |        | sext_ln156_3 | sext  | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_33_4_1_U23     | 1   |        | add_ln156    | add   | dsp_slice | 3       |
+|    sig_pow_1_fu_346_p2                   |     |        | sig_pow_1    | add   | fabric    | 0       |
+|    mul_16s_16s_32_1_1_U20                | 1   |        | mul_ln157    | mul   | auto      | 0       |
+|    mac_muladd_16s_16s_32s_33_4_1_U24     | 1   |        | mul_ln157_1  | mul   | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_33_4_1_U24     | 1   |        | sext_ln157_3 | sext  | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_33_4_1_U24     | 1   |        | add_ln157    | add   | dsp_slice | 3       |
+|    nse_pow_1_fu_355_p2                   |     |        | nse_pow_1    | add   | fabric    | 0       |
++------------------------------------------+-----+--------+--------------+-------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------------------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                                  | Usage        | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                                       |              |           |      |      |        |          |      |         | Banks            |
++---------------------------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| + snr_monitor_top                     |              |           | 6    | 0    |        |          |      |         |                  |
+|   SNR_s_axi_U                         | interface    | s_axilite |      |      |        |          |      |         |                  |
+|   fft_re_U                            | ram_1p array |           | 1    |      |        | fft_re   | auto | 1       | 16, 1024, 1      |
+|   fft_im_U                            | ram_1p array |           | 1    |      |        | fft_im   | auto | 1       | 16, 1024, 1      |
+|   h_re_U                              | ram_1p array |           | 1    |      |        | h_re     | auto | 1       | 16, 1024, 1      |
+|   h_im_U                              | ram_1p array |           | 1    |      |        | h_im     | auto | 1       | 16, 1024, 1      |
+|  + snr_monitor_top_Pipeline_pilot_snr |              |           | 2    | 0    |        |          |      |         |                  |
+|    DMRS_RE_U                          | rom_1p       |           | 1    |      |        | DMRS_RE  | auto | 1       | 15, 100, 1       |
+|    DMRS_IM_U                          | rom_1p       |           | 1    |      |        | DMRS_IM  | auto | 1       | 15, 100, 1       |
++---------------------------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+------------------------------------+------------------------------------------------------+
+| Type            | Options                            | Location                                             |
++-----------------+------------------------------------+------------------------------------------------------+
+| inline          |                                    | ./dmrs_pilots.h:86 in is_pilot                       |
+| inline          |                                    | ./dmrs_pilots.h:95 in pilot_index                    |
+| inline          |                                    | chan_est.cpp:42 in ls_div                            |
+| interface       | axis port=fft_in                   | chan_est.cpp:56 in chan_est_top, fft_in              |
+| interface       | axis port=weight_stream            | chan_est.cpp:57 in chan_est_top, weight_stream       |
+| interface       | ap_none port=symbol_num            | chan_est.cpp:58 in chan_est_top, symbol_num          |
+| interface       | ap_ctrl_hs port=return             | chan_est.cpp:59 in chan_est_top, return              |
+| disaggregate    | variable=fft_in                    | chan_est.cpp:60 in chan_est_top, fft_in              |
+| array_partition | variable=fft_re complete dim=1     | chan_est.cpp:68 in chan_est_top, fft_re              |
+| array_partition | variable=fft_im complete dim=1     | chan_est.cpp:69 in chan_est_top, fft_im              |
+| array_partition | variable=pilot_h_re complete dim=1 | chan_est.cpp:74 in chan_est_top, pilot_h_re          |
+| array_partition | variable=pilot_h_im complete dim=1 | chan_est.cpp:75 in chan_est_top, pilot_h_im          |
+| array_partition | variable=w_re complete dim=1       | chan_est.cpp:80 in chan_est_top, w_re                |
+| array_partition | variable=w_re complete dim=2       | chan_est.cpp:81 in chan_est_top, w_re                |
+| array_partition | variable=w_im complete dim=1       | chan_est.cpp:82 in chan_est_top, w_im                |
+| array_partition | variable=w_im complete dim=2       | chan_est.cpp:83 in chan_est_top, w_im                |
+| pipeline        | II=1                               | chan_est.cpp:90 in chan_est_top                      |
+| unroll          |                                    | chan_est.cpp:92 in chan_est_top                      |
+| pipeline        | II=1                               | chan_est.cpp:108 in chan_est_top                     |
+| unroll          |                                    | chan_est.cpp:116 in chan_est_top                     |
+| pipeline        | II=1                               | chan_est.cpp:131 in chan_est_top                     |
+| unroll          |                                    | chan_est.cpp:134 in chan_est_top                     |
+| unroll          |                                    | chan_est.cpp:136 in chan_est_top                     |
+| pipeline        | II=1                               | chan_est.cpp:148 in chan_est_top                     |
+| interface       | axis port=fft_in                   | snr_monitor.cpp:60 in snr_monitor_top, fft_in        |
+| interface       | axis port=weight_stream            | snr_monitor.cpp:61 in snr_monitor_top, weight_stream |
+| interface       | ap_none port=symbol_num            | snr_monitor.cpp:62 in snr_monitor_top, symbol_num    |
+| interface       | s_axilite port=snr_out bundle=SNR  | snr_monitor.cpp:63 in snr_monitor_top, snr_out       |
+| interface       | s_axilite port=return bundle=SNR   | snr_monitor.cpp:64 in snr_monitor_top, return        |
+| disaggregate    | variable=fft_in                    | snr_monitor.cpp:65 in snr_monitor_top, fft_in        |
+| pipeline        | II=1                               | snr_monitor.cpp:84 in snr_monitor_top                |
+| pipeline        | II=1                               | snr_monitor.cpp:100 in snr_monitor_top               |
+| pipeline        | II=1                               | snr_monitor.cpp:120 in snr_monitor_top               |
++-----------------+------------------------------------+------------------------------------------------------+
+
+

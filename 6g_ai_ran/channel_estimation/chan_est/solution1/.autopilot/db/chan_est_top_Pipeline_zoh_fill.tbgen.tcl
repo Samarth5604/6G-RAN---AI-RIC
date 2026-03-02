@@ -23,10 +23,10 @@ dict set ap_memory_interface_dict w_re_3 { MEM_WIDTH 16 MEM_SIZE 2048 MASTER_TYP
 dict set ap_memory_interface_dict w_re_2 { MEM_WIDTH 16 MEM_SIZE 2048 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict w_re_1 { MEM_WIDTH 16 MEM_SIZE 2048 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict w_re { MEM_WIDTH 16 MEM_SIZE 2048 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict pilot_h_re { MEM_WIDTH 16 MEM_SIZE 344 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict pilot_h_im { MEM_WIDTH 16 MEM_SIZE 344 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict pilot_h_re_1 { MEM_WIDTH 16 MEM_SIZE 344 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict pilot_h_im_1 { MEM_WIDTH 16 MEM_SIZE 344 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict pilot_h_re { MEM_WIDTH 16 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict pilot_h_im { MEM_WIDTH 16 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict pilot_h_re_1 { MEM_WIDTH 16 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict pilot_h_im_1 { MEM_WIDTH 16 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
 	{ w_im_3 int 16 regular {array 1024 { 0 3 } 0 1 }  }
 	{ w_im_2 int 16 regular {array 1024 { 0 3 } 0 1 }  }
@@ -36,10 +36,10 @@ set C_modelArgList {
 	{ w_re_2 int 16 regular {array 1024 { 0 3 } 0 1 }  }
 	{ w_re_1 int 16 regular {array 1024 { 0 3 } 0 1 }  }
 	{ w_re int 16 regular {array 1024 { 0 3 } 0 1 }  }
-	{ pilot_h_re int 16 regular {array 172 { 1 3 } 1 1 }  }
-	{ pilot_h_im int 16 regular {array 172 { 1 3 } 1 1 }  }
-	{ pilot_h_re_1 int 16 regular {array 172 { 1 3 } 1 1 }  }
-	{ pilot_h_im_1 int 16 regular {array 172 { 1 3 } 1 1 }  }
+	{ pilot_h_re int 16 regular {array 100 { 1 3 } 1 1 }  }
+	{ pilot_h_im int 16 regular {array 100 { 1 3 } 1 1 }  }
+	{ pilot_h_re_1 int 16 regular {array 100 { 1 3 } 1 1 }  }
+	{ pilot_h_im_1 int 16 regular {array 100 { 1 3 } 1 1 }  }
 }
 set hasAXIMCache 0
 set hasAXIML2Cache 0
@@ -98,16 +98,16 @@ set portList {
 	{ w_re_ce0 sc_out sc_logic 1 signal 7 } 
 	{ w_re_we0 sc_out sc_logic 1 signal 7 } 
 	{ w_re_d0 sc_out sc_lv 16 signal 7 } 
-	{ pilot_h_re_address0 sc_out sc_lv 8 signal 8 } 
+	{ pilot_h_re_address0 sc_out sc_lv 7 signal 8 } 
 	{ pilot_h_re_ce0 sc_out sc_logic 1 signal 8 } 
 	{ pilot_h_re_q0 sc_in sc_lv 16 signal 8 } 
-	{ pilot_h_im_address0 sc_out sc_lv 8 signal 9 } 
+	{ pilot_h_im_address0 sc_out sc_lv 7 signal 9 } 
 	{ pilot_h_im_ce0 sc_out sc_logic 1 signal 9 } 
 	{ pilot_h_im_q0 sc_in sc_lv 16 signal 9 } 
-	{ pilot_h_re_1_address0 sc_out sc_lv 8 signal 10 } 
+	{ pilot_h_re_1_address0 sc_out sc_lv 7 signal 10 } 
 	{ pilot_h_re_1_ce0 sc_out sc_logic 1 signal 10 } 
 	{ pilot_h_re_1_q0 sc_in sc_lv 16 signal 10 } 
-	{ pilot_h_im_1_address0 sc_out sc_lv 8 signal 11 } 
+	{ pilot_h_im_1_address0 sc_out sc_lv 7 signal 11 } 
 	{ pilot_h_im_1_ce0 sc_out sc_logic 1 signal 11 } 
 	{ pilot_h_im_1_q0 sc_in sc_lv 16 signal 11 } 
 }
@@ -150,16 +150,16 @@ set NewPortList {[
  	{ "name": "w_re_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "w_re", "role": "ce0" }} , 
  	{ "name": "w_re_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "w_re", "role": "we0" }} , 
  	{ "name": "w_re_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "w_re", "role": "d0" }} , 
- 	{ "name": "pilot_h_re_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "pilot_h_re", "role": "address0" }} , 
+ 	{ "name": "pilot_h_re_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "pilot_h_re", "role": "address0" }} , 
  	{ "name": "pilot_h_re_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_re", "role": "ce0" }} , 
  	{ "name": "pilot_h_re_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "pilot_h_re", "role": "q0" }} , 
- 	{ "name": "pilot_h_im_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "pilot_h_im", "role": "address0" }} , 
+ 	{ "name": "pilot_h_im_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "pilot_h_im", "role": "address0" }} , 
  	{ "name": "pilot_h_im_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_im", "role": "ce0" }} , 
  	{ "name": "pilot_h_im_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "pilot_h_im", "role": "q0" }} , 
- 	{ "name": "pilot_h_re_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "pilot_h_re_1", "role": "address0" }} , 
+ 	{ "name": "pilot_h_re_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "pilot_h_re_1", "role": "address0" }} , 
  	{ "name": "pilot_h_re_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_re_1", "role": "ce0" }} , 
  	{ "name": "pilot_h_re_1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "pilot_h_re_1", "role": "q0" }} , 
- 	{ "name": "pilot_h_im_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "pilot_h_im_1", "role": "address0" }} , 
+ 	{ "name": "pilot_h_im_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "pilot_h_im_1", "role": "address0" }} , 
  	{ "name": "pilot_h_im_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pilot_h_im_1", "role": "ce0" }} , 
  	{ "name": "pilot_h_im_1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "pilot_h_im_1", "role": "q0" }}  ]}
 
@@ -235,8 +235,8 @@ set Spec2ImplPortList {
 	w_re_2 { ap_memory {  { w_re_2_address0 mem_address 1 10 }  { w_re_2_ce0 mem_ce 1 1 }  { w_re_2_we0 mem_we 1 1 }  { w_re_2_d0 mem_din 1 16 } } }
 	w_re_1 { ap_memory {  { w_re_1_address0 mem_address 1 10 }  { w_re_1_ce0 mem_ce 1 1 }  { w_re_1_we0 mem_we 1 1 }  { w_re_1_d0 mem_din 1 16 } } }
 	w_re { ap_memory {  { w_re_address0 mem_address 1 10 }  { w_re_ce0 mem_ce 1 1 }  { w_re_we0 mem_we 1 1 }  { w_re_d0 mem_din 1 16 } } }
-	pilot_h_re { ap_memory {  { pilot_h_re_address0 mem_address 1 8 }  { pilot_h_re_ce0 mem_ce 1 1 }  { pilot_h_re_q0 mem_dout 0 16 } } }
-	pilot_h_im { ap_memory {  { pilot_h_im_address0 mem_address 1 8 }  { pilot_h_im_ce0 mem_ce 1 1 }  { pilot_h_im_q0 mem_dout 0 16 } } }
-	pilot_h_re_1 { ap_memory {  { pilot_h_re_1_address0 mem_address 1 8 }  { pilot_h_re_1_ce0 mem_ce 1 1 }  { pilot_h_re_1_q0 mem_dout 0 16 } } }
-	pilot_h_im_1 { ap_memory {  { pilot_h_im_1_address0 mem_address 1 8 }  { pilot_h_im_1_ce0 mem_ce 1 1 }  { pilot_h_im_1_q0 mem_dout 0 16 } } }
+	pilot_h_re { ap_memory {  { pilot_h_re_address0 mem_address 1 7 }  { pilot_h_re_ce0 mem_ce 1 1 }  { pilot_h_re_q0 mem_dout 0 16 } } }
+	pilot_h_im { ap_memory {  { pilot_h_im_address0 mem_address 1 7 }  { pilot_h_im_ce0 mem_ce 1 1 }  { pilot_h_im_q0 mem_dout 0 16 } } }
+	pilot_h_re_1 { ap_memory {  { pilot_h_re_1_address0 mem_address 1 7 }  { pilot_h_re_1_ce0 mem_ce 1 1 }  { pilot_h_re_1_q0 mem_dout 0 16 } } }
+	pilot_h_im_1 { ap_memory {  { pilot_h_im_1_address0 mem_address 1 7 }  { pilot_h_im_1_ce0 mem_ce 1 1 }  { pilot_h_im_1_q0 mem_dout 0 16 } } }
 }

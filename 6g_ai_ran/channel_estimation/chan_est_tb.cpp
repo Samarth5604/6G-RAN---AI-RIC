@@ -27,27 +27,28 @@ static void checkf(const char *label, float got, float expected) {
     }
 }
 
-// Pack a known flat channel H through the DMRS pilots into the FFT stream
+// Pack a known flat channel H through the correct 100RB DMRS pilots
 static void fill_fft_stream(
     hls::stream<axis_t> fft_in[NUM_ANT],
     float H_re, float H_im)
 {
     for (int k = 0; k < FFT_SIZE; k++) {
-        float xr = 1.0f, xi = 0.0f;
+        float yr, yi;
         if (is_pilot(k)) {
             int m = pilot_index(k);
-            xr = (float)DMRS_RE[m];
-            xi = (float)DMRS_IM[m];
+            float xr = (float)DMRS_RE[m];
+            float xi = (float)DMRS_IM[m];
+            // Y = H * X
+            yr = H_re * xr - H_im * xi;
+            yi = H_im * xr + H_re * xi;
+        } else {
+            // Non-pilot: send zeros (guard band) or arbitrary data
+            yr = 0.0f;
+            yi = 0.0f;
         }
-        // Y = H * X
-        float yr = H_re * xr - H_im * xi;
-        float yi = H_im * xr + H_re * xi;
 
         for (int a = 0; a < NUM_ANT; a++) {
             axis_t s;
-            // Scale to Q1.14: multiply by 2^14 = 16384
-            // Using 16383 (2^14 - 1) was a 1-LSB error that accumulated
-            // across the complex multiply in ls_div causing tolerance failures
             s.data.range(15,  0) = (ap_uint<16>)((ap_int<16>)(yr * 16384.0f));
             s.data.range(31, 16) = (ap_uint<16>)((ap_int<16>)(yi * 16384.0f));
             s.last = (k == FFT_SIZE - 1) ? ap_uint<1>(1) : ap_uint<1>(0);
@@ -88,10 +89,12 @@ int main() {
                     float got_re = (float)wr;
                     float got_im = (float)wi;
 
-                    // k=0 has no preceding pilot — ZOH holds identity (1+0j).
-                    // This is correct behaviour: k=0 is a DC/guard subcarrier
-                    // in 3GPP NR and carries no data. Skip the H check for it.
-                    if (k > 0) {
+                    // Only check subcarriers in the occupied band (212–811)
+                    // excluding DC (512). Guard band subcarriers received
+                    // zero input so their ZOH estimate is from the nearest
+                    // pilot which may differ from H.
+                    bool in_occupied = (k >= 212 && k <= 811 && k != 512);
+                    if (in_occupied) {
                         if (fabsf(got_re - H_re) > TOLERANCE) {
                             std::cout << "FAIL weight_re[b=" << b << ",a=" << a
                                       << ",k=" << k << "] got=" << got_re

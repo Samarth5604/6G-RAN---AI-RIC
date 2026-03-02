@@ -13822,7 +13822,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>SENSITIVITY</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PL_PS_IRQ0.SENSITIVITY">LEVEL_HIGH</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PL_PS_IRQ0.SENSITIVITY">LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -13831,7 +13831,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PortWidth</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PL_PS_IRQ0.PortWidth">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PL_PS_IRQ0.PortWidth">3</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -13842,7 +13842,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.PL_PS_IRQ0" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PSU__USE__IRQ0)) = 1)">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.PL_PS_IRQ0" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PSU__USE__IRQ0)) = 1)">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -31751,7 +31751,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:64e8c791</spirit:value>
+            <spirit:value>9:8eec8efa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31766,11 +31766,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jan 23 11:08:37 UTC 2026</spirit:value>
+            <spirit:value>Sun Mar 01 08:54:22 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:64e8c791</spirit:value>
+            <spirit:value>9:8eec8efa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31785,11 +31785,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Mar 01 03:59:21 UTC 2026</spirit:value>
+            <spirit:value>Mon Mar 02 06:28:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c3e38f07</spirit:value>
+            <spirit:value>9:a1b39a2f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31800,7 +31800,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c3e38f07</spirit:value>
+            <spirit:value>9:a1b39a2f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31811,7 +31811,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c3e38f07</spirit:value>
+            <spirit:value>9:a1b39a2f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31827,11 +31827,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jan 23 11:08:37 UTC 2026</spirit:value>
+            <spirit:value>Sun Mar 01 08:54:22 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1b3e0ef3</spirit:value>
+            <spirit:value>9:93eafb4a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -31851,11 +31851,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jan 23 11:08:37 UTC 2026</spirit:value>
+            <spirit:value>Sun Mar 01 08:54:22 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1b3e0ef3</spirit:value>
+            <spirit:value>9:93eafb4a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -31875,11 +31875,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Mar 01 03:59:22 UTC 2026</spirit:value>
+            <spirit:value>Mon Mar 02 06:28:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c3e38f07</spirit:value>
+            <spirit:value>9:a1b39a2f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -54136,7 +54136,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(PARAM_VALUE.PSU__NUM_F2P0__INTR__INPUTS))-1)">0</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(PARAM_VALUE.PSU__NUM_F2P0__INTR__INPUTS))-1)">2</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -54153,7 +54153,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.pl_ps_irq0" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PSU__USE__IRQ0)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.pl_ps_irq0" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PSU__USE__IRQ0)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -66739,7 +66739,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_NUM_F2P_0_INTR_INPUTS</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_NUM_F2P_0_INTR_INPUTS" spirit:dependency="spirit:decode(id(PARAM_VALUE.PSU__NUM_F2P0__INTR__INPUTS))">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_NUM_F2P_0_INTR_INPUTS" spirit:dependency="spirit:decode(id(PARAM_VALUE.PSU__NUM_F2P0__INTR__INPUTS))">3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_NUM_F2P_1_INTR_INPUTS</spirit:name>
@@ -74070,7 +74070,7 @@ FFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD050000;FD05FFFF;1|FPD;DD
     <spirit:parameter>
       <spirit:name>PSU__USE__IRQ0</spirit:name>
       <spirit:displayName>PSU USE IRQ0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__USE__IRQ0" spirit:choiceRef="choice_list_8af5a703">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__USE__IRQ0" spirit:choiceRef="choice_list_8af5a703">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PSU__USE__IRQ1</spirit:name>
@@ -80920,11 +80920,11 @@ FFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD050000;FD05FFFF;1|FPD;DD
     <spirit:parameter>
       <spirit:name>PSU__NUM_F2P0__INTR__INPUTS</spirit:name>
       <spirit:displayName>PL-PS number of intrupts</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__NUM_F2P0__INTR__INPUTS" spirit:minimum="0" spirit:maximum="8" spirit:rangeType="long">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__NUM_F2P0__INTR__INPUTS" spirit:minimum="0" spirit:maximum="8" spirit:rangeType="long">3</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PSU__NUM_F2P0__INTR__INPUTS" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PSU__USE__IRQ0)) = 1)">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PSU__NUM_F2P0__INTR__INPUTS" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PSU__USE__IRQ0)) = 1)">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -81723,6 +81723,8 @@ FFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD050000;FD05FFFF;1|FPD;DD
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PL_CLK0.FREQ_HZ" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PL_CLK0.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PL_CLK0.PHASE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PL_PS_IRQ0.PortWidth" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PL_PS_IRQ0.SENSITIVITY" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PL_RESETN0.POLARITY" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACE_FPD.ADDR_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACE_FPD.ARUSER_WIDTH" xilinx:valuePermission="bd"/>
@@ -81867,7 +81869,7 @@ FFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD050000;FD05FFFF;1|FPD;DD
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__M_AXI_GP0__FREQMHZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__M_AXI_GP1__FREQMHZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__M_AXI_GP2__FREQMHZ" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__NUM_F2P0__INTR__INPUTS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__NUM_F2P0__INTR__INPUTS" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__NUM_F2P1__INTR__INPUTS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__OVERRIDE__BASIC_CLOCK" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__PROTECTION__MASTERS" xilinx:valueSource="user"/>
@@ -81882,6 +81884,7 @@ FFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD050000;FD05FFFF;1|FPD;DD
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__S_AXI_GP5__FREQMHZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__S_AXI_GP6__FREQMHZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__TSU__BUFG_PORT_LOOPBACK" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__USE__IRQ0" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__USE__S_AXI_ACE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__USE__S_AXI_GP0" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PSU__USE__S_AXI_GP1" xilinx:valueSource="user"/>

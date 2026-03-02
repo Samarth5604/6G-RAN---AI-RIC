@@ -1,0 +1,85 @@
+---
+MainSourceFile:  /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          55545
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          283219
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          283683
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          284148
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /home/samarth/Desktop/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          567853
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_91_1:  '
+    FileOffset:      91
+    FilePath:        chan_est.cpp
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          1038035
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_91_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_115_2:  '
+    FileOffset:      115
+    FilePath:        chan_est.cpp
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          1038516
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_115_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_133_3:  '
+    FileOffset:      133
+    FilePath:        chan_est.cpp
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          1038879
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_133_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_135_4:  '
+    FileOffset:      135
+    FilePath:        chan_est.cpp
+    Replacements:    
+      - FilePath:        /home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/.autopilot/db/chan_est.pp.0.cpp
+        Offset:          1038929
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_135_4: '
+...

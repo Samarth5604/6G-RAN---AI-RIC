@@ -1,0 +1,45 @@
+{
+  "0": {
+    "basicblocks": 37,
+    "calls": "",
+    "file": "snr_monitor.cpp",
+    "fileloc": 54,
+    "instructions": 551,
+    "loads": {
+      "L": 8
+    },
+    "name": "snr_monitor_top",
+    "stores": {
+      "L": 7,
+      "T": 2
+    },
+    "total_instructions": 3265
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "3 2",
+    "file": "snr_monitor.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 3,
+    "name": "",
+    "total_instructions": 77405
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dmrs_pilots.h",
+    "fileloc": 55,
+    "instructions": 101,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 38701
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dmrs_pilots.h",
+    "fileloc": 27,
+    "instructions": 101,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 38701
+  }
+}

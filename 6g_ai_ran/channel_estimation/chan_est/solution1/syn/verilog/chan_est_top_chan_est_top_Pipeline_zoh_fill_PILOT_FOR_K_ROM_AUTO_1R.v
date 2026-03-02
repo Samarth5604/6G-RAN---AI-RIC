@@ -8,7 +8,7 @@ module chan_est_top_chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R (
     address0, ce0, q0, 
     reset, clk);
 
-parameter DataWidth = 8;
+parameter DataWidth = 7;
 parameter AddressWidth = 10;
 parameter AddressRange = 1024;
  

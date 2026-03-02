@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Mar  1 09:35:36 2026
-# Process ID: 8868
+# Start of session at: Mon Mar  2 12:36:06 2026
+# Process ID: 106262
 # Current directory: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1
 # Command line: vivado -log thz_pipeline_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source thz_pipeline_top_wrapper.tcl
 # Log file: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1/thz_pipeline_top_wrapper.vds
@@ -19,18 +19,13 @@
 # Host memory       :33071 MB
 # Swap memory       :16739 MB
 # Total Virtual     :49810 MB
-# Available Virtual :42701 MB
+# Available Virtual :38664 MB
 #-----------------------------------------------------------
 source thz_pipeline_top_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1571.934 ; gain = 7.961 ; free physical = 19734 ; free virtual = 40336
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/Vitis-AI-master/src/vai_library/dpu_task/src'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/beamforming'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/cp_insertion'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/cp_removal'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/ml_kem_pqc'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran/channel_estimation'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/zcu104_dpu_workspace/DPU_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/samarth/Desktop/6g_ai_ran'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/samarth/Desktop/6g_ai_ran' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1'.)
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/samarth/Desktop/Vivado/2024.1/data/ip'.
 Command: read_checkpoint -auto_incremental -incremental /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/utils_1/imports/synth_1/thz_pipeline_top_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/utils_1/imports/synth_1/thz_pipeline_top_wrapper.dcp for incremental synthesis
@@ -44,42 +39,49 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8915
+INFO: [Synth 8-7075] Helper process launched with PID 106282
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3041.398 ; gain = 305.777 ; free physical = 17976 ; free virtual = 38573
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3043.047 ; gain = 304.691 ; free physical = 12402 ; free virtual = 34815
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'thz_pipeline_top_wrapper' [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/hdl/thz_pipeline_top_wrapper.v:13]
-INFO: [Synth 8-6157] synthesizing module 'thz_pipeline_top' [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1/.Xil/Vivado-8868-localhost.localdomain/realtime/thz_pipeline_top_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'thz_pipeline_top' (0#1) [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1/.Xil/Vivado-8868-localhost.localdomain/realtime/thz_pipeline_top_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'thz_pipeline_top' [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1/.Xil/Vivado-106262-localhost.localdomain/realtime/thz_pipeline_top_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'thz_pipeline_top' (0#1) [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1/.Xil/Vivado-106262-localhost.localdomain/realtime/thz_pipeline_top_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'thz_pipeline_top_wrapper' (0#1) [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/hdl/thz_pipeline_top_wrapper.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3121.367 ; gain = 385.746 ; free physical = 17885 ; free virtual = 38484
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3124.016 ; gain = 385.660 ; free physical = 12311 ; free virtual = 34725
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3130.273 ; gain = 394.652 ; free physical = 17881 ; free virtual = 38480
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3124.016 ; gain = 385.660 ; free physical = 12314 ; free virtual = 34724
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3130.273 ; gain = 394.652 ; free physical = 17881 ; free virtual = 38480
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3124.016 ; gain = 385.660 ; free physical = 12314 ; free virtual = 34724
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3130.273 ; gain = 0.000 ; free physical = 17881 ; free virtual = 38480
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3124.016 ; gain = 0.000 ; free physical = 12314 ; free virtual = 34724
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc]
+WARNING: [Vivado 12-507] No nets matched 'thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]'. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc:4]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc:6]
+Finished Parsing XDC File [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/thz_pipeline_top_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thz_pipeline_top_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/thz_pipeline_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3206.180 ; gain = 0.000 ; free physical = 17867 ; free virtual = 38466
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3195.680 ; gain = 0.000 ; free physical = 12302 ; free virtual = 34712
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3206.180 ; gain = 0.000 ; free physical = 17867 ; free virtual = 38466
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3195.680 ; gain = 0.000 ; free physical = 12302 ; free virtual = 34712
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3206.180 ; gain = 470.559 ; free physical = 17850 ; free virtual = 38459
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3195.680 ; gain = 457.324 ; free physical = 12305 ; free virtual = 34713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -87,17 +89,17 @@ Start Loading Part and Timing Information
 Loading part: xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3214.184 ; gain = 478.562 ; free physical = 17850 ; free virtual = 38459
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3203.684 ; gain = 465.328 ; free physical = 12305 ; free virtual = 34713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for thz_pipeline_top_i. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3214.184 ; gain = 478.562 ; free physical = 17850 ; free virtual = 38459
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3203.684 ; gain = 465.328 ; free physical = 12305 ; free virtual = 34713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3214.184 ; gain = 478.562 ; free physical = 17848 ; free virtual = 38458
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3203.684 ; gain = 465.328 ; free physical = 12303 ; free virtual = 34712
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -120,25 +122,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3214.184 ; gain = 478.562 ; free physical = 17848 ; free virtual = 38454
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3203.684 ; gain = 465.328 ; free physical = 12282 ; free virtual = 34707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3673.746 ; gain = 938.125 ; free physical = 17440 ; free virtual = 38044
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3676.863 ; gain = 938.508 ; free physical = 11900 ; free virtual = 34314
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3673.746 ; gain = 938.125 ; free physical = 17439 ; free virtual = 38044
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3676.863 ; gain = 938.508 ; free physical = 11900 ; free virtual = 34314
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3683.762 ; gain = 948.141 ; free physical = 17430 ; free virtual = 38034
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3686.879 ; gain = 948.523 ; free physical = 11889 ; free virtual = 34304
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -156,37 +158,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3697.637 ; gain = 962.016 ; free physical = 17308 ; free virtual = 37919
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3700.754 ; gain = 962.398 ; free physical = 11884 ; free virtual = 34301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3697.637 ; gain = 962.016 ; free physical = 17308 ; free virtual = 37919
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3700.754 ; gain = 962.398 ; free physical = 11884 ; free virtual = 34301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3697.637 ; gain = 962.016 ; free physical = 17308 ; free virtual = 37919
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3700.754 ; gain = 962.398 ; free physical = 11884 ; free virtual = 34301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3697.637 ; gain = 962.016 ; free physical = 17308 ; free virtual = 37919
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3700.754 ; gain = 962.398 ; free physical = 11884 ; free virtual = 34301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3697.637 ; gain = 962.016 ; free physical = 17308 ; free virtual = 37919
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3700.754 ; gain = 962.398 ; free physical = 11884 ; free virtual = 34301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3697.637 ; gain = 962.016 ; free physical = 17308 ; free virtual = 37919
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3700.754 ; gain = 962.398 ; free physical = 11884 ; free virtual = 34301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -206,26 +208,26 @@ Report Cell Usage:
 |1     |thz_pipeline_top |     1|
 +------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3697.637 ; gain = 962.016 ; free physical = 17308 ; free virtual = 37919
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3700.754 ; gain = 962.398 ; free physical = 11884 ; free virtual = 34301
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3697.637 ; gain = 886.109 ; free physical = 17301 ; free virtual = 37912
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3697.637 ; gain = 962.016 ; free physical = 17301 ; free virtual = 37912
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3700.754 ; gain = 890.734 ; free physical = 11884 ; free virtual = 34300
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3700.754 ; gain = 962.398 ; free physical = 11884 ; free virtual = 34300
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3697.637 ; gain = 0.000 ; free physical = 17300 ; free virtual = 37910
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3700.754 ; gain = 0.000 ; free physical = 11884 ; free virtual = 34300
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3697.637 ; gain = 0.000 ; free physical = 17541 ; free virtual = 38150
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3700.754 ; gain = 0.000 ; free physical = 12183 ; free virtual = 34600
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: eba16e38
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+28 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 3697.637 ; gain = 2050.227 ; free physical = 17541 ; free virtual = 38150
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3005.422; main = 2653.632; forked = 396.238
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5340.059; main = 3683.766; forked = 1656.293
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 3700.754 ; gain = 2050.375 ; free physical = 12183 ; free virtual = 34600
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2741.184; main = 2646.929; forked = 395.461
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5076.051; main = 3627.055; forked = 1656.293
 INFO: [Common 17-1381] The checkpoint '/home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1/thz_pipeline_top_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file thz_pipeline_top_wrapper_utilization_synth.rpt -pb thz_pipeline_top_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Mar  1 09:36:19 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  2 12:36:32 2026...

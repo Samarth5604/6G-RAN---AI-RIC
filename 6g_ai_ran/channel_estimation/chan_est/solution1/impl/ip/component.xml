@@ -310,7 +310,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9b7c65a9</spirit:value>
+            <spirit:value>dcce5538</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -326,7 +326,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c5eb882b</spirit:value>
+            <spirit:value>eb97eac8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -342,7 +342,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8da7c663</spirit:value>
+            <spirit:value>465d0932</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -358,7 +358,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d90015bd</spirit:value>
+            <spirit:value>58186d98</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1075,7 +1075,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/chan_est_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_a249f5cb</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_b411808b</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1212,7 +1212,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">1031 ~ 6342</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">1031 ~ 6270</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -1225,8 +1225,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Chan_est_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114500681</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-02-28T10:31:10Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114502056</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-03-01T09:26:38Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1235,9 +1235,9 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a9ae45b4"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b563d109"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3b4f1567"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="c005fdb7"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="f5880fd0"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="a64182cc"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

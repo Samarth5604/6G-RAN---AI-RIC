@@ -703,7 +703,47 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f1abb940</spirit:value>
+            <spirit:value>9:4fc17d27</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>chan_est_top</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sun Mar 01 09:28:11 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1bccc122</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>thz_pipeline_top_chan_est_top_0_1</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sun Mar 01 09:28:11 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1bccc122</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -719,11 +759,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Feb 28 12:13:54 UTC 2026</spirit:value>
+            <spirit:value>Sun Mar 01 09:28:11 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f1abb940</spirit:value>
+            <spirit:value>9:4fc17d27</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -739,11 +779,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Feb 28 12:13:54 UTC 2026</spirit:value>
+            <spirit:value>Sun Mar 01 09:28:11 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f1abb940</spirit:value>
+            <spirit:value>9:4fc17d27</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -757,6 +797,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -769,6 +810,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -781,6 +823,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -793,6 +836,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -805,6 +849,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -817,6 +862,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -833,6 +879,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -849,6 +896,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -868,6 +916,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -883,6 +932,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -899,6 +949,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -914,6 +965,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -930,6 +982,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -946,6 +999,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -965,6 +1019,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -980,6 +1035,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -996,6 +1052,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -1011,6 +1068,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1027,6 +1085,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1043,6 +1102,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1059,6 +1119,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1075,6 +1136,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1087,6 +1149,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1103,6 +1166,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1115,6 +1179,7 @@
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1123,6 +1188,119 @@
   </spirit:model>
   <spirit:fileSets>
     <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_buf_loop.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_IM_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_IM_ROM_AUTO_1R.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_RE_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_RE_ROM_AUTO_1R.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_weight_out.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_zoh_fill.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/chan_est_top_chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_fft_re_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_hls_deadlock_idx0_monitor.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_hls_deadlock_idx1_monitor.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_hls_deadlock_kernel_monitor_top.vh</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_mac_muladd_16s_15s_30s_30_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_mac_mulsub_16s_15s_30s_30_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_mul_16s_15s_30_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_pilot_h_re_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_regslice_both.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/thz_pipeline_top_chan_est_top_0_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>constraints/chan_est_top_ooc.xdc</spirit:name>
@@ -1130,11 +1308,11 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_chan_est_top_Pipeline_buf_loop.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_buf_loop.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1142,7 +1320,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_IM_ROM_AUTO_1R.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_IM_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1150,15 +1328,15 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_RE_ROM_AUTO_1R.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_pilot_scan_DMRS_RE_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_chan_est_top_Pipeline_weight_out.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_weight_out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_chan_est_top_Pipeline_zoh_fill.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_zoh_fill.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1166,51 +1344,51 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_fft_re_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_fft_re_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_hls_deadlock_idx0_monitor.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_hls_deadlock_idx0_monitor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_hls_deadlock_idx1_monitor.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_hls_deadlock_idx1_monitor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_hls_deadlock_kernel_monitor_top.vh</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_hls_deadlock_kernel_monitor_top.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_mac_muladd_16s_15s_30s_30_4_1.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_mac_muladd_16s_15s_30s_30_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_mac_mulsub_16s_15s_30s_30_4_1.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_mac_mulsub_16s_15s_30s_30_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_mul_16s_15s_30_1_1.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_mul_16s_15s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_pilot_h_re_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_pilot_h_re_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top_regslice_both.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/7d15/hdl/verilog/chan_est_top.v</spirit:name>
+        <spirit:name>../../../../../../project_1.srcs/sources_1/bd/thz_pipeline_top/ipshared/f3ad/hdl/verilog/chan_est_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1275,7 +1453,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">1031 ~ 6342</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">1031 ~ 6270</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -1289,10 +1467,11 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Chan_est_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114500681</xilinx:coreRevision>
+      <xilinx:coreRevision>2114502056</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
+        <xilinx:sdx_kernel_sim_inst>inst</xilinx:sdx_kernel_sim_inst>
         <xilinx:sdx_kernel_synth_inst>inst</xilinx:sdx_kernel_synth_inst>
       </xilinx:sdxKernelAttributes>
       <xilinx:configElementInfos>
@@ -1346,9 +1525,9 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a9ae45b4"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b563d109"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3b4f1567"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="c005fdb7"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="f5880fd0"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="a64182cc"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

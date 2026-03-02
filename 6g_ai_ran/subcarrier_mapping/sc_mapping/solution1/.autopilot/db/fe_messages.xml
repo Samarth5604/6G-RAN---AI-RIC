@@ -1,0 +1,51 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sc_mapper_rx" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sc_mapper.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=fft_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sc_mapper.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=data_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sc_mapper.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sc_mapper.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fft_in" ARG_PragmaType="disaggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sc_mapper.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=data_out" ARG_PragmaType="disaggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sc_mapper.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sc_mapper.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sc_mapper.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sc_mapper.cpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sc_mapper_rx" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="sc_mapper.cpp:47:19" msg_body="Loop 'VITIS_LOOP_47_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_47_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="sc_mapper.cpp:57:30" msg_body="Loop 'VITIS_LOOP_57_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_57_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="sc_mapper.cpp:21:0" msg_body="Unrolling loop 'VITIS_LOOP_47_1' (sc_mapper.cpp:47:19) in function 'sc_mapper_rx' completely with a factor of 2">
+        <args Factor="2" LoopLoc="sc_mapper.cpp:47:19" LoopName="VITIS_LOOP_47_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="sc_mapper.cpp:21:0" msg_body="Unrolling loop 'VITIS_LOOP_57_2' (sc_mapper.cpp:57:30) in function 'sc_mapper_rx' completely with a factor of 2">
+        <args Factor="2" LoopLoc="sc_mapper.cpp:57:30" LoopName="VITIS_LOOP_57_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="sc_mapper.cpp:21:0" msg_body="Applying array_partition to 'fft_in': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="fft_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="sc_mapper.cpp:21:0" msg_body="Applying array_partition to 'data_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="data_out"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

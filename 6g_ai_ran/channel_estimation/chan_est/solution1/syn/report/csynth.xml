@@ -20,26 +20,26 @@
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
             <Best-caseLatency>1030</Best-caseLatency>
-            <Average-caseLatency>3686</Average-caseLatency>
-            <Worst-caseLatency>6341</Worst-caseLatency>
+            <Average-caseLatency>3650</Average-caseLatency>
+            <Worst-caseLatency>6269</Worst-caseLatency>
             <Best-caseRealTimeLatency>3.430 us</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>12.274 us</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>21.116 us</Worst-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>12.154 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>20.876 us</Worst-caseRealTimeLatency>
             <Interval-min>1031</Interval-min>
-            <Interval-max>6342</Interval-max>
+            <Interval-max>6270</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>chan_est.cpp:190</SourceLocation>
+            <SourceLocation>chan_est.cpp:51</SourceLocation>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <BRAM_18K>19</BRAM_18K>
             <DSP>8</DSP>
-            <FF>636</FF>
-            <LUT>1232</LUT>
+            <FF>632</FF>
+            <LUT>1249</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -355,31 +355,31 @@
                     <ModuleName>chan_est_top_Pipeline_buf_loop</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>152</ID>
-                    <BindInstances>icmp_ln228_fu_160_p2 add_ln228_fu_166_p2</BindInstances>
+                    <BindInstances>icmp_ln89_fu_160_p2 add_ln89_fu_166_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_chan_est_top_Pipeline_pilot_scan_fu_176</InstName>
                     <ModuleName>chan_est_top_Pipeline_pilot_scan</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>176</ID>
-                    <BindInstances>icmp_ln246_fu_208_p2 add_ln246_fu_214_p2 sub_ln248_fu_252_p2 mac_muladd_16s_15s_30s_30_4_1_U17 mul_16s_15s_30_1_1_U13 mac_muladd_16s_15s_30s_30_4_1_U17 mul_16s_15s_30_1_1_U14 mac_mulsub_16s_15s_30s_30_4_1_U18 mac_mulsub_16s_15s_30s_30_4_1_U18 mac_muladd_16s_15s_30s_30_4_1_U19 mul_16s_15s_30_1_1_U15 mac_muladd_16s_15s_30s_30_4_1_U19 mul_16s_15s_30_1_1_U16 mac_mulsub_16s_15s_30s_30_4_1_U20 mac_mulsub_16s_15s_30s_30_4_1_U20 DMRS_RE_U DMRS_IM_U</BindInstances>
+                    <BindInstances>icmp_ln107_fu_202_p2 m_2_fu_208_p2 mac_muladd_16s_15s_30s_30_4_1_U17 mul_16s_15s_30_1_1_U13 mac_muladd_16s_15s_30s_30_4_1_U17 mul_16s_15s_30_1_1_U14 mac_mulsub_16s_15s_30s_30_4_1_U18 mac_mulsub_16s_15s_30s_30_4_1_U18 mac_muladd_16s_15s_30s_30_4_1_U19 mul_16s_15s_30_1_1_U15 mac_muladd_16s_15s_30s_30_4_1_U19 mul_16s_15s_30_1_1_U16 mac_mulsub_16s_15s_30s_30_4_1_U20 mac_mulsub_16s_15s_30s_30_4_1_U20 DMRS_RE_U DMRS_IM_U</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_chan_est_top_Pipeline_zoh_fill_fu_192</InstName>
                     <ModuleName>chan_est_top_Pipeline_zoh_fill</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>192</ID>
-                    <BindInstances>icmp_ln266_fu_231_p2 add_ln266_fu_237_p2 PILOT_FOR_K_U</BindInstances>
+                    <BindInstances>icmp_ln130_fu_231_p2 add_ln130_fu_237_p2 PILOT_FOR_K_U</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_chan_est_top_Pipeline_weight_out_fu_210</InstName>
                     <ModuleName>chan_est_top_Pipeline_weight_out</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>210</ID>
-                    <BindInstances>icmp_ln283_fu_212_p2 idx_2_fu_218_p2 select_ln289_fu_267_p3 select_ln289_1_fu_274_p3 select_ln289_2_fu_281_p3 select_ln290_fu_288_p3 select_ln290_1_fu_295_p3 select_ln290_2_fu_302_p3 w_last_fu_256_p2</BindInstances>
+                    <BindInstances>icmp_ln147_fu_212_p2 idx_2_fu_218_p2 select_ln153_fu_267_p3 select_ln153_1_fu_274_p3 select_ln153_2_fu_281_p3 select_ln154_fu_288_p3 select_ln154_1_fu_295_p3 select_ln154_2_fu_302_p3 w_last_fu_256_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>fft_re_U fft_re_1_U fft_im_U fft_im_1_U pilot_h_re_U pilot_h_re_1_U pilot_h_im_U pilot_h_im_1_U w_re_U w_re_1_U w_re_2_U w_re_3_U w_im_U w_im_1_U w_im_2_U w_im_3_U icmp_ln243_fu_230_p2</BindInstances>
+            <BindInstances>fft_re_U fft_re_1_U fft_im_U fft_im_1_U pilot_h_re_U pilot_h_re_1_U pilot_h_im_U pilot_h_im_1_U w_re_U w_re_1_U w_re_2_U w_re_3_U w_im_U w_im_1_U w_im_2_U w_im_3_U icmp_ln104_fu_230_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -420,13 +420,13 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>chan_est.cpp:228</SourceLocation>
+                    <SourceLocation>chan_est.cpp:89</SourceLocation>
                     <SummaryOfLoopViolations>
                         <buf_loop>
                             <Name>buf_loop</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>chan_est.cpp:228</SourceLocation>
+                            <SourceLocation>chan_est.cpp:89</SourceLocation>
                         </buf_loop>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
@@ -451,8 +451,8 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="buf_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln228_fu_160_p2" SOURCE="chan_est.cpp:228" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln228" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="buf_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln228_fu_166_p2" SOURCE="chan_est.cpp:228" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln228" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="buf_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln89_fu_160_p2" SOURCE="chan_est.cpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln89" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="buf_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln89_fu_166_p2" SOURCE="chan_est.cpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln89" VISIBLE="true"/>
             </BindNodes>
         </Module>
         <Module>
@@ -467,22 +467,22 @@
                     <EstimatedClockPeriod>2.380</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>178</Best-caseLatency>
-                    <Average-caseLatency>178</Average-caseLatency>
-                    <Worst-caseLatency>178</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.593 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.593 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.593 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>173</PipelineInitiationInterval>
+                    <Best-caseLatency>106</Best-caseLatency>
+                    <Average-caseLatency>106</Average-caseLatency>
+                    <Worst-caseLatency>106</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.353 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.353 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.353 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>101</PipelineInitiationInterval>
                     <PipelineType>loop auto-rewind (delay=0 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
                     <pilot_scan>
                         <Name>pilot_scan</Name>
                         <Slack>2.43</Slack>
-                        <TripCount>172</TripCount>
-                        <Latency>176</Latency>
-                        <AbsoluteTimeLatency>0.586 us</AbsoluteTimeLatency>
+                        <TripCount>100</TripCount>
+                        <Latency>104</Latency>
+                        <AbsoluteTimeLatency>0.346 us</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>6</PipelineDepth>
                         <PipelineType>yes</PipelineType>
@@ -492,13 +492,13 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>chan_est.cpp:246</SourceLocation>
+                    <SourceLocation>chan_est.cpp:107</SourceLocation>
                     <SummaryOfLoopViolations>
                         <pilot_scan>
                             <Name>pilot_scan</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>chan_est.cpp:248</SourceLocation>
+                            <SourceLocation>chan_est.cpp:107</SourceLocation>
                         </pilot_scan>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
@@ -511,10 +511,10 @@
                     <DSP>8</DSP>
                     <AVAIL_DSP>1728</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>311</FF>
+                    <FF>308</FF>
                     <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>137</LUT>
+                    <LUT>154</LUT>
                     <AVAIL_LUT>230400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -523,9 +523,8 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="pilot_scan" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln246_fu_208_p2" SOURCE="chan_est.cpp:246" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln246" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="pilot_scan" OPTYPE="add" PRAGMA="" RTLNAME="add_ln246_fu_214_p2" SOURCE="chan_est.cpp:246" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln246" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="pilot_scan" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln248_fu_252_p2" SOURCE="chan_est.cpp:248" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln248" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="pilot_scan" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln107_fu_202_p2" SOURCE="chan_est.cpp:107" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln107" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="pilot_scan" OPTYPE="add" PRAGMA="" RTLNAME="m_2_fu_208_p2" SOURCE="chan_est.cpp:107" STORAGESUBTYPE="" URAM="0" VARIABLE="m_2" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_30s_30_4_1_U17" SOURCE="chan_est.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_15s_30_1_1_U13" SOURCE="chan_est.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_1" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_30s_30_4_1_U17" SOURCE="chan_est.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46" VISIBLE="true"/>
@@ -538,8 +537,8 @@
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_15s_30_1_1_U16" SOURCE="chan_est.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_2" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="mul" PRAGMA="" RTLNAME="mac_mulsub_16s_15s_30s_30_4_1_U20" SOURCE="chan_est.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_3" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="pilot_scan" OPTYPE="sub" PRAGMA="" RTLNAME="mac_mulsub_16s_15s_30s_30_4_1_U20" SOURCE="chan_est.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln47_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="DMRS_RE_U" SOURCE="" STORAGESIZE="15 172 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="DMRS_RE" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="DMRS_IM_U" SOURCE="" STORAGESIZE="15 172 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="DMRS_IM" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="DMRS_RE_U" SOURCE="" STORAGESIZE="15 100 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="DMRS_RE" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="DMRS_IM_U" SOURCE="" STORAGESIZE="15 100 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="DMRS_IM" VISIBLE="true"/>
             </BindNodes>
         </Module>
         <Module>
@@ -579,13 +578,13 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>chan_est.cpp:266</SourceLocation>
+                    <SourceLocation>chan_est.cpp:130</SourceLocation>
                     <SummaryOfLoopViolations>
                         <zoh_fill>
                             <Name>zoh_fill</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>chan_est.cpp:266</SourceLocation>
+                            <SourceLocation>chan_est.cpp:130</SourceLocation>
                         </zoh_fill>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
@@ -595,7 +594,7 @@
                     <BRAM_18K>1</BRAM_18K>
                     <AVAIL_BRAM>624</AVAIL_BRAM>
                     <UTIL_BRAM>~0</UTIL_BRAM>
-                    <FF>167</FF>
+                    <FF>166</FF>
                     <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
                     <LUT>107</LUT>
@@ -610,9 +609,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="zoh_fill" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln266_fu_231_p2" SOURCE="chan_est.cpp:266" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln266" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="zoh_fill" OPTYPE="add" PRAGMA="" RTLNAME="add_ln266_fu_237_p2" SOURCE="chan_est.cpp:266" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln266" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="PILOT_FOR_K_U" SOURCE="" STORAGESIZE="8 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="PILOT_FOR_K" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="zoh_fill" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln130_fu_231_p2" SOURCE="chan_est.cpp:130" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln130" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="zoh_fill" OPTYPE="add" PRAGMA="" RTLNAME="add_ln130_fu_237_p2" SOURCE="chan_est.cpp:130" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln130" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="PILOT_FOR_K_U" SOURCE="" STORAGESIZE="7 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="PILOT_FOR_K" VISIBLE="true"/>
             </BindNodes>
         </Module>
         <Module>
@@ -652,13 +651,13 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>chan_est.cpp:283</SourceLocation>
+                    <SourceLocation>chan_est.cpp:147</SourceLocation>
                     <SummaryOfLoopViolations>
                         <weight_out>
                             <Name>weight_out</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>chan_est.cpp:283</SourceLocation>
+                            <SourceLocation>chan_est.cpp:147</SourceLocation>
                         </weight_out>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
@@ -683,15 +682,15 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="weight_out" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln283_fu_212_p2" SOURCE="chan_est.cpp:283" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln283" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="weight_out" OPTYPE="add" PRAGMA="" RTLNAME="idx_2_fu_218_p2" SOURCE="chan_est.cpp:283" STORAGESUBTYPE="" URAM="0" VARIABLE="idx_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln289_fu_267_p3" SOURCE="chan_est.cpp:289" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln289" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln289_1_fu_274_p3" SOURCE="chan_est.cpp:289" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln289_1" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln289_2_fu_281_p3" SOURCE="chan_est.cpp:289" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln289_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln290_fu_288_p3" SOURCE="chan_est.cpp:290" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln290" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln290_1_fu_295_p3" SOURCE="chan_est.cpp:290" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln290_1" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln290_2_fu_302_p3" SOURCE="chan_est.cpp:290" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln290_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="weight_out" OPTYPE="seteq" PRAGMA="" RTLNAME="w_last_fu_256_p2" SOURCE="chan_est.cpp:292" STORAGESUBTYPE="" URAM="0" VARIABLE="w_last" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="weight_out" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln147_fu_212_p2" SOURCE="chan_est.cpp:147" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln147" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="weight_out" OPTYPE="add" PRAGMA="" RTLNAME="idx_2_fu_218_p2" SOURCE="chan_est.cpp:147" STORAGESUBTYPE="" URAM="0" VARIABLE="idx_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln153_fu_267_p3" SOURCE="chan_est.cpp:153" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln153" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln153_1_fu_274_p3" SOURCE="chan_est.cpp:153" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln153_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln153_2_fu_281_p3" SOURCE="chan_est.cpp:153" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln153_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln154_fu_288_p3" SOURCE="chan_est.cpp:154" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln154" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln154_1_fu_295_p3" SOURCE="chan_est.cpp:154" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln154_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="weight_out" OPTYPE="select" PRAGMA="" RTLNAME="select_ln154_2_fu_302_p3" SOURCE="chan_est.cpp:154" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln154_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="weight_out" OPTYPE="seteq" PRAGMA="" RTLNAME="w_last_fu_256_p2" SOURCE="chan_est.cpp:156" STORAGESUBTYPE="" URAM="0" VARIABLE="w_last" VISIBLE="false"/>
             </BindNodes>
         </Module>
         <Module>
@@ -704,18 +703,18 @@
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>1030</Best-caseLatency>
-                    <Average-caseLatency>3686</Average-caseLatency>
-                    <Worst-caseLatency>6341</Worst-caseLatency>
+                    <Average-caseLatency>3650</Average-caseLatency>
+                    <Worst-caseLatency>6269</Worst-caseLatency>
                     <Best-caseRealTimeLatency>3.430 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>12.274 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>21.116 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>1031 ~ 6342</PipelineInitiationInterval>
+                    <Average-caseRealTimeLatency>12.154 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>20.876 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1031 ~ 6270</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>chan_est.cpp:190</SourceLocation>
+                    <SourceLocation>chan_est.cpp:51</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -726,10 +725,10 @@
                     <DSP>8</DSP>
                     <AVAIL_DSP>1728</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>636</FF>
+                    <FF>632</FF>
                     <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>1232</LUT>
+                    <LUT>1249</LUT>
                     <AVAIL_LUT>230400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -738,23 +737,23 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_re_U" SOURCE="chan_est.cpp:205" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_re" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_re_1_U" SOURCE="chan_est.cpp:205" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_re_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_im_U" SOURCE="chan_est.cpp:206" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_im" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_im_1_U" SOURCE="chan_est.cpp:206" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_im_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_re_U" SOURCE="chan_est.cpp:211" STORAGESIZE="16 172 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_re" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_re_1_U" SOURCE="chan_est.cpp:211" STORAGESIZE="16 172 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_re_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_im_U" SOURCE="chan_est.cpp:212" STORAGESIZE="16 172 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_im" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_im_1_U" SOURCE="chan_est.cpp:212" STORAGESIZE="16 172 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_im_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_U" SOURCE="chan_est.cpp:217" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_1_U" SOURCE="chan_est.cpp:217" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_2_U" SOURCE="chan_est.cpp:217" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_3_U" SOURCE="chan_est.cpp:217" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re_3" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_U" SOURCE="chan_est.cpp:218" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_1_U" SOURCE="chan_est.cpp:218" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_2_U" SOURCE="chan_est.cpp:218" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_3_U" SOURCE="chan_est.cpp:218" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im_3" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln243_fu_230_p2" SOURCE="chan_est.cpp:243" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln243" VISIBLE="false"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_re_U" SOURCE="chan_est.cpp:66" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_re" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_re_1_U" SOURCE="chan_est.cpp:66" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_re_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_im_U" SOURCE="chan_est.cpp:67" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_im" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="fft_im_1_U" SOURCE="chan_est.cpp:67" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="fft_im_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_re_U" SOURCE="chan_est.cpp:72" STORAGESIZE="16 100 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_re" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_re_1_U" SOURCE="chan_est.cpp:72" STORAGESIZE="16 100 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_re_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_im_U" SOURCE="chan_est.cpp:73" STORAGESIZE="16 100 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_im" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pilot_h_im_1_U" SOURCE="chan_est.cpp:73" STORAGESIZE="16 100 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pilot_h_im_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_U" SOURCE="chan_est.cpp:78" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_1_U" SOURCE="chan_est.cpp:78" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_2_U" SOURCE="chan_est.cpp:78" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_re_3_U" SOURCE="chan_est.cpp:78" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_re_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_U" SOURCE="chan_est.cpp:79" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_1_U" SOURCE="chan_est.cpp:79" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_2_U" SOURCE="chan_est.cpp:79" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="w_im_3_U" SOURCE="chan_est.cpp:79" STORAGESIZE="16 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="w_im_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln104_fu_230_p2" SOURCE="chan_est.cpp:104" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln104" VISIBLE="false"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -918,30 +917,30 @@
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
     <PragmaReport>
-        <Pragma type="inline" location="./dmrs_pilots.h:109" status="valid" parentFunction="is_pilot" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="./dmrs_pilots.h:115" status="valid" parentFunction="pilot_index" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="./dmrs_pilots.h:86" status="valid" parentFunction="is_pilot" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="./dmrs_pilots.h:95" status="valid" parentFunction="pilot_index" variable="" isDirective="0" options=""/>
         <Pragma type="inline" location="chan_est.cpp:42" status="valid" parentFunction="ls_div" variable="" isDirective="0" options=""/>
-        <Pragma type="interface" location="chan_est.cpp:195" status="valid" parentFunction="chan_est_top" variable="fft_in" isDirective="0" options="axis port=fft_in"/>
-        <Pragma type="interface" location="chan_est.cpp:196" status="valid" parentFunction="chan_est_top" variable="weight_stream" isDirective="0" options="axis port=weight_stream"/>
-        <Pragma type="interface" location="chan_est.cpp:197" status="valid" parentFunction="chan_est_top" variable="symbol_num" isDirective="0" options="ap_none port=symbol_num"/>
-        <Pragma type="interface" location="chan_est.cpp:198" status="valid" parentFunction="chan_est_top" variable="return" isDirective="0" options="ap_ctrl_hs port=return"/>
-        <Pragma type="disaggregate" location="chan_est.cpp:199" status="valid" parentFunction="chan_est_top" variable="fft_in" isDirective="0" options="variable=fft_in"/>
-        <Pragma type="array_partition" location="chan_est.cpp:207" status="valid" parentFunction="chan_est_top" variable="fft_re" isDirective="0" options="variable=fft_re complete dim=1"/>
-        <Pragma type="array_partition" location="chan_est.cpp:208" status="valid" parentFunction="chan_est_top" variable="fft_im" isDirective="0" options="variable=fft_im complete dim=1"/>
-        <Pragma type="array_partition" location="chan_est.cpp:213" status="valid" parentFunction="chan_est_top" variable="pilot_h_re" isDirective="0" options="variable=pilot_h_re complete dim=1"/>
-        <Pragma type="array_partition" location="chan_est.cpp:214" status="valid" parentFunction="chan_est_top" variable="pilot_h_im" isDirective="0" options="variable=pilot_h_im complete dim=1"/>
-        <Pragma type="array_partition" location="chan_est.cpp:219" status="valid" parentFunction="chan_est_top" variable="w_re" isDirective="0" options="variable=w_re complete dim=1"/>
-        <Pragma type="array_partition" location="chan_est.cpp:220" status="valid" parentFunction="chan_est_top" variable="w_re" isDirective="0" options="variable=w_re complete dim=2"/>
-        <Pragma type="array_partition" location="chan_est.cpp:221" status="valid" parentFunction="chan_est_top" variable="w_im" isDirective="0" options="variable=w_im complete dim=1"/>
-        <Pragma type="array_partition" location="chan_est.cpp:222" status="valid" parentFunction="chan_est_top" variable="w_im" isDirective="0" options="variable=w_im complete dim=2"/>
-        <Pragma type="pipeline" location="chan_est.cpp:229" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="chan_est.cpp:231" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="chan_est.cpp:247" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="chan_est.cpp:252" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="chan_est.cpp:267" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="chan_est.cpp:270" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="chan_est.cpp:272" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="chan_est.cpp:284" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="interface" location="chan_est.cpp:56" status="valid" parentFunction="chan_est_top" variable="fft_in" isDirective="0" options="axis port=fft_in"/>
+        <Pragma type="interface" location="chan_est.cpp:57" status="valid" parentFunction="chan_est_top" variable="weight_stream" isDirective="0" options="axis port=weight_stream"/>
+        <Pragma type="interface" location="chan_est.cpp:58" status="valid" parentFunction="chan_est_top" variable="symbol_num" isDirective="0" options="ap_none port=symbol_num"/>
+        <Pragma type="interface" location="chan_est.cpp:59" status="valid" parentFunction="chan_est_top" variable="return" isDirective="0" options="ap_ctrl_hs port=return"/>
+        <Pragma type="disaggregate" location="chan_est.cpp:60" status="valid" parentFunction="chan_est_top" variable="fft_in" isDirective="0" options="variable=fft_in"/>
+        <Pragma type="array_partition" location="chan_est.cpp:68" status="valid" parentFunction="chan_est_top" variable="fft_re" isDirective="0" options="variable=fft_re complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:69" status="valid" parentFunction="chan_est_top" variable="fft_im" isDirective="0" options="variable=fft_im complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:74" status="valid" parentFunction="chan_est_top" variable="pilot_h_re" isDirective="0" options="variable=pilot_h_re complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:75" status="valid" parentFunction="chan_est_top" variable="pilot_h_im" isDirective="0" options="variable=pilot_h_im complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:80" status="valid" parentFunction="chan_est_top" variable="w_re" isDirective="0" options="variable=w_re complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:81" status="valid" parentFunction="chan_est_top" variable="w_re" isDirective="0" options="variable=w_re complete dim=2"/>
+        <Pragma type="array_partition" location="chan_est.cpp:82" status="valid" parentFunction="chan_est_top" variable="w_im" isDirective="0" options="variable=w_im complete dim=1"/>
+        <Pragma type="array_partition" location="chan_est.cpp:83" status="valid" parentFunction="chan_est_top" variable="w_im" isDirective="0" options="variable=w_im complete dim=2"/>
+        <Pragma type="pipeline" location="chan_est.cpp:90" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="chan_est.cpp:92" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="chan_est.cpp:108" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="chan_est.cpp:116" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="chan_est.cpp:131" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="chan_est.cpp:134" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="chan_est.cpp:136" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="chan_est.cpp:148" status="valid" parentFunction="chan_est_top" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'chan_est_top'
 ================================================================
 + General Information: 
-    * Date:           Sat Feb 28 15:53:58 2026
+    * Date:           Sun Mar  1 14:56:19 2026
     * Version:        2024.1 (Build 5069499 on May 21 2024)
     * Project:        chan_est
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,12 +19,12 @@
     |               Modules               | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |         |         |           |            |     |
     |               & Loops               | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF    |     LUT    | URAM|
     +-------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+---------+-----------+------------+-----+
-    |+ chan_est_top                       |     -|  0.05|     6341|  2.112e+04|         -|     6342|     -|        no|  19 (3%)|  8 (~0%)|  636 (~0%)|  1232 (~0%)|    -|
+    |+ chan_est_top                       |     -|  0.05|     6269|  2.088e+04|         -|     6270|     -|        no|  19 (3%)|  8 (~0%)|  632 (~0%)|  1249 (~0%)|    -|
     | + chan_est_top_Pipeline_buf_loop    |     -|  0.78|     1026|  3.417e+03|         -|     1026|     -|        no|        -|        -|   89 (~0%)|    97 (~0%)|    -|
     |  o buf_loop                         |     -|  2.43|     1024|  3.410e+03|         2|        1|  1024|       yes|        -|        -|          -|           -|    -|
-    | + chan_est_top_Pipeline_pilot_scan  |     -|  0.05|      178|    592.740|         -|      178|     -|        no|  2 (~0%)|  8 (~0%)|  311 (~0%)|   137 (~0%)|    -|
-    |  o pilot_scan                       |     -|  2.43|      176|    586.080|         6|        1|   172|       yes|        -|        -|          -|           -|    -|
-    | + chan_est_top_Pipeline_zoh_fill    |     -|  0.77|     1029|  3.427e+03|         -|     1029|     -|        no|  1 (~0%)|        -|  167 (~0%)|   107 (~0%)|    -|
+    | + chan_est_top_Pipeline_pilot_scan  |     -|  0.05|      106|    352.980|         -|      106|     -|        no|  2 (~0%)|  8 (~0%)|  308 (~0%)|   154 (~0%)|    -|
+    |  o pilot_scan                       |     -|  2.43|      104|    346.320|         6|        1|   100|       yes|        -|        -|          -|           -|    -|
+    | + chan_est_top_Pipeline_zoh_fill    |     -|  0.77|     1029|  3.427e+03|         -|     1029|     -|        no|  1 (~0%)|        -|  166 (~0%)|   107 (~0%)|    -|
     |  o zoh_fill                         |     -|  2.43|     1027|  3.420e+03|         5|        1|  1024|       yes|        -|        -|          -|           -|    -|
     | + chan_est_top_Pipeline_weight_out  |     -|  0.48|     4099|  1.365e+04|         -|     4099|     -|        no|        -|        -|   54 (~0%)|   208 (~0%)|    -|
     |  o weight_out                       |     -|  2.43|     4097|  1.364e+04|         3|        1|  4096|       yes|        -|        -|          -|           -|    -|
@@ -90,14 +90,13 @@
 | Name                                 | DSP | Pragma | Variable       | Op     | Impl      | Latency |
 +--------------------------------------+-----+--------+----------------+--------+-----------+---------+
 | + chan_est_top                       | 8   |        |                |        |           |         |
-|   icmp_ln243_fu_230_p2               |     |        | icmp_ln243     | seteq  | auto      | 0       |
+|   icmp_ln104_fu_230_p2               |     |        | icmp_ln104     | seteq  | auto      | 0       |
 |  + chan_est_top_Pipeline_buf_loop    | 0   |        |                |        |           |         |
-|    icmp_ln228_fu_160_p2              |     |        | icmp_ln228     | seteq  | auto      | 0       |
-|    add_ln228_fu_166_p2               |     |        | add_ln228      | add    | fabric    | 0       |
+|    icmp_ln89_fu_160_p2               |     |        | icmp_ln89      | seteq  | auto      | 0       |
+|    add_ln89_fu_166_p2                |     |        | add_ln89       | add    | fabric    | 0       |
 |  + chan_est_top_Pipeline_pilot_scan  | 8   |        |                |        |           |         |
-|    icmp_ln246_fu_208_p2              |     |        | icmp_ln246     | seteq  | auto      | 0       |
-|    add_ln246_fu_214_p2               |     |        | add_ln246      | add    | fabric    | 0       |
-|    sub_ln248_fu_252_p2               |     |        | sub_ln248      | sub    | fabric    | 0       |
+|    icmp_ln107_fu_202_p2              |     |        | icmp_ln107     | seteq  | auto      | 0       |
+|    m_2_fu_208_p2                     |     |        | m_2            | add    | fabric    | 0       |
 |    mac_muladd_16s_15s_30s_30_4_1_U17 | 1   |        | mul_ln46       | mul    | dsp_slice | 3       |
 |    mul_16s_15s_30_1_1_U13            | 1   |        | mul_ln46_1     | mul    | auto      | 0       |
 |    mac_muladd_16s_15s_30s_30_4_1_U17 | 1   |        | add_ln46       | add    | dsp_slice | 3       |
@@ -111,17 +110,17 @@
 |    mac_mulsub_16s_15s_30s_30_4_1_U20 | 1   |        | mul_ln47_3     | mul    | dsp_slice | 3       |
 |    mac_mulsub_16s_15s_30s_30_4_1_U20 | 1   |        | sub_ln47_1     | sub    | dsp_slice | 3       |
 |  + chan_est_top_Pipeline_zoh_fill    | 0   |        |                |        |           |         |
-|    icmp_ln266_fu_231_p2              |     |        | icmp_ln266     | seteq  | auto      | 0       |
-|    add_ln266_fu_237_p2               |     |        | add_ln266      | add    | fabric    | 0       |
+|    icmp_ln130_fu_231_p2              |     |        | icmp_ln130     | seteq  | auto      | 0       |
+|    add_ln130_fu_237_p2               |     |        | add_ln130      | add    | fabric    | 0       |
 |  + chan_est_top_Pipeline_weight_out  | 0   |        |                |        |           |         |
-|    icmp_ln283_fu_212_p2              |     |        | icmp_ln283     | seteq  | auto      | 0       |
+|    icmp_ln147_fu_212_p2              |     |        | icmp_ln147     | seteq  | auto      | 0       |
 |    idx_2_fu_218_p2                   |     |        | idx_2          | add    | fabric    | 0       |
-|    select_ln289_fu_267_p3            |     |        | select_ln289   | select | auto_sel  | 0       |
-|    select_ln289_1_fu_274_p3          |     |        | select_ln289_1 | select | auto_sel  | 0       |
-|    select_ln289_2_fu_281_p3          |     |        | select_ln289_2 | select | auto_sel  | 0       |
-|    select_ln290_fu_288_p3            |     |        | select_ln290   | select | auto_sel  | 0       |
-|    select_ln290_1_fu_295_p3          |     |        | select_ln290_1 | select | auto_sel  | 0       |
-|    select_ln290_2_fu_302_p3          |     |        | select_ln290_2 | select | auto_sel  | 0       |
+|    select_ln153_fu_267_p3            |     |        | select_ln153   | select | auto_sel  | 0       |
+|    select_ln153_1_fu_274_p3          |     |        | select_ln153_1 | select | auto_sel  | 0       |
+|    select_ln153_2_fu_281_p3          |     |        | select_ln153_2 | select | auto_sel  | 0       |
+|    select_ln154_fu_288_p3            |     |        | select_ln154   | select | auto_sel  | 0       |
+|    select_ln154_1_fu_295_p3          |     |        | select_ln154_1 | select | auto_sel  | 0       |
+|    select_ln154_2_fu_302_p3          |     |        | select_ln154_2 | select | auto_sel  | 0       |
 |    w_last_fu_256_p2                  |     |        | w_last         | seteq  | auto      | 0       |
 +--------------------------------------+-----+--------+----------------+--------+-----------+---------+
 
@@ -138,10 +137,10 @@
 |   fft_re_1_U                        | ram_1p array |      | 1    |      |        | fft_re_1     | auto | 1       | 16, 1024, 1      |
 |   fft_im_U                          | ram_1p array |      | 1    |      |        | fft_im       | auto | 1       | 16, 1024, 1      |
 |   fft_im_1_U                        | ram_1p array |      | 1    |      |        | fft_im_1     | auto | 1       | 16, 1024, 1      |
-|   pilot_h_re_U                      | ram_1p array |      | 1    |      |        | pilot_h_re   | auto | 1       | 16, 172, 1       |
-|   pilot_h_re_1_U                    | ram_1p array |      | 1    |      |        | pilot_h_re_1 | auto | 1       | 16, 172, 1       |
-|   pilot_h_im_U                      | ram_1p array |      | 1    |      |        | pilot_h_im   | auto | 1       | 16, 172, 1       |
-|   pilot_h_im_1_U                    | ram_1p array |      | 1    |      |        | pilot_h_im_1 | auto | 1       | 16, 172, 1       |
+|   pilot_h_re_U                      | ram_1p array |      | 1    |      |        | pilot_h_re   | auto | 1       | 16, 100, 1       |
+|   pilot_h_re_1_U                    | ram_1p array |      | 1    |      |        | pilot_h_re_1 | auto | 1       | 16, 100, 1       |
+|   pilot_h_im_U                      | ram_1p array |      | 1    |      |        | pilot_h_im   | auto | 1       | 16, 100, 1       |
+|   pilot_h_im_1_U                    | ram_1p array |      | 1    |      |        | pilot_h_im_1 | auto | 1       | 16, 100, 1       |
 |   w_re_U                            | ram_1p array |      | 1    |      |        | w_re         | auto | 1       | 16, 1024, 1      |
 |   w_re_1_U                          | ram_1p array |      | 1    |      |        | w_re_1       | auto | 1       | 16, 1024, 1      |
 |   w_re_2_U                          | ram_1p array |      | 1    |      |        | w_re_2       | auto | 1       | 16, 1024, 1      |
@@ -151,10 +150,10 @@
 |   w_im_2_U                          | ram_1p array |      | 1    |      |        | w_im_2       | auto | 1       | 16, 1024, 1      |
 |   w_im_3_U                          | ram_1p array |      | 1    |      |        | w_im_3       | auto | 1       | 16, 1024, 1      |
 |  + chan_est_top_Pipeline_pilot_scan |              |      | 2    | 0    |        |              |      |         |                  |
-|    DMRS_RE_U                        | rom_1p       |      | 1    |      |        | DMRS_RE      | auto | 1       | 15, 172, 1       |
-|    DMRS_IM_U                        | rom_1p       |      | 1    |      |        | DMRS_IM      | auto | 1       | 15, 172, 1       |
+|    DMRS_RE_U                        | rom_1p       |      | 1    |      |        | DMRS_RE      | auto | 1       | 15, 100, 1       |
+|    DMRS_IM_U                        | rom_1p       |      | 1    |      |        | DMRS_IM      | auto | 1       | 15, 100, 1       |
 |  + chan_est_top_Pipeline_zoh_fill   |              |      | 1    | 0    |        |              |      |         |                  |
-|    PILOT_FOR_K_U                    | rom_1p       |      | 1    |      |        | PILOT_FOR_K  | auto | 1       | 8, 1024, 1       |
+|    PILOT_FOR_K_U                    | rom_1p       |      | 1    |      |        | PILOT_FOR_K  | auto | 1       | 7, 1024, 1       |
 +-------------------------------------+--------------+------+------+------+--------+--------------+------+---------+------------------+
 
 
@@ -162,33 +161,33 @@
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+-----------------+------------------------------------+-------------------------------------------------+
-| Type            | Options                            | Location                                        |
-+-----------------+------------------------------------+-------------------------------------------------+
-| inline          |                                    | ./dmrs_pilots.h:109 in is_pilot                 |
-| inline          |                                    | ./dmrs_pilots.h:115 in pilot_index              |
-| inline          |                                    | chan_est.cpp:42 in ls_div                       |
-| interface       | axis port=fft_in                   | chan_est.cpp:195 in chan_est_top, fft_in        |
-| interface       | axis port=weight_stream            | chan_est.cpp:196 in chan_est_top, weight_stream |
-| interface       | ap_none port=symbol_num            | chan_est.cpp:197 in chan_est_top, symbol_num    |
-| interface       | ap_ctrl_hs port=return             | chan_est.cpp:198 in chan_est_top, return        |
-| disaggregate    | variable=fft_in                    | chan_est.cpp:199 in chan_est_top, fft_in        |
-| array_partition | variable=fft_re complete dim=1     | chan_est.cpp:207 in chan_est_top, fft_re        |
-| array_partition | variable=fft_im complete dim=1     | chan_est.cpp:208 in chan_est_top, fft_im        |
-| array_partition | variable=pilot_h_re complete dim=1 | chan_est.cpp:213 in chan_est_top, pilot_h_re    |
-| array_partition | variable=pilot_h_im complete dim=1 | chan_est.cpp:214 in chan_est_top, pilot_h_im    |
-| array_partition | variable=w_re complete dim=1       | chan_est.cpp:219 in chan_est_top, w_re          |
-| array_partition | variable=w_re complete dim=2       | chan_est.cpp:220 in chan_est_top, w_re          |
-| array_partition | variable=w_im complete dim=1       | chan_est.cpp:221 in chan_est_top, w_im          |
-| array_partition | variable=w_im complete dim=2       | chan_est.cpp:222 in chan_est_top, w_im          |
-| pipeline        | II=1                               | chan_est.cpp:229 in chan_est_top                |
-| unroll          |                                    | chan_est.cpp:231 in chan_est_top                |
-| pipeline        | II=1                               | chan_est.cpp:247 in chan_est_top                |
-| unroll          |                                    | chan_est.cpp:252 in chan_est_top                |
-| pipeline        | II=1                               | chan_est.cpp:267 in chan_est_top                |
-| unroll          |                                    | chan_est.cpp:270 in chan_est_top                |
-| unroll          |                                    | chan_est.cpp:272 in chan_est_top                |
-| pipeline        | II=1                               | chan_est.cpp:284 in chan_est_top                |
-+-----------------+------------------------------------+-------------------------------------------------+
++-----------------+------------------------------------+------------------------------------------------+
+| Type            | Options                            | Location                                       |
++-----------------+------------------------------------+------------------------------------------------+
+| inline          |                                    | ./dmrs_pilots.h:86 in is_pilot                 |
+| inline          |                                    | ./dmrs_pilots.h:95 in pilot_index              |
+| inline          |                                    | chan_est.cpp:42 in ls_div                      |
+| interface       | axis port=fft_in                   | chan_est.cpp:56 in chan_est_top, fft_in        |
+| interface       | axis port=weight_stream            | chan_est.cpp:57 in chan_est_top, weight_stream |
+| interface       | ap_none port=symbol_num            | chan_est.cpp:58 in chan_est_top, symbol_num    |
+| interface       | ap_ctrl_hs port=return             | chan_est.cpp:59 in chan_est_top, return        |
+| disaggregate    | variable=fft_in                    | chan_est.cpp:60 in chan_est_top, fft_in        |
+| array_partition | variable=fft_re complete dim=1     | chan_est.cpp:68 in chan_est_top, fft_re        |
+| array_partition | variable=fft_im complete dim=1     | chan_est.cpp:69 in chan_est_top, fft_im        |
+| array_partition | variable=pilot_h_re complete dim=1 | chan_est.cpp:74 in chan_est_top, pilot_h_re    |
+| array_partition | variable=pilot_h_im complete dim=1 | chan_est.cpp:75 in chan_est_top, pilot_h_im    |
+| array_partition | variable=w_re complete dim=1       | chan_est.cpp:80 in chan_est_top, w_re          |
+| array_partition | variable=w_re complete dim=2       | chan_est.cpp:81 in chan_est_top, w_re          |
+| array_partition | variable=w_im complete dim=1       | chan_est.cpp:82 in chan_est_top, w_im          |
+| array_partition | variable=w_im complete dim=2       | chan_est.cpp:83 in chan_est_top, w_im          |
+| pipeline        | II=1                               | chan_est.cpp:90 in chan_est_top                |
+| unroll          |                                    | chan_est.cpp:92 in chan_est_top                |
+| pipeline        | II=1                               | chan_est.cpp:108 in chan_est_top               |
+| unroll          |                                    | chan_est.cpp:116 in chan_est_top               |
+| pipeline        | II=1                               | chan_est.cpp:131 in chan_est_top               |
+| unroll          |                                    | chan_est.cpp:134 in chan_est_top               |
+| unroll          |                                    | chan_est.cpp:136 in chan_est_top               |
+| pipeline        | II=1                               | chan_est.cpp:148 in chan_est_top               |
++-----------------+------------------------------------+------------------------------------------------+
 
 

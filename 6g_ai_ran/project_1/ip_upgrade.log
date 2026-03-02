@@ -1,6 +1,195 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 14:57:44 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_chan_est_top_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of thz_pipeline_top_chan_est_top_0_1 (xilinx.com:hls:chan_est_top:1.0) from (Rev. 2114500681) to (Rev. 2114502056)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 14:23:45 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_mlkem_top_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of thz_pipeline_top_mlkem_top_1_1 (xilinx.com:hls:mlkem_top:1.0 (Rev. 2114499341)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 14:23:45 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_mlkem_top_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of thz_pipeline_top_mlkem_top_0_1 (xilinx.com:hls:mlkem_top:1.0 (Rev. 2114499341)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 14:23:45 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_cp_removal_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of thz_pipeline_top_cp_removal_0_1 (xilinx.com:hls:cp_removal:1.0 (Rev. 2114500510)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 14:23:45 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_cp_removal_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of thz_pipeline_top_cp_removal_0_0 (xilinx.com:hls:cp_removal:1.0 (Rev. 2114500510)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 14:23:45 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_cp_insertion_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of thz_pipeline_top_cp_insertion_1_0 (xilinx.com:hls:cp_insertion:1.0 (Rev. 2114500506)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 14:23:45 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_cp_insertion_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of thz_pipeline_top_cp_insertion_0_0 (xilinx.com:hls:cp_insertion:1.0 (Rev. 2114500506)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 14:23:45 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_chan_est_top_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of thz_pipeline_top_chan_est_top_0_1 (xilinx.com:hls:chan_est_top:1.0 (Rev. 2114500681)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sun Mar  1 14:23:45 2026
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'thz_pipeline_top_beamformer_top_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the update of thz_pipeline_top_beamformer_top_0_3 (xilinx.com:hls:beamformer_top:1.0 (Rev. 2114500775)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
 | Date         : Sat Feb 28 17:36:04 2026
 | Host         : localhost.localdomain running 64-bit unknown
 | Command      : upgrade_ip

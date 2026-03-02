@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:chan_est_top:1.0
-// IP Revision: 2114500681
+// IP Revision: 2114502056
 
 (* X_CORE_INFO = "chan_est_top,Vivado 2024.1" *)
 (* CHECK_LICENSE_TYPE = "thz_pipeline_top_chan_est_top_0_1,chan_est_top,{}" *)
-(* CORE_GENERATION_INFO = "thz_pipeline_top_chan_est_top_0_1,chan_est_top,{x_ipProduct=Vivado 2024.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=chan_est_top,x_ipVersion=1.0,x_ipCoreRevision=2114500681,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "thz_pipeline_top_chan_est_top_0_1,chan_est_top,{x_ipProduct=Vivado 2024.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=chan_est_top,x_ipVersion=1.0,x_ipCoreRevision=2114502056,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module thz_pipeline_top_chan_est_top_0_1 (

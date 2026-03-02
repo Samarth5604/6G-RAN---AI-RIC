@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 31,
+    "calls": "",
+    "file": "snr_monitor.cpp",
+    "fileloc": 54,
+    "instructions": 250,
+    "loads": {
+      "G": 2,
+      "L": 8
+    },
+    "name": "snr_monitor_top",
+    "stores": {
+      "L": 4,
+      "T": 2
+    },
+    "total_instructions": 250
+  }
+}

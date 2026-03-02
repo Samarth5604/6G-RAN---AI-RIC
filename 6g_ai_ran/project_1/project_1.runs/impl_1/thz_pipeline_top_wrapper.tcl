@@ -97,9 +97,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Physopt 32-662} -limit 9999
-set_msg_config -id {Physopt 32-668} -limit 9999
-set_msg_config -id {Physopt 32-702} -limit 9999
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -107,12 +104,8 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param power.BramSDPPropagationFix 1
   set_param chipscope.maxJobs 4
   set_param bd.open.in_stealth_mode 2
-  set_param power.enableUnconnectedCarry8PinPower 1
-  set_param power.enableCarry8RouteBelPower 1
-  set_param power.enableLutRouteBelPower 1
   set_param runs.launchOptions { -jobs 10  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu7ev-ffvc1156-2-e
@@ -124,12 +117,7 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path /home/samarth/Desktop/6g_ai_ran/project_1/project_1.xpr [current_project]
   set_property ip_repo_paths {
   /home/samarth/Desktop/Vitis-AI-master/src/vai_library/dpu_task/src
-  /home/samarth/Desktop/6g_ai_ran/beamforming
-  /home/samarth/Desktop/6g_ai_ran/cp_insertion
-  /home/samarth/Desktop/6g_ai_ran/cp_removal
-  /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc
-  /home/samarth/Desktop/6g_ai_ran/channel_estimation
-  /home/samarth/Desktop/zcu104_dpu_workspace/DPU_IP
+  /home/samarth/Desktop/6g_ai_ran
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo /home/samarth/Desktop/6g_ai_ran/project_1/project_1.cache/ip [current_project]

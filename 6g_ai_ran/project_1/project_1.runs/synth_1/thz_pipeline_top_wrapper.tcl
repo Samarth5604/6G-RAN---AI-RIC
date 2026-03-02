@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 set_param bd.open.in_stealth_mode 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu7ev-ffvc1156-2-e
@@ -71,12 +72,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   /home/samarth/Desktop/Vitis-AI-master/src/vai_library/dpu_task/src
-  /home/samarth/Desktop/6g_ai_ran/beamforming
-  /home/samarth/Desktop/6g_ai_ran/cp_insertion
-  /home/samarth/Desktop/6g_ai_ran/cp_removal
-  /home/samarth/Desktop/6g_ai_ran/ml_kem_pqc
-  /home/samarth/Desktop/6g_ai_ran/channel_estimation
-  /home/samarth/Desktop/zcu104_dpu_workspace/DPU_IP
+  /home/samarth/Desktop/6g_ai_ran
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/samarth/Desktop/6g_ai_ran/project_1/project_1.cache/ip [current_project]
@@ -169,10 +165,14 @@ set_property used_in_implementation false [get_files -all /home/samarth/Desktop/
 set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axis_broadcaster_0_0/thz_pipeline_top_axis_broadcaster_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axis_broadcaster_0_1/thz_pipeline_top_axis_broadcaster_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_chan_est_top_0_1/constraints/chan_est_top_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_auto_pc_0/thz_pipeline_top_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3_board.xdc]
 set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3.xdc]
+set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_sc_mapper_rx_0_0/constraints/sc_mapper_rx_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_snr_monitor_top_0_0/constraints/snr_monitor_top_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axis_broadcaster_1_0/thz_pipeline_top_axis_broadcaster_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_auto_pc_0/thz_pipeline_top_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_slot_counter_top_0_0/constraints/slot_counter_top_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/thz_pipeline_top_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -184,6 +184,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc
+set_property used_in_implementation false [get_files /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/constrs_1/new/impl_1.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/utils_1/imports/synth_1/thz_pipeline_top_wrapper.dcp

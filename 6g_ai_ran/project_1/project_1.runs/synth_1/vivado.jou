@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Mar  1 09:35:36 2026
-# Process ID: 8868
+# Start of session at: Mon Mar  2 12:36:06 2026
+# Process ID: 106262
 # Current directory: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1
 # Command line: vivado -log thz_pipeline_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source thz_pipeline_top_wrapper.tcl
 # Log file: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.runs/synth_1/thz_pipeline_top_wrapper.vds
@@ -19,6 +19,6 @@
 # Host memory       :33071 MB
 # Swap memory       :16739 MB
 # Total Virtual     :49810 MB
-# Available Virtual :42701 MB
+# Available Virtual :38664 MB
 #-----------------------------------------------------------
 source thz_pipeline_top_wrapper.tcl -notrace

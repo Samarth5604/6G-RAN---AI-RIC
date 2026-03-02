@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "slot_counter_top",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "slot_counter_top"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/samarth/Desktop/6g_ai_ran/slot_counter/slot_counter/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

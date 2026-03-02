@@ -1,7 +1,14 @@
 vhdl xil_defaultlib  \
-"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_0/sim/thz_pipeline_top_axi_dma_0_0.vhd" \
-"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_rst_ps8_0_266M_0/sim/thz_pipeline_top_rst_ps8_0_266M_0.vhd" \
 "../../../bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_1/sim/bd_fc49_psr_aclk_0.vhd" \
+"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_xfft_0_0/sim/thz_pipeline_top_xfft_0_0.vhd" \
+"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_rst_ps8_0_266M_0/sim/thz_pipeline_top_rst_ps8_0_266M_0.vhd" \
+"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_xfft_0_2/sim/thz_pipeline_top_xfft_0_2.vhd" \
+"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_0/sim/thz_pipeline_top_axi_dma_0_0.vhd" \
+"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_axi_dma_0_1/sim/thz_pipeline_top_axi_dma_0_1.vhd" \
+"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_1/bd_0/ip/ip_1/sim/bd_3c88_psr_aclk_0.vhd" \
+"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_xfft_0_3/sim/thz_pipeline_top_xfft_0_3.vhd" \
+"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_xfft_0_4/sim/thz_pipeline_top_xfft_0_4.vhd" \
+"../../../bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/sim/thz_pipeline_top_axi_gpio_0_3.vhd" \
 
 # Do not sort compile order
 nosort

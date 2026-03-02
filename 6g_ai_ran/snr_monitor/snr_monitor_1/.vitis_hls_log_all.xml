@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="snr_monitor_1" solutionName="solution1" date="2026-03-02T11:31:41.385+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 'fft_in' as it needs to be read/written in its entirety" projectName="snr_monitor_1" solutionName="solution1" date="2026-03-02T11:31:40.681+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/csynth.tcl'" projectName="snr_monitor_1" solutionName="solution1" date="2026-03-02T11:31:27.103+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor_1/solution1/export.tcl'" projectName="snr_monitor_1" solutionName="solution1" date="2026-03-02T11:32:17.310+0530" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

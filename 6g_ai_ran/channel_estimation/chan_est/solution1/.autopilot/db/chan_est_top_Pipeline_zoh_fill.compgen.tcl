@@ -175,7 +175,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename pilot_h_re \
     op interface \
-    ports { pilot_h_re_address0 { O 8 vector } pilot_h_re_ce0 { O 1 bit } pilot_h_re_q0 { I 16 vector } } \
+    ports { pilot_h_re_address0 { O 7 vector } pilot_h_re_ce0 { O 1 bit } pilot_h_re_q0 { I 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pilot_h_re'"
@@ -194,7 +194,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename pilot_h_im \
     op interface \
-    ports { pilot_h_im_address0 { O 8 vector } pilot_h_im_ce0 { O 1 bit } pilot_h_im_q0 { I 16 vector } } \
+    ports { pilot_h_im_address0 { O 7 vector } pilot_h_im_ce0 { O 1 bit } pilot_h_im_q0 { I 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pilot_h_im'"
@@ -213,7 +213,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename pilot_h_re_1 \
     op interface \
-    ports { pilot_h_re_1_address0 { O 8 vector } pilot_h_re_1_ce0 { O 1 bit } pilot_h_re_1_q0 { I 16 vector } } \
+    ports { pilot_h_re_1_address0 { O 7 vector } pilot_h_re_1_ce0 { O 1 bit } pilot_h_re_1_q0 { I 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pilot_h_re_1'"
@@ -232,7 +232,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename pilot_h_im_1 \
     op interface \
-    ports { pilot_h_im_1_address0 { O 8 vector } pilot_h_im_1_ce0 { O 1 bit } pilot_h_im_1_q0 { I 16 vector } } \
+    ports { pilot_h_im_1_address0 { O 7 vector } pilot_h_im_1_ce0 { O 1 bit } pilot_h_im_1_q0 { I 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pilot_h_im_1'"

@@ -107,6 +107,8 @@ thz_pipeline_top_zynq_ultra_ps_e_0_0_sc::thz_pipeline_top_zynq_ultra_ps_e_0_0_sc
   M_AXI_HPM0_LPD_wr_socket = mp_impl->M_AXI_HPM0_LPD_wr_socket;
   S_AXI_HPC0_FPD_rd_socket = mp_impl->S_AXI_HPC0_FPD_rd_socket;
   S_AXI_HPC0_FPD_wr_socket = mp_impl->S_AXI_HPC0_FPD_wr_socket;
+  S_AXI_HPC1_FPD_rd_socket = mp_impl->S_AXI_HPC1_FPD_rd_socket;
+  S_AXI_HPC1_FPD_wr_socket = mp_impl->S_AXI_HPC1_FPD_wr_socket;
 }
 
 thz_pipeline_top_zynq_ultra_ps_e_0_0_sc::~thz_pipeline_top_zynq_ultra_ps_e_0_0_sc()

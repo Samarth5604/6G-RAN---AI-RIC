@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
--- Date        : Sun Mar  1 09:35:16 2026
+-- Date        : Mon Mar  2 12:35:50 2026
 -- Host        : localhost.localdomain running 64-bit unknown
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/thz_pipeline_top_stub.vhdl

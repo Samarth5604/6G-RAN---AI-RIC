@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:24:15.227+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:23:18.727+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:22:21.786+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:22:05.848+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:21:35.148+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:15:15.971+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:10:10.039+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:07:11.192+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:29:44.089+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:26:19.786+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:22:57.311+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:22:14.338+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:21:23.987+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:20:00.788+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:18:49.602+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:17:53.878+0530"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:24:08.128+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:23:17.619+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:22:20.551+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:22:04.718+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:21:33.942+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:15:08.176+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:10:01.017+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-02T11:07:10.131+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:29:40.532+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:26:17.826+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:22:52.058+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:22:12.933+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:21:22.423+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:19:59.380+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:18:47.910+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl&#xA;Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/snr_monitor/snr_monitor/solution1/csim.tcl'" projectName="snr_monitor" solutionName="solution1" date="2026-03-01T15:17:52.070+0530" type="Warning"/>
+      </csimLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

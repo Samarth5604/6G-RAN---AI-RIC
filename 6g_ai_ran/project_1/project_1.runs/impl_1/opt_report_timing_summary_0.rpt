@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date              : Sun Mar  1 10:28:26 2026
+| Date              : Mon Mar  2 12:37:44 2026
 | Host              : localhost.localdomain running 64-bit unknown
 | Command           : report_timing_summary -max_paths 10 -report_unconstrained -file opt_report_timing_summary_0.rpt -pb opt_report_timing_summary_0.pb -rpx opt_report_timing_summary_0.rpx
 | Design            : thz_pipeline_top_wrapper
@@ -143,7 +143,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      0.818        0.000                      0                85662       -0.096    -2547.170                  47870                85662        0.166        0.000                       0                 28980  
+      0.812        0.000                      0                88950       -0.096    -2625.708                  49794                88950        0.166        0.000                       0                 30245  
 
 
 Timing constraints are not met.
@@ -166,7 +166,7 @@ clk_pl_0  {0.000 1.666}        3.333           300.030
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-clk_pl_0            0.818        0.000                      0                85662       -0.096    -2547.170                  47870                85662        0.166        0.000                       0                 28980  
+clk_pl_0            0.812        0.000                      0                88950       -0.096    -2625.708                  49794                88950        0.166        0.000                       0                 30245  
 
 
 ------------------------------------------------------------------------------------------------
@@ -218,15 +218,15 @@ Path Group    From Clock    To Clock
 From Clock:  clk_pl_0
   To Clock:  clk_pl_0
 
-Setup :            0  Failing Endpoints,  Worst Slack        0.818ns,  Total Violation        0.000ns
-Hold  :        47870  Failing Endpoints,  Worst Slack       -0.096ns,  Total Violation    -2547.170ns
+Setup :            0  Failing Endpoints,  Worst Slack        0.812ns,  Total Violation        0.000ns
+Hold  :        49794  Failing Endpoints,  Worst Slack       -0.096ns,  Total Violation    -2625.708ns
 PW    :            0  Failing Endpoints,  Worst Slack        0.166ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.818ns  (required time - arrival time)
+Slack (MET) :             0.812ns  (required time - arrival time)
   Source:                 thz_pipeline_top_i/axi_gpio_0/U0/ip2bus_wrack_i_D1_reg/C
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
   Destination:            thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2WREADY
@@ -234,7 +234,7 @@ Slack (MET) :             0.818ns  (required time - arrival time)
   Path Group:             clk_pl_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            3.333ns  (clk_pl_0 rise@3.333ns - clk_pl_0 rise@0.000ns)
-  Data Path Delay:        1.318ns  (logic 0.341ns (25.873%)  route 0.977ns (74.127%))
+  Data Path Delay:        1.324ns  (logic 0.341ns (25.755%)  route 0.983ns (74.245%))
   Logic Levels:           4  (LUT5=2 LUT6=2)
   Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    2.607ns = ( 5.940 - 3.333 ) 
@@ -253,19 +253,19 @@ Slack (MET) :             0.818ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_gpio_0/U0/s_axi_aclk
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_gpio_0/U0/s_axi_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_gpio_0/U0/ip2bus_wrack_i_D1_reg/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/axi_gpio_0/U0/ip2bus_wrack_i_D1_reg/Q
                          net (fo=1, unplaced)         0.154     3.023    thz_pipeline_top_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ip2bus_wrack_i_D1
                          LUT6 (Prop_LUT6_I0_O)        0.150     3.173 r  thz_pipeline_top_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/s_axi_wready_INST_0/O
-                         net (fo=8, unplaced)         0.214     3.387    thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_axi_wready[3]
-                         LUT5 (Prop_LUT5_I1_O)        0.038     3.425 r  thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/s_axi_wready[0]_INST_0_i_3/O
-                         net (fo=3, unplaced)         0.192     3.617    thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/gen_decerr.decerr_slave_inst/m_ready_d_reg[1]
-                         LUT6 (Prop_LUT6_I4_O)        0.038     3.655 r  thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/gen_decerr.decerr_slave_inst/s_axi_wready[0]_INST_0_i_1/O
-                         net (fo=1, unplaced)         0.186     3.841    thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/f_mux_return__1
-                         LUT5 (Prop_LUT5_I4_O)        0.038     3.879 r  thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_wready[0]_INST_0/O
-                         net (fo=1, unplaced)         0.231     4.110    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/maxigp2_wready
+                         net (fo=8, unplaced)         0.214     3.387    thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_axi_wready[4]
+                         LUT5 (Prop_LUT5_I4_O)        0.038     3.425 r  thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/s_axi_wready[0]_INST_0_i_6/O
+                         net (fo=1, unplaced)         0.186     3.611    thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/gen_decerr.decerr_slave_inst/m_ready_d_reg[0]_2
+                         LUT6 (Prop_LUT6_I5_O)        0.038     3.649 f  thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/gen_decerr.decerr_slave_inst/s_axi_wready[0]_INST_0_i_1/O
+                         net (fo=4, unplaced)         0.198     3.847    thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/PS8_i_1
+                         LUT5 (Prop_LUT5_I4_O)        0.038     3.885 r  thz_pipeline_top_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_wready[0]_INST_0/O
+                         net (fo=1, unplaced)         0.231     4.116    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/maxigp2_wready
                          PS8                                          r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2WREADY
   -------------------------------------------------------------------    -------------------
 
@@ -275,7 +275,7 @@ Slack (MET) :             0.818ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk0
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk0
                          PS8                                          r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -283,9 +283,9 @@ Slack (MET) :             0.818ns  (required time - arrival time)
                                                      -0.948     4.928    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i
   -------------------------------------------------------------------
                          required time                          4.928    
-                         arrival time                          -4.110    
+                         arrival time                          -4.116    
   -------------------------------------------------------------------
-                         slack                                  0.818    
+                         slack                                  0.812    
 
 Slack (MET) :             0.957ns  (required time - arrival time)
   Source:                 thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/DSP_A_B_DATA_INST/CLK
@@ -314,7 +314,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_A2_DATA[14])
@@ -344,7 +344,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/DSP_A_B_DATA_INST/CLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -383,7 +383,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_A2_DATA[14])
@@ -413,7 +413,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/DSP_A_B_DATA_INST/CLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -452,7 +452,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/CLK
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_A2_DATA[14])
@@ -482,7 +482,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/CLK
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/DSP_A_B_DATA_INST/CLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -521,7 +521,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/CLK
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_A2_DATA[14])
@@ -551,7 +551,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/CLK
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/DSP_A_B_DATA_INST/CLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -590,7 +590,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_A2_DATA[14])
@@ -620,7 +620,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/DSP_A_B_DATA_INST/CLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -659,7 +659,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_A2_DATA[14])
@@ -689,7 +689,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/DSP_A_B_DATA_INST/CLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -728,7 +728,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/CLK
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_A2_DATA[14])
@@ -758,7 +758,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/CLK
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/DSP_A_B_DATA_INST/CLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -797,7 +797,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/CLK
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_13ns_29_1_1_U17/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_A2_DATA[14])
@@ -827,7 +827,7 @@ Slack (MET) :             0.957ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/CLK
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_29s_29_4_1_U22/mlkem_top_mac_muladd_16s_13s_29s_29_4_1_DSP48_0_U/a_reg_reg/DSP_A_B_DATA_INST/CLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -866,7 +866,7 @@ Slack (MET) :             0.963ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mul_16s_12ns_28_1_1_U18/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_A2_DATA[14])
@@ -896,7 +896,7 @@ Slack (MET) :             0.963ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.143     3.476    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     3.501 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
+                         net (fo=30604, unplaced)     2.439     5.940    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/CLK
                          DSP_A_B_DATA                                 r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/mac_muladd_16s_13s_28s_29_4_1_U23/mlkem_top_mac_muladd_16s_13s_28s_29_4_1_DSP48_0_U/a_reg_reg/DSP_A_B_DATA_INST/CLK
                          clock pessimism              0.040     5.980    
                          clock uncertainty           -0.104     5.876    
@@ -937,7 +937,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -951,7 +951,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAMA/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -985,7 +985,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -999,7 +999,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAMA_D1/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -1033,7 +1033,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -1047,7 +1047,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAMB/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -1081,7 +1081,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -1095,7 +1095,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAMB_D1/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -1129,7 +1129,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -1143,7 +1143,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAMC/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -1177,7 +1177,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -1191,7 +1191,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAMC_D1/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -1225,7 +1225,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -1239,7 +1239,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAMD/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -1273,7 +1273,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -1287,7 +1287,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAMD_D1/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -1321,7 +1321,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -1335,7 +1335,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAME/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -1369,7 +1369,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[2]/Q
@@ -1383,7 +1383,7 @@ Slack (VIOLATED) :        -0.096ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_13/RAME_D1/CLK
                          clock pessimism             -0.033     1.398    
                          RAMD32 (Hold_RAMD32_CLK_WADR2)
@@ -1481,7 +1481,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/rst_ps8_0_266M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/slowest_sync_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/rst_ps8_0_266M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/slowest_sync_clk
                          FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
 
 
@@ -1520,7 +1520,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/rst_ps8_0_266M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/slowest_sync_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/rst_ps8_0_266M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/slowest_sync_clk
                          FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
 
 
@@ -1546,7 +1546,7 @@ Slack:                    inf
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.428ns  (logic 0.115ns (26.869%)  route 0.313ns (73.131%))
+  Data Path Delay:        0.437ns  (logic 0.115ns (26.316%)  route 0.322ns (73.684%))
   Logic Levels:           1  (LUT1=1)
   Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    2.607ns
@@ -1566,13 +1566,13 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
                          FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.077     2.869 f  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
-                         net (fo=655, unplaced)       0.265     3.134    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aresetn
-                         LUT1 (Prop_LUT1_I0_O)        0.038     3.172 r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to_i_1/O
-                         net (fo=1, unplaced)         0.048     3.220    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/asr_d1
+                         net (fo=965, unplaced)       0.274     3.143    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aresetn
+                         LUT1 (Prop_LUT1_I0_O)        0.038     3.181 r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to_i_1/O
+                         net (fo=1, unplaced)         0.048     3.229    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/asr_d1
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
   -------------------------------------------------------------------    -------------------
 
@@ -1582,7 +1582,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aclk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
 
 Slack:                    inf
@@ -1592,7 +1592,7 @@ Slack:                    inf
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.428ns  (logic 0.115ns (26.869%)  route 0.313ns (73.131%))
+  Data Path Delay:        0.437ns  (logic 0.115ns (26.316%)  route 0.322ns (73.684%))
   Logic Levels:           1  (LUT1=1)
   Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    2.607ns
@@ -1612,13 +1612,13 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
                          FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.077     2.869 f  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
-                         net (fo=655, unplaced)       0.265     3.134    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aresetn
-                         LUT1 (Prop_LUT1_I0_O)        0.038     3.172 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to_i_1/O
-                         net (fo=1, unplaced)         0.048     3.220    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/asr_d1
+                         net (fo=965, unplaced)       0.274     3.143    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aresetn
+                         LUT1 (Prop_LUT1_I0_O)        0.038     3.181 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to_i_1/O
+                         net (fo=1, unplaced)         0.048     3.229    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/asr_d1
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
   -------------------------------------------------------------------    -------------------
 
@@ -1628,7 +1628,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aclk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
 
 Slack:                    inf
@@ -1638,7 +1638,7 @@ Slack:                    inf
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.428ns  (logic 0.115ns (26.869%)  route 0.313ns (73.131%))
+  Data Path Delay:        0.437ns  (logic 0.115ns (26.316%)  route 0.322ns (73.684%))
   Logic Levels:           1  (LUT1=1)
   Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    2.607ns
@@ -1658,13 +1658,13 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
                          FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.077     2.869 f  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
-                         net (fo=655, unplaced)       0.265     3.134    thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/s_aresetn
-                         LUT1 (Prop_LUT1_I0_O)        0.038     3.172 r  thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst_i_1/O
-                         net (fo=1, unplaced)         0.048     3.220    thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/src_rst
+                         net (fo=965, unplaced)       0.274     3.143    thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/s_aresetn
+                         LUT1 (Prop_LUT1_I0_O)        0.038     3.181 r  thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst_i_1/O
+                         net (fo=1, unplaced)         0.048     3.229    thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/src_rst
                          FDRE                                         r  thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/syncstages_ff_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1674,7 +1674,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/dest_clk
                          FDRE                                         r  thz_pipeline_top_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/syncstages_ff_reg[0]/C
 
 Slack:                    inf
@@ -1684,7 +1684,7 @@ Slack:                    inf
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.428ns  (logic 0.115ns (26.869%)  route 0.313ns (73.131%))
+  Data Path Delay:        0.437ns  (logic 0.115ns (26.316%)  route 0.322ns (73.684%))
   Logic Levels:           1  (LUT1=1)
   Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    2.607ns
@@ -1704,13 +1704,13 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
                          FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.077     2.869 f  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
-                         net (fo=655, unplaced)       0.265     3.134    thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/s_aresetn
-                         LUT1 (Prop_LUT1_I0_O)        0.038     3.172 r  thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst_i_1/O
-                         net (fo=1, unplaced)         0.048     3.220    thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/src_rst
+                         net (fo=965, unplaced)       0.274     3.143    thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/s_aresetn
+                         LUT1 (Prop_LUT1_I0_O)        0.038     3.181 r  thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst_i_1/O
+                         net (fo=1, unplaced)         0.048     3.229    thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/src_rst
                          FDRE                                         r  thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/syncstages_ff_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1720,8 +1720,184 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/dest_clk
                          FDRE                                         r  thz_pipeline_top_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst/syncstages_ff_reg[0]/C
+
+Slack:                    inf
+  Source:                 thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
+  Destination:            thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.399ns  (logic 0.077ns (19.298%)  route 0.322ns (80.702%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.607ns
+    Source Clock Delay      (SCD):    2.792ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.104ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.195ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
+                         FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
+                         net (fo=965, unplaced)       0.322     3.191    thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST/axi_resetn
+                         FDRE                                         r  thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST/m_axi_mm2s_aclk
+                         FDRE                                         r  thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
+
+Slack:                    inf
+  Source:                 thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
+  Destination:            thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.399ns  (logic 0.077ns (19.298%)  route 0.322ns (80.702%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.607ns
+    Source Clock Delay      (SCD):    2.792ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.104ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.195ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
+                         FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
+                         net (fo=965, unplaced)       0.322     3.191    thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST_OUT/axi_resetn
+                         FDRE                                         r  thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST_OUT/m_axi_mm2s_aclk
+                         FDRE                                         r  thz_pipeline_top_i/axi_dma_0/U0/I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
+
+Slack:                    inf
+  Source:                 thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
+  Destination:            thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.399ns  (logic 0.077ns (19.298%)  route 0.322ns (80.702%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.607ns
+    Source Clock Delay      (SCD):    2.792ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.104ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.195ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
+                         FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
+                         net (fo=965, unplaced)       0.322     3.191    thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST/axi_resetn
+                         FDRE                                         r  thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST/m_axi_mm2s_aclk
+                         FDRE                                         r  thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
+
+Slack:                    inf
+  Source:                 thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
+  Destination:            thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.399ns  (logic 0.077ns (19.298%)  route 0.322ns (80.702%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.607ns
+    Source Clock Delay      (SCD):    2.792ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.104ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.195ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/rst_ps8_0_266M/U0/slowest_sync_clk
+                         FDRE                                         r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/rst_ps8_0_266M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
+                         net (fo=965, unplaced)       0.322     3.191    thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST_OUT/axi_resetn
+                         FDRE                                         r  thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST_OUT/m_axi_mm2s_aclk
+                         FDRE                                         r  thz_pipeline_top_i/axi_dma_1/U0/I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
 
 Slack:                    inf
   Source:                 thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
@@ -1750,7 +1926,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -1764,7 +1940,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[0]/C
 
 Slack:                    inf
@@ -1794,7 +1970,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -1808,184 +1984,8 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[1]/C
-
-Slack:                    inf
-  Source:                 thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Destination:            thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[2]/CLR
-                            (recovery check against rising-edge clock clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Path Group:             (none)
-  Path Type:              Recovery (Max at Slow Process Corner)
-  Data Path Delay:        0.399ns  (logic 0.077ns (19.298%)  route 0.322ns (80.702%))
-  Logic Levels:           0  
-  Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    2.607ns
-    Source Clock Delay      (SCD):    2.792ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.104ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.195ns
-    Phase Error              (PE):    0.000ns
-  Timing Exception:       False Path
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-                         BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/aclk
-                         FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
-  -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
-                         net (fo=51, unplaced)        0.322     3.191    thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/src_arst
-                         FDCE                                         f  thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[2]/CLR  (IS_INVERTED)
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-                         BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
-                         FDCE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[2]/C
-
-Slack:                    inf
-  Source:                 thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Destination:            thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[0]/CLR
-                            (recovery check against rising-edge clock clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Path Group:             (none)
-  Path Type:              Recovery (Max at Slow Process Corner)
-  Data Path Delay:        0.399ns  (logic 0.077ns (19.298%)  route 0.322ns (80.702%))
-  Logic Levels:           0  
-  Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    2.607ns
-    Source Clock Delay      (SCD):    2.792ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.104ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.195ns
-    Phase Error              (PE):    0.000ns
-  Timing Exception:       False Path
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-                         BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/aclk
-                         FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
-  -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
-                         net (fo=51, unplaced)        0.322     3.191    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/src_arst
-                         FDCE                                         f  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[0]/CLR  (IS_INVERTED)
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-                         BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
-                         FDCE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[0]/C
-
-Slack:                    inf
-  Source:                 thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Destination:            thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[1]/CLR
-                            (recovery check against rising-edge clock clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Path Group:             (none)
-  Path Type:              Recovery (Max at Slow Process Corner)
-  Data Path Delay:        0.399ns  (logic 0.077ns (19.298%)  route 0.322ns (80.702%))
-  Logic Levels:           0  
-  Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    2.607ns
-    Source Clock Delay      (SCD):    2.792ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.104ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.195ns
-    Phase Error              (PE):    0.000ns
-  Timing Exception:       False Path
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-                         BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/aclk
-                         FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
-  -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
-                         net (fo=51, unplaced)        0.322     3.191    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/src_arst
-                         FDCE                                         f  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[1]/CLR  (IS_INVERTED)
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-                         BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
-                         FDCE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[1]/C
-
-Slack:                    inf
-  Source:                 thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Destination:            thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[2]/CLR
-                            (recovery check against rising-edge clock clk_pl_0  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Path Group:             (none)
-  Path Type:              Recovery (Max at Slow Process Corner)
-  Data Path Delay:        0.399ns  (logic 0.077ns (19.298%)  route 0.322ns (80.702%))
-  Logic Levels:           0  
-  Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    2.607ns
-    Source Clock Delay      (SCD):    2.792ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.104ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.195ns
-    Phase Error              (PE):    0.000ns
-  Timing Exception:       False Path
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, unplaced)         0.180     0.180    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-                         BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.028     0.208 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.584     2.792    thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/aclk
-                         FDRE                                         r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
-  -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_FDRE_C_Q)         0.077     2.869 r  thz_pipeline_top_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
-                         net (fo=51, unplaced)        0.322     3.191    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/src_arst
-                         FDCE                                         f  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[2]/CLR  (IS_INVERTED)
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-                         PS8                          0.000     0.000 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-                         BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
-                         FDCE                                         r  thz_pipeline_top_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[2]/C
 
 
 
@@ -2020,7 +2020,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2034,7 +2034,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[0]/C
 
 Slack:                    inf
@@ -2064,7 +2064,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2078,7 +2078,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[1]/C
 
 Slack:                    inf
@@ -2108,7 +2108,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2122,7 +2122,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[2]/C
 
 Slack:                    inf
@@ -2152,7 +2152,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2166,7 +2166,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[0]/C
 
 Slack:                    inf
@@ -2196,7 +2196,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2210,7 +2210,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[1]/C
 
 Slack:                    inf
@@ -2240,7 +2240,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2254,7 +2254,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[2]/C
 
 Slack:                    inf
@@ -2284,7 +2284,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2298,7 +2298,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[0]/C
 
 Slack:                    inf
@@ -2328,7 +2328,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2342,7 +2342,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[1]/C
 
 Slack:                    inf
@@ -2372,7 +2372,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2386,7 +2386,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[2]/C
 
 Slack:                    inf
@@ -2416,7 +2416,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.122     0.122    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.139 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
+                         net (fo=30604, unplaced)     1.114     1.253    thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/aclk
                          FDRE                                         r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     1.291 r  thz_pipeline_top_i/axi_smc1/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
@@ -2430,7 +2430,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
                          FDCE                                         r  thz_pipeline_top_i/axi_smc1/inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[0]/C
 
 
@@ -2491,7 +2491,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[15]_srl2/CLK
 
 Slack:                    inf
@@ -2536,7 +2536,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_2_reg_250_pp0_iter2_reg_reg[15]_srl2/CLK
 
 Slack:                    inf
@@ -2581,7 +2581,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[15]_srl2/CLK
 
 Slack:                    inf
@@ -2626,7 +2626,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_2_reg_250_pp0_iter2_reg_reg[15]_srl2/CLK
 
 Slack:                    inf
@@ -2671,7 +2671,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[21]_srl2/CLK
 
 Slack:                    inf
@@ -2716,7 +2716,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[22]_srl2/CLK
 
 Slack:                    inf
@@ -2761,7 +2761,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_2_reg_250_pp0_iter2_reg_reg[21]_srl2/CLK
 
 Slack:                    inf
@@ -2806,7 +2806,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_2_reg_250_pp0_iter2_reg_reg[22]_srl2/CLK
 
 Slack:                    inf
@@ -2851,7 +2851,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[21]_srl2/CLK
 
 Slack:                    inf
@@ -2896,7 +2896,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.143     0.143    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.168 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     2.439     2.607    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[22]_srl2/CLK
 
 
@@ -2947,7 +2947,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[0]_srl2/CLK
 
 Slack:                    inf
@@ -2992,7 +2992,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_2_reg_250_pp0_iter2_reg_reg[0]_srl2/CLK
 
 Slack:                    inf
@@ -3037,7 +3037,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[0]_srl2/CLK
 
 Slack:                    inf
@@ -3082,7 +3082,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_2_reg_250_pp0_iter2_reg_reg[0]_srl2/CLK
 
 Slack:                    inf
@@ -3127,7 +3127,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[16]_srl2/CLK
 
 Slack:                    inf
@@ -3172,7 +3172,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[8]_srl2/CLK
 
 Slack:                    inf
@@ -3217,7 +3217,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_2_reg_250_pp0_iter2_reg_reg[16]_srl2/CLK
 
 Slack:                    inf
@@ -3262,7 +3262,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_0/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_2_reg_250_pp0_iter2_reg_reg[8]_srl2/CLK
 
 Slack:                    inf
@@ -3307,7 +3307,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[16]_srl2/CLK
 
 Slack:                    inf
@@ -3352,7 +3352,7 @@ Slack:                    inf
                          net (fo=1, unplaced)         0.154     0.154    thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
                          BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.172 r  thz_pipeline_top_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-                         net (fo=29304, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
+                         net (fo=30604, unplaced)     1.259     1.431    thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/ap_clk
                          SRL16E                                       r  thz_pipeline_top_i/mlkem_top_1/inst/process_phase_U0/grp_process_phase_Pipeline_VITIS_LOOP_44_1_fu_38/a_1_reg_260_pp0_iter2_reg_reg[8]_srl2/CLK
 
 

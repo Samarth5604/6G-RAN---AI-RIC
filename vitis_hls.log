@@ -1,0 +1,15 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Mar  1 12:01:16 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /home/samarth/Desktop/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'samarth' on host 'localhost' (Linux_x86_64 version 5.14.0-611.35.1.el9_7.x86_64) on Sun Mar 01 12:01:17 IST 2026
+INFO: [HLS 200-10] In directory '/home/samarth/Desktop/6G-RAN---AI-RIC'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI
+INFO: [HLS 200-112] Total CPU user time: 1305.93 seconds. Total CPU system time: 57.11 seconds. Total elapsed time: 6041.59 seconds; peak allocated memory: 97.535 MB.

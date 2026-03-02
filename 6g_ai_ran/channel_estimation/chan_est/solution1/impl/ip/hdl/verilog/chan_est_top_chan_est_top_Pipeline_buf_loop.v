@@ -89,7 +89,7 @@ wire    ap_CS_fsm_pp0_stage0;
 wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_idle_pp0;
-wire   [0:0] icmp_ln228_fu_160_p2;
+wire   [0:0] icmp_ln89_fu_160_p2;
 reg    ap_block_state1_pp0_stage0_iter0;
 reg    ap_block_pp0_stage0_subdone;
 reg    ap_condition_exit_pp0_iter0_stage0;
@@ -100,15 +100,15 @@ wire    ap_block_pp0_stage0;
 reg    fft_in_1_TDATA_blk_n;
 reg   [10:0] k_2_reg_227;
 reg    ap_block_pp0_stage0_11001;
-wire   [15:0] trunc_ln233_fu_176_p1;
-reg   [15:0] trunc_ln233_reg_235;
+wire   [15:0] trunc_ln94_fu_176_p1;
+reg   [15:0] trunc_ln94_reg_235;
 reg   [15:0] tmp_s_reg_240;
-wire   [15:0] trunc_ln233_1_fu_194_p1;
-reg   [15:0] trunc_ln233_1_reg_245;
+wire   [15:0] trunc_ln94_1_fu_194_p1;
+reg   [15:0] trunc_ln94_1_reg_245;
 reg   [15:0] tmp_1_reg_250;
-wire   [63:0] zext_ln228_fu_213_p1;
+wire   [63:0] zext_ln89_fu_213_p1;
 reg   [10:0] k_fu_72;
-wire   [10:0] add_ln228_fu_166_p2;
+wire   [10:0] add_ln89_fu_166_p2;
 wire    ap_loop_init;
 reg   [10:0] ap_sig_allocacmp_k_2;
 reg    fft_re_we0_local;
@@ -186,8 +186,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln228_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1))) begin
-            k_fu_72 <= add_ln228_fu_166_p2;
+        if (((icmp_ln89_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1))) begin
+            k_fu_72 <= add_ln89_fu_166_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             k_fu_72 <= 11'd0;
         end
@@ -199,13 +199,13 @@ always @ (posedge ap_clk) begin
         k_2_reg_227 <= ap_sig_allocacmp_k_2;
         tmp_1_reg_250 <= {{fft_in_1_TDATA[31:16]}};
         tmp_s_reg_240 <= {{fft_in_0_TDATA[31:16]}};
-        trunc_ln233_1_reg_245 <= trunc_ln233_1_fu_194_p1;
-        trunc_ln233_reg_235 <= trunc_ln233_fu_176_p1;
+        trunc_ln94_1_reg_245 <= trunc_ln94_1_fu_194_p1;
+        trunc_ln94_reg_235 <= trunc_ln94_fu_176_p1;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_subdone) & (icmp_ln228_fu_160_p2 == 1'd1) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_subdone) & (icmp_ln89_fu_160_p2 == 1'd1) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -285,7 +285,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0) & (icmp_ln228_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (icmp_ln89_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         fft_in_0_TDATA_blk_n = fft_in_0_TVALID;
     end else begin
         fft_in_0_TDATA_blk_n = 1'b1;
@@ -293,7 +293,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln228_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln89_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         fft_in_0_TREADY = 1'b1;
     end else begin
         fft_in_0_TREADY = 1'b0;
@@ -301,7 +301,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0) & (icmp_ln228_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (icmp_ln89_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         fft_in_1_TDATA_blk_n = fft_in_1_TVALID;
     end else begin
         fft_in_1_TDATA_blk_n = 1'b1;
@@ -309,7 +309,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln228_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln89_fu_160_p2 == 1'd0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         fft_in_1_TREADY = 1'b1;
     end else begin
         fft_in_1_TREADY = 1'b0;
@@ -359,7 +359,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln228_fu_166_p2 = (ap_sig_allocacmp_k_2 + 11'd1);
+assign add_ln89_fu_166_p2 = (ap_sig_allocacmp_k_2 + 11'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -374,7 +374,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_block_state1_pp0_stage0_iter0 = (((fft_in_1_TVALID == 1'b0) & (icmp_ln228_fu_160_p2 == 1'd0)) | ((icmp_ln228_fu_160_p2 == 1'd0) & (fft_in_0_TVALID == 1'b0)));
+    ap_block_state1_pp0_stage0_iter0 = (((fft_in_1_TVALID == 1'b0) & (icmp_ln89_fu_160_p2 == 1'd0)) | ((icmp_ln89_fu_160_p2 == 1'd0) & (fft_in_0_TVALID == 1'b0)));
 end
 
 assign ap_done = ap_done_sig;
@@ -387,7 +387,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign fft_im_1_address0 = zext_ln228_fu_213_p1;
+assign fft_im_1_address0 = zext_ln89_fu_213_p1;
 
 assign fft_im_1_ce0 = fft_im_1_ce0_local;
 
@@ -395,7 +395,7 @@ assign fft_im_1_d0 = tmp_1_reg_250;
 
 assign fft_im_1_we0 = fft_im_1_we0_local;
 
-assign fft_im_address0 = zext_ln228_fu_213_p1;
+assign fft_im_address0 = zext_ln89_fu_213_p1;
 
 assign fft_im_ce0 = fft_im_ce0_local;
 
@@ -403,28 +403,28 @@ assign fft_im_d0 = tmp_s_reg_240;
 
 assign fft_im_we0 = fft_im_we0_local;
 
-assign fft_re_1_address0 = zext_ln228_fu_213_p1;
+assign fft_re_1_address0 = zext_ln89_fu_213_p1;
 
 assign fft_re_1_ce0 = fft_re_1_ce0_local;
 
-assign fft_re_1_d0 = trunc_ln233_1_reg_245;
+assign fft_re_1_d0 = trunc_ln94_1_reg_245;
 
 assign fft_re_1_we0 = fft_re_1_we0_local;
 
-assign fft_re_address0 = zext_ln228_fu_213_p1;
+assign fft_re_address0 = zext_ln89_fu_213_p1;
 
 assign fft_re_ce0 = fft_re_ce0_local;
 
-assign fft_re_d0 = trunc_ln233_reg_235;
+assign fft_re_d0 = trunc_ln94_reg_235;
 
 assign fft_re_we0 = fft_re_we0_local;
 
-assign icmp_ln228_fu_160_p2 = ((ap_sig_allocacmp_k_2 == 11'd1024) ? 1'b1 : 1'b0);
+assign icmp_ln89_fu_160_p2 = ((ap_sig_allocacmp_k_2 == 11'd1024) ? 1'b1 : 1'b0);
 
-assign trunc_ln233_1_fu_194_p1 = fft_in_1_TDATA[15:0];
+assign trunc_ln94_1_fu_194_p1 = fft_in_1_TDATA[15:0];
 
-assign trunc_ln233_fu_176_p1 = fft_in_0_TDATA[15:0];
+assign trunc_ln94_fu_176_p1 = fft_in_0_TDATA[15:0];
 
-assign zext_ln228_fu_213_p1 = k_2_reg_227;
+assign zext_ln89_fu_213_p1 = k_2_reg_227;
 
 endmodule //chan_est_top_chan_est_top_Pipeline_buf_loop

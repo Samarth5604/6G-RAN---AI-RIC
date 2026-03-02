@@ -4,7 +4,7 @@
     "xci_name": "thz_pipeline_top_chan_est_top_0_1",
     "cell_name": "chan_est_top_0",
     "component_reference": "xilinx.com:hls:chan_est_top:1.0",
-    "ip_revision": "2114500681",
+    "ip_revision": "2114502056",
     "gen_directory": "../../../../../../project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_chan_est_top_0_1",
     "parameters": {
       "component_parameters": {
@@ -13,7 +13,7 @@
         "machine": [ { "value": "64", "enabled": false, "usage": "all" } ],
         "combinational": [ { "value": "0", "enabled": false, "usage": "all" } ],
         "latency": [ { "value": "1030", "enabled": false, "usage": "all" } ],
-        "II": [ { "value": "1031 ~ 6342", "enabled": false, "usage": "all" } ]
+        "II": [ { "value": "1031 ~ 6270", "enabled": false, "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynquplus" } ],
@@ -31,7 +31,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114500681" } ],
+        "IPREVISION": [ { "value": "2114502056" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_chan_est_top_0_1" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

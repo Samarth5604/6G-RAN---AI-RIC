@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"slot_counter_top": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,4 +1,4 @@
-INFO: [HLS 200-10] For user 'samarth' on host 'localhost' (Linux_x86_64 version 5.14.0-611.35.1.el9_7.x86_64) on Sat Feb 28 16:01:02 IST 2026
+INFO: [HLS 200-10] For user 'samarth' on host 'localhost' (Linux_x86_64 version 5.14.0-611.35.1.el9_7.x86_64) on Sun Mar 01 14:56:31 IST 2026
 INFO: [HLS 200-10] In directory '/home/samarth/Desktop/6g_ai_ran/channel_estimation'
 WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
 Sourcing Tcl script '/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/export.tcl'
@@ -25,8 +25,11 @@ INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samar
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
 INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./chan_est/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name chan_est_top chan_est_top 
+WARNING: [HLS 200-484] The 'set_directive_top -name' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_top -location' command is deprecated and will be removed in a future release.
 INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -34,7 +37,7 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
   **** SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Sat Feb 28 16:01:04 2026
+  **** Start of session at: Sun Mar  1 14:56:32 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -59,7 +62,7 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/impl/ip/component.xml
 INFO: Created IP archive /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/impl/ip/xilinx_com_hls_chan_est_top_1_0.zip
-INFO: [Common 17-206] Exiting Vivado at Sat Feb 28 16:01:10 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  1 14:56:38 2026...
 INFO: [HLS 200-802] Generated output file export.zip
-INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:17; Allocated memory: 6.000 MB.
-INFO: [HLS 200-112] Total CPU user time: 10.03 seconds. Total CPU system time: 0.48 seconds. Total elapsed time: 19.46 seconds; peak allocated memory: 336.465 MB.
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:17; Allocated memory: 6.012 MB.
+INFO: [HLS 200-112] Total CPU user time: 9.08 seconds. Total CPU system time: 0.41 seconds. Total elapsed time: 18.53 seconds; peak allocated memory: 301.977 MB.

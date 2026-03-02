@@ -13,8 +13,8 @@ module chan_est_top_pilot_h_re_RAM_AUTO_1R1W (
     reset, clk);
 
 parameter DataWidth = 16;
-parameter AddressWidth = 8;
-parameter AddressRange = 172;
+parameter AddressWidth = 7;
+parameter AddressRange = 100;
  
 input[AddressWidth-1:0] address0;
 input ce0;

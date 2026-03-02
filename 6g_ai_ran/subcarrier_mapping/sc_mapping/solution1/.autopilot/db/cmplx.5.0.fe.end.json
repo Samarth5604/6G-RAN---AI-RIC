@@ -1,0 +1,21 @@
+{
+    "0": {
+        "name": "sc_mapper_rx",
+        "file": "sc_mapper.cpp",
+        "fileloc": "18",
+        "instructions": "68",
+        "total_instructions": "68",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -41,7 +41,7 @@ end;
 architecture behav of chan_est_top is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "chan_est_top_chan_est_top,hls_ip_2024_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu7ev-ffvc1156-2-e,HLS_INPUT_CLOCK=3.330000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.380000,HLS_SYN_LAT=3686,HLS_SYN_TPT=none,HLS_SYN_MEM=19,HLS_SYN_DSP=0,HLS_SYN_FF=636,HLS_SYN_LUT=1232,HLS_VERSION=2024_1}";
+    "chan_est_top_chan_est_top,hls_ip_2024_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu7ev-ffvc1156-2-e,HLS_INPUT_CLOCK=3.330000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.380000,HLS_SYN_LAT=3650,HLS_SYN_TPT=none,HLS_SYN_MEM=19,HLS_SYN_DSP=0,HLS_SYN_FF=632,HLS_SYN_LUT=1249,HLS_VERSION=2024_1}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
@@ -75,8 +75,8 @@ architecture behav of chan_est_top is
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal icmp_ln243_fu_230_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln243_reg_236 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln104_fu_230_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln104_reg_236 : STD_LOGIC_VECTOR (0 downto 0);
     signal fft_re_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal fft_re_ce0 : STD_LOGIC;
     signal fft_re_we0 : STD_LOGIC;
@@ -93,19 +93,19 @@ architecture behav of chan_est_top is
     signal fft_im_1_ce0 : STD_LOGIC;
     signal fft_im_1_we0 : STD_LOGIC;
     signal fft_im_1_q0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal pilot_h_re_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal pilot_h_re_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal pilot_h_re_ce0 : STD_LOGIC;
     signal pilot_h_re_we0 : STD_LOGIC;
     signal pilot_h_re_q0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal pilot_h_re_1_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal pilot_h_re_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal pilot_h_re_1_ce0 : STD_LOGIC;
     signal pilot_h_re_1_we0 : STD_LOGIC;
     signal pilot_h_re_1_q0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal pilot_h_im_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal pilot_h_im_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal pilot_h_im_ce0 : STD_LOGIC;
     signal pilot_h_im_we0 : STD_LOGIC;
     signal pilot_h_im_q0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal pilot_h_im_1_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal pilot_h_im_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal pilot_h_im_1_ce0 : STD_LOGIC;
     signal pilot_h_im_1_we0 : STD_LOGIC;
     signal pilot_h_im_1_q0 : STD_LOGIC_VECTOR (15 downto 0);
@@ -167,19 +167,19 @@ architecture behav of chan_est_top is
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_done : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_idle : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_ready : STD_LOGIC;
-    signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_ce0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_we0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_ce0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_we0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_ce0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_we0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_ce0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_we0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_d0 : STD_LOGIC_VECTOR (15 downto 0);
@@ -227,13 +227,13 @@ architecture behav of chan_est_top is
     signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_w_re_ce0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_w_re_we0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_w_re_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_ce0 : STD_LOGIC;
-    signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_ce0 : STD_LOGIC;
-    signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_1_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_re_1_ce0 : STD_LOGIC;
-    signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_1_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_1_ce0 : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_weight_out_fu_210_ap_start : STD_LOGIC;
     signal grp_chan_est_top_Pipeline_weight_out_fu_210_ap_done : STD_LOGIC;
@@ -390,19 +390,19 @@ architecture behav of chan_est_top is
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        pilot_h_im_1_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        pilot_h_im_1_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         pilot_h_im_1_ce0 : OUT STD_LOGIC;
         pilot_h_im_1_we0 : OUT STD_LOGIC;
         pilot_h_im_1_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-        pilot_h_im_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        pilot_h_im_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         pilot_h_im_ce0 : OUT STD_LOGIC;
         pilot_h_im_we0 : OUT STD_LOGIC;
         pilot_h_im_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-        pilot_h_re_1_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        pilot_h_re_1_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         pilot_h_re_1_ce0 : OUT STD_LOGIC;
         pilot_h_re_1_we0 : OUT STD_LOGIC;
         pilot_h_re_1_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-        pilot_h_re_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        pilot_h_re_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         pilot_h_re_ce0 : OUT STD_LOGIC;
         pilot_h_re_we0 : OUT STD_LOGIC;
         pilot_h_re_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
@@ -461,16 +461,16 @@ architecture behav of chan_est_top is
         w_re_ce0 : OUT STD_LOGIC;
         w_re_we0 : OUT STD_LOGIC;
         w_re_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-        pilot_h_re_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        pilot_h_re_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         pilot_h_re_ce0 : OUT STD_LOGIC;
         pilot_h_re_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        pilot_h_im_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        pilot_h_im_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         pilot_h_im_ce0 : OUT STD_LOGIC;
         pilot_h_im_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        pilot_h_re_1_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        pilot_h_re_1_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         pilot_h_re_1_ce0 : OUT STD_LOGIC;
         pilot_h_re_1_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        pilot_h_im_1_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        pilot_h_im_1_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         pilot_h_im_1_ce0 : OUT STD_LOGIC;
         pilot_h_im_1_q0 : IN STD_LOGIC_VECTOR (15 downto 0) );
     end component;
@@ -541,7 +541,7 @@ architecture behav of chan_est_top is
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        address0 : IN STD_LOGIC_VECTOR (6 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
         d0 : IN STD_LOGIC_VECTOR (15 downto 0);
@@ -626,8 +626,8 @@ begin
     pilot_h_re_U : component chan_est_top_pilot_h_re_RAM_AUTO_1R1W
     generic map (
         DataWidth => 16,
-        AddressRange => 172,
-        AddressWidth => 8)
+        AddressRange => 100,
+        AddressWidth => 7)
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -640,8 +640,8 @@ begin
     pilot_h_re_1_U : component chan_est_top_pilot_h_re_RAM_AUTO_1R1W
     generic map (
         DataWidth => 16,
-        AddressRange => 172,
-        AddressWidth => 8)
+        AddressRange => 100,
+        AddressWidth => 7)
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -654,8 +654,8 @@ begin
     pilot_h_im_U : component chan_est_top_pilot_h_re_RAM_AUTO_1R1W
     generic map (
         DataWidth => 16,
-        AddressRange => 172,
-        AddressWidth => 8)
+        AddressRange => 100,
+        AddressWidth => 7)
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -668,8 +668,8 @@ begin
     pilot_h_im_1_U : component chan_est_top_pilot_h_re_RAM_AUTO_1R1W
     generic map (
         DataWidth => 16,
-        AddressRange => 172,
-        AddressWidth => 8)
+        AddressRange => 100,
+        AddressWidth => 7)
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1163,7 +1163,7 @@ begin
             if (ap_rst_n_inv = '1') then
                 grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_start_reg <= ap_const_logic_0;
             else
-                if (((icmp_ln243_reg_236 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+                if (((icmp_ln104_reg_236 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
                     grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_start_reg <= ap_const_logic_1;
                 elsif ((grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_ready = ap_const_logic_1)) then 
                     grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_start_reg <= ap_const_logic_0;
@@ -1208,12 +1208,12 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state1)) then
-                icmp_ln243_reg_236 <= icmp_ln243_fu_230_p2;
+                icmp_ln104_reg_236 <= icmp_ln104_fu_230_p2;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, icmp_ln243_reg_236, grp_chan_est_top_Pipeline_buf_loop_fu_152_ap_done, grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_done, grp_chan_est_top_Pipeline_zoh_fill_fu_192_ap_done, grp_chan_est_top_Pipeline_weight_out_fu_210_ap_done, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state9, ap_CS_fsm_state10, regslice_both_weight_stream_V_data_V_U_apdone_blk)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, icmp_ln104_reg_236, grp_chan_est_top_Pipeline_buf_loop_fu_152_ap_done, grp_chan_est_top_Pipeline_pilot_scan_fu_176_ap_done, grp_chan_est_top_Pipeline_zoh_fill_fu_192_ap_done, grp_chan_est_top_Pipeline_weight_out_fu_210_ap_done, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state9, ap_CS_fsm_state10, regslice_both_weight_stream_V_data_V_U_apdone_blk)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -1231,7 +1231,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state3;
                 end if;
             when ap_ST_fsm_state4 => 
-                if (((icmp_ln243_reg_236 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
+                if (((icmp_ln104_reg_236 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
                     ap_NS_fsm <= ap_ST_fsm_state10;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state5;
@@ -1541,7 +1541,7 @@ begin
     grp_chan_est_top_Pipeline_weight_out_fu_210_ap_start <= grp_chan_est_top_Pipeline_weight_out_fu_210_ap_start_reg;
     grp_chan_est_top_Pipeline_weight_out_fu_210_weight_stream_TREADY <= (weight_stream_TREADY_int_regslice and ap_CS_fsm_state9);
     grp_chan_est_top_Pipeline_zoh_fill_fu_192_ap_start <= grp_chan_est_top_Pipeline_zoh_fill_fu_192_ap_start_reg;
-    icmp_ln243_fu_230_p2 <= "1" when (symbol_num = ap_const_lv4_2) else "0";
+    icmp_ln104_fu_230_p2 <= "1" when (symbol_num = ap_const_lv4_2) else "0";
 
     pilot_h_im_1_address0_assign_proc : process(grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_address0, grp_chan_est_top_Pipeline_zoh_fill_fu_192_pilot_h_im_1_address0, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
@@ -1550,7 +1550,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
             pilot_h_im_1_address0 <= grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_1_address0;
         else 
-            pilot_h_im_1_address0 <= "XXXXXXXX";
+            pilot_h_im_1_address0 <= "XXXXXXX";
         end if; 
     end process;
 
@@ -1584,7 +1584,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
             pilot_h_im_address0 <= grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_im_address0;
         else 
-            pilot_h_im_address0 <= "XXXXXXXX";
+            pilot_h_im_address0 <= "XXXXXXX";
         end if; 
     end process;
 
@@ -1618,7 +1618,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
             pilot_h_re_1_address0 <= grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_1_address0;
         else 
-            pilot_h_re_1_address0 <= "XXXXXXXX";
+            pilot_h_re_1_address0 <= "XXXXXXX";
         end if; 
     end process;
 
@@ -1652,7 +1652,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
             pilot_h_re_address0 <= grp_chan_est_top_Pipeline_pilot_scan_fu_176_pilot_h_re_address0;
         else 
-            pilot_h_re_address0 <= "XXXXXXXX";
+            pilot_h_re_address0 <= "XXXXXXX";
         end if; 
     end process;
 

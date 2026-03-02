@@ -250,11 +250,35 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipelin
 # IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_chan_est_top_0_1/thz_pipeline_top_chan_est_top_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_chan_est_top_0_1 || ORIG_REF_NAME==thz_pipeline_top_chan_est_top_0_1} -quiet] -quiet
 
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axi_gpio_0_3 || ORIG_REF_NAME==thz_pipeline_top_axi_gpio_0_3} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_sc_mapper_rx_0_0/thz_pipeline_top_sc_mapper_rx_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_sc_mapper_rx_0_0 || ORIG_REF_NAME==thz_pipeline_top_sc_mapper_rx_0_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_snr_monitor_top_0_0/thz_pipeline_top_snr_monitor_top_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_snr_monitor_top_0_0 || ORIG_REF_NAME==thz_pipeline_top_snr_monitor_top_0_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axis_broadcaster_1_0/thz_pipeline_top_axis_broadcaster_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axis_broadcaster_1_0 || ORIG_REF_NAME==thz_pipeline_top_axis_broadcaster_1_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_xlconcat_0_0/thz_pipeline_top_xlconcat_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_xlconcat_0_0 || ORIG_REF_NAME==thz_pipeline_top_xlconcat_0_0} -quiet] -quiet
+
 # IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_auto_pc_0/thz_pipeline_top_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_auto_pc_0 || ORIG_REF_NAME==thz_pipeline_top_auto_pc_0} -quiet] -quiet
 
-# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axi_gpio_0_3 || ORIG_REF_NAME==thz_pipeline_top_axi_gpio_0_3} -quiet] -quiet
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_slot_counter_top_0_0/thz_pipeline_top_slot_counter_top_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_slot_counter_top_0_0 || ORIG_REF_NAME==thz_pipeline_top_slot_counter_top_0_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_xlslice_0_0/thz_pipeline_top_xlslice_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_xlslice_0_0 || ORIG_REF_NAME==thz_pipeline_top_xlslice_0_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_xlslice_0_1/thz_pipeline_top_xlslice_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_xlslice_0_1 || ORIG_REF_NAME==thz_pipeline_top_xlslice_0_1} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_xlslice_0_2/thz_pipeline_top_xlslice_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_xlslice_0_2 || ORIG_REF_NAME==thz_pipeline_top_xlslice_0_2} -quiet] -quiet
 
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_1/bd_fc49_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
@@ -457,8 +481,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_chan_est_top_0_1/constraints/chan_est_top_ooc.xdc
 
-# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_auto_pc_0/thz_pipeline_top_auto_pc_0_ooc.xdc
-
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axi_gpio_0_3 || ORIG_REF_NAME==thz_pipeline_top_axi_gpio_0_3} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
@@ -466,6 +488,16 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axi_gpio_0_3 || ORIG_REF_NAME==thz_pipeline_top_axi_gpio_0_3} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_sc_mapper_rx_0_0/constraints/sc_mapper_rx_ooc.xdc
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_snr_monitor_top_0_0/constraints/snr_monitor_top_ooc.xdc
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axis_broadcaster_1_0/thz_pipeline_top_axis_broadcaster_1_0_ooc.xdc
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_auto_pc_0/thz_pipeline_top_auto_pc_0_ooc.xdc
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_slot_counter_top_0_0/constraints/slot_counter_top_ooc.xdc
 
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/thz_pipeline_top_ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'thz_pipeline_top'. Do not add the DONT_TOUCH constraint.
@@ -719,11 +751,35 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_chan_est_top_0_1/thz_pipeline_top_chan_est_top_0_1.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_chan_est_top_0_1 || ORIG_REF_NAME==thz_pipeline_top_chan_est_top_0_1} -quiet] -quiet
 
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axi_gpio_0_3 || ORIG_REF_NAME==thz_pipeline_top_axi_gpio_0_3} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_sc_mapper_rx_0_0/thz_pipeline_top_sc_mapper_rx_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_sc_mapper_rx_0_0 || ORIG_REF_NAME==thz_pipeline_top_sc_mapper_rx_0_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_snr_monitor_top_0_0/thz_pipeline_top_snr_monitor_top_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_snr_monitor_top_0_0 || ORIG_REF_NAME==thz_pipeline_top_snr_monitor_top_0_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axis_broadcaster_1_0/thz_pipeline_top_axis_broadcaster_1_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axis_broadcaster_1_0 || ORIG_REF_NAME==thz_pipeline_top_axis_broadcaster_1_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_xlconcat_0_0/thz_pipeline_top_xlconcat_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_xlconcat_0_0 || ORIG_REF_NAME==thz_pipeline_top_xlconcat_0_0} -quiet] -quiet
+
 # IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_auto_pc_0/thz_pipeline_top_auto_pc_0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_auto_pc_0 || ORIG_REF_NAME==thz_pipeline_top_auto_pc_0} -quiet] -quiet
 
-# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axi_gpio_0_3 || ORIG_REF_NAME==thz_pipeline_top_axi_gpio_0_3} -quiet] -quiet
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_slot_counter_top_0_0/thz_pipeline_top_slot_counter_top_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_slot_counter_top_0_0 || ORIG_REF_NAME==thz_pipeline_top_slot_counter_top_0_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_xlslice_0_0/thz_pipeline_top_xlslice_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_xlslice_0_0 || ORIG_REF_NAME==thz_pipeline_top_xlslice_0_0} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_xlslice_0_1/thz_pipeline_top_xlslice_0_1.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_xlslice_0_1 || ORIG_REF_NAME==thz_pipeline_top_xlslice_0_1} -quiet] -quiet
+
+# IP: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.srcs/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_xlslice_0_2/thz_pipeline_top_xlslice_0_2.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==thz_pipeline_top_xlslice_0_2 || ORIG_REF_NAME==thz_pipeline_top_xlslice_0_2} -quiet] -quiet
 
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_smc_0/bd_0/ip/ip_1/bd_fc49_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
@@ -926,8 +982,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_chan_est_top_0_1/constraints/chan_est_top_ooc.xdc
 
-# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_auto_pc_0/thz_pipeline_top_auto_pc_0_ooc.xdc
-
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3_board.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axi_gpio_0_3 || ORIG_REF_NAME==thz_pipeline_top_axi_gpio_0_3} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
@@ -935,6 +989,16 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axi_gpio_0_3/thz_pipeline_top_axi_gpio_0_3.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==thz_pipeline_top_axi_gpio_0_3 || ORIG_REF_NAME==thz_pipeline_top_axi_gpio_0_3} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_sc_mapper_rx_0_0/constraints/sc_mapper_rx_ooc.xdc
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_snr_monitor_top_0_0/constraints/snr_monitor_top_ooc.xdc
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_axis_broadcaster_1_0/thz_pipeline_top_axis_broadcaster_1_0_ooc.xdc
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_auto_pc_0/thz_pipeline_top_auto_pc_0_ooc.xdc
+
+# XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/ip/thz_pipeline_top_slot_counter_top_0_0/constraints/slot_counter_top_ooc.xdc
 
 # XDC: /home/samarth/Desktop/6g_ai_ran/project_1/project_1.gen/sources_1/bd/thz_pipeline_top/thz_pipeline_top_ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'thz_pipeline_top'. Do not add the DONT_TOUCH constraint.

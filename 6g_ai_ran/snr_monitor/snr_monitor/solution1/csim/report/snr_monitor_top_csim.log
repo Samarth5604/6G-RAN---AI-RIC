@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../snr_monitor_tb.cpp in debug mode
+   Compiling ../../../../../channel_estimation/chan_est.cpp in debug mode
+   Compiling ../../../../snr_monitor.cpp in debug mode
+   Generating csim.exe
+FAIL [HighSNR] got_snr=26085.5 expected=156250 ratio=0.166947
+PASS [LowSNR] SNR=0.780716 (expected~0.78125, ratio=0.999316)
+PASS [NonDMRS] snr_out unchanged on symbol 5
+PASS [ZeroNoise] SNR=65536 (saturated or >30dB)
+
+FAIL: 1 error(s)
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4096
+ERR: [SIM 100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 3] *************** CSIM finish ***************

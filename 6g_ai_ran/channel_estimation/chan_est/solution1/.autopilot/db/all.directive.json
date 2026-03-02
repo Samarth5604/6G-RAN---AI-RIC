@@ -16,6 +16,27 @@
       ]
     },
     "slx": false,
+    "sourceFile": "/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "chan_est_top",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "chan_est_top"
+        }
+      ]
+    },
+    "slx": false,
     "sourceFile": "/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/csynth.tcl",
     "sourceLine": 18,
     "success": true

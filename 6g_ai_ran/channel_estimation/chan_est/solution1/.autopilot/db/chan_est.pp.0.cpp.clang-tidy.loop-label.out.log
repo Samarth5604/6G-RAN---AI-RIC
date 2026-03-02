@@ -23,23 +23,23 @@
       ^~~
       VITIS_LOOP_1247_1: 
 /home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:3947:7: note: FIX-IT applied suggested code changes
-/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9309:2: warning: Added loop label VITIS_LOOP_230_1:   [xilinx-label-all-loops]
+/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9303:2: warning: Added loop label VITIS_LOOP_91_1:   [xilinx-label-all-loops]
  for (int a = 0; a < 2; a++) {
  ^~~
- VITIS_LOOP_230_1: 
-/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9309:2: note: FIX-IT applied suggested code changes
-/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9330:13: warning: Added loop label VITIS_LOOP_251_2:   [xilinx-label-all-loops]
+ VITIS_LOOP_91_1: 
+/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9303:2: note: FIX-IT applied suggested code changes
+/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9327:13: warning: Added loop label VITIS_LOOP_115_2:   [xilinx-label-all-loops]
             for (int a = 0; a < 2; a++) {
             ^~~
-            VITIS_LOOP_251_2: 
-/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9330:13: note: FIX-IT applied suggested code changes
-/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9348:13: warning: Added loop label VITIS_LOOP_269_3:   [xilinx-label-all-loops]
+            VITIS_LOOP_115_2: 
+/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9327:13: note: FIX-IT applied suggested code changes
+/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9345:13: warning: Added loop label VITIS_LOOP_133_3:   [xilinx-label-all-loops]
             for (int b = 0; b < 2; b++) {
             ^~~
-            VITIS_LOOP_269_3: 
-/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9348:13: note: FIX-IT applied suggested code changes
-/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9350:2: warning: Added loop label VITIS_LOOP_271_4:   [xilinx-label-all-loops]
+            VITIS_LOOP_133_3: 
+/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9345:13: note: FIX-IT applied suggested code changes
+/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9347:2: warning: Added loop label VITIS_LOOP_135_4:   [xilinx-label-all-loops]
  for (int a = 0; a < 2; a++) {
  ^~~
- VITIS_LOOP_271_4: 
-/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9350:2: note: FIX-IT applied suggested code changes
+ VITIS_LOOP_135_4: 
+/home/samarth/Desktop/6g_ai_ran/channel_estimation/chan_est/solution1/.autopilot/db/chan_est.pp.0.cpp:9347:2: note: FIX-IT applied suggested code changes

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'chan_est_top_Pipeline_buf_loop'" level="0">
-<item name = "Date">Sat Feb 28 15:53:58 2026
+<item name = "Date">Sun Mar  1 14:56:19 2026
 </item>
 <item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
 <item name = "Project">chan_est</item>
@@ -78,9 +78,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln228_fu_166_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln89_fu_166_p2">+, 0, 0, 18, 11, 1</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln228_fu_160_p2">icmp, 0, 0, 19, 11, 12</column>
+<column name="icmp_ln89_fu_160_p2">icmp, 0, 0, 19, 11, 12</column>
 <column name="ap_block_state1_pp0_stage0_iter0">or, 0, 0, 2, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
@@ -104,8 +104,8 @@
 <column name="k_fu_72">11, 0, 11, 0</column>
 <column name="tmp_1_reg_250">16, 0, 16, 0</column>
 <column name="tmp_s_reg_240">16, 0, 16, 0</column>
-<column name="trunc_ln233_1_reg_245">16, 0, 16, 0</column>
-<column name="trunc_ln233_reg_235">16, 0, 16, 0</column>
+<column name="trunc_ln94_1_reg_245">16, 0, 16, 0</column>
+<column name="trunc_ln94_reg_235">16, 0, 16, 0</column>
 </table>
 </item>
 </section>

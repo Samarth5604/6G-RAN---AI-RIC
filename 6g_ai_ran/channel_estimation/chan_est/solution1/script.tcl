@@ -14,7 +14,7 @@ open_solution "solution1" -flow_target vivado
 set_part {xczu7ev-ffvc1156-2-e}
 create_clock -period 3.33 -name default
 config_export -format ip_catalog -output /home/samarth/Desktop/6g_ai_ran/channel_estimation -rtl verilog
-#source "./chan_est/solution1/directives.tcl"
+source "./chan_est/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design

@@ -1,0 +1,167 @@
+
+
+================================================================
+== Synthesis Summary Report of 'slot_counter_top'
+================================================================
++ General Information: 
+    * Date:           Mon Mar  2 12:24:00 2026
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        slot_counter
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ slot_counter_top  |     -|  0.25|        1|   3.330|         -|        2|     -|        no|     -|   -|  125 (~0%)|  353 (~0%)|    -|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------+------------+---------------+--------+----------+
+| Interface  | Data Width | Address Width | Offset | Register |
++------------+------------+---------------+--------+----------+
+| s_axi_CTRL | 32         | 6             | 16     | 0        |
++------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------+---------------------+--------+-------+--------+----------------------------------+-------------------------+
+| Interface  | Register            | Offset | Width | Access | Description                      | Bit Fields              |
++------------+---------------------+--------+-------+--------+----------------------------------+-------------------------+
+| s_axi_CTRL | sync_req            | 0x10   | 32    | W      | Data signal of sync_req          |                         |
+| s_axi_CTRL | sync_symbol         | 0x18   | 32    | W      | Data signal of sync_symbol       |                         |
+| s_axi_CTRL | sync_slot           | 0x20   | 32    | W      | Data signal of sync_slot         |                         |
+| s_axi_CTRL | symbol_num_out      | 0x28   | 32    | R      | Data signal of symbol_num_out    |                         |
+| s_axi_CTRL | symbol_num_out_ctrl | 0x2c   | 32    | R      | Control signal of symbol_num_out | 0=symbol_num_out_ap_vld |
+| s_axi_CTRL | slot_num_out        | 0x38   | 32    | R      | Data signal of slot_num_out      |                         |
+| s_axi_CTRL | slot_num_out_ctrl   | 0x3c   | 32    | R      | Control signal of slot_num_out   | 0=slot_num_out_ap_vld   |
++------------+---------------------+--------+-------+--------+----------------------------------+-------------------------+
+
+* Other Ports
++-----------------+---------+-----------+----------+
+| Port            | Mode    | Direction | Bitwidth |
++-----------------+---------+-----------+----------+
+| gpio_override   | ap_none | in        | 1        |
+| gpio_slot_num   | ap_none | in        | 7        |
+| gpio_symbol_num | ap_none | in        | 4        |
+| slot_num        | ap_none | out       | 7        |
+| symbol_num      | ap_none | out       | 4        |
++-----------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------------+-----------+-------------+
+| Argument        | Direction | Datatype    |
++-----------------+-----------+-------------+
+| symbol_num      | out       | ap_uint<4>& |
+| slot_num        | out       | ap_uint<7>& |
+| gpio_override   | in        | ap_uint<1>  |
+| gpio_symbol_num | in        | ap_uint<4>  |
+| gpio_slot_num   | in        | ap_uint<7>  |
+| sync_req        | in        | ap_uint<1>  |
+| sync_symbol     | in        | ap_uint<4>  |
+| sync_slot       | in        | ap_uint<7>  |
+| symbol_num_out  | out       | ap_uint<4>& |
+| slot_num_out    | out       | ap_uint<7>& |
++-----------------+-----------+-------------+
+
+* SW-to-HW Mapping
++-----------------+-----------------+----------+-----------------------------------------------+
+| Argument        | HW Interface    | HW Type  | HW Info                                       |
++-----------------+-----------------+----------+-----------------------------------------------+
+| symbol_num      | symbol_num      | port     |                                               |
+| slot_num        | slot_num        | port     |                                               |
+| gpio_override   | gpio_override   | port     |                                               |
+| gpio_symbol_num | gpio_symbol_num | port     |                                               |
+| gpio_slot_num   | gpio_slot_num   | port     |                                               |
+| sync_req        | s_axi_CTRL      | register | name=sync_req offset=0x10 range=32            |
+| sync_symbol     | s_axi_CTRL      | register | name=sync_symbol offset=0x18 range=32         |
+| sync_slot       | s_axi_CTRL      | register | name=sync_slot offset=0x20 range=32           |
+| symbol_num_out  | s_axi_CTRL      | register | name=symbol_num_out offset=0x28 range=32      |
+| symbol_num_out  | s_axi_CTRL      | register | name=symbol_num_out_ctrl offset=0x2c range=32 |
+| slot_num_out    | s_axi_CTRL      | register | name=slot_num_out offset=0x38 range=32        |
+| slot_num_out    | s_axi_CTRL      | register | name=slot_num_out_ctrl offset=0x3c range=32   |
++-----------------+-----------------+----------+-----------------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------+-----+--------+-------------------+--------+----------+---------+
+| Name                     | DSP | Pragma | Variable          | Op     | Impl     | Latency |
++--------------------------+-----+--------+-------------------+--------+----------+---------+
+| + slot_counter_top       | 0   |        |                   |        |          |         |
+|   icmp_ln93_fu_214_p2    |     |        | icmp_ln93         | seteq  | auto     | 0       |
+|   icmp_ln93_1_fu_220_p2  |     |        | icmp_ln93_1       | seteq  | auto     | 0       |
+|   or_ln93_fu_226_p2      |     |        | or_ln93           | or     | auto     | 0       |
+|   select_ln97_fu_232_p3  |     |        | select_ln97       | select | auto_sel | 0       |
+|   icmp_ln97_fu_244_p2    |     |        | icmp_ln97         | setgt  | auto     | 0       |
+|   icmp_ln100_fu_256_p2   |     |        | icmp_ln100        | seteq  | auto     | 0       |
+|   add_ln107_fu_262_p2    |     |        | add_ln107         | add    | fabric   | 0       |
+|   icmp_ln103_fu_280_p2   |     |        | icmp_ln103        | seteq  | auto     | 0       |
+|   add_ln105_fu_286_p2    |     |        | add_ln105         | add    | fabric   | 0       |
+|   select_ln103_fu_292_p3 |     |        | select_ln103      | select | auto_sel | 0       |
+|   add_ln110_fu_306_p2    |     |        | add_ln110         | add    | fabric   | 0       |
+|   symbol_num             |     |        | gpio_symbol_num_1 | select | auto_sel | 0       |
+|   slot_num               |     |        | gpio_slot_num_1   | select | auto_sel | 0       |
++--------------------------+-----+--------+-------------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++--------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name               | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                    |           |           |      |      |        |          |      |         | Banks            |
++--------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + slot_counter_top |           |           | 0    | 0    |        |          |      |         |                  |
+|   CTRL_s_axi_U     | interface | s_axilite |      |      |        |          |      |         |                  |
++--------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-------------------------------------------+----------------------------------------------------------+
+| Type      | Options                                   | Location                                                 |
++-----------+-------------------------------------------+----------------------------------------------------------+
+| interface | ap_none port=symbol_num                   | slot_counter.cpp:55 in slot_counter_top, symbol_num      |
+| interface | ap_none port=slot_num                     | slot_counter.cpp:56 in slot_counter_top, slot_num        |
+| interface | ap_none port=gpio_override                | slot_counter.cpp:57 in slot_counter_top, gpio_override   |
+| interface | ap_none port=gpio_symbol_num              | slot_counter.cpp:58 in slot_counter_top, gpio_symbol_num |
+| interface | ap_none port=gpio_slot_num                | slot_counter.cpp:59 in slot_counter_top, gpio_slot_num   |
+| interface | s_axilite port=sync_req bundle=CTRL       | slot_counter.cpp:60 in slot_counter_top, sync_req        |
+| interface | s_axilite port=sync_symbol bundle=CTRL    | slot_counter.cpp:61 in slot_counter_top, sync_symbol     |
+| interface | s_axilite port=sync_slot bundle=CTRL      | slot_counter.cpp:62 in slot_counter_top, sync_slot       |
+| interface | s_axilite port=symbol_num_out bundle=CTRL | slot_counter.cpp:63 in slot_counter_top, symbol_num_out  |
+| interface | s_axilite port=slot_num_out bundle=CTRL   | slot_counter.cpp:64 in slot_counter_top, slot_num_out    |
+| interface | s_axilite port=return bundle=CTRL         | slot_counter.cpp:65 in slot_counter_top, return          |
+| interface | ap_ctrl_none port=return                  | slot_counter.cpp:66 in slot_counter_top, return          |
+| reset     | variable=phase_cnt                        | slot_counter.cpp:72 in slot_counter_top, phase_cnt       |
+| reset     | variable=symbol_cnt                       | slot_counter.cpp:73 in slot_counter_top, symbol_cnt      |
+| reset     | variable=slot_cnt                         | slot_counter.cpp:74 in slot_counter_top, slot_cnt        |
++-----------+-------------------------------------------+----------------------------------------------------------+
+
+

@@ -23,14 +23,14 @@
 
 <trans id="68" from="4" to="5">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln243" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="69" from="4" to="10">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln243" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -336,10 +336,10 @@ entry:35 %w_im_3 = alloca i64 1
 
 <Node id="59" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-entry:42 %icmp_ln243 = icmp_eq  i4 %symbol_num_read, i4 2
+entry:42 %icmp_ln104 = icmp_eq  i4 %symbol_num_read, i4 2
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln243"/></StgValue>
+<StgValue><ssdm name="icmp_ln104"/></StgValue>
 </operation>
 </state>
 
@@ -405,10 +405,10 @@ entry:40 %call_ln0 = call void @chan_est_top_Pipeline_buf_loop, i16 %fft_im_1, i
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-entry:0 %spectopmodule_ln190 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty
+entry:0 %spectopmodule_ln51 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln190"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln51"/></StgValue>
 </operation>
 
 <operation id="33" st_id="4" stage="1" lat="1">
@@ -420,10 +420,10 @@ entry:0 %spectopmodule_ln190 = spectopmodule void @_ssdm_op_SpecTopModule, void 
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:1 %specinterface_ln190 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0
+entry:1 %specinterface_ln51 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln190"/></StgValue>
+<StgValue><ssdm name="specinterface_ln51"/></StgValue>
 </operation>
 
 <operation id="34" st_id="4" stage="1" lat="1">
@@ -690,10 +690,10 @@ entry:18 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %weight_s
 
 <Node id="53" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0">
 <![CDATA[
-entry:36 %specaxissidechannel_ln228 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %weight_stream_V_data_V, i4 %weight_stream_V_keep_V, i4 %weight_stream_V_strb_V, i1 0, i1 %weight_stream_V_last_V, i1 0, i1 0, void @empty_6
+entry:36 %specaxissidechannel_ln89 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %weight_stream_V_data_V, i4 %weight_stream_V_keep_V, i4 %weight_stream_V_strb_V, i1 0, i1 %weight_stream_V_last_V, i1 0, i1 0, void @empty_6
 
 ]]></Node>
-<StgValue><ssdm name="specaxissidechannel_ln228"/></StgValue>
+<StgValue><ssdm name="specaxissidechannel_ln89"/></StgValue>
 </operation>
 
 <operation id="52" st_id="4" stage="1" lat="1">
@@ -705,10 +705,10 @@ entry:36 %specaxissidechannel_ln228 = specaxissidechannel void @_ssdm_op_SpecAXI
 
 <Node id="54" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0">
 <![CDATA[
-entry:37 %specaxissidechannel_ln228 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %fft_in_1_V_data_V, i4 %fft_in_1_V_keep_V, i4 %fft_in_1_V_strb_V, i1 0, i1 %fft_in_1_V_last_V, i1 0, i1 0, void @empty_1
+entry:37 %specaxissidechannel_ln89 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %fft_in_1_V_data_V, i4 %fft_in_1_V_keep_V, i4 %fft_in_1_V_strb_V, i1 0, i1 %fft_in_1_V_last_V, i1 0, i1 0, void @empty_1
 
 ]]></Node>
-<StgValue><ssdm name="specaxissidechannel_ln228"/></StgValue>
+<StgValue><ssdm name="specaxissidechannel_ln89"/></StgValue>
 </operation>
 
 <operation id="53" st_id="4" stage="1" lat="1">
@@ -720,10 +720,10 @@ entry:37 %specaxissidechannel_ln228 = specaxissidechannel void @_ssdm_op_SpecAXI
 
 <Node id="55" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0">
 <![CDATA[
-entry:38 %specaxissidechannel_ln228 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %fft_in_0_V_data_V, i4 %fft_in_0_V_keep_V, i4 %fft_in_0_V_strb_V, i1 0, i1 %fft_in_0_V_last_V, i1 0, i1 0, void @empty_0
+entry:38 %specaxissidechannel_ln89 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %fft_in_0_V_data_V, i4 %fft_in_0_V_keep_V, i4 %fft_in_0_V_strb_V, i1 0, i1 %fft_in_0_V_last_V, i1 0, i1 0, void @empty_0
 
 ]]></Node>
-<StgValue><ssdm name="specaxissidechannel_ln228"/></StgValue>
+<StgValue><ssdm name="specaxissidechannel_ln89"/></StgValue>
 </operation>
 
 <operation id="54" st_id="4" stage="1" lat="1">
@@ -735,10 +735,10 @@ entry:38 %specaxissidechannel_ln228 = specaxissidechannel void @_ssdm_op_SpecAXI
 
 <Node id="58" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-entry:41 %empty_22 = wait i32 @_ssdm_op_Wait
+entry:41 %empty_20 = wait i32 @_ssdm_op_Wait
 
 ]]></Node>
-<StgValue><ssdm name="empty_22"/></StgValue>
+<StgValue><ssdm name="empty_20"/></StgValue>
 </operation>
 
 <operation id="55" st_id="4" stage="1" lat="1">
@@ -750,23 +750,23 @@ entry:41 %empty_22 = wait i32 @_ssdm_op_Wait
 
 <Node id="60" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-entry:43 %br_ln243 = br i1 %icmp_ln243, void %if.end, void %VITIS_LOOP_251_2.preheader
+entry:43 %br_ln104 = br i1 %icmp_ln104, void %if.end, void %for.body24.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln243"/></StgValue>
+<StgValue><ssdm name="br_ln104"/></StgValue>
 </operation>
 
 <operation id="56" st_id="4" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln243" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="15" op_10_bw="15" op_11_bw="0" op_12_bw="0" op_13_bw="0">
 <![CDATA[
-VITIS_LOOP_251_2.preheader:0 %call_ln0 = call void @chan_est_top_Pipeline_pilot_scan, i16 %pilot_h_im_1, i16 %pilot_h_im, i16 %pilot_h_re_1, i16 %pilot_h_re, i16 %fft_re, i16 %fft_im, i16 %fft_re_1, i16 %fft_im_1, i15 %DMRS_RE, i15 %DMRS_IM
+for.body24.preheader:0 %call_ln0 = call void @chan_est_top_Pipeline_pilot_scan, i16 %pilot_h_im_1, i16 %pilot_h_im, i16 %pilot_h_re_1, i16 %pilot_h_re, i16 %fft_re, i16 %fft_im, i16 %fft_re_1, i16 %fft_im_1, i15 %DMRS_RE, i15 %DMRS_IM
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -784,7 +784,7 @@ VITIS_LOOP_251_2.preheader:0 %call_ln0 = call void @chan_est_top_Pipeline_pilot_
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="15" op_10_bw="15" op_11_bw="0" op_12_bw="0" op_13_bw="0">
 <![CDATA[
-VITIS_LOOP_251_2.preheader:0 %call_ln0 = call void @chan_est_top_Pipeline_pilot_scan, i16 %pilot_h_im_1, i16 %pilot_h_im, i16 %pilot_h_re_1, i16 %pilot_h_re, i16 %fft_re, i16 %fft_im, i16 %fft_re_1, i16 %fft_im_1, i15 %DMRS_RE, i15 %DMRS_IM
+for.body24.preheader:0 %call_ln0 = call void @chan_est_top_Pipeline_pilot_scan, i16 %pilot_h_im_1, i16 %pilot_h_im, i16 %pilot_h_re_1, i16 %pilot_h_re, i16 %fft_re, i16 %fft_im, i16 %fft_re_1, i16 %fft_im_1, i15 %DMRS_RE, i15 %DMRS_IM
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -800,9 +800,9 @@ VITIS_LOOP_251_2.preheader:0 %call_ln0 = call void @chan_est_top_Pipeline_pilot_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="8" op_14_bw="0" op_15_bw="0" op_16_bw="0">
+<Node id="63" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="7" op_14_bw="0" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-VITIS_LOOP_251_2.preheader:1 %call_ln0 = call void @chan_est_top_Pipeline_zoh_fill, i16 %w_im_3, i16 %w_im_2, i16 %w_im_1, i16 %w_im, i16 %w_re_3, i16 %w_re_2, i16 %w_re_1, i16 %w_re, i16 %pilot_h_re, i16 %pilot_h_im, i16 %pilot_h_re_1, i16 %pilot_h_im_1, i8 %PILOT_FOR_K
+for.body24.preheader:1 %call_ln0 = call void @chan_est_top_Pipeline_zoh_fill, i16 %w_im_3, i16 %w_im_2, i16 %w_im_1, i16 %w_im, i16 %w_re_3, i16 %w_re_2, i16 %w_re_1, i16 %w_re, i16 %pilot_h_re, i16 %pilot_h_im, i16 %pilot_h_re_1, i16 %pilot_h_im_1, i7 %PILOT_FOR_K
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -818,9 +818,9 @@ VITIS_LOOP_251_2.preheader:1 %call_ln0 = call void @chan_est_top_Pipeline_zoh_fi
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="8" op_14_bw="0" op_15_bw="0" op_16_bw="0">
+<Node id="63" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="7" op_14_bw="0" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-VITIS_LOOP_251_2.preheader:1 %call_ln0 = call void @chan_est_top_Pipeline_zoh_fill, i16 %w_im_3, i16 %w_im_2, i16 %w_im_1, i16 %w_im, i16 %w_re_3, i16 %w_re_2, i16 %w_re_1, i16 %w_re, i16 %pilot_h_re, i16 %pilot_h_im, i16 %pilot_h_re_1, i16 %pilot_h_im_1, i8 %PILOT_FOR_K
+for.body24.preheader:1 %call_ln0 = call void @chan_est_top_Pipeline_zoh_fill, i16 %w_im_3, i16 %w_im_2, i16 %w_im_1, i16 %w_im, i16 %w_re_3, i16 %w_re_2, i16 %w_re_1, i16 %w_re, i16 %pilot_h_re, i16 %pilot_h_im, i16 %pilot_h_re_1, i16 %pilot_h_im_1, i7 %PILOT_FOR_K
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -838,10 +838,10 @@ VITIS_LOOP_251_2.preheader:1 %call_ln0 = call void @chan_est_top_Pipeline_zoh_fi
 
 <Node id="64" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-VITIS_LOOP_251_2.preheader:2 %empty_23 = wait i32 @_ssdm_op_Wait
+for.body24.preheader:2 %empty_21 = wait i32 @_ssdm_op_Wait
 
 ]]></Node>
-<StgValue><ssdm name="empty_23"/></StgValue>
+<StgValue><ssdm name="empty_21"/></StgValue>
 </operation>
 
 <operation id="61" st_id="8" stage="2" lat="2">
@@ -853,7 +853,7 @@ VITIS_LOOP_251_2.preheader:2 %empty_23 = wait i32 @_ssdm_op_Wait
 
 <Node id="65" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="32" op_10_bw="4" op_11_bw="4" op_12_bw="1" op_13_bw="0" op_14_bw="0" op_15_bw="0">
 <![CDATA[
-VITIS_LOOP_251_2.preheader:3 %call_ln0 = call void @chan_est_top_Pipeline_weight_out, i16 %w_re, i16 %w_re_1, i16 %w_re_2, i16 %w_re_3, i16 %w_im, i16 %w_im_1, i16 %w_im_2, i16 %w_im_3, i32 %weight_stream_V_data_V, i4 %weight_stream_V_keep_V, i4 %weight_stream_V_strb_V, i1 %weight_stream_V_last_V
+for.body24.preheader:3 %call_ln0 = call void @chan_est_top_Pipeline_weight_out, i16 %w_re, i16 %w_re_1, i16 %w_re_2, i16 %w_re_3, i16 %w_im, i16 %w_im_1, i16 %w_im_2, i16 %w_im_3, i32 %weight_stream_V_data_V, i4 %weight_stream_V_keep_V, i4 %weight_stream_V_strb_V, i1 %weight_stream_V_last_V
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -871,7 +871,7 @@ VITIS_LOOP_251_2.preheader:3 %call_ln0 = call void @chan_est_top_Pipeline_weight
 
 <Node id="65" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="32" op_10_bw="4" op_11_bw="4" op_12_bw="1" op_13_bw="0" op_14_bw="0" op_15_bw="0">
 <![CDATA[
-VITIS_LOOP_251_2.preheader:3 %call_ln0 = call void @chan_est_top_Pipeline_weight_out, i16 %w_re, i16 %w_re_1, i16 %w_re_2, i16 %w_re_3, i16 %w_im, i16 %w_im_1, i16 %w_im_2, i16 %w_im_3, i32 %weight_stream_V_data_V, i4 %weight_stream_V_keep_V, i4 %weight_stream_V_strb_V, i1 %weight_stream_V_last_V
+for.body24.preheader:3 %call_ln0 = call void @chan_est_top_Pipeline_weight_out, i16 %w_re, i16 %w_re_1, i16 %w_re_2, i16 %w_re_3, i16 %w_im, i16 %w_im_1, i16 %w_im_2, i16 %w_im_3, i32 %weight_stream_V_data_V, i4 %weight_stream_V_keep_V, i4 %weight_stream_V_strb_V, i1 %weight_stream_V_last_V
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -886,7 +886,7 @@ VITIS_LOOP_251_2.preheader:3 %call_ln0 = call void @chan_est_top_Pipeline_weight
 
 <Node id="66" bw="0" op_0_bw="0">
 <![CDATA[
-VITIS_LOOP_251_2.preheader:4 %br_ln0 = br void %if.end
+for.body24.preheader:4 %br_ln0 = br void %if.end
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -904,10 +904,10 @@ VITIS_LOOP_251_2.preheader:4 %br_ln0 = br void %if.end
 
 <Node id="68" bw="0">
 <![CDATA[
-if.end:0 %ret_ln297 = ret
+if.end:0 %ret_ln161 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln297"/></StgValue>
+<StgValue><ssdm name="ret_ln161"/></StgValue>
 </operation>
 </state>
 </state_list>

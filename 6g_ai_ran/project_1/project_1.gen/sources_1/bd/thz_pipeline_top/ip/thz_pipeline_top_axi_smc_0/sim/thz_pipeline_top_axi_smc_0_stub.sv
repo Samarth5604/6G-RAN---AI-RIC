@@ -68,7 +68,7 @@ typedef bit bit_as_bool;
 module thz_pipeline_top_axi_smc_0 (
   input bit_as_bool aclk,
   input bit_as_bool aresetn,
-  input bit [31 : 0] S00_AXI_araddr,
+  input bit [39 : 0] S00_AXI_araddr,
   input bit [7 : 0] S00_AXI_arlen,
   input bit [2 : 0] S00_AXI_arsize,
   input bit [1 : 0] S00_AXI_arburst,
@@ -83,7 +83,7 @@ module thz_pipeline_top_axi_smc_0 (
   output bit_as_bool S00_AXI_rlast,
   output bit_as_bool S00_AXI_rvalid,
   input bit_as_bool S00_AXI_rready,
-  input bit [31 : 0] S01_AXI_awaddr,
+  input bit [39 : 0] S01_AXI_awaddr,
   input bit [7 : 0] S01_AXI_awlen,
   input bit [2 : 0] S01_AXI_awsize,
   input bit [1 : 0] S01_AXI_awburst,
@@ -145,7 +145,7 @@ module thz_pipeline_top_axi_smc_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00
 *);
   input bit aclk;
   input bit aresetn;
-  input bit [31 : 0] S00_AXI_araddr;
+  input bit [39 : 0] S00_AXI_araddr;
   input bit [7 : 0] S00_AXI_arlen;
   input bit [2 : 0] S00_AXI_arsize;
   input bit [1 : 0] S00_AXI_arburst;
@@ -160,7 +160,7 @@ module thz_pipeline_top_axi_smc_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00
   output wire S00_AXI_rlast;
   output wire S00_AXI_rvalid;
   input bit S00_AXI_rready;
-  input bit [31 : 0] S01_AXI_awaddr;
+  input bit [39 : 0] S01_AXI_awaddr;
   input bit [7 : 0] S01_AXI_awlen;
   input bit [2 : 0] S01_AXI_awsize;
   input bit [1 : 0] S01_AXI_awburst;

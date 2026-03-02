@@ -23,18 +23,18 @@
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>1030</Best-caseLatency>
-<Average-caseLatency>3686</Average-caseLatency>
-<Worst-caseLatency>6341</Worst-caseLatency>
+<Average-caseLatency>3650</Average-caseLatency>
+<Worst-caseLatency>6269</Worst-caseLatency>
 <Best-caseRealTimeLatency>3.430 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>12.274 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>21.116 us</Worst-caseRealTimeLatency>
+<Average-caseRealTimeLatency>12.154 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>20.876 us</Worst-caseRealTimeLatency>
 <Interval-min>1031</Interval-min>
-<Interval-max>6342</Interval-max>
+<Interval-max>6270</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>chan_est.cpp:190</SourceLocation>
+<SourceLocation>chan_est.cpp:51</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
@@ -42,8 +42,8 @@
 <Resources>
 <BRAM_18K>19</BRAM_18K>
 <DSP>8</DSP>
-<FF>636</FF>
-<LUT>1232</LUT>
+<FF>632</FF>
+<LUT>1249</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

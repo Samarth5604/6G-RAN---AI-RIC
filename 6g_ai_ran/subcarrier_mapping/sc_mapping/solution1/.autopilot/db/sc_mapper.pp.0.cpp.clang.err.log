@@ -1,0 +1,31 @@
+/home/samarth/Desktop/6G-RAN---AI-RIC/6g_ai_ran/subcarrier_mapping/sc_mapping/solution1/csynth.tcl:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=name=sc_mapper_rx_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=sc_mapper_rx
+        ^
+sc_mapper.cpp:22:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=axis port=fft_in_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=fft_in
+        ^
+sc_mapper.cpp:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=axis port=data_out_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=data_out
+        ^
+sc_mapper.cpp:24:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=ap_ctrl_hs port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_ctrl_hs port=return
+        ^
+sc_mapper.cpp:25:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=disaggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=variable=fft_in_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DISAGGREGATE variable=fft_in
+        ^
+sc_mapper.cpp:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=disaggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=variable=data_out_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DISAGGREGATE variable=data_out
+        ^
+sc_mapper.cpp:41:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+sc_mapper.cpp:44:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=variable=s complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=s complete
+        ^
+sc_mapper.cpp:48:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+sc_mapper.cpp:58:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sc_mapper_rx_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+10 warnings generated.

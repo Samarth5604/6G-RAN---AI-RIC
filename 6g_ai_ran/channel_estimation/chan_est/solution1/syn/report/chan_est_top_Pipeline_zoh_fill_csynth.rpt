@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'chan_est_top_Pipeline_zoh_fill'
 ================================================================
-* Date:           Sat Feb 28 15:53:58 2026
+* Date:           Sun Mar  1 14:56:19 2026
 
 * Version:        2024.1 (Build 5069499 on May 21 2024)
 * Project:        chan_est
@@ -59,9 +59,9 @@
 |Instance         |        -|     -|       -|       -|    -|
 |Memory           |        1|     -|       0|       0|    -|
 |Multiplexer      |        -|     -|       0|      36|    -|
-|Register         |        -|     -|     167|      32|    -|
+|Register         |        -|     -|     166|      32|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        1|     0|     167|     107|    0|
+|Total            |        1|     0|     166|     107|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      624|  1728|  460800|  230400|   96|
 +-----------------+---------+------+--------+--------+-----+
@@ -79,9 +79,9 @@
     +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |     Memory    |                         Module                         | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |PILOT_FOR_K_U  |chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R  |        1|  0|   0|    0|  1024|    8|     1|         8192|
+    |PILOT_FOR_K_U  |chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R  |        1|  0|   0|    0|  1024|    7|     1|         7168|
     +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |Total          |                                                        |        1|  0|   0|    0|  1024|    8|     1|         8192|
+    |Total          |                                                        |        1|  0|   0|    0|  1024|    7|     1|         7168|
     +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
 
     * FIFO: 
@@ -91,8 +91,8 @@
     +----------------------+----------+----+---+----+------------+------------+
     |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------+----------+----+---+----+------------+------------+
-    |add_ln266_fu_237_p2   |         +|   0|  0|  18|          11|           1|
-    |icmp_ln266_fu_231_p2  |      icmp|   0|  0|  19|          11|          12|
+    |add_ln130_fu_237_p2   |         +|   0|  0|  18|          11|           1|
+    |icmp_ln130_fu_231_p2  |      icmp|   0|  0|  19|          11|          12|
     |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
     +----------------------+----------+----+---+----+------------+------------+
     |Total                 |          |   0|  0|  39|          23|          15|
@@ -124,15 +124,15 @@
     |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
     |k_fu_50                           |  11|   0|   11|          0|
-    |m_reg_288                         |   8|   0|    8|          0|
+    |m_reg_288                         |   7|   0|    7|          0|
     |pilot_h_im_1_load_reg_331         |  16|   0|   16|          0|
     |pilot_h_im_load_reg_325           |  16|   0|   16|          0|
     |pilot_h_re_1_load_reg_319         |  16|   0|   16|          0|
     |pilot_h_re_load_reg_313           |  16|   0|   16|          0|
-    |zext_ln266_reg_271                |  11|   0|   64|         53|
-    |zext_ln266_reg_271                |  64|  32|   64|         53|
+    |zext_ln130_reg_271                |  11|   0|   64|         53|
+    |zext_ln130_reg_271                |  64|  32|   64|         53|
     +----------------------------------+----+----+-----+-----------+
-    |Total                             | 167|  32|  220|        106|
+    |Total                             | 166|  32|  219|        106|
     +----------------------------------+----+----+-----+-----------+
 
 
@@ -182,16 +182,16 @@
 |w_re_ce0               |  out|    1|   ap_memory|                            w_re|         array|
 |w_re_we0               |  out|    1|   ap_memory|                            w_re|         array|
 |w_re_d0                |  out|   16|   ap_memory|                            w_re|         array|
-|pilot_h_re_address0    |  out|    8|   ap_memory|                      pilot_h_re|         array|
+|pilot_h_re_address0    |  out|    7|   ap_memory|                      pilot_h_re|         array|
 |pilot_h_re_ce0         |  out|    1|   ap_memory|                      pilot_h_re|         array|
 |pilot_h_re_q0          |   in|   16|   ap_memory|                      pilot_h_re|         array|
-|pilot_h_im_address0    |  out|    8|   ap_memory|                      pilot_h_im|         array|
+|pilot_h_im_address0    |  out|    7|   ap_memory|                      pilot_h_im|         array|
 |pilot_h_im_ce0         |  out|    1|   ap_memory|                      pilot_h_im|         array|
 |pilot_h_im_q0          |   in|   16|   ap_memory|                      pilot_h_im|         array|
-|pilot_h_re_1_address0  |  out|    8|   ap_memory|                    pilot_h_re_1|         array|
+|pilot_h_re_1_address0  |  out|    7|   ap_memory|                    pilot_h_re_1|         array|
 |pilot_h_re_1_ce0       |  out|    1|   ap_memory|                    pilot_h_re_1|         array|
 |pilot_h_re_1_q0        |   in|   16|   ap_memory|                    pilot_h_re_1|         array|
-|pilot_h_im_1_address0  |  out|    8|   ap_memory|                    pilot_h_im_1|         array|
+|pilot_h_im_1_address0  |  out|    7|   ap_memory|                    pilot_h_im_1|         array|
 |pilot_h_im_1_ce0       |  out|    1|   ap_memory|                    pilot_h_im_1|         array|
 |pilot_h_im_1_q0        |   in|   16|   ap_memory|                    pilot_h_im_1|         array|
 +-----------------------+-----+-----+------------+--------------------------------+--------------+

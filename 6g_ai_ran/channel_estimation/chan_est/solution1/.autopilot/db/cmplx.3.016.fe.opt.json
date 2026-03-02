@@ -1,10 +1,10 @@
 {
   "0": {
-    "basicblocks": 15,
+    "basicblocks": 18,
     "calls": "",
     "file": "chan_est.cpp",
-    "fileloc": 190,
-    "instructions": 258,
+    "fileloc": 51,
+    "instructions": 270,
     "loads": {
       "G": 3,
       "L": 18
@@ -13,6 +13,6 @@
     "stores": {
       "L": 20
     },
-    "total_instructions": 258
+    "total_instructions": 270
   }
 }

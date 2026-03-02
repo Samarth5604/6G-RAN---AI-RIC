@@ -1,77 +1,101 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.660133",
-   "Default View_TopLeft":"238,-594",
+   "Default View_ScaleFactor":"0.384634",
+   "Default View_TopLeft":"-130,-1092",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace inst axi_smc -pg 1 -lvl 1 -x 610 -y -200 -defaultsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 610 -y -390 -defaultsOSRD
-preplace inst xfft_0 -pg 1 -lvl 5 -x 2410 -y -250 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1990 -y -180 -defaultsOSRD
-preplace inst rst_ps8_0_266M -pg 1 -lvl 1 -x 610 -y -640 -defaultsOSRD
-preplace inst ps8_0_axi_periph -pg 1 -lvl 1 -x 610 -y 90 -defaultsOSRD
-preplace inst axis_data_fifo_0 -pg 1 -lvl 2 -x 1235 -y -740 -defaultsOSRD
-preplace inst xfft_1 -pg 1 -lvl 5 -x 2410 -y 110 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 2 -x 1235 -y -180 -defaultsOSRD
-preplace inst mlkem_top_0 -pg 1 -lvl 4 -x 1990 -y -350 -defaultsOSRD
-preplace inst mlkem_top_1 -pg 1 -lvl 4 -x 1990 -y 80 -defaultsOSRD
-preplace inst axi_dma_1 -pg 1 -lvl 2 -x 1235 -y 40 -defaultsOSRD
-preplace inst axi_smc1 -pg 1 -lvl 1 -x 610 -y 380 -defaultsOSRD
-preplace inst axis_data_fifo_1 -pg 1 -lvl 2 -x 1235 -y 330 -defaultsOSRD
-preplace inst beamformer_top_0 -pg 1 -lvl 7 -x 3280 -y 90 -defaultsOSRD
-preplace inst cp_removal_0 -pg 1 -lvl 4 -x 1990 -y -570 -defaultsOSRD
-preplace inst cp_removal_1 -pg 1 -lvl 4 -x 1990 -y 300 -defaultsOSRD
-preplace inst xfft_2 -pg 1 -lvl 8 -x 3730 -y -310 -defaultsOSRD
-preplace inst xfft_3 -pg 1 -lvl 8 -x 3730 -y 80 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 4 -x 1990 -y -50 -defaultsOSRD
-preplace inst cp_insertion_0 -pg 1 -lvl 9 -x 4140 -y -290 -defaultsOSRD
-preplace inst cp_insertion_1 -pg 1 -lvl 9 -x 4140 -y 90 -defaultsOSRD
-preplace inst axis_broadcaster_0 -pg 1 -lvl 6 -x 2840 -y -480 -defaultsOSRD
-preplace inst axis_broadcaster_1 -pg 1 -lvl 6 -x 2840 -y 280 -defaultsOSRD
-preplace inst chan_est_top_0 -pg 1 -lvl 7 -x 3280 -y -240 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 1235 -y -360 -defaultsOSRD
-preplace netloc rst_ps8_0_266M_peripheral_aresetn 1 0 9 280 -110 1035 440 1470 410 1810 400 N 400 2670 -200 3060 210 N 210 3970
-preplace netloc xfft_0_m_axis_data_tdata 1 5 2 N -280 3000
-preplace netloc xlconstant_0_dout 1 3 6 1820 -250 2190 210 2680 200 3000 220 3490 -210 3980
-preplace netloc xlconstant_1_dout 1 4 4 N -50 N -50 N -50 3500
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 9 250 -740 1015 450 1450 400 1800 -240 2180 -140 2660 -270 3080 -100 3510 -200 3960
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 240 -750 940
-preplace netloc axi_gpio_0_gpio_io_o 1 2 5 1460 -440 NJ -440 2170J -400 NJ -400 3070J
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 2 2 1470 -360 N
-preplace netloc axi_dma_0_M_AXI_MM2S 1 0 3 260 -520 N -520 1430
-preplace netloc axi_dma_0_M_AXI_S2MM 1 0 3 270 -510 N -510 1440
-preplace netloc axi_dma_1_M_AXIS_MM2S 1 2 2 N 20 1630
-preplace netloc axi_dma_1_M_AXI_MM2S 1 0 3 300 290 950J 410 1430
-preplace netloc axi_dma_1_M_AXI_S2MM 1 0 3 300 470 NJ 470 1420
-preplace netloc axi_smc1_M00_AXI 1 0 2 280 -500 930
-preplace netloc axi_smc_M00_AXI 1 0 2 300 -290 920
-preplace netloc axis_broadcaster_0_M00_AXIS 1 6 1 3090 -490n
-preplace netloc axis_broadcaster_0_M01_AXIS 1 6 1 3020 -470n
-preplace netloc axis_broadcaster_1_M00_AXIS 1 6 1 3010 -240n
-preplace netloc axis_broadcaster_1_M01_AXIS 1 6 1 3070 90n
-preplace netloc axis_data_fifo_0_M_AXIS 1 2 2 N -740 1650
-preplace netloc axis_data_fifo_1_M_AXIS 1 2 2 1470 300 N
-preplace netloc beamformer_top_0_out_stream_0 1 7 1 3480 -350n
-preplace netloc beamformer_top_0_out_stream_1 1 7 1 3470 40n
-preplace netloc chan_est_top_0_weight_stream 1 6 2 3090 -120 3470
-preplace netloc cp_insertion_0_out_stream 1 1 9 1055 -660 NJ -660 1640 -670 NJ -670 NJ -670 N -670 NJ -670 NJ -670 4300
-preplace netloc cp_insertion_1_out_stream 1 1 9 1045 430 NJ 430 N 430 NJ 430 NJ 430 N 430 NJ 430 NJ 430 4300
-preplace netloc cp_removal_0_out_stream 1 1 4 1055 -470 NJ -470 N -470 2170
-preplace netloc cp_removal_1_out_stream 1 1 4 1055 420 NJ 420 N 420 2160
-preplace netloc mlkem_top_0_out_stream 1 4 1 2170 -360n
-preplace netloc mlkem_top_1_out_stream 1 4 1 N 70
-preplace netloc ps8_0_axi_periph_M00_AXI 1 1 1 940 -230n
-preplace netloc ps8_0_axi_periph_M01_AXI 1 1 3 950 -440 1450 -430 1630
-preplace netloc ps8_0_axi_periph_M02_AXI 1 1 1 920 -10n
-preplace netloc ps8_0_axi_periph_M03_AXI 1 1 3 1025J 160 1470 50 N
-preplace netloc xfft_0_M_AXIS_DATA 1 5 1 2630 -500n
-preplace netloc xfft_1_M_AXIS_DATA 1 5 1 2630 70n
-preplace netloc xfft_2_M_AXIS_DATA 1 8 1 3950 -350n
-preplace netloc xfft_3_M_AXIS_DATA 1 8 1 3950 40n
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 0 2 290 -490 920
-preplace netloc ps8_0_axi_periph_M04_AXI 1 1 1 1045 -380n
-levelinfo -pg 1 -30 610 1235 1610 1990 2410 2840 3280 3730 4140 4320
+preplace inst axi_smc -pg 1 -lvl 1 -x 250 -y -110 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 250 -y -300 -defaultsOSRD
+preplace inst xfft_0 -pg 1 -lvl 5 -x 2290 -y -190 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 1320 -y -210 -defaultsOSRD
+preplace inst rst_ps8_0_266M -pg 1 -lvl 1 -x 250 -y -660 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 1 -x 250 -y 200 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 2 -x 880 -y -630 -defaultsOSRD
+preplace inst xfft_1 -pg 1 -lvl 5 -x 2290 -y 220 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 2 -x 880 -y -180 -defaultsOSRD
+preplace inst mlkem_top_0 -pg 1 -lvl 3 -x 1320 -y -360 -defaultsOSRD
+preplace inst mlkem_top_1 -pg 1 -lvl 3 -x 1320 -y 80 -defaultsOSRD
+preplace inst axi_dma_1 -pg 1 -lvl 2 -x 880 -y 60 -defaultsOSRD
+preplace inst axi_smc1 -pg 1 -lvl 1 -x 250 -y 510 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 2 -x 880 -y 270 -defaultsOSRD
+preplace inst beamformer_top_0 -pg 1 -lvl 7 -x 3270 -y 80 -defaultsOSRD
+preplace inst cp_removal_0 -pg 1 -lvl 3 -x 1320 -y -570 -defaultsOSRD
+preplace inst cp_removal_1 -pg 1 -lvl 3 -x 1320 -y 290 -defaultsOSRD
+preplace inst xfft_2 -pg 1 -lvl 8 -x 3740 -y -330 -defaultsOSRD
+preplace inst xfft_3 -pg 1 -lvl 8 -x 3740 -y -80 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -x 1320 -y -80 -defaultsOSRD
+preplace inst cp_insertion_0 -pg 1 -lvl 5 -x 2290 -y -630 -defaultsOSRD
+preplace inst cp_insertion_1 -pg 1 -lvl 5 -x 2290 -y 430 -defaultsOSRD
+preplace inst axis_broadcaster_0 -pg 1 -lvl 6 -x 2790 -y -310 -defaultsOSRD
+preplace inst axis_broadcaster_1 -pg 1 -lvl 6 -x 2790 -y -80 -defaultsOSRD
+preplace inst chan_est_top_0 -pg 1 -lvl 7 -x 3270 -y -570 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 880 -y -360 -defaultsOSRD
+preplace inst sc_mapper_rx_0 -pg 1 -lvl 5 -x 2290 -y 30 -defaultsOSRD
+preplace inst snr_monitor_top_0 -pg 1 -lvl 7 -x 3270 -y -220 -defaultsOSRD
+preplace inst axis_broadcaster_2 -pg 1 -lvl 6 -x 2790 -y 270 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 880 -y 440 -defaultsOSRD
+preplace inst slot_counter_top_0 -pg 1 -lvl 6 -x 2790 -y -590 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 4 -x 1660 -y -330 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -x 1660 -y 30 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 4 -x 1660 -y -180 -defaultsOSRD
+preplace netloc rst_ps8_0_266M_peripheral_aresetn 1 0 7 -110 -440 590 -450 1100 190 N 190 2030 -330 2580 -470 3060
+preplace netloc xfft_0_m_axis_data_tdata 1 4 3 2060 330 2540 40 N
+preplace netloc xlconstant_0_dout 1 2 6 1150 -270 1500 -240 2010 -320 2550 -220 3020 -100 3510
+preplace netloc xlconstant_1_dout 1 3 5 N -80 N -80 2510 -160 3010 -90 3500
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 8 -120 -560 630 -550 1130 -10 1520 90 2020 -500 2570 -480 3040 -80 3490
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 -60 -760 570
+preplace netloc xlconcat_0_dout 1 0 3 -80 620 NJ 620 1060J
+preplace netloc mlkem_top_0_interrupt 1 1 3 690 180 NJ 180 1490
+preplace netloc mlkem_top_1_interrupt 1 1 3 700 360 1120J 400 1500
+preplace netloc snr_monitor_top_0_interrupt 1 1 7 600 550 NJ 550 NJ 550 N 550 NJ 550 NJ 550 3460
+preplace netloc Net 1 6 1 3080 -600n
+preplace netloc axi_gpio_0_gpio_io_o 1 2 2 1110 -450 1550J
+preplace netloc xlslice_2_Dout 1 4 2 2050 -510 2540
+preplace netloc xlslice_1_Dout 1 4 2 2040 -520 2550J
+preplace netloc xlslice_0_Dout 1 4 2 1770 -530 2530
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 2 1 1120 -370n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 0 3 -100 -490 N -490 1060
+preplace netloc axi_dma_0_M_AXI_S2MM 1 0 3 -90 -480 N -480 1070
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 2 1 1110 40n
+preplace netloc axi_dma_1_M_AXI_MM2S 1 0 3 -60 600 NJ 600 1080
+preplace netloc axi_dma_1_M_AXI_S2MM 1 0 3 -70 610 NJ 610 1070
+preplace netloc axi_smc1_M00_AXI 1 0 2 -60 -410 560
+preplace netloc axi_smc_M00_AXI 1 0 2 -80 -430 600
+preplace netloc axis_broadcaster_0_M00_AXIS 1 6 1 2990 -590n
+preplace netloc axis_broadcaster_0_M01_AXIS 1 6 1 3030 -310n
+preplace netloc axis_broadcaster_1_M00_AXIS 1 6 1 3000 -570n
+preplace netloc axis_broadcaster_1_M01_AXIS 1 6 1 2990 -80n
+preplace netloc axis_data_fifo_0_M_AXIS 1 2 1 1120 -630n
+preplace netloc axis_data_fifo_1_M_AXIS 1 2 1 1110 270n
+preplace netloc beamformer_top_0_out_stream_0 1 7 1 3480 -370n
+preplace netloc beamformer_top_0_out_stream_1 1 7 1 3520 -120n
+preplace netloc cp_insertion_0_out_stream 1 1 5 700 -730 NJ -730 N -730 N -730 2510
+preplace netloc cp_insertion_1_out_stream 1 1 5 680 540 NJ 540 N 540 N 540 2510
+preplace netloc cp_removal_0_out_stream 1 1 3 700 -470 NJ -470 1490
+preplace netloc cp_removal_1_out_stream 1 1 3 700 350 1140J 390 1490
+preplace netloc mlkem_top_0_out_stream 1 3 2 1490 -390 1780
+preplace netloc mlkem_top_1_out_stream 1 3 2 1510 180 N
+preplace netloc ps8_0_axi_periph_M00_AXI 1 1 1 620 -230n
+preplace netloc ps8_0_axi_periph_M01_AXI 1 1 2 610 -440 1140
+preplace netloc ps8_0_axi_periph_M02_AXI 1 1 1 660 10n
+preplace netloc ps8_0_axi_periph_M03_AXI 1 1 2 680J 190 1060
+preplace netloc ps8_0_axi_periph_M04_AXI 1 1 1 650 -380n
+preplace netloc sc_mapper_rx_0_data_out_0 1 5 1 2590 -330n
+preplace netloc sc_mapper_rx_0_data_out_1 1 5 1 2520 -100n
+preplace netloc xfft_0_M_AXIS_DATA 1 4 2 2070 -300 2510
+preplace netloc xfft_1_M_AXIS_DATA 1 4 2 2070 320 2510
+preplace netloc xfft_2_M_AXIS_DATA 1 4 5 2070 -450 N -450 N -450 N -450 3960
+preplace netloc xfft_3_M_AXIS_DATA 1 4 5 2070 530 N 530 N 530 N 530 3960
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 0 2 -70 -420 580
+preplace netloc axis_broadcaster_1_M02_AXIS 1 6 1 3050 -240n
+preplace netloc axis_broadcaster_0_M02_AXIS 1 6 1 3070 -290n
+preplace netloc chan_est_top_0_weight_stream 1 5 3 2590 190 2990 200 3470
+preplace netloc axis_broadcaster_2_M00_AXIS 1 6 1 3080 100n
+preplace netloc axis_broadcaster_2_M01_AXIS 1 6 1 3070 -220n
+preplace netloc ps8_0_axi_periph_M05_AXI 1 1 6 670 -60 1060J -150 1520J -250 2060 -310 2530J -230 3010
+preplace netloc ps8_0_axi_periph_M06_AXI 1 1 5 640 -460 NJ -460 NJ -460 1780 -490 2520J
+levelinfo -pg 1 -420 250 880 1320 1660 2290 2790 3270 3740 3980
 pagesize -pg 1 -db -bbox -sgen -650 -1260 5140 1210
 "
 }

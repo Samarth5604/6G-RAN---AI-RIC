@@ -1,0 +1,120 @@
+
+
+================================================================
+== Synthesis Summary Report of 'sc_mapper_rx'
+================================================================
++ General Information: 
+    * Date:           Sun Mar  1 14:11:07 2026
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        sc_mapping
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |     Modules    | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |         |    |           |           |     |
+    |     & Loops    | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |    LUT    | URAM|
+    +----------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |+ sc_mapper_rx  |    II|  0.07|     1028|  3.629e+03|         -|     1024|     -|    rewind|  1 (~0%)|   -|  403 (~0%)|  465 (~0%)|    -|
+    | o scan_loop    |     -|  2.58|     1026|  3.622e+03|         4|        1|  1024|       yes|        -|   -|          -|          -|    -|
+    +----------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface  | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| data_out_0 | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| data_out_1 | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| fft_in_0   | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| fft_in_1   | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------------------------------------+
+| Argument | Direction | Datatype                                                |
++----------+-----------+---------------------------------------------------------+
+| fft_in   | in        | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>* |
+| data_out | out       | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>* |
++----------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| fft_in   | fft_in_0     | interface |
+| fft_in   | fft_in_1     | interface |
+| data_out | data_out_0   | interface |
+| data_out | data_out_1   | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+-------------+-------+--------+---------+
+| Name                    | DSP | Pragma | Variable    | Op    | Impl   | Latency |
++-------------------------+-----+--------+-------------+-------+--------+---------+
+| + sc_mapper_rx          | 0   |        |             |       |        |         |
+|   icmp_ln53_fu_238_p2   |     |        | icmp_ln53   | setlt | auto   | 0       |
+|   icmp_ln53_1_fu_244_p2 |     |        | icmp_ln53_1 | seteq | auto   | 0       |
+|   is_data_fu_249_p2     |     |        | is_data     | and   | auto   | 0       |
+|   k_fu_215_p2           |     |        | k           | add   | fabric | 0       |
+|   is_last_fu_255_p2     |     |        | is_last     | seteq | auto   | 0       |
+|   d_fu_261_p2           |     |        | d           | add   | fabric | 0       |
+|   icmp_ln68_fu_267_p2   |     |        | icmp_ln68   | setlt | auto   | 0       |
+|   icmp_ln39_fu_221_p2   |     |        | icmp_ln39   | seteq | auto   | 0       |
++-------------------------+-----+--------+-------------+-------+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------+--------+------+------+------+--------+-------------+------+---------+------------------+
+| Name            | Usage  | Type | BRAM | URAM | Pragma | Variable    | Impl | Latency | Bitwidth, Depth, |
+|                 |        |      |      |      |        |             |      |         | Banks            |
++-----------------+--------+------+------+------+--------+-------------+------+---------+------------------+
+| + sc_mapper_rx  |        |      | 1    | 0    |        |             |      |         |                  |
+|   DATA_SC_IDX_U | rom_1p |      | 1    |      |        | DATA_SC_IDX | auto | 1       | 10, 499, 1       |
++-----------------+--------+------+------+------+--------+-------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+------------------------+--------------------------------------------+
+| Type            | Options                | Location                                   |
++-----------------+------------------------+--------------------------------------------+
+| interface       | axis port=fft_in       | sc_mapper.cpp:22 in sc_mapper_rx, fft_in   |
+| interface       | axis port=data_out     | sc_mapper.cpp:23 in sc_mapper_rx, data_out |
+| interface       | ap_ctrl_hs port=return | sc_mapper.cpp:24 in sc_mapper_rx, return   |
+| disaggregate    | variable=fft_in        | sc_mapper.cpp:25 in sc_mapper_rx, fft_in   |
+| disaggregate    | variable=data_out      | sc_mapper.cpp:26 in sc_mapper_rx, data_out |
+| pipeline        | II=1                   | sc_mapper.cpp:41 in sc_mapper_rx           |
+| array_partition | variable=s complete    | sc_mapper.cpp:44 in sc_mapper_rx, s        |
+| unroll          |                        | sc_mapper.cpp:48 in sc_mapper_rx           |
+| unroll          |                        | sc_mapper.cpp:58 in sc_mapper_rx           |
++-----------------+------------------------+--------------------------------------------+
+
+

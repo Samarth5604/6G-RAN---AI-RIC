@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'chan_est_top_Pipeline_zoh_fill'
 ================================================================
-* Date:           Sat Feb 28 15:53:58 2026
+* Date:           Sun Mar  1 14:56:19 2026
 
 * Version:        2024.1 (Build 5069499 on May 21 2024)
 * Project:        chan_est
@@ -59,9 +59,9 @@
 |Instance         |        -|     -|       -|       -|    -|
 |Memory           |        1|     -|       0|       0|    -|
 |Multiplexer      |        -|     -|       0|      36|    -|
-|Register         |        -|     -|     167|      32|    -|
+|Register         |        -|     -|     166|      32|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        1|     0|     167|     107|    0|
+|Total            |        1|     0|     166|     107|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      624|  1728|  460800|  230400|   96|
 +-----------------+---------+------+--------+--------+-----+
@@ -79,9 +79,9 @@
     +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |     Memory    |                         Module                         | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |PILOT_FOR_K_U  |chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R  |        1|  0|   0|    0|  1024|    8|     1|         8192|
+    |PILOT_FOR_K_U  |chan_est_top_Pipeline_zoh_fill_PILOT_FOR_K_ROM_AUTO_1R  |        1|  0|   0|    0|  1024|    7|     1|         7168|
     +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |Total          |                                                        |        1|  0|   0|    0|  1024|    8|     1|         8192|
+    |Total          |                                                        |        1|  0|   0|    0|  1024|    7|     1|         7168|
     +---------------+--------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
 
     * FIFO: 
@@ -91,8 +91,8 @@
     +----------------------+----------+----+---+----+------------+------------+
     |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------+----------+----+---+----+------------+------------+
-    |add_ln266_fu_237_p2   |         +|   0|  0|  18|          11|           1|
-    |icmp_ln266_fu_231_p2  |      icmp|   0|  0|  19|          11|          12|
+    |add_ln130_fu_237_p2   |         +|   0|  0|  18|          11|           1|
+    |icmp_ln130_fu_231_p2  |      icmp|   0|  0|  19|          11|          12|
     |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
     +----------------------+----------+----+---+----+------------+------------+
     |Total                 |          |   0|  0|  39|          23|          15|
@@ -124,15 +124,15 @@
     |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
     |k_fu_50                           |  11|   0|   11|          0|
-    |m_reg_288                         |   8|   0|    8|          0|
+    |m_reg_288                         |   7|   0|    7|          0|
     |pilot_h_im_1_load_reg_331         |  16|   0|   16|          0|
     |pilot_h_im_load_reg_325           |  16|   0|   16|          0|
     |pilot_h_re_1_load_reg_319         |  16|   0|   16|          0|
     |pilot_h_re_load_reg_313           |  16|   0|   16|          0|
-    |zext_ln266_reg_271                |  11|   0|   64|         53|
-    |zext_ln266_reg_271                |  64|  32|   64|         53|
+    |zext_ln130_reg_271                |  11|   0|   64|         53|
+    |zext_ln130_reg_271                |  64|  32|   64|         53|
     +----------------------------------+----+----+-----+-----------+
-    |Total                             | 167|  32|  220|        106|
+    |Total                             | 166|  32|  219|        106|
     +----------------------------------+----+----+-----+-----------+
 
 
@@ -182,16 +182,16 @@
 |w_re_ce0               |  out|    1|   ap_memory|                            w_re|         array|
 |w_re_we0               |  out|    1|   ap_memory|                            w_re|         array|
 |w_re_d0                |  out|   16|   ap_memory|                            w_re|         array|
-|pilot_h_re_address0    |  out|    8|   ap_memory|                      pilot_h_re|         array|
+|pilot_h_re_address0    |  out|    7|   ap_memory|                      pilot_h_re|         array|
 |pilot_h_re_ce0         |  out|    1|   ap_memory|                      pilot_h_re|         array|
 |pilot_h_re_q0          |   in|   16|   ap_memory|                      pilot_h_re|         array|
-|pilot_h_im_address0    |  out|    8|   ap_memory|                      pilot_h_im|         array|
+|pilot_h_im_address0    |  out|    7|   ap_memory|                      pilot_h_im|         array|
 |pilot_h_im_ce0         |  out|    1|   ap_memory|                      pilot_h_im|         array|
 |pilot_h_im_q0          |   in|   16|   ap_memory|                      pilot_h_im|         array|
-|pilot_h_re_1_address0  |  out|    8|   ap_memory|                    pilot_h_re_1|         array|
+|pilot_h_re_1_address0  |  out|    7|   ap_memory|                    pilot_h_re_1|         array|
 |pilot_h_re_1_ce0       |  out|    1|   ap_memory|                    pilot_h_re_1|         array|
 |pilot_h_re_1_q0        |   in|   16|   ap_memory|                    pilot_h_re_1|         array|
-|pilot_h_im_1_address0  |  out|    8|   ap_memory|                    pilot_h_im_1|         array|
+|pilot_h_im_1_address0  |  out|    7|   ap_memory|                    pilot_h_im_1|         array|
 |pilot_h_im_1_ce0       |  out|    1|   ap_memory|                    pilot_h_im_1|         array|
 |pilot_h_im_1_q0        |   in|   16|   ap_memory|                    pilot_h_im_1|         array|
 +-----------------------+-----+-----+------------+--------------------------------+--------------+
@@ -240,60 +240,60 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.66>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%k = alloca i32 1" [chan_est.cpp:266]   --->   Operation 8 'alloca' 'k' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.42ns)   --->   "%store_ln266 = store i11 0, i11 %k" [chan_est.cpp:266]   --->   Operation 9 'store' 'store_ln266' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_269_3"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%k_1 = load i11 %k" [chan_est.cpp:266]   --->   Operation 11 'load' 'k_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.79ns)   --->   "%icmp_ln266 = icmp_eq  i11 %k_1, i11 1024" [chan_est.cpp:266]   --->   Operation 12 'icmp' 'icmp_ln266' <Predicate = true> <Delay = 0.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 13 [1/1] (0.79ns)   --->   "%add_ln266 = add i11 %k_1, i11 1" [chan_est.cpp:266]   --->   Operation 13 'add' 'add_ln266' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln266 = br i1 %icmp_ln266, void %VITIS_LOOP_269_3.split, void %for.body109.preheader.exitStub" [chan_est.cpp:266]   --->   Operation 14 'br' 'br_ln266' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln266 = zext i11 %k_1" [chan_est.cpp:266]   --->   Operation 15 'zext' 'zext_ln266' <Predicate = (!icmp_ln266)> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%PILOT_FOR_K_addr = getelementptr i8 %PILOT_FOR_K, i64 0, i64 %zext_ln266" [chan_est.cpp:268]   --->   Operation 16 'getelementptr' 'PILOT_FOR_K_addr' <Predicate = (!icmp_ln266)> <Delay = 0.00>
-ST_1 : Operation 17 [2/2] (1.23ns)   --->   "%m = load i10 %PILOT_FOR_K_addr" [chan_est.cpp:268]   --->   Operation 17 'load' 'm' <Predicate = (!icmp_ln266)> <Delay = 1.23> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 1024> <ROM>
-ST_1 : Operation 18 [1/1] (0.42ns)   --->   "%store_ln266 = store i11 %add_ln266, i11 %k" [chan_est.cpp:266]   --->   Operation 18 'store' 'store_ln266' <Predicate = (!icmp_ln266)> <Delay = 0.42>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%k = alloca i32 1" [chan_est.cpp:130]   --->   Operation 8 'alloca' 'k' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.42ns)   --->   "%store_ln130 = store i11 0, i11 %k" [chan_est.cpp:130]   --->   Operation 9 'store' 'store_ln130' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_133_3"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%k_1 = load i11 %k" [chan_est.cpp:130]   --->   Operation 11 'load' 'k_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.79ns)   --->   "%icmp_ln130 = icmp_eq  i11 %k_1, i11 1024" [chan_est.cpp:130]   --->   Operation 12 'icmp' 'icmp_ln130' <Predicate = true> <Delay = 0.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.79ns)   --->   "%add_ln130 = add i11 %k_1, i11 1" [chan_est.cpp:130]   --->   Operation 13 'add' 'add_ln130' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln130 = br i1 %icmp_ln130, void %VITIS_LOOP_133_3.split, void %for.body112.preheader.exitStub" [chan_est.cpp:130]   --->   Operation 14 'br' 'br_ln130' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln130 = zext i11 %k_1" [chan_est.cpp:130]   --->   Operation 15 'zext' 'zext_ln130' <Predicate = (!icmp_ln130)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%PILOT_FOR_K_addr = getelementptr i7 %PILOT_FOR_K, i64 0, i64 %zext_ln130" [chan_est.cpp:132]   --->   Operation 16 'getelementptr' 'PILOT_FOR_K_addr' <Predicate = (!icmp_ln130)> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (1.23ns)   --->   "%m = load i10 %PILOT_FOR_K_addr" [chan_est.cpp:132]   --->   Operation 17 'load' 'm' <Predicate = (!icmp_ln130)> <Delay = 1.23> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 7> <Depth = 1024> <ROM>
+ST_1 : Operation 18 [1/1] (0.42ns)   --->   "%store_ln130 = store i11 %add_ln130, i11 %k" [chan_est.cpp:130]   --->   Operation 18 'store' 'store_ln130' <Predicate = (!icmp_ln130)> <Delay = 0.42>
 
 State 2 <SV = 1> <Delay = 1.23>
-ST_2 : Operation 19 [1/2] (1.23ns)   --->   "%m = load i10 %PILOT_FOR_K_addr" [chan_est.cpp:268]   --->   Operation 19 'load' 'm' <Predicate = true> <Delay = 1.23> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 1024> <ROM>
+ST_2 : Operation 19 [1/2] (1.23ns)   --->   "%m = load i10 %PILOT_FOR_K_addr" [chan_est.cpp:132]   --->   Operation 19 'load' 'm' <Predicate = true> <Delay = 1.23> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 7> <Depth = 1024> <ROM>
 
 State 3 <SV = 2> <Delay = 1.23>
-ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%idxprom79 = zext i8 %m" [chan_est.cpp:268]   --->   Operation 20 'zext' 'idxprom79' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%pilot_h_re_addr = getelementptr i16 %pilot_h_re, i64 0, i64 %idxprom79" [chan_est.cpp:273]   --->   Operation 21 'getelementptr' 'pilot_h_re_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 22 [2/2] (1.23ns)   --->   "%pilot_h_re_load = load i8 %pilot_h_re_addr" [chan_est.cpp:273]   --->   Operation 22 'load' 'pilot_h_re_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 172> <RAM>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%pilot_h_im_addr = getelementptr i16 %pilot_h_im, i64 0, i64 %idxprom79" [chan_est.cpp:274]   --->   Operation 23 'getelementptr' 'pilot_h_im_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%pilot_h_re_1_addr = getelementptr i16 %pilot_h_re_1, i64 0, i64 %idxprom79" [chan_est.cpp:273]   --->   Operation 24 'getelementptr' 'pilot_h_re_1_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 25 [2/2] (1.23ns)   --->   "%pilot_h_re_1_load = load i8 %pilot_h_re_1_addr" [chan_est.cpp:273]   --->   Operation 25 'load' 'pilot_h_re_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 172> <RAM>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%pilot_h_im_1_addr = getelementptr i16 %pilot_h_im_1, i64 0, i64 %idxprom79" [chan_est.cpp:274]   --->   Operation 26 'getelementptr' 'pilot_h_im_1_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 27 [2/2] (1.23ns)   --->   "%pilot_h_im_load = load i8 %pilot_h_im_addr" [chan_est.cpp:274]   --->   Operation 27 'load' 'pilot_h_im_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 172> <RAM>
-ST_3 : Operation 28 [2/2] (1.23ns)   --->   "%pilot_h_im_1_load = load i8 %pilot_h_im_1_addr" [chan_est.cpp:274]   --->   Operation 28 'load' 'pilot_h_im_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 172> <RAM>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%idxprom82 = zext i7 %m" [chan_est.cpp:132]   --->   Operation 20 'zext' 'idxprom82' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%pilot_h_re_addr = getelementptr i16 %pilot_h_re, i64 0, i64 %idxprom82" [chan_est.cpp:137]   --->   Operation 21 'getelementptr' 'pilot_h_re_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [2/2] (1.23ns)   --->   "%pilot_h_re_load = load i7 %pilot_h_re_addr" [chan_est.cpp:137]   --->   Operation 22 'load' 'pilot_h_re_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%pilot_h_im_addr = getelementptr i16 %pilot_h_im, i64 0, i64 %idxprom82" [chan_est.cpp:138]   --->   Operation 23 'getelementptr' 'pilot_h_im_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%pilot_h_re_1_addr = getelementptr i16 %pilot_h_re_1, i64 0, i64 %idxprom82" [chan_est.cpp:137]   --->   Operation 24 'getelementptr' 'pilot_h_re_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [2/2] (1.23ns)   --->   "%pilot_h_re_1_load = load i7 %pilot_h_re_1_addr" [chan_est.cpp:137]   --->   Operation 25 'load' 'pilot_h_re_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%pilot_h_im_1_addr = getelementptr i16 %pilot_h_im_1, i64 0, i64 %idxprom82" [chan_est.cpp:138]   --->   Operation 26 'getelementptr' 'pilot_h_im_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [2/2] (1.23ns)   --->   "%pilot_h_im_load = load i7 %pilot_h_im_addr" [chan_est.cpp:138]   --->   Operation 27 'load' 'pilot_h_im_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_3 : Operation 28 [2/2] (1.23ns)   --->   "%pilot_h_im_1_load = load i7 %pilot_h_im_1_addr" [chan_est.cpp:138]   --->   Operation 28 'load' 'pilot_h_im_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
 State 4 <SV = 3> <Delay = 1.23>
-ST_4 : Operation 29 [1/2] (1.23ns)   --->   "%pilot_h_re_load = load i8 %pilot_h_re_addr" [chan_est.cpp:273]   --->   Operation 29 'load' 'pilot_h_re_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 172> <RAM>
-ST_4 : Operation 30 [1/2] (1.23ns)   --->   "%pilot_h_re_1_load = load i8 %pilot_h_re_1_addr" [chan_est.cpp:273]   --->   Operation 30 'load' 'pilot_h_re_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 172> <RAM>
-ST_4 : Operation 31 [1/2] (1.23ns)   --->   "%pilot_h_im_load = load i8 %pilot_h_im_addr" [chan_est.cpp:274]   --->   Operation 31 'load' 'pilot_h_im_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 172> <RAM>
-ST_4 : Operation 32 [1/2] (1.23ns)   --->   "%pilot_h_im_1_load = load i8 %pilot_h_im_1_addr" [chan_est.cpp:274]   --->   Operation 32 'load' 'pilot_h_im_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 172> <RAM>
-ST_4 : Operation 53 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 53 'ret' 'ret_ln0' <Predicate = (icmp_ln266)> <Delay = 0.42>
+ST_4 : Operation 29 [1/2] (1.23ns)   --->   "%pilot_h_re_load = load i7 %pilot_h_re_addr" [chan_est.cpp:137]   --->   Operation 29 'load' 'pilot_h_re_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_4 : Operation 30 [1/2] (1.23ns)   --->   "%pilot_h_re_1_load = load i7 %pilot_h_re_1_addr" [chan_est.cpp:137]   --->   Operation 30 'load' 'pilot_h_re_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_4 : Operation 31 [1/2] (1.23ns)   --->   "%pilot_h_im_load = load i7 %pilot_h_im_addr" [chan_est.cpp:138]   --->   Operation 31 'load' 'pilot_h_im_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_4 : Operation 32 [1/2] (1.23ns)   --->   "%pilot_h_im_1_load = load i7 %pilot_h_im_1_addr" [chan_est.cpp:138]   --->   Operation 32 'load' 'pilot_h_im_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_4 : Operation 53 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 53 'ret' 'ret_ln0' <Predicate = (icmp_ln130)> <Delay = 0.42>
 
 State 5 <SV = 4> <Delay = 1.23>
-ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%specpipeline_ln267 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_8" [chan_est.cpp:267]   --->   Operation 33 'specpipeline' 'specpipeline_ln267' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%speclooptripcount_ln266 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1024, i64 1024, i64 1024" [chan_est.cpp:266]   --->   Operation 34 'speclooptripcount' 'speclooptripcount_ln266' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%specloopname_ln266 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [chan_est.cpp:266]   --->   Operation 35 'specloopname' 'specloopname_ln266' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%w_re_addr = getelementptr i16 %w_re, i64 0, i64 %zext_ln266" [chan_est.cpp:273]   --->   Operation 36 'getelementptr' 'w_re_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%w_im_addr = getelementptr i16 %w_im, i64 0, i64 %zext_ln266" [chan_est.cpp:274]   --->   Operation 37 'getelementptr' 'w_im_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%w_re_1_addr = getelementptr i16 %w_re_1, i64 0, i64 %zext_ln266" [chan_est.cpp:273]   --->   Operation 38 'getelementptr' 'w_re_1_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%w_im_1_addr = getelementptr i16 %w_im_1, i64 0, i64 %zext_ln266" [chan_est.cpp:274]   --->   Operation 39 'getelementptr' 'w_im_1_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%w_re_2_addr = getelementptr i16 %w_re_2, i64 0, i64 %zext_ln266" [chan_est.cpp:273]   --->   Operation 40 'getelementptr' 'w_re_2_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%w_im_2_addr = getelementptr i16 %w_im_2, i64 0, i64 %zext_ln266" [chan_est.cpp:274]   --->   Operation 41 'getelementptr' 'w_im_2_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%w_re_3_addr = getelementptr i16 %w_re_3, i64 0, i64 %zext_ln266" [chan_est.cpp:273]   --->   Operation 42 'getelementptr' 'w_re_3_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 43 [1/1] (1.23ns)   --->   "%store_ln273 = store i16 %pilot_h_re_load, i10 %w_re_addr" [chan_est.cpp:273]   --->   Operation 43 'store' 'store_ln273' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
-ST_5 : Operation 44 [1/1] (1.23ns)   --->   "%store_ln273 = store i16 %pilot_h_re_1_load, i10 %w_re_1_addr" [chan_est.cpp:273]   --->   Operation 44 'store' 'store_ln273' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
-ST_5 : Operation 45 [1/1] (1.23ns)   --->   "%store_ln273 = store i16 %pilot_h_re_load, i10 %w_re_2_addr" [chan_est.cpp:273]   --->   Operation 45 'store' 'store_ln273' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
-ST_5 : Operation 46 [1/1] (1.23ns)   --->   "%store_ln273 = store i16 %pilot_h_re_1_load, i10 %w_re_3_addr" [chan_est.cpp:273]   --->   Operation 46 'store' 'store_ln273' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
-ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%w_im_3_addr = getelementptr i16 %w_im_3, i64 0, i64 %zext_ln266" [chan_est.cpp:274]   --->   Operation 47 'getelementptr' 'w_im_3_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 48 [1/1] (1.23ns)   --->   "%store_ln274 = store i16 %pilot_h_im_load, i10 %w_im_addr" [chan_est.cpp:274]   --->   Operation 48 'store' 'store_ln274' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
-ST_5 : Operation 49 [1/1] (1.23ns)   --->   "%store_ln274 = store i16 %pilot_h_im_1_load, i10 %w_im_1_addr" [chan_est.cpp:274]   --->   Operation 49 'store' 'store_ln274' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
-ST_5 : Operation 50 [1/1] (1.23ns)   --->   "%store_ln274 = store i16 %pilot_h_im_load, i10 %w_im_2_addr" [chan_est.cpp:274]   --->   Operation 50 'store' 'store_ln274' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
-ST_5 : Operation 51 [1/1] (1.23ns)   --->   "%store_ln274 = store i16 %pilot_h_im_1_load, i10 %w_im_3_addr" [chan_est.cpp:274]   --->   Operation 51 'store' 'store_ln274' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
-ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln266 = br void %VITIS_LOOP_269_3" [chan_est.cpp:266]   --->   Operation 52 'br' 'br_ln266' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%specpipeline_ln131 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_8" [chan_est.cpp:131]   --->   Operation 33 'specpipeline' 'specpipeline_ln131' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%speclooptripcount_ln130 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1024, i64 1024, i64 1024" [chan_est.cpp:130]   --->   Operation 34 'speclooptripcount' 'speclooptripcount_ln130' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%specloopname_ln130 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [chan_est.cpp:130]   --->   Operation 35 'specloopname' 'specloopname_ln130' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%w_re_addr = getelementptr i16 %w_re, i64 0, i64 %zext_ln130" [chan_est.cpp:137]   --->   Operation 36 'getelementptr' 'w_re_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%w_im_addr = getelementptr i16 %w_im, i64 0, i64 %zext_ln130" [chan_est.cpp:138]   --->   Operation 37 'getelementptr' 'w_im_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%w_re_1_addr = getelementptr i16 %w_re_1, i64 0, i64 %zext_ln130" [chan_est.cpp:137]   --->   Operation 38 'getelementptr' 'w_re_1_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%w_im_1_addr = getelementptr i16 %w_im_1, i64 0, i64 %zext_ln130" [chan_est.cpp:138]   --->   Operation 39 'getelementptr' 'w_im_1_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%w_re_2_addr = getelementptr i16 %w_re_2, i64 0, i64 %zext_ln130" [chan_est.cpp:137]   --->   Operation 40 'getelementptr' 'w_re_2_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%w_im_2_addr = getelementptr i16 %w_im_2, i64 0, i64 %zext_ln130" [chan_est.cpp:138]   --->   Operation 41 'getelementptr' 'w_im_2_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%w_re_3_addr = getelementptr i16 %w_re_3, i64 0, i64 %zext_ln130" [chan_est.cpp:137]   --->   Operation 42 'getelementptr' 'w_re_3_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (1.23ns)   --->   "%store_ln137 = store i16 %pilot_h_re_load, i10 %w_re_addr" [chan_est.cpp:137]   --->   Operation 43 'store' 'store_ln137' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
+ST_5 : Operation 44 [1/1] (1.23ns)   --->   "%store_ln137 = store i16 %pilot_h_re_1_load, i10 %w_re_1_addr" [chan_est.cpp:137]   --->   Operation 44 'store' 'store_ln137' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
+ST_5 : Operation 45 [1/1] (1.23ns)   --->   "%store_ln137 = store i16 %pilot_h_re_load, i10 %w_re_2_addr" [chan_est.cpp:137]   --->   Operation 45 'store' 'store_ln137' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
+ST_5 : Operation 46 [1/1] (1.23ns)   --->   "%store_ln137 = store i16 %pilot_h_re_1_load, i10 %w_re_3_addr" [chan_est.cpp:137]   --->   Operation 46 'store' 'store_ln137' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%w_im_3_addr = getelementptr i16 %w_im_3, i64 0, i64 %zext_ln130" [chan_est.cpp:138]   --->   Operation 47 'getelementptr' 'w_im_3_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (1.23ns)   --->   "%store_ln138 = store i16 %pilot_h_im_load, i10 %w_im_addr" [chan_est.cpp:138]   --->   Operation 48 'store' 'store_ln138' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
+ST_5 : Operation 49 [1/1] (1.23ns)   --->   "%store_ln138 = store i16 %pilot_h_im_1_load, i10 %w_im_1_addr" [chan_est.cpp:138]   --->   Operation 49 'store' 'store_ln138' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
+ST_5 : Operation 50 [1/1] (1.23ns)   --->   "%store_ln138 = store i16 %pilot_h_im_load, i10 %w_im_2_addr" [chan_est.cpp:138]   --->   Operation 50 'store' 'store_ln138' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
+ST_5 : Operation 51 [1/1] (1.23ns)   --->   "%store_ln138 = store i16 %pilot_h_im_1_load, i10 %w_im_3_addr" [chan_est.cpp:138]   --->   Operation 51 'store' 'store_ln138' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 1024> <RAM>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln130 = br void %VITIS_LOOP_133_3" [chan_est.cpp:130]   --->   Operation 52 'br' 'br_ln130' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -327,17 +327,17 @@ Port [ PILOT_FOR_K]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1
 <LifeTime>
 <method=bitvector/>
 k                       (alloca           ) [ 010000]
-store_ln266             (store            ) [ 000000]
+store_ln130             (store            ) [ 000000]
 br_ln0                  (br               ) [ 000000]
 k_1                     (load             ) [ 000000]
-icmp_ln266              (icmp             ) [ 011110]
-add_ln266               (add              ) [ 000000]
-br_ln266                (br               ) [ 000000]
-zext_ln266              (zext             ) [ 011111]
+icmp_ln130              (icmp             ) [ 011110]
+add_ln130               (add              ) [ 000000]
+br_ln130                (br               ) [ 000000]
+zext_ln130              (zext             ) [ 011111]
 PILOT_FOR_K_addr        (getelementptr    ) [ 011000]
-store_ln266             (store            ) [ 000000]
+store_ln130             (store            ) [ 000000]
 m                       (load             ) [ 010100]
-idxprom79               (zext             ) [ 000000]
+idxprom82               (zext             ) [ 000000]
 pilot_h_re_addr         (getelementptr    ) [ 010010]
 pilot_h_im_addr         (getelementptr    ) [ 010010]
 pilot_h_re_1_addr       (getelementptr    ) [ 010010]
@@ -346,9 +346,9 @@ pilot_h_re_load         (load             ) [ 010001]
 pilot_h_re_1_load       (load             ) [ 010001]
 pilot_h_im_load         (load             ) [ 010001]
 pilot_h_im_1_load       (load             ) [ 010001]
-specpipeline_ln267      (specpipeline     ) [ 000000]
-speclooptripcount_ln266 (speclooptripcount) [ 000000]
-specloopname_ln266      (specloopname     ) [ 000000]
+specpipeline_ln131      (specpipeline     ) [ 000000]
+speclooptripcount_ln130 (speclooptripcount) [ 000000]
+specloopname_ln130      (specloopname     ) [ 000000]
 w_re_addr               (getelementptr    ) [ 000000]
 w_im_addr               (getelementptr    ) [ 000000]
 w_re_1_addr             (getelementptr    ) [ 000000]
@@ -356,16 +356,16 @@ w_im_1_addr             (getelementptr    ) [ 000000]
 w_re_2_addr             (getelementptr    ) [ 000000]
 w_im_2_addr             (getelementptr    ) [ 000000]
 w_re_3_addr             (getelementptr    ) [ 000000]
-store_ln273             (store            ) [ 000000]
-store_ln273             (store            ) [ 000000]
-store_ln273             (store            ) [ 000000]
-store_ln273             (store            ) [ 000000]
+store_ln137             (store            ) [ 000000]
+store_ln137             (store            ) [ 000000]
+store_ln137             (store            ) [ 000000]
+store_ln137             (store            ) [ 000000]
 w_im_3_addr             (getelementptr    ) [ 000000]
-store_ln274             (store            ) [ 000000]
-store_ln274             (store            ) [ 000000]
-store_ln274             (store            ) [ 000000]
-store_ln274             (store            ) [ 000000]
-br_ln266                (br               ) [ 000000]
+store_ln138             (store            ) [ 000000]
+store_ln138             (store            ) [ 000000]
+store_ln138             (store            ) [ 000000]
+store_ln138             (store            ) [ 000000]
+br_ln130                (br               ) [ 000000]
 ret_ln0                 (ret              ) [ 000000]
 </LifeTime>
 
@@ -623,7 +623,7 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="54" class="1004" name="PILOT_FOR_K_addr_gep_fu_54">
 <pin_list>
-<pin id="55" dir="0" index="0" bw="8" slack="0"/>
+<pin id="55" dir="0" index="0" bw="7" slack="0"/>
 <pin id="56" dir="0" index="1" bw="1" slack="0"/>
 <pin id="57" dir="0" index="2" bw="11" slack="0"/>
 <pin id="58" dir="1" index="3" bw="10" slack="0"/>
@@ -637,9 +637,9 @@ ret_ln0                 (ret              ) [ 000000]
 <comp id="61" class="1004" name="grp_access_fu_61">
 <pin_list>
 <pin id="62" dir="0" index="0" bw="10" slack="0"/>
-<pin id="63" dir="0" index="1" bw="8" slack="2147483647"/>
+<pin id="63" dir="0" index="1" bw="7" slack="2147483647"/>
 <pin id="64" dir="0" index="2" bw="0" slack="2147483647"/>
-<pin id="65" dir="1" index="3" bw="8" slack="1"/>
+<pin id="65" dir="1" index="3" bw="7" slack="1"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -651,8 +651,8 @@ ret_ln0                 (ret              ) [ 000000]
 <pin_list>
 <pin id="68" dir="0" index="0" bw="16" slack="0"/>
 <pin id="69" dir="0" index="1" bw="1" slack="0"/>
-<pin id="70" dir="0" index="2" bw="8" slack="0"/>
-<pin id="71" dir="1" index="3" bw="8" slack="0"/>
+<pin id="70" dir="0" index="2" bw="7" slack="0"/>
+<pin id="71" dir="1" index="3" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
@@ -662,7 +662,7 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="74" class="1004" name="grp_access_fu_74">
 <pin_list>
-<pin id="75" dir="0" index="0" bw="8" slack="0"/>
+<pin id="75" dir="0" index="0" bw="7" slack="0"/>
 <pin id="76" dir="0" index="1" bw="16" slack="2147483647"/>
 <pin id="77" dir="0" index="2" bw="0" slack="2147483647"/>
 <pin id="78" dir="1" index="3" bw="16" slack="1"/>
@@ -677,8 +677,8 @@ ret_ln0                 (ret              ) [ 000000]
 <pin_list>
 <pin id="81" dir="0" index="0" bw="16" slack="0"/>
 <pin id="82" dir="0" index="1" bw="1" slack="0"/>
-<pin id="83" dir="0" index="2" bw="8" slack="0"/>
-<pin id="84" dir="1" index="3" bw="8" slack="0"/>
+<pin id="83" dir="0" index="2" bw="7" slack="0"/>
+<pin id="84" dir="1" index="3" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
@@ -690,8 +690,8 @@ ret_ln0                 (ret              ) [ 000000]
 <pin_list>
 <pin id="88" dir="0" index="0" bw="16" slack="0"/>
 <pin id="89" dir="0" index="1" bw="1" slack="0"/>
-<pin id="90" dir="0" index="2" bw="8" slack="0"/>
-<pin id="91" dir="1" index="3" bw="8" slack="0"/>
+<pin id="90" dir="0" index="2" bw="7" slack="0"/>
+<pin id="91" dir="1" index="3" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
@@ -701,7 +701,7 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="94" class="1004" name="grp_access_fu_94">
 <pin_list>
-<pin id="95" dir="0" index="0" bw="8" slack="0"/>
+<pin id="95" dir="0" index="0" bw="7" slack="0"/>
 <pin id="96" dir="0" index="1" bw="16" slack="2147483647"/>
 <pin id="97" dir="0" index="2" bw="0" slack="2147483647"/>
 <pin id="98" dir="1" index="3" bw="16" slack="1"/>
@@ -716,8 +716,8 @@ ret_ln0                 (ret              ) [ 000000]
 <pin_list>
 <pin id="101" dir="0" index="0" bw="16" slack="0"/>
 <pin id="102" dir="0" index="1" bw="1" slack="0"/>
-<pin id="103" dir="0" index="2" bw="8" slack="0"/>
-<pin id="104" dir="1" index="3" bw="8" slack="0"/>
+<pin id="103" dir="0" index="2" bw="7" slack="0"/>
+<pin id="104" dir="1" index="3" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
@@ -727,7 +727,7 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="107" class="1004" name="grp_access_fu_107">
 <pin_list>
-<pin id="108" dir="0" index="0" bw="8" slack="0"/>
+<pin id="108" dir="0" index="0" bw="7" slack="0"/>
 <pin id="109" dir="0" index="1" bw="16" slack="2147483647"/>
 <pin id="110" dir="0" index="2" bw="0" slack="2147483647"/>
 <pin id="111" dir="1" index="3" bw="16" slack="1"/>
@@ -740,7 +740,7 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="113" class="1004" name="grp_access_fu_113">
 <pin_list>
-<pin id="114" dir="0" index="0" bw="8" slack="0"/>
+<pin id="114" dir="0" index="0" bw="7" slack="0"/>
 <pin id="115" dir="0" index="1" bw="16" slack="2147483647"/>
 <pin id="116" dir="0" index="2" bw="0" slack="2147483647"/>
 <pin id="117" dir="1" index="3" bw="16" slack="1"/>
@@ -842,7 +842,7 @@ ret_ln0                 (ret              ) [ 000000]
 </bind>
 </comp>
 
-<comp id="168" class="1004" name="store_ln273_access_fu_168">
+<comp id="168" class="1004" name="store_ln137_access_fu_168">
 <pin_list>
 <pin id="169" dir="0" index="0" bw="10" slack="0"/>
 <pin id="170" dir="0" index="1" bw="16" slack="1"/>
@@ -851,11 +851,11 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln273/5 "/>
+<opset="store_ln137/5 "/>
 </bind>
 </comp>
 
-<comp id="174" class="1004" name="store_ln273_access_fu_174">
+<comp id="174" class="1004" name="store_ln137_access_fu_174">
 <pin_list>
 <pin id="175" dir="0" index="0" bw="10" slack="0"/>
 <pin id="176" dir="0" index="1" bw="16" slack="1"/>
@@ -864,11 +864,11 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln273/5 "/>
+<opset="store_ln137/5 "/>
 </bind>
 </comp>
 
-<comp id="180" class="1004" name="store_ln273_access_fu_180">
+<comp id="180" class="1004" name="store_ln137_access_fu_180">
 <pin_list>
 <pin id="181" dir="0" index="0" bw="10" slack="0"/>
 <pin id="182" dir="0" index="1" bw="16" slack="1"/>
@@ -877,11 +877,11 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln273/5 "/>
+<opset="store_ln137/5 "/>
 </bind>
 </comp>
 
-<comp id="186" class="1004" name="store_ln273_access_fu_186">
+<comp id="186" class="1004" name="store_ln137_access_fu_186">
 <pin_list>
 <pin id="187" dir="0" index="0" bw="10" slack="0"/>
 <pin id="188" dir="0" index="1" bw="16" slack="1"/>
@@ -890,7 +890,7 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln273/5 "/>
+<opset="store_ln137/5 "/>
 </bind>
 </comp>
 
@@ -907,7 +907,7 @@ ret_ln0                 (ret              ) [ 000000]
 </bind>
 </comp>
 
-<comp id="199" class="1004" name="store_ln274_access_fu_199">
+<comp id="199" class="1004" name="store_ln138_access_fu_199">
 <pin_list>
 <pin id="200" dir="0" index="0" bw="10" slack="0"/>
 <pin id="201" dir="0" index="1" bw="16" slack="1"/>
@@ -916,11 +916,11 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln274/5 "/>
+<opset="store_ln138/5 "/>
 </bind>
 </comp>
 
-<comp id="205" class="1004" name="store_ln274_access_fu_205">
+<comp id="205" class="1004" name="store_ln138_access_fu_205">
 <pin_list>
 <pin id="206" dir="0" index="0" bw="10" slack="0"/>
 <pin id="207" dir="0" index="1" bw="16" slack="1"/>
@@ -929,11 +929,11 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln274/5 "/>
+<opset="store_ln138/5 "/>
 </bind>
 </comp>
 
-<comp id="211" class="1004" name="store_ln274_access_fu_211">
+<comp id="211" class="1004" name="store_ln138_access_fu_211">
 <pin_list>
 <pin id="212" dir="0" index="0" bw="10" slack="0"/>
 <pin id="213" dir="0" index="1" bw="16" slack="1"/>
@@ -942,11 +942,11 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln274/5 "/>
+<opset="store_ln138/5 "/>
 </bind>
 </comp>
 
-<comp id="217" class="1004" name="store_ln274_access_fu_217">
+<comp id="217" class="1004" name="store_ln138_access_fu_217">
 <pin_list>
 <pin id="218" dir="0" index="0" bw="10" slack="0"/>
 <pin id="219" dir="0" index="1" bw="16" slack="1"/>
@@ -955,11 +955,11 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln274/5 "/>
+<opset="store_ln138/5 "/>
 </bind>
 </comp>
 
-<comp id="223" class="1004" name="store_ln266_store_fu_223">
+<comp id="223" class="1004" name="store_ln130_store_fu_223">
 <pin_list>
 <pin id="224" dir="0" index="0" bw="1" slack="0"/>
 <pin id="225" dir="0" index="1" bw="11" slack="0"/>
@@ -967,7 +967,7 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln266/1 "/>
+<opset="store_ln130/1 "/>
 </bind>
 </comp>
 
@@ -982,7 +982,7 @@ ret_ln0                 (ret              ) [ 000000]
 </bind>
 </comp>
 
-<comp id="231" class="1004" name="icmp_ln266_fu_231">
+<comp id="231" class="1004" name="icmp_ln130_fu_231">
 <pin_list>
 <pin id="232" dir="0" index="0" bw="11" slack="0"/>
 <pin id="233" dir="0" index="1" bw="11" slack="0"/>
@@ -990,11 +990,11 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln266/1 "/>
+<opset="icmp_ln130/1 "/>
 </bind>
 </comp>
 
-<comp id="237" class="1004" name="add_ln266_fu_237">
+<comp id="237" class="1004" name="add_ln130_fu_237">
 <pin_list>
 <pin id="238" dir="0" index="0" bw="11" slack="0"/>
 <pin id="239" dir="0" index="1" bw="1" slack="0"/>
@@ -1002,22 +1002,22 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln266/1 "/>
+<opset="add_ln130/1 "/>
 </bind>
 </comp>
 
-<comp id="243" class="1004" name="zext_ln266_fu_243">
+<comp id="243" class="1004" name="zext_ln130_fu_243">
 <pin_list>
 <pin id="244" dir="0" index="0" bw="11" slack="0"/>
 <pin id="245" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln266/1 "/>
+<opset="zext_ln130/1 "/>
 </bind>
 </comp>
 
-<comp id="248" class="1004" name="store_ln266_store_fu_248">
+<comp id="248" class="1004" name="store_ln130_store_fu_248">
 <pin_list>
 <pin id="249" dir="0" index="0" bw="11" slack="0"/>
 <pin id="250" dir="0" index="1" bw="11" slack="0"/>
@@ -1025,18 +1025,18 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln266/1 "/>
+<opset="store_ln130/1 "/>
 </bind>
 </comp>
 
-<comp id="253" class="1004" name="idxprom79_fu_253">
+<comp id="253" class="1004" name="idxprom82_fu_253">
 <pin_list>
-<pin id="254" dir="0" index="0" bw="8" slack="1"/>
+<pin id="254" dir="0" index="0" bw="7" slack="1"/>
 <pin id="255" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="idxprom79/3 "/>
+<opset="idxprom82/3 "/>
 </bind>
 </comp>
 
@@ -1050,23 +1050,23 @@ ret_ln0                 (ret              ) [ 000000]
 </bind>
 </comp>
 
-<comp id="267" class="1005" name="icmp_ln266_reg_267">
+<comp id="267" class="1005" name="icmp_ln130_reg_267">
 <pin_list>
 <pin id="268" dir="0" index="0" bw="1" slack="3"/>
 <pin id="269" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln266 "/>
+<opset="icmp_ln130 "/>
 </bind>
 </comp>
 
-<comp id="271" class="1005" name="zext_ln266_reg_271">
+<comp id="271" class="1005" name="zext_ln130_reg_271">
 <pin_list>
 <pin id="272" dir="0" index="0" bw="64" slack="4"/>
 <pin id="273" dir="1" index="1" bw="64" slack="4"/>
 </pin_list>
 <bind>
-<opset="zext_ln266 "/>
+<opset="zext_ln130 "/>
 </bind>
 </comp>
 
@@ -1082,8 +1082,8 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="288" class="1005" name="m_reg_288">
 <pin_list>
-<pin id="289" dir="0" index="0" bw="8" slack="1"/>
-<pin id="290" dir="1" index="1" bw="8" slack="1"/>
+<pin id="289" dir="0" index="0" bw="7" slack="1"/>
+<pin id="290" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
 <opset="m "/>
@@ -1092,8 +1092,8 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="293" class="1005" name="pilot_h_re_addr_reg_293">
 <pin_list>
-<pin id="294" dir="0" index="0" bw="8" slack="1"/>
-<pin id="295" dir="1" index="1" bw="8" slack="1"/>
+<pin id="294" dir="0" index="0" bw="7" slack="1"/>
+<pin id="295" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
 <opset="pilot_h_re_addr "/>
@@ -1102,8 +1102,8 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="298" class="1005" name="pilot_h_im_addr_reg_298">
 <pin_list>
-<pin id="299" dir="0" index="0" bw="8" slack="1"/>
-<pin id="300" dir="1" index="1" bw="8" slack="1"/>
+<pin id="299" dir="0" index="0" bw="7" slack="1"/>
+<pin id="300" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
 <opset="pilot_h_im_addr "/>
@@ -1112,8 +1112,8 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="303" class="1005" name="pilot_h_re_1_addr_reg_303">
 <pin_list>
-<pin id="304" dir="0" index="0" bw="8" slack="1"/>
-<pin id="305" dir="1" index="1" bw="8" slack="1"/>
+<pin id="304" dir="0" index="0" bw="7" slack="1"/>
+<pin id="305" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
 <opset="pilot_h_re_1_addr "/>
@@ -1122,8 +1122,8 @@ ret_ln0                 (ret              ) [ 000000]
 
 <comp id="308" class="1005" name="pilot_h_im_1_addr_reg_308">
 <pin_list>
-<pin id="309" dir="0" index="0" bw="8" slack="1"/>
-<pin id="310" dir="1" index="1" bw="8" slack="1"/>
+<pin id="309" dir="0" index="0" bw="7" slack="1"/>
+<pin id="310" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
 <opset="pilot_h_im_1_addr "/>
@@ -1377,15 +1377,15 @@ ret_ln0                 (ret              ) [ 000000]
 	Port: chan_est_top_Pipeline_zoh_fill : PILOT_FOR_K | {1 2 }
   - Chain level:
 	State 1
-		store_ln266 : 1
+		store_ln130 : 1
 		k_1 : 1
-		icmp_ln266 : 2
-		add_ln266 : 2
-		br_ln266 : 3
-		zext_ln266 : 2
+		icmp_ln130 : 2
+		add_ln130 : 2
+		br_ln130 : 3
+		zext_ln130 : 2
 		PILOT_FOR_K_addr : 3
 		m : 4
-		store_ln266 : 3
+		store_ln130 : 3
 	State 2
 	State 3
 		pilot_h_re_addr : 1
@@ -1398,14 +1398,14 @@ ret_ln0                 (ret              ) [ 000000]
 		pilot_h_im_1_load : 2
 	State 4
 	State 5
-		store_ln273 : 1
-		store_ln273 : 1
-		store_ln273 : 1
-		store_ln273 : 1
-		store_ln274 : 1
-		store_ln274 : 1
-		store_ln274 : 1
-		store_ln274 : 1
+		store_ln137 : 1
+		store_ln137 : 1
+		store_ln137 : 1
+		store_ln137 : 1
+		store_ln138 : 1
+		store_ln138 : 1
+		store_ln138 : 1
+		store_ln138 : 1
 
 
 ============================================================
@@ -1416,12 +1416,12 @@ ret_ln0                 (ret              ) [ 000000]
 |----------|-------------------|---------|---------|
 | Operation|  Functional Unit  |    FF   |   LUT   |
 |----------|-------------------|---------|---------|
-|   icmp   | icmp_ln266_fu_231 |    0    |    18   |
+|   icmp   | icmp_ln130_fu_231 |    0    |    18   |
 |----------|-------------------|---------|---------|
-|    add   |  add_ln266_fu_237 |    0    |    18   |
+|    add   |  add_ln130_fu_237 |    0    |    18   |
 |----------|-------------------|---------|---------|
-|   zext   | zext_ln266_fu_243 |    0    |    0    |
-|          |  idxprom79_fu_253 |    0    |    0    |
+|   zext   | zext_ln130_fu_243 |    0    |    0    |
+|          |  idxprom82_fu_253 |    0    |    0    |
 |----------|-------------------|---------|---------|
 |   Total  |                   |    0    |    36   |
 |----------|-------------------|---------|---------|
@@ -1434,20 +1434,20 @@ N/A
 |                         |   FF   |
 +-------------------------+--------+
 | PILOT_FOR_K_addr_reg_283|   10   |
-|    icmp_ln266_reg_267   |    1   |
+|    icmp_ln130_reg_267   |    1   |
 |        k_reg_260        |   11   |
-|        m_reg_288        |    8   |
-|pilot_h_im_1_addr_reg_308|    8   |
+|        m_reg_288        |    7   |
+|pilot_h_im_1_addr_reg_308|    7   |
 |pilot_h_im_1_load_reg_331|   16   |
-| pilot_h_im_addr_reg_298 |    8   |
+| pilot_h_im_addr_reg_298 |    7   |
 | pilot_h_im_load_reg_325 |   16   |
-|pilot_h_re_1_addr_reg_303|    8   |
+|pilot_h_re_1_addr_reg_303|    7   |
 |pilot_h_re_1_load_reg_319|   16   |
-| pilot_h_re_addr_reg_293 |    8   |
+| pilot_h_re_addr_reg_293 |    7   |
 | pilot_h_re_load_reg_313 |   16   |
-|    zext_ln266_reg_271   |   64   |
+|    zext_ln130_reg_271   |   64   |
 +-------------------------+--------+
-|          Total          |   190  |
+|          Total          |   185  |
 +-------------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -1455,12 +1455,12 @@ N/A
 |        Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |-------------------|------|------|------|--------||---------||---------||---------|
 |  grp_access_fu_61 |  p0  |   2  |  10  |   20   ||    0    ||    9    |
-|  grp_access_fu_74 |  p0  |   2  |   8  |   16   ||    0    ||    9    |
-|  grp_access_fu_94 |  p0  |   2  |   8  |   16   ||    0    ||    9    |
-| grp_access_fu_107 |  p0  |   2  |   8  |   16   ||    0    ||    9    |
-| grp_access_fu_113 |  p0  |   2  |   8  |   16   ||    0    ||    9    |
+|  grp_access_fu_74 |  p0  |   2  |   7  |   14   ||    0    ||    9    |
+|  grp_access_fu_94 |  p0  |   2  |   7  |   14   ||    0    ||    9    |
+| grp_access_fu_107 |  p0  |   2  |   7  |   14   ||    0    ||    9    |
+| grp_access_fu_113 |  p0  |   2  |   7  |   14   ||    0    ||    9    |
 |-------------------|------|------|------|--------||---------||---------||---------|
-|       Total       |      |      |      |   84   ||  2.135  ||    0    ||    45   |
+|       Total       |      |      |      |   76   ||  2.135  ||    0    ||    45   |
 |-------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -1472,7 +1472,7 @@ N/A
 |  Function |    -   |    0   |   36   |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    2   |    0   |   45   |
-|  Register |    -   |   190  |    -   |
+|  Register |    -   |   185  |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    2   |   190  |   81   |
+|   Total   |    2   |   185  |   81   |
 +-----------+--------+--------+--------+
